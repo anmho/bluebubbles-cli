@@ -1,0 +1,55 @@
+---
+title: "Local Server"
+description: "Manage an installed BlueBubbles Server app on macOS."
+---
+
+## Commands
+
+These commands are local process-manager operations, not remote API calls.
+
+```bash
+bluebubbles server local start
+bluebubbles server local status
+bluebubbles server local stop
+bluebubbles server local restart
+bluebubbles server local logs
+```
+
+## App discovery
+
+The CLI checks these default locations:
+
+- `/Applications/BlueBubbles.app`
+- `/Applications/BlueBubbles Server.app`
+- `~/Applications/BlueBubbles.app`
+- `~/Applications/BlueBubbles Server.app`
+
+If your install lives elsewhere:
+
+```bash
+bluebubbles config set appPath /Applications/BlueBubbles.app
+```
+
+## Launch arguments
+
+Persist launch arguments:
+
+```bash
+bluebubbles config set launchArgs --headless,--foreground
+```
+
+Or pass them at runtime:
+
+```bash
+bluebubbles server local start --arg --headless --arg --foreground
+```
+
+## Logs
+
+The CLI prefers a configured log file or the log captured from CLI-owned launches.
+
+```bash
+bluebubbles server local logs --count 100
+bluebubbles server local logs --follow
+bluebubbles config set logPath /path/to/bluebubbles.log
+```

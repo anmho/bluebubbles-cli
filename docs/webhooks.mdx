@@ -1,0 +1,37 @@
+---
+title: "Webhooks"
+description: "Validate BlueBubbles webhook payloads and run a local receiver."
+---
+
+## Commands
+
+These are local tooling commands, not BlueBubbles API endpoints.
+
+```bash
+bluebubbles webhook validate payload.json
+cat payload.json | bluebubbles webhook validate
+bluebubbles webhook serve --port 8000 --path /bluebubbles/webhook
+```
+
+## Validation
+
+`bluebubbles webhook validate` accepts either:
+
+- a file path argument
+- JSON from stdin
+
+The command checks that the payload matches the BlueBubbles webhook shape exposed by the SDK runtime guards.
+
+## Local receiver
+
+`bluebubbles webhook serve` starts a small local HTTP listener that:
+
+- accepts `POST` requests on the configured path
+- validates the incoming payload
+- logs either the event type or full JSON
+
+Example:
+
+```bash
+bluebubbles webhook serve --port 8000 --path /bluebubbles/webhook
+```

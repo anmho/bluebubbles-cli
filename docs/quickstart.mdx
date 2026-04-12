@@ -1,0 +1,70 @@
+---
+title: "Quickstart"
+description: "Install the CLI and run the first BlueBubbles resource commands."
+---
+
+## Install
+
+```bash
+npm install -g bluebubbles-cli
+```
+
+From source:
+
+```bash
+bun install
+bun run build
+bun link
+```
+
+Or run directly:
+
+```bash
+bun run dev -- --help
+```
+
+## Configure API access
+
+Persisted config:
+
+```bash
+bluebubbles config set baseUrl http://localhost:1234
+bluebubbles config set password your-server-password
+```
+
+Environment variables:
+
+```bash
+export BLUEBUBBLES_BASE_URL=http://localhost:1234
+export BLUEBUBBLES_PASSWORD=your-server-password
+```
+
+## First commands
+
+```bash
+bluebubbles doctor
+bluebubbles ping
+bluebubbles server info
+bluebubbles chat list
+bluebubbles message list --chat 'iMessage;+;chat123'
+bluebubbles message send --chat 'iMessage;+;chat123' --message 'hello from bluebubbles'
+```
+
+## Local server lifecycle
+
+```bash
+bluebubbles config set appPath /Applications/BlueBubbles.app
+bluebubbles server local start
+bluebubbles server local status
+bluebubbles server local logs --count 50
+```
+
+## JSON input for mutation commands
+
+Some commands accept structured JSON through a file, stdin, or inline body.
+
+```bash
+bluebubbles server settings set --file settings.json
+cat theme.json | bluebubbles server theme set custom-theme
+bluebubbles server theme set custom-theme --body '{"accent":"blue"}'
+```

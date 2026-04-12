@@ -1,0 +1,209 @@
+---
+title: "CLI Reference"
+description: "Curated command surface for the bluebubbles executable, with endpoint mappings."
+---
+
+## Root resources
+
+```bash
+bluebubbles config ...
+bluebubbles doctor
+bluebubbles ping
+bluebubbles server ...
+bluebubbles chat ...
+bluebubbles message ...
+bluebubbles handle ...
+bluebubbles attachment ...
+bluebubbles contact ...
+bluebubbles icloud ...
+bluebubbles webhook ...
+```
+
+## Output options
+
+Most API commands support:
+
+- `-o, --output <format>` where format is `table` or `json`
+- `--json` as an alias for `-o json`
+- `--renderer <name>` for human table rendering (`columnify`, `compact`)
+
+## Endpoint-mapped commands
+
+### Ping
+
+- `bluebubbles ping`
+  API: `GET /api/v1/ping`
+
+### Server
+
+- `bluebubbles server info`
+  API: `GET /api/v1/server/info`
+- `bluebubbles server logs [--count <n>]`
+  API: `GET /api/v1/server/logs`
+- `bluebubbles server alert list`
+  API: `GET /api/v1/server/alert`
+- `bluebubbles server alert read <ids>`
+  API: `POST /api/v1/server/alert/read`
+- `bluebubbles server update check`
+  API: `GET /api/v1/server/update/check`
+- `bluebubbles server update install [--wait] [--yes]`
+  API: `POST /api/v1/server/update/install`
+- `bluebubbles server restart services [--yes]`
+  API: `GET /api/v1/server/restart/soft`
+- `bluebubbles server restart app [--yes]`
+  API: `GET /api/v1/server/restart/hard`
+- `bluebubbles server settings get`
+  API: `GET /api/v1/backup/settings`
+- `bluebubbles server settings set --file <path>`
+  API: `POST /api/v1/backup/settings`
+- `bluebubbles server settings delete <name> [--yes]`
+  API: `DELETE /api/v1/backup/settings/<name>`
+- `bluebubbles server theme list`
+  API: `GET /api/v1/backup/theme`
+- `bluebubbles server theme set <name> --file <path>`
+  API: `POST /api/v1/backup/theme`
+- `bluebubbles server theme delete <name> [--yes]`
+  API: `DELETE /api/v1/backup/theme/<name>`
+- `bluebubbles server local start`
+  Local process manager, no remote API endpoint
+- `bluebubbles server local status`
+  Local process manager, no remote API endpoint
+- `bluebubbles server local stop [--yes]`
+  Local process manager, no remote API endpoint
+- `bluebubbles server local restart [--yes]`
+  Local process manager, no remote API endpoint
+- `bluebubbles server local logs`
+  Local process manager, no remote API endpoint
+
+### Chat
+
+- `bluebubbles chat list`
+  API: `POST /api/v1/chat/query`
+- `bluebubbles chat get <guid>`
+  API: `GET /api/v1/chat/<Chat GUID>`
+- `bluebubbles chat messages <guid>`
+  API: `GET /api/v1/chat/<Chat GUID>/message`
+- `bluebubbles chat update <guid> --name <name>`
+  API: `PUT /api/v1/chat/<Chat GUID>`
+- `bluebubbles chat delete <guid> [--yes]`
+  API: `DELETE /api/v1/chat/<Chat GUID>`
+- `bluebubbles chat group leave <guid> [--yes]`
+  API: `POST /api/v1/chat/<Chat GUID>/leave`
+- `bluebubbles chat group participant add <guid> <address>`
+  API: `POST /api/v1/chat/<Chat GUID>/participant`
+- `bluebubbles chat group participant remove <guid> <address> [--yes]`
+  API: `DELETE /api/v1/chat/<Chat GUID>/participant`
+- `bluebubbles chat group icon set <guid>`
+  API: `POST /api/v1/chat/<Chat GUID>/icon`
+- `bluebubbles chat group icon remove <guid> [--yes]`
+  API: `DELETE /api/v1/chat/<Chat GUID>/icon`
+- `bluebubbles chat typing start <guid>`
+  API: `POST /api/v1/chat/<Chat GUID>/typing`
+- `bluebubbles chat typing stop <guid>`
+  API: `DELETE /api/v1/chat/<Chat GUID>/typing`
+
+### Message
+
+- `bluebubbles message list`
+  API: `POST /api/v1/message/query`
+- `bluebubbles message get <guid>`
+  API: `GET /api/v1/message/<GUID>`
+- `bluebubbles message send --chat <guid> --message <text>`
+  API: `POST /api/v1/message/text`
+- `bluebubbles message react <guid> --chat <guid> --reaction <type>`
+  API: `POST /api/v1/message/react`
+- `bluebubbles message edit <guid> --message <text>`
+  API: `POST /api/v1/message/<GUID>/edit`
+- `bluebubbles message unsend <guid> [--yes]`
+  API: `POST /api/v1/message/<GUID>/unsend`
+
+### Message Schedule
+
+- `bluebubbles message schedule list`
+  API: `GET /api/v1/message/schedule`
+- `bluebubbles message schedule get <id>`
+  API: `GET /api/v1/message/schedule/<ID>`
+- `bluebubbles message schedule create --chat <guid> --message <text> --date <date>`
+  API: `POST /api/v1/message/schedule`
+- `bluebubbles message schedule update <id>`
+  API: `PUT /api/v1/message/schedule/<ID>`
+- `bluebubbles message schedule delete <id> [--yes]`
+  API: `DELETE /api/v1/message/schedule/<ID>`
+
+### Handle
+
+- `bluebubbles handle list`
+  API: `POST /api/v1/handle/query`
+- `bluebubbles handle availability <address>`
+  API: `GET /api/v1/handle/<address>/availability`
+
+### Attachment
+
+- `bluebubbles attachment get <guid>`
+  API: `GET /api/v1/attachment/<GUID>`
+- `bluebubbles attachment download <guid> [--file <path>]`
+  API: `GET /api/v1/attachment/<GUID>/download`
+- `bluebubbles attachment force-download <guid> [--file <path>]`
+  API: `GET /api/v1/attachment/<GUID>/download/force`
+
+### Contact
+
+- `bluebubbles contact list`
+  API: `GET /api/v1/contact`
+- `bluebubbles contact query [--address <value>]`
+  API: `POST /api/v1/contact/query`
+
+### iCloud
+
+- `bluebubbles icloud account`
+  API: `GET /api/v1/icloud/account`
+- `bluebubbles icloud contact`
+  API: `GET /api/v1/icloud/contact`
+- `bluebubbles icloud findmy devices list`
+  API: `GET /api/v1/icloud/findmy/devices`
+- `bluebubbles icloud findmy devices refresh`
+  API: `POST /api/v1/icloud/findmy/devices/refresh`
+- `bluebubbles icloud findmy friends list`
+  API: `GET /api/v1/icloud/findmy/friends`
+- `bluebubbles icloud findmy friends refresh`
+  API: `POST /api/v1/icloud/findmy/friends/refresh`
+- `bluebubbles icloud alias set <email>`
+  API: `POST /api/v1/icloud/account/alias`
+
+### Webhook
+
+- `bluebubbles webhook validate [file]`
+  Local tool, no API endpoint
+- `bluebubbles webhook serve [--port <port>] [--path <path>]`
+  Local tool, no API endpoint
+
+## Removed from the curated surface
+
+- `fcm`
+- `mac`
+- web-only commands
+- `webhooks types`
+- low-value count and blurhash commands that are better handled with `--json` plus shell tools
+
+## Output
+
+Most commands accept `--json` and emit:
+
+```json
+{
+  "ok": true,
+  "data": {}
+}
+```
+
+Errors emit:
+
+```json
+{
+  "ok": false,
+  "error": {
+    "kind": "validation",
+    "message": "..."
+  }
+}
+```

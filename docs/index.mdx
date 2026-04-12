@@ -1,0 +1,58 @@
+---
+title: "BlueBubbles CLI"
+description: "A curated BlueBubbles terminal CLI organized around the resources that matter in day-to-day use."
+---
+
+## What it covers
+
+<Columns cols={2}>
+  <Card
+    title="Quickstart"
+    icon="rocket"
+    href="/quickstart"
+  >
+    Install the CLI, configure the BlueBubbles server connection, and run the first resource commands.
+  </Card>
+  <Card
+    title="CLI reference"
+    icon="terminal"
+    href="/cli-reference"
+  >
+    Browse the curated command tree with the API endpoint mapping for every retained command.
+  </Card>
+  <Card
+    title="Local server control"
+    icon="power-off"
+    href="/local-server"
+  >
+    Manage a local BlueBubbles Server app through `bluebubbles server local ...`.
+  </Card>
+  <Card
+    title="Webhooks"
+    icon="webhook"
+    href="/webhooks"
+  >
+    Validate webhook payloads and run a local receiver through `bluebubbles webhook ...`.
+  </Card>
+  <Card
+    title="API reference"
+    icon="square-code"
+  >
+    Mintlify renders a pinned copy of the official BlueBubbles OpenAPI spec from `docs/openapi.yaml`.
+  </Card>
+</Columns>
+
+## Positioning
+
+This CLI is intentionally curated.
+
+- Root help is resource-first: `ping`, `server`, `chat`, `message`, `handle`, `attachment`, `contact`, `icloud`, `webhook`, `config`, `doctor`.
+- Low-value or risky clutter like `fcm`, `mac`, and web-only commands is removed.
+- Server-owned admin state is nested under `server`, including `server settings` and `server theme`.
+- Each retained command is documented with the API endpoint it corresponds to.
+
+## Current architecture
+
+- API commands go through the current `@jgoon/bluebubbles`-backed client layer in this repo.
+- Local lifecycle commands manage an installed BlueBubbles Server app on macOS.
+- Mintlify uses `docs/openapi.yaml`, a pinned copy of the official BlueBubbles OpenAPI spec.
