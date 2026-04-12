@@ -19,8 +19,9 @@
     "test": "bun test src/index.test.ts src/lib/*.test.ts",
     "test:commands": "bun run scripts/test-commands.ts",
     "test:commands:strict": "TEST_COMMANDS_STRICT=1 bun run scripts/test-commands.ts",
-    "docs:dev": "cd docs && mint dev --no-open",
-    "docs:validate": "cd docs && mint validate"
+    "docs:sync-openapi": "bun run scripts/sync-openapi.ts",
+    "docs:dev": "bun run docs:sync-openapi && cd docs && mint dev --no-open",
+    "docs:validate": "bun run docs:sync-openapi && cd docs && mint validate"
   },
   "devDependencies": {
     "@types/bun": "^1.3.12",
@@ -28,7 +29,8 @@
     "@types/node": "^25.6.0",
     "mint": "^4.2.507",
     "openapi-typescript": "^7.13.0",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "yaml": "^2.8.3"
   },
   "dependencies": {
     "@jgoon/bluebubbles": "^1.1.0",

@@ -19,6 +19,7 @@ bun run build
 The repo uses the local `mint` dev dependency. There is no separate scraper step in the current setup.
 
 ```bash
+bun run docs:sync-openapi
 bun run docs:dev
 bun run docs:validate
 ```
@@ -34,4 +35,5 @@ docs/openapi.yaml
 - CLI usage docs are hand-curated.
 - API reference pages are rendered from the pinned OpenAPI file rather than maintained as generated MDX snapshots.
 - The upstream source of truth remains `https://raw.githubusercontent.com/Jish2/bluebubbles-sdk/main/openapi.yaml`.
+- `docs:sync-openapi` applies a minimal Mint compatibility patch when the upstream file has empty `responses` objects.
 - The current CLI runtime still uses the repo's `@jgoon/bluebubbles`-backed client layer; replacing that with a new generated SDK is a separate code migration step.

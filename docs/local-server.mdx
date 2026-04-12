@@ -5,14 +5,15 @@ description: "Manage an installed BlueBubbles Server app on macOS."
 
 ## Commands
 
-These commands are local process-manager operations, not remote API calls.
+These commands are local process-manager operations, not API calls.
 
 ```bash
-bluebubbles server local start
-bluebubbles server local status
-bluebubbles server local stop
-bluebubbles server local restart
-bluebubbles server local logs
+bluebubbles server start
+bluebubbles server status
+bluebubbles server stop
+bluebubbles server restart
+bluebubbles server logs
+bluebubbles server logs --source api
 ```
 
 ## App discovery
@@ -41,7 +42,7 @@ bluebubbles config set launchArgs --headless,--foreground
 Or pass them at runtime:
 
 ```bash
-bluebubbles server local start --arg --headless --arg --foreground
+bluebubbles server start --arg --headless --arg --foreground
 ```
 
 ## Logs
@@ -49,7 +50,7 @@ bluebubbles server local start --arg --headless --arg --foreground
 The CLI prefers a configured log file or the log captured from CLI-owned launches.
 
 ```bash
-bluebubbles server local logs --count 100
-bluebubbles server local logs --follow
+bluebubbles server logs --count 100
+bluebubbles server logs --follow
 bluebubbles config set logPath /path/to/bluebubbles.log
 ```

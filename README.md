@@ -45,7 +45,9 @@ bluebubbles contact list --renderer columnify
 ```bash
 bluebubbles ping
 bluebubbles server info
-bluebubbles server local status
+bluebubbles server status
+bluebubbles server logs
+bluebubbles server logs --source api
 bluebubbles chat list
 bluebubbles message send --chat <guid> --message "hello"
 bluebubbles message schedule list
@@ -82,6 +84,7 @@ export BLUEBUBBLES_PASSWORD='your#server#password'
 Mintlify is configured through the local `mint` dev dependency.
 
 ```bash
+bun run docs:sync-openapi
 bun run docs:dev
 bun run docs:validate
 ```

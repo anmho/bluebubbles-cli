@@ -39,7 +39,17 @@ Most API commands support:
 - `bluebubbles server info`
   API: `GET /api/v1/server/info`
 - `bluebubbles server logs [--count <n>]`
+  Local process manager, no API endpoint
+- `bluebubbles server logs --source api [--count <n>]`
   API: `GET /api/v1/server/logs`
+- `bluebubbles server start`
+  Local process manager, no API endpoint
+- `bluebubbles server status`
+  Local process manager, no API endpoint
+- `bluebubbles server stop [--yes]`
+  Local process manager, no API endpoint
+- `bluebubbles server restart [--yes]`
+  Local process manager, no API endpoint
 - `bluebubbles server alert list`
   API: `GET /api/v1/server/alert`
 - `bluebubbles server alert read <ids>`
@@ -48,9 +58,9 @@ Most API commands support:
   API: `GET /api/v1/server/update/check`
 - `bluebubbles server update install [--wait] [--yes]`
   API: `POST /api/v1/server/update/install`
-- `bluebubbles server restart services [--yes]`
+- `bluebubbles server restart-services [--yes]`
   API: `GET /api/v1/server/restart/soft`
-- `bluebubbles server restart app [--yes]`
+- `bluebubbles server restart-app [--yes]`
   API: `GET /api/v1/server/restart/hard`
 - `bluebubbles server settings get`
   API: `GET /api/v1/backup/settings`
@@ -64,16 +74,6 @@ Most API commands support:
   API: `POST /api/v1/backup/theme`
 - `bluebubbles server theme delete <name> [--yes]`
   API: `DELETE /api/v1/backup/theme/<name>`
-- `bluebubbles server local start`
-  Local process manager, no remote API endpoint
-- `bluebubbles server local status`
-  Local process manager, no remote API endpoint
-- `bluebubbles server local stop [--yes]`
-  Local process manager, no remote API endpoint
-- `bluebubbles server local restart [--yes]`
-  Local process manager, no remote API endpoint
-- `bluebubbles server local logs`
-  Local process manager, no remote API endpoint
 
 ### Chat
 
