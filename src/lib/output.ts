@@ -1,5 +1,5 @@
 import columnify from "columnify";
-import { CliError } from "./errors.js";
+import type { CliError } from "./errors.js";
 import type { ChatSummary, DoctorCheck, MessageSummary } from "./types.js";
 
 type Row = Record<string, string>;
@@ -8,11 +8,8 @@ type ColumnSpec<T> = {
   value: (item: T) => unknown;
   maxWidth?: number;
 };
-type TableRenderer = (rows: Row[], columns: string[]) => string;
 
 const DEFAULT_COLUMN_WIDTH = 40;
-const tableRenderers = new Map<string, TableRenderer>();
-let activeRenderer = "columnify";
 
 function normalizeText(value: string): string {
   return value.replace(/\s+/g, " ").trim();
@@ -138,43 +135,8 @@ function columnifyRenderer(rows: Row[], columns: string[]): string {
   });
 }
 
-function compactRenderer(rows: Row[], columns: string[]): string {
-  const header = columns.join("  ");
-  const body = rows
-    .map((row) => columns.map((column) => row[column] ?? "").join("  "))
-    .join("\n");
-  return body ? `${header}\n${body}` : header;
-}
-
-tableRenderers.set("columnify", columnifyRenderer);
-tableRenderers.set("compact", compactRenderer);
-
-export function registerTableRenderer(name: string, renderer: TableRenderer): void {
-  const normalized = normalizeText(name).toLowerCase();
-  if (!normalized) {
-    throw new CliError("Renderer name cannot be empty.", "validation");
-  }
-  tableRenderers.set(normalized, renderer);
-}
-
-export function setActiveTableRenderer(name: string | undefined): void {
-  if (!name) return;
-  const normalized = name.trim().toLowerCase();
-  if (!tableRenderers.has(normalized)) {
-    throw new CliError(
-      `Unsupported renderer "${name}". Available: ${[...tableRenderers.keys()].join(", ")}`,
-      "validation",
-    );
-  }
-  activeRenderer = normalized;
-}
-
 function renderRows(rows: Row[], columns: string[]): string {
-  const renderer = tableRenderers.get(activeRenderer);
-  if (!renderer) {
-    throw new CliError(`Renderer "${activeRenderer}" is not registered.`, "general");
-  }
-  return renderer(rows, columns);
+  return columnifyRenderer(rows, columns);
 }
 
 export function printTableRows<T>(items: T[], columns: ColumnSpec<T>[]): void {

@@ -36,8 +36,31 @@ bun run dev -- --help
 Output controls:
 
 ```bash
+bluebubbles contact list
 bluebubbles chat list -o json
-bluebubbles contact list --renderer columnify
+```
+
+Human-readable output (`columnify`) is the default:
+
+```text
+NAME            PHONE             EMAIL
+Alex Rivera     +1-555-0100       alex@example.com
+Taylor Kim      +1-555-0199       taylor@example.com
+```
+
+JSON output is available with `-o json` or `--json`:
+
+```json
+{
+  "ok": true,
+  "data": [
+    {
+      "displayName": "Alex Rivera",
+      "phoneNumbers": [{ "address": "+1-555-0100" }],
+      "emails": [{ "address": "alex@example.com" }]
+    }
+  ]
+}
 ```
 
 ## Command shape

@@ -28,7 +28,6 @@ export type OutputFormat = "table" | "json";
 export interface OutputOptions {
   json?: boolean;
   output?: OutputFormat;
-  renderer?: string;
 }
 
 export interface CommandOverrides extends CliConfig {

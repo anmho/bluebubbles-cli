@@ -6,7 +6,7 @@ import {
   loadConfig,
 } from "./config.js";
 import { CliError } from "./errors.js";
-import { printJson, setActiveTableRenderer } from "./output.js";
+import { printJson } from "./output.js";
 import type { CommandOverrides, OutputFormat, OutputOptions } from "./types.js";
 import { BlueBubblesClient } from "./bluebubbles/client.js";
 import type { ApiConfig } from "./bluebubbles/client.js";
@@ -21,7 +21,6 @@ export function addConnectionOptions(command: Command): Command {
     .option("--base-url <url>", "BlueBubbles API base URL")
     .option("--password <password>", "BlueBubbles server password")
     .option("-o, --output <format>", "Output format (table|json)", parseOutputFormat)
-    .option("--renderer <name>", "Table renderer plugin (columnify|compact)")
     .option("--json", "Alias for -o json");
 }
 
@@ -108,7 +107,6 @@ export function maybePrint(data: unknown, output: OutputOptions, human: () => vo
     return;
   }
 
-  setActiveTableRenderer(output.renderer);
   human();
 }
 
