@@ -294,13 +294,13 @@ async function main(): Promise<number> {
     { name: "doctor", argv: ["doctor"], ok: [0] },
     { name: "ping", argv: ["ping"], ok: [0], requiresApi: true },
     { name: "server info", argv: ["server", "info", "--json"], ok: [0], requiresApi: true },
-    { name: "server logs", argv: ["server", "logs", "--count", "5"], ok: [0], requiresApi: true },
+    { name: "server logs api", argv: ["server", "logs", "--source", "api", "--count", "5"], ok: [0], requiresApi: true },
     { name: "server alert list", argv: ["server", "alert", "list"], ok: [0], requiresApi: true },
     { name: "server alert read", argv: ["server", "alert", "read", "1"], ok: [0], requiresApi: true },
     { name: "server update check", argv: ["server", "update", "check"], ok: [0], requiresApi: true },
     { name: "server update install", argv: ["server", "update", "install", "--yes"], ok: [0, 6], requiresApi: true, destructive: true },
-    { name: "server restart services", argv: ["server", "restart", "services", "--yes"], ok: [0, 6], requiresApi: true, destructive: true },
-    { name: "server restart app", argv: ["server", "restart", "app", "--yes"], ok: [0, 6], requiresApi: true, destructive: true },
+    { name: "server restart services", argv: ["server", "restart-services", "--yes"], ok: [0, 6], requiresApi: true, destructive: true },
+    { name: "server restart app", argv: ["server", "restart-app", "--yes"], ok: [0, 6], requiresApi: true, destructive: true },
     { name: "server settings get", argv: ["server", "settings", "get"], ok: [0], requiresApi: true },
     { name: "server settings set", argv: ["server", "settings", "set", "--file", settingsFile], ok: [0], requiresApi: true, destructive: true },
     { name: "server settings delete", argv: ["server", "settings", "delete", "test-setting", "--yes"], ok: [0, 6], requiresApi: true, destructive: true },
@@ -351,11 +351,11 @@ async function main(): Promise<number> {
     { name: "webhook validate", argv: ["webhook", "validate", webhookPayload], ok: [0, 2], acceptsConnection: false },
     { name: "webhook serve", argv: ["webhook", "serve"], ok: [0], longRunning: true, acceptsConnection: false },
 
-    { name: "server local status", argv: ["server", "local", "status"], ok: [0, 5], requiresDarwin: true, acceptsConnection: false },
-    { name: "server local logs", argv: ["server", "local", "logs"], ok: [0, 5, 6], requiresDarwin: true, acceptsConnection: false },
-    { name: "server local start", argv: ["server", "local", "start", "--app-path", "/nonexistent/BlueBubbles.app"], ok: [0, 5], requiresDarwin: true, destructive: true, acceptsConnection: false },
-    { name: "server local stop", argv: ["server", "local", "stop", "--yes"], ok: [0, 5, 6], requiresDarwin: true, destructive: true, acceptsConnection: false },
-    { name: "server local restart", argv: ["server", "local", "restart", "--yes", "--app-path", "/nonexistent/BlueBubbles.app"], ok: [0, 5, 6], requiresDarwin: true, destructive: true, acceptsConnection: false },
+    { name: "server status", argv: ["server", "status"], ok: [0, 5], requiresDarwin: true, acceptsConnection: false },
+    { name: "server logs local", argv: ["server", "logs"], ok: [0, 5, 6], requiresDarwin: true, acceptsConnection: false },
+    { name: "server start", argv: ["server", "start", "--app-path", "/nonexistent/BlueBubbles.app"], ok: [0, 5], requiresDarwin: true, destructive: true, acceptsConnection: false },
+    { name: "server stop", argv: ["server", "stop", "--yes"], ok: [0, 5, 6], requiresDarwin: true, destructive: true, acceptsConnection: false },
+    { name: "server restart local", argv: ["server", "restart", "--yes", "--app-path", "/nonexistent/BlueBubbles.app"], ok: [0, 5, 6], requiresDarwin: true, destructive: true, acceptsConnection: false },
   ];
 
   const results: Result[] = [];

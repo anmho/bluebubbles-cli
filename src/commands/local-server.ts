@@ -2,15 +2,18 @@ import type { Command } from "commander";
 import {
   addConnectionOptions,
   addDangerousOption,
+  clientFromOptions,
   collect,
   maybePrint,
   requireConfirmation,
   withConfig,
 } from "../lib/cli-helpers.js";
+import { CliError } from "../lib/errors.js";
 import {
   printKeyValue,
   printSuccess,
 } from "../lib/output.js";
+import { getRemoteLogs } from "../lib/bluebubbles/server.js";
 import {
   restartServer,
   serverStatus,
@@ -20,13 +23,9 @@ import {
 } from "../lib/local-server.js";
 import type { CommandOverrides, OutputOptions } from "../lib/types.js";
 
-export function registerServerLocalCommands(serverCommand: Command): void {
-  const localCommand = serverCommand
-    .command("local")
-    .description("Local BlueBubbles server process control (no API endpoint)");
-
+export function registerServerLifecycleCommands(serverCommand: Command): void {
   addConnectionOptions(
-    localCommand.command("start").description("Start the local BlueBubbles app (local process manager, no API endpoint)"),
+    serverCommand.command("start").description("Start the local BlueBubbles app (local process manager, no API endpoint)"),
   )
     .option("--app-path <path>", "Override the BlueBubbles app bundle or executable path")
     .option("--log-path <path>", "Override the local log file path")
@@ -53,7 +52,7 @@ export function registerServerLocalCommands(serverCommand: Command): void {
     );
 
   addConnectionOptions(
-    localCommand.command("status").description("Show local process status (local process manager, no API endpoint)"),
+    serverCommand.command("status").description("Show local process status (local process manager, no API endpoint)"),
   ).action(async (options: CommandOverrides & OutputOptions & { config?: string }) => {
     const context = await withConfig(options);
     const status = await serverStatus({
@@ -74,7 +73,7 @@ export function registerServerLocalCommands(serverCommand: Command): void {
 
   addConnectionOptions(
     addDangerousOption(
-      localCommand.command("stop").description("Stop the local app (local process manager, no API endpoint)"),
+      serverCommand.command("stop").description("Stop the local app (local process manager, no API endpoint)"),
     ),
   ).action(async (options: CommandOverrides & OutputOptions & { config?: string; yes?: boolean }) => {
     await requireConfirmation(options, "Stop the local BlueBubbles app?");
@@ -85,7 +84,7 @@ export function registerServerLocalCommands(serverCommand: Command): void {
 
   addConnectionOptions(
     addDangerousOption(
-      localCommand.command("restart").description("Restart the local app (local process manager, no API endpoint)"),
+      serverCommand.command("restart").description("Restart the local app (local process manager, no API endpoint)"),
     ),
   )
     .option("--app-path <path>", "Override the BlueBubbles app bundle or executable path")
@@ -109,14 +108,29 @@ export function registerServerLocalCommands(serverCommand: Command): void {
       maybePrint(state, options, () => printSuccess(`Restarted BlueBubbles with PID ${state.pid}`, false));
     });
 
-  localCommand
-    .command("logs")
-    .description("Show local process logs (local process manager, no API endpoint)")
-    .option("--config <path>", "Override the config file location")
+  addConnectionOptions(
+    serverCommand
+      .command("logs")
+      .description("Show server logs (local process manager by default; use --source api for GET /api/v1/server/logs)")
+      .option("--source <source>", "Log source (local|api)", "local"),
+  )
     .option("--log-path <path>", "Override the local log file path")
     .option("--count <number>", "Number of log lines to show", (value) => Number.parseInt(value, 10), 100)
     .option("-f, --follow", "Follow the log file")
-    .action(async (options: CommandOverrides & { count: number; follow?: boolean; config?: string }) => {
+    .action(async (options: CommandOverrides & OutputOptions & { count: number; follow?: boolean; config?: string; source?: string }) => {
+      const source = (options.source ?? "local").toLowerCase();
+      if (source === "api") {
+        if (options.follow) {
+          throw new CliError("`--follow` is only supported with `--source local`.", "validation");
+        }
+        const client = await clientFromOptions(options);
+        const result = await getRemoteLogs(client, options.count);
+        maybePrint(result.data, options, () => printSuccess(result.data ?? "", false));
+        return;
+      }
+      if (source !== "local") {
+        throw new CliError(`Unsupported log source "${options.source}". Use: local, api`, "validation");
+      }
       const context = await withConfig(options);
       await showLogs({
         statePath: context.statePath,

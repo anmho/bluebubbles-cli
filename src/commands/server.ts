@@ -11,17 +11,17 @@ import {
   printKeyValue,
   printSuccess,
 } from "../lib/output.js";
+import { CliError } from "../lib/errors.js";
 import {
   checkServerUpdate,
   getAlerts,
-  getRemoteLogs,
   getServerInfo,
   installServerUpdate,
   markAlertRead,
   restartApp,
   restartServices,
 } from "../lib/bluebubbles/server.js";
-import { registerServerLocalCommands } from "./local-server.js";
+import { registerServerLifecycleCommands } from "./local-server.js";
 import { registerServerSettingsCommands } from "./settings.js";
 import { registerServerThemeCommands } from "./themes.js";
 import type { CommandOverrides, OutputOptions } from "../lib/types.js";
@@ -37,20 +37,6 @@ export function registerServerCommands(program: Command): void {
     const result = await getServerInfo(client);
     maybePrint(result.data, options, () => printKeyValue(result.data ?? {}));
   }));
-
-  addConnectionOptions(
-    serverCommand.command("logs").description("Fetch remote server logs (GET /api/v1/server/logs)"),
-  )
-    .option(
-      "--count <number>",
-      "Number of remote log lines to fetch",
-      (value) => Number.parseInt(value, 10),
-      100,
-    )
-    .action(withBlueBubblesDeps(({ client }) => async (options: CommandOverrides & OutputOptions & { count: number; config?: string }) => {
-      const result = await getRemoteLogs(client, options.count);
-      maybePrint(result.data, options, () => printSuccess(result.data ?? "", false));
-    }));
 
   const alertCommand = serverCommand
     .command("alert")
@@ -105,13 +91,9 @@ export function registerServerCommands(program: Command): void {
       maybePrint(result.data, options, () => printSuccess("Update installation initiated.", false));
     }));
 
-  const restartCommand = serverCommand
-    .command("restart")
-    .description("Server restart operations");
-
   addConnectionOptions(
     addDangerousOption(
-      restartCommand.command("services").description("Restart internal services (GET /api/v1/server/restart/soft)"),
+      serverCommand.command("restart-services").description("Restart internal services (GET /api/v1/server/restart/soft)"),
     ),
   ).action(withBlueBubblesDeps(({ client }) => async (options: CommandOverrides & OutputOptions & { yes?: boolean }) => {
     await requireConfirmation(options, "Restart BlueBubbles internal services?");
@@ -121,7 +103,7 @@ export function registerServerCommands(program: Command): void {
 
   addConnectionOptions(
     addDangerousOption(
-      restartCommand.command("app").description("Restart the app (GET /api/v1/server/restart/hard)"),
+      serverCommand.command("restart-app").description("Restart the app (GET /api/v1/server/restart/hard)"),
     ),
   ).action(withBlueBubblesDeps(({ client }) => async (options: CommandOverrides & OutputOptions & { yes?: boolean }) => {
     await requireConfirmation(options, "Restart the BlueBubbles app?");
@@ -129,7 +111,19 @@ export function registerServerCommands(program: Command): void {
     maybePrint(result.data, options, () => printSuccess("App restart initiated.", false));
   }));
 
-  registerServerLocalCommands(serverCommand);
+  registerServerLifecycleCommands(serverCommand);
   registerServerSettingsCommands(serverCommand);
   registerServerThemeCommands(serverCommand);
+
+  serverCommand
+    .command("local")
+    .description("Deprecated command namespace")
+    .argument("[command]", "Deprecated local subcommand")
+    .argument("[...rest]", "Additional deprecated local arguments")
+    .action(() => {
+      throw new CliError(
+        "`bluebubbles server local ...` has been removed. Use `bluebubbles server start|status|stop|restart|logs`.",
+        "validation",
+      );
+    });
 }

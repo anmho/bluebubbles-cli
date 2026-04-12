@@ -141,7 +141,7 @@ export async function startServer(input: {
   await sleep(300);
 
   if (!isRunning(child.pid!)) {
-    throw new CliError("BlueBubbles exited immediately after launch. Check `bluebubbles server local logs`.", "process");
+    throw new CliError("BlueBubbles exited immediately after launch. Check `bluebubbles server logs`.", "process");
   }
 
   const state: RuntimeState = {
@@ -207,6 +207,7 @@ export async function serverStatus(input: {
   state: RuntimeState | null;
   appPath?: string;
 }> {
+  ensureMacOS();
   const state = await readRuntimeState(input.statePath);
   if (!state) {
     return {
