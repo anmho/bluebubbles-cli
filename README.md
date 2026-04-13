@@ -1,8 +1,8 @@
 # bluebubbles-cli
 
-`bluebubbles-cli` is a Bun-first BlueBubbles CLI with a curated, resource-oriented command tree for terminal use.
+`bluebubbles-cli` is a terminal-first BlueBubbles CLI.
 
-It is not positioned as a full endpoint browser. The CLI keeps the common resource flows prominent, removes low-value surface area like `fcm`, `mac`, and web-only commands, and shows the API endpoint mapping in command help and docs.
+It focuses on real workflows: chats, messages, server operations, and clean output (`table`, `wide`, `json`).
 
 ## Install
 
