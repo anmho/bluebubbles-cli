@@ -58,6 +58,14 @@ GUID                        FROM       TEXT                          AGE   CHAT
 9aa1...77c                  +1555...   sounds good, see you soon     8m    iMessage;+;chat123
 ```
 
+`messages list -o wide` includes extra columns:
+
+```text
+GUID                        FROM       TEXT                          AGE   CHAT                     FROM_ME   ATTACHMENTS   CREATED_AT              CHAT_NAME
+4b2f...e91                  me         hello from bluebubbles        2m    iMessage;+;chat123      yes       0             2026-04-12 21:08:14     Weekend Plans
+9aa1...77c                  +1555...   sounds good, see you soon     8m    iMessage;+;chat123      no        1             2026-04-12 21:02:07     Weekend Plans
+```
+
 JSON output is available with `-o json` or `--json`:
 
 ```json
