@@ -3,13 +3,13 @@ import {
   addConnectionOptions,
   maybePrint,
   withBlueBubblesDeps,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printFindMyDevices,
   printFindMyFriends,
   printKeyValue,
   printSuccess,
-} from "../lib/output.js";
+} from "~/lib/output.js";
 import {
   getContactCard,
   getFindMyDevices,
@@ -18,8 +18,8 @@ import {
   modifyActiveAlias,
   refreshFindMyDevices,
   refreshFindMyFriends,
-} from "../lib/bluebubbles/icloud.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/bluebubbles/icloud.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerICloudCommands(program: Command): void {
   const icloudCommand = program.command("icloud").description("iCloud resource operations");

@@ -7,13 +7,13 @@ import {
   readJsonInput,
   requireConfirmation,
   withBlueBubblesDeps,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printThemes,
   printSuccess,
-} from "../lib/output.js";
-import { getThemes, setTheme, deleteTheme } from "../lib/bluebubbles/theme.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/output.js";
+import { getThemes, setTheme, deleteTheme } from "~/lib/bluebubbles/theme.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerServerThemeCommands(serverCommand: Command): void {
   const themesCommand = serverCommand.command("theme").description("Server theme resource operations");

@@ -6,12 +6,12 @@ import {
   requireConfirmation,
   withBlueBubblesDeps,
   withPaging,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printChats,
   printMessages,
   printSuccess,
-} from "../lib/output.js";
+} from "~/lib/output.js";
 import {
   addParticipant,
   deleteChat,
@@ -25,9 +25,9 @@ import {
   startTyping,
   stopTyping,
   updateChat,
-} from "../lib/bluebubbles/chat.js";
-import { DEFAULT_CHAT_WITH, DEFAULT_MESSAGE_WITH } from "../lib/constants.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/bluebubbles/chat.js";
+import { DEFAULT_CHAT_WITH, DEFAULT_MESSAGE_WITH } from "~/lib/constants.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerChatCommands(program: Command): void {
   const chatCommand = program.command("chat").description("Chat resource operations");

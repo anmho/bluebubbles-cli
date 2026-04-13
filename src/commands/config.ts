@@ -7,15 +7,15 @@ import {
   redactSecret,
   setConfigValue,
   unsetConfigValue,
-} from "../lib/config.js";
-import { CliError } from "../lib/errors.js";
+} from "~/lib/config.js";
+import { CliError } from "~/lib/errors.js";
 import {
   maybePrint,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printKeyValue,
   printSuccess,
-} from "../lib/output.js";
+} from "~/lib/output.js";
 
 const formatConfigForDisplay = (config: Record<string, unknown>, reveal = false) => ({
   ...config,

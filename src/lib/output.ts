@@ -1,6 +1,6 @@
 import columnify from "columnify";
-import type { CliError } from "./errors.js";
-import type { ChatSummary, DoctorCheck, MessageSummary } from "./types.js";
+import type { CliError } from "~/lib/errors.js";
+import type { ChatSummary, DoctorCheck, MessageSummary } from "~/lib/types.js";
 
 type Row = Record<string, string>;
 type ColumnSpec<T> = {

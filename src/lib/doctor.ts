@@ -1,9 +1,9 @@
 import { existsSync } from "node:fs";
-import { OPENAPI_SPEC_URL } from "./constants.js";
-import { discoverAppPath, readRuntimeState, serverStatus } from "./local-server.js";
-import { ping } from "./bluebubbles/ping.js";
-import { BlueBubblesClient } from "./bluebubbles/client.js";
-import type { CliConfig, DoctorCheck } from "./types.js";
+import { OPENAPI_SPEC_URL } from "~/lib/constants.js";
+import { discoverAppPath, readRuntimeState, serverStatus } from "~/lib/local-server.js";
+import { ping } from "~/lib/bluebubbles/ping.js";
+import { BlueBubblesClient } from "~/lib/bluebubbles/client.js";
+import type { CliConfig, DoctorCheck } from "~/lib/types.js";
 
 export async function runDoctor(input: {
   config: CliConfig;

@@ -5,13 +5,13 @@ import {
   maybePrint,
   requireConfirmation,
   withBlueBubblesDeps,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printAlerts,
   printKeyValue,
   printSuccess,
-} from "../lib/output.js";
-import { CliError } from "../lib/errors.js";
+} from "~/lib/output.js";
+import { CliError } from "~/lib/errors.js";
 import {
   checkServerUpdate,
   getAlerts,
@@ -20,11 +20,11 @@ import {
   markAlertRead,
   restartApp,
   restartServices,
-} from "../lib/bluebubbles/server.js";
-import { registerServerLifecycleCommands } from "./local-server.js";
-import { registerServerSettingsCommands } from "./settings.js";
-import { registerServerThemeCommands } from "./themes.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/bluebubbles/server.js";
+import { registerServerLifecycleCommands } from "~/commands/local-server.js";
+import { registerServerSettingsCommands } from "~/commands/settings.js";
+import { registerServerThemeCommands } from "~/commands/themes.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerServerCommands(program: Command): void {
   const serverCommand = program

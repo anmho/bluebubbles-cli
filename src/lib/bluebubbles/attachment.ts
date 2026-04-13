@@ -1,4 +1,4 @@
-import type { ApiEnvelope, BlueBubblesClient } from "./client.js";
+import type { ApiEnvelope, BlueBubblesClient } from "~/lib/bluebubbles/client.js";
 
 export const getAttachment = (client: BlueBubblesClient, guid: string) =>
   client.fetchTemplated<ApiEnvelope<any>>(

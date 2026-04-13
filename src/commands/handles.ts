@@ -4,13 +4,13 @@ import {
   maybePrint,
   withBlueBubblesDeps,
   withPaging,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printHandles,
   printSuccess,
-} from "../lib/output.js";
-import { getHandleAvailability, queryHandles } from "../lib/bluebubbles/handle.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/output.js";
+import { getHandleAvailability, queryHandles } from "~/lib/bluebubbles/handle.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerHandleCommands(program: Command): void {
   const handleCommand = program.command("handle").description("Handle resource operations");

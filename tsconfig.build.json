@@ -7,6 +7,13 @@
     ],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
     "rootDir": "src",
     "outDir": "dist",
     "strict": true,

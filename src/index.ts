@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 import { Command } from "commander";
-import { APP_NAME } from "./lib/constants.js";
-import { printError } from "./lib/output.js";
-import { toCliError } from "./lib/errors.js";
-import { registerConfigCommands } from "./commands/config.js";
-import { registerServerCommands } from "./commands/server.js";
-import { registerChatCommands } from "./commands/chats.js";
-import { registerMessageCommands } from "./commands/messages.js";
-import { registerHandleCommands } from "./commands/handles.js";
-import { registerAttachmentCommands } from "./commands/attachments.js";
-import { registerICloudCommands } from "./commands/icloud.js";
-import { registerContactCommands } from "./commands/contacts.js";
-import { registerPingCommands } from "./commands/ping.js";
-import { registerDoctorCommands } from "./commands/doctor.js";
-import { registerWebhookCommands } from "./commands/webhooks.js";
+import { APP_NAME } from "~/lib/constants.js";
+import { printError } from "~/lib/output.js";
+import { toCliError } from "~/lib/errors.js";
+import { registerConfigCommands } from "~/commands/config.js";
+import { registerServerCommands } from "~/commands/server.js";
+import { registerChatCommands } from "~/commands/chats.js";
+import { registerMessageCommands } from "~/commands/messages.js";
+import { registerHandleCommands } from "~/commands/handles.js";
+import { registerAttachmentCommands } from "~/commands/attachments.js";
+import { registerICloudCommands } from "~/commands/icloud.js";
+import { registerContactCommands } from "~/commands/contacts.js";
+import { registerPingCommands } from "~/commands/ping.js";
+import { registerDoctorCommands } from "~/commands/doctor.js";
+import { registerWebhookCommands } from "~/commands/webhooks.js";
 
 function wantsJsonOutput(argv: string[]): boolean {
   for (let index = 0; index < argv.length; index += 1) {

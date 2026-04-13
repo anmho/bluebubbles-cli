@@ -3,8 +3,8 @@ import { mkdir, open, readFile, rm, writeFile } from "node:fs/promises";
 import { homedir } from "node:os";
 import path from "node:path";
 import { spawn } from "node:child_process";
-import { CliError } from "./errors.js";
-import type { CliConfig, RuntimeState } from "./types.js";
+import { CliError } from "~/lib/errors.js";
+import type { CliConfig, RuntimeState } from "~/lib/types.js";
 
 const DEFAULT_APP_CANDIDATES = [
   "/Applications/BlueBubbles.app",

@@ -3,8 +3,8 @@ import { readFile } from "node:fs/promises";
 import {
   isBlueBubblesWebhookPayload,
 } from "@jgoon/bluebubbles/webhooks";
-import { CliError } from "./errors.js";
-import type { OutputOptions } from "./types.js";
+import { CliError } from "~/lib/errors.js";
+import type { OutputOptions } from "~/lib/types.js";
 
 async function readStdin(): Promise<string> {
   const chunks: Buffer[] = [];

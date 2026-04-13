@@ -3,9 +3,9 @@ import { homedir } from "node:os";
 import path from "node:path";
 import { z } from "zod";
 import { existsSync } from "node:fs";
-import { APP_NAME } from "./constants.js";
-import { CliError } from "./errors.js";
-import type { CliConfig, CommandOverrides, ConfigContext } from "./types.js";
+import { APP_NAME } from "~/lib/constants.js";
+import { CliError } from "~/lib/errors.js";
+import type { CliConfig, CommandOverrides, ConfigContext } from "~/lib/types.js";
 
 const configSchema = z.object({
   baseUrl: z.string().url().optional(),

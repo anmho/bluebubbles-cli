@@ -1,16 +1,16 @@
 import type { Command } from "commander";
 import {
   maybePrint,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printSuccess,
-} from "../lib/output.js";
+} from "~/lib/output.js";
 import {
   serveWebhookReceiver,
   validateWebhookPayload,
-} from "../lib/webhooks.js";
-import { WEBHOOK_DEFAULT_PATH } from "../lib/constants.js";
-import type { OutputOptions } from "../lib/types.js";
+} from "~/lib/webhooks.js";
+import { WEBHOOK_DEFAULT_PATH } from "~/lib/constants.js";
+import type { OutputOptions } from "~/lib/types.js";
 
 export function registerWebhookCommands(program: Command): void {
   const webhookCommand = program.command("webhook").description("Webhook validation and local receiver tooling");

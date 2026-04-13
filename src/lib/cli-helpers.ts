@@ -4,12 +4,12 @@ import { createInterface } from "node:readline/promises";
 import {
   ensureDataDirs,
   loadConfig,
-} from "./config.js";
-import { CliError } from "./errors.js";
-import { printJson } from "./output.js";
-import type { CommandOverrides, OutputFormat, OutputOptions } from "./types.js";
-import { BlueBubblesClient } from "./bluebubbles/client.js";
-import type { ApiConfig } from "./bluebubbles/client.js";
+} from "~/lib/config.js";
+import { CliError } from "~/lib/errors.js";
+import { printJson } from "~/lib/output.js";
+import type { CommandOverrides, OutputFormat, OutputOptions } from "~/lib/types.js";
+import { BlueBubblesClient } from "~/lib/bluebubbles/client.js";
+import type { ApiConfig } from "~/lib/bluebubbles/client.js";
 
 export function collect(value: string, previous: string[] = []): string[] {
   return [...previous, value];

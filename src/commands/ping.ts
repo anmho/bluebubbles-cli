@@ -3,10 +3,10 @@ import {
   addConnectionOptions,
   maybePrint,
   withBlueBubblesDeps,
-} from "../lib/cli-helpers.js";
-import { ping } from "../lib/bluebubbles/ping.js";
-import { printSuccess } from "../lib/output.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/cli-helpers.js";
+import { ping } from "~/lib/bluebubbles/ping.js";
+import { printSuccess } from "~/lib/output.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerPingCommands(program: Command): void {
   addConnectionOptions(

@@ -1,5 +1,5 @@
-import type { ChatSummary, MessageSummary } from "../types.js";
-import type { ApiEnvelope, BlueBubblesClient } from "./client.js";
+import type { ChatSummary, MessageSummary } from "~/lib/types.js";
+import type { ApiEnvelope, BlueBubblesClient } from "~/lib/bluebubbles/client.js";
 
 export const listChats = (
   client: BlueBubblesClient,

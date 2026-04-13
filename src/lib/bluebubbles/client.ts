@@ -1,6 +1,6 @@
 import { createClient } from "@jgoon/bluebubbles";
 import type { paths } from "@jgoon/bluebubbles";
-import { CliError } from "../errors.js";
+import { CliError } from "~/lib/errors.js";
 
 export interface ApiConfig {
   baseUrl: string;

@@ -6,13 +6,13 @@ import {
   requireConfirmation,
   withBlueBubblesDeps,
   withPaging,
-} from "../lib/cli-helpers.js";
-import { CliError } from "../lib/errors.js";
+} from "~/lib/cli-helpers.js";
+import { CliError } from "~/lib/errors.js";
 import {
   printMessages,
   printScheduledMessages,
   printSuccess,
-} from "../lib/output.js";
+} from "~/lib/output.js";
 import {
   createScheduledMessage,
   deleteScheduledMessage,
@@ -25,10 +25,10 @@ import {
   sendText,
   unsendMessage,
   updateScheduledMessage,
-} from "../lib/bluebubbles/message.js";
-import { DEFAULT_MESSAGE_WITH } from "../lib/constants.js";
-import type { EditMessageInput, SendReactInput } from "../lib/bluebubbles/message.js";
-import type { CommandOverrides, MessageSummary, OutputOptions } from "../lib/types.js";
+} from "~/lib/bluebubbles/message.js";
+import { DEFAULT_MESSAGE_WITH } from "~/lib/constants.js";
+import type { EditMessageInput, SendReactInput } from "~/lib/bluebubbles/message.js";
+import type { CommandOverrides, MessageSummary, OutputOptions } from "~/lib/types.js";
 
 export function registerMessageCommands(program: Command): void {
   const messageCommand = program.command("message").description("Message resource operations");

@@ -3,13 +3,13 @@ import {
   addConnectionOptions,
   maybePrint,
   withConfig,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printDoctorChecks,
-} from "../lib/output.js";
-import { runDoctor } from "../lib/doctor.js";
-import { OPENAPI_SPEC_URL } from "../lib/constants.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/output.js";
+import { runDoctor } from "~/lib/doctor.js";
+import { OPENAPI_SPEC_URL } from "~/lib/constants.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerDoctorCommands(program: Command): void {
   addConnectionOptions(program.command("doctor").description("Run BlueBubbles environment diagnostics")).action(

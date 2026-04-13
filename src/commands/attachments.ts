@@ -5,17 +5,17 @@ import {
   addConnectionOptions,
   maybePrint,
   withBlueBubblesDeps,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printKeyValue,
   printSuccess,
-} from "../lib/output.js";
+} from "~/lib/output.js";
 import {
   downloadAttachment,
   forceDownloadAttachment,
   getAttachment,
-} from "../lib/bluebubbles/attachment.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/bluebubbles/attachment.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 async function saveResponse(
   response: Response,

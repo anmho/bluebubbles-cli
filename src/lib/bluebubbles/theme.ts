@@ -1,4 +1,4 @@
-import type { ApiEnvelope, BlueBubblesClient } from "./client.js";
+import type { ApiEnvelope, BlueBubblesClient } from "~/lib/bluebubbles/client.js";
 
 export const getThemes = (client: BlueBubblesClient) =>
   client.getFixed<ApiEnvelope<any[]>>("/api/v1/backup/theme");

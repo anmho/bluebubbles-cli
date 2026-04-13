@@ -7,13 +7,13 @@ import {
   readJsonInput,
   requireConfirmation,
   withBlueBubblesDeps,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   printKeyValue,
   printSuccess,
-} from "../lib/output.js";
-import { getSettings, setSettings, deleteSettings } from "../lib/bluebubbles/settings.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/output.js";
+import { getSettings, setSettings, deleteSettings } from "~/lib/bluebubbles/settings.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerServerSettingsCommands(serverCommand: Command): void {
   const settingsCommand = serverCommand.command("settings").description("Server settings resource operations");

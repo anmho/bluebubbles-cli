@@ -4,13 +4,13 @@ import {
   collect,
   maybePrint,
   withBlueBubblesDeps,
-} from "../lib/cli-helpers.js";
+} from "~/lib/cli-helpers.js";
 import {
   listContacts,
   queryContacts,
-} from "../lib/bluebubbles/contact.js";
-import { printContacts } from "../lib/output.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/bluebubbles/contact.js";
+import { printContacts } from "~/lib/output.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerContactCommands(program: Command): void {
   const contactCommand = program.command("contact").description("Contact resource operations");

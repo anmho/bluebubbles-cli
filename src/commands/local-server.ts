@@ -7,21 +7,21 @@ import {
   maybePrint,
   requireConfirmation,
   withConfig,
-} from "../lib/cli-helpers.js";
-import { CliError } from "../lib/errors.js";
+} from "~/lib/cli-helpers.js";
+import { CliError } from "~/lib/errors.js";
 import {
   printKeyValue,
   printSuccess,
-} from "../lib/output.js";
-import { getRemoteLogs } from "../lib/bluebubbles/server.js";
+} from "~/lib/output.js";
+import { getRemoteLogs } from "~/lib/bluebubbles/server.js";
 import {
   restartServer,
   serverStatus,
   showLogs,
   startServer,
   stopServer,
-} from "../lib/local-server.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+} from "~/lib/local-server.js";
+import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerServerLifecycleCommands(serverCommand: Command): void {
   addConnectionOptions(
