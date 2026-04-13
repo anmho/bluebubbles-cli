@@ -36,8 +36,9 @@ bun run dev -- --help
 Output controls:
 
 ```bash
-bluebubbles contact list
+bluebubbles contacts list
 bluebubbles chats list -o wide
+bluebubbles messages list --chat 'iMessage;+;chat123' -o wide
 bluebubbles chats list -o json
 ```
 
@@ -76,8 +77,11 @@ For messages:
 
 ```bash
 bluebubbles messages list --chat 'iMessage;+;chat123'
+bluebubbles messages list --chat 'iMessage;+;chat123' -o wide
 bluebubbles messages list --chat 'iMessage;+;chat123' --json
 ```
+
+`-o wide` affects table output only. JSON output remains the full payload (`-o json` / `--json`).
 
 Pagination defaults are conservative for message-heavy commands:
 
