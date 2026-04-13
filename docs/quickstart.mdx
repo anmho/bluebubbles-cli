@@ -50,6 +50,20 @@ bluebubbles message list --chat 'iMessage;+;chat123'
 bluebubbles message send --chat 'iMessage;+;chat123' --message 'hello from bluebubbles'
 ```
 
+Message pagination defaults to `--limit 50`. Page manually with offset:
+
+```bash
+bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 0 --json
+bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 50 --json
+```
+
+Filter by date range or `where` clause:
+
+```bash
+bluebubbles message list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
+bluebubbles message list --where '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]' --json
+```
+
 ## Local server lifecycle
 
 ```bash

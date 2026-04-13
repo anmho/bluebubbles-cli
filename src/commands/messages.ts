@@ -7,6 +7,7 @@ import {
   withBlueBubblesDeps,
   withPaging,
 } from "../lib/cli-helpers.js";
+import { CliError } from "../lib/errors.js";
 import {
   printMessages,
   printScheduledMessages,
@@ -33,9 +34,15 @@ export function registerMessageCommands(program: Command): void {
   const messageCommand = program.command("message").description("Message resource operations");
 
   addConnectionOptions(
-    withPaging(messageCommand.command("list").description("List messages (POST /api/v1/message/query)")),
+    withPaging(messageCommand.command("list").description("List messages (POST /api/v1/message/query)"), 50),
   )
     .option("--chat <guid>", "Limit messages to a specific chat")
+    .option("--after <epochSeconds>", "Only include messages after this epoch seconds value")
+    .option("--before <epochSeconds>", "Only include messages before this epoch seconds value")
+    .option(
+      "--where <json>",
+      "TypeORM-style where clauses JSON (array or object). Example: '[{\"statement\":\"message.text LIKE :q\",\"args\":{\"q\":\"%hello%\"}}]'",
+    )
     .action(
       withBlueBubblesDeps(({ client }) => async (
         options: CommandOverrides &
@@ -45,13 +52,45 @@ export function registerMessageCommands(program: Command): void {
             sort?: string;
             with: string[];
             chat?: string;
+            after?: string;
+            before?: string;
+            where?: string;
           },
       ) => {
+        const parseEpoch = (value?: string): number | undefined => {
+          if (!value) return undefined;
+          const parsed = Number.parseInt(value, 10);
+          if (Number.isNaN(parsed)) {
+            throw new CliError(`Invalid epoch seconds value: ${value}`, "validation");
+          }
+          return parsed;
+        };
+
+        const parseWhere = (value?: string): Array<Record<string, unknown>> | undefined => {
+          if (!value) return undefined;
+          let parsed: unknown;
+          try {
+            parsed = JSON.parse(value);
+          } catch {
+            throw new CliError("--where must be valid JSON (array or object).", "validation");
+          }
+          if (Array.isArray(parsed)) {
+            return parsed as Array<Record<string, unknown>>;
+          }
+          if (parsed && typeof parsed === "object") {
+            return [parsed as Record<string, unknown>];
+          }
+          throw new CliError("--where must be a JSON object or array of objects.", "validation");
+        };
+
         const result = await listMessages(client, {
           chatGuid: options.chat,
           limit: options.limit,
           offset: options.offset,
           sort: options.sort,
+          after: parseEpoch(options.after),
+          before: parseEpoch(options.before),
+          where: parseWhere(options.where),
           with: options.with.length > 0 ? options.with : [...DEFAULT_MESSAGE_WITH],
         });
         maybePrint(result.data ?? [], options, () => printMessages(result.data ?? []));

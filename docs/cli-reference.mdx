@@ -82,6 +82,7 @@ Most API commands support:
   API: `GET /api/v1/chat/<Chat GUID>`
 - `bluebubbles chat messages <guid>`
   API: `GET /api/v1/chat/<Chat GUID>/message`
+  Notes: defaults to `--limit 50`; supports `--after` and `--before`
 - `bluebubbles chat update <guid> --name <name>`
   API: `PUT /api/v1/chat/<Chat GUID>`
 - `bluebubbles chat delete <guid> [--yes]`
@@ -105,6 +106,7 @@ Most API commands support:
 
 - `bluebubbles message list`
   API: `POST /api/v1/message/query`
+  Notes: defaults to `--limit 50`; supports `--chat`, `--after`, `--before`, and `--where '<json>'`
 - `bluebubbles message get <guid>`
   API: `GET /api/v1/message/<GUID>`
 - `bluebubbles message send --chat <guid> --message <text>`

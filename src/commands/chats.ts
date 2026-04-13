@@ -70,7 +70,7 @@ export function registerChatCommands(program: Command): void {
     }));
 
   addConnectionOptions(
-    withPaging(chatCommand.command("messages").description("List messages for a chat (GET /api/v1/chat/<Chat GUID>/message)")),
+    withPaging(chatCommand.command("messages").description("List messages for a chat (GET /api/v1/chat/<Chat GUID>/message)"), 50),
   )
     .argument("<guid>")
     .option("--after <epochSeconds>", "Only include messages after this epoch seconds value")

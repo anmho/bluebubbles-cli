@@ -78,6 +78,43 @@ bluebubbles message list --chat 'iMessage;+;chat123'
 bluebubbles message list --chat 'iMessage;+;chat123' --json
 ```
 
+Pagination defaults are conservative for message-heavy commands:
+
+- `bluebubbles message list` defaults to `--limit 50`
+- `bluebubbles chat messages <guid>` defaults to `--limit 50`
+
+## Query and filter examples
+
+Get all messages for one conversation in pages:
+
+```bash
+bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 0 --json
+bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 50 --json
+bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 100 --json
+```
+
+Filter by date window (epoch seconds):
+
+```bash
+bluebubbles message list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
+```
+
+Advanced text filtering via API `where` clauses:
+
+```bash
+bluebubbles message list \
+  --where '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]' \
+  --limit 50 \
+  --json
+```
+
+Conversation endpoint alternative:
+
+```bash
+bluebubbles chat messages 'iMessage;+;chat123' --limit 50 --offset 0 --json
+bluebubbles chat messages 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
+```
+
 ## Command shape
 
 ```bash

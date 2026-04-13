@@ -32,6 +32,9 @@ export const listMessages = (
     sort?: string;
     chatGuid?: string;
     with?: string[];
+    where?: Array<Record<string, unknown>>;
+    after?: number;
+    before?: number;
   },
 ) => client.postFixed<ApiEnvelope<MessageSummary[]>>("/api/v1/message/query", input);
 

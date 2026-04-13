@@ -122,9 +122,12 @@ export async function withConfig(options: CommandOverrides) {
   return configContext;
 }
 
-export function withPaging(command: Command): Command {
-  return command
-    .option("--limit <number>", "Result limit", (value) => Number.parseInt(value, 10))
+export function withPaging(command: Command, defaultLimit?: number): Command {
+  const configured = defaultLimit === undefined
+    ? command.option("--limit <number>", "Result limit", (value) => Number.parseInt(value, 10))
+    : command.option("--limit <number>", "Result limit", (value) => Number.parseInt(value, 10), defaultLimit);
+
+  return configured
     .option("--offset <number>", "Result offset", (value) => Number.parseInt(value, 10))
     .option("--sort <direction>", "Sort direction")
     .option("--with <item>", "Include related data", (value, previous: string[]) => [...previous, value], []);
