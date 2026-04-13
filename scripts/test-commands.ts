@@ -71,22 +71,10 @@ async function readRawDotEnvValue(key: string): Promise<string | undefined> {
 }
 
 async function resolveConnectionArgs(): Promise<string[]> {
-  const rawEnvBaseUrl = await readRawDotEnvValue("TEST_COMMANDS_BASE_URL");
-  const rawEnvPassword = await readRawDotEnvValue("TEST_COMMANDS_PASSWORD");
-  if (rawEnvBaseUrl && rawEnvPassword) {
-    return ["--base-url", rawEnvBaseUrl, "--password", rawEnvPassword];
-  }
-
   const rawDefaultBaseUrl = await readRawDotEnvValue("BLUEBUBBLES_BASE_URL");
   const rawDefaultPassword = await readRawDotEnvValue("BLUEBUBBLES_PASSWORD");
   if (rawDefaultBaseUrl && rawDefaultPassword) {
     return ["--base-url", rawDefaultBaseUrl, "--password", rawDefaultPassword];
-  }
-
-  const envBaseUrl = process.env.TEST_COMMANDS_BASE_URL;
-  const envPassword = process.env.TEST_COMMANDS_PASSWORD;
-  if (envBaseUrl && envPassword) {
-    return ["--base-url", envBaseUrl, "--password", envPassword];
   }
 
   const envDefaultBaseUrl = process.env.BLUEBUBBLES_BASE_URL;
@@ -225,13 +213,13 @@ function classifyApiPreflight(result: { exitCode: number; stdout: string; stderr
   if (kind === "auth" || status === 401) {
     return {
       ready: false,
-      reason: "API unauthorized in preflight (401). Check TEST_COMMANDS_PASSWORD / BLUEBUBBLES_PASSWORD.",
+      reason: "API unauthorized in preflight (401). Check BLUEBUBBLES_PASSWORD or persisted config password.",
     };
   }
 
   return {
     ready: false,
-    reason: "API unavailable in preflight. Check TEST_COMMANDS_BASE_URL and server reachability.",
+    reason: "API unavailable in preflight. Check BLUEBUBBLES_BASE_URL (or persisted config baseUrl) and server reachability.",
   };
 }
 

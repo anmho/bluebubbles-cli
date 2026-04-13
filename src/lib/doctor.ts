@@ -12,13 +12,13 @@ export async function runDoctor(input: {
 }): Promise<DoctorCheck[]> {
   const checks: DoctorCheck[] = [];
 
-  const hasDiscovered = input.config.baseUrl && input.config.password;
+  const hasRuntimeConfig = input.config.baseUrl && input.config.password;
   checks.push({
     name: "config file",
-    status: existsSync(input.configPath) ? "pass" : (hasDiscovered ? "pass" : "warn"),
+    status: existsSync(input.configPath) ? "pass" : (hasRuntimeConfig ? "pass" : "warn"),
     detail: existsSync(input.configPath)
       ? `Found ${input.configPath}`
-      : (hasDiscovered ? "Auto-discovered from BlueBubbles Server" : `No config file yet at ${input.configPath}`),
+      : (hasRuntimeConfig ? "Using runtime config (env and/or CLI flags)." : `No config file yet at ${input.configPath}`),
   });
 
   checks.push({

@@ -172,7 +172,7 @@ bun run docs:dev
 bun run docs:validate
 ```
 
-`test:commands` is local-only by design. It exercises all registered CLI commands and can skip unavailable API/local prerequisites in tolerant mode.
+`test:commands` is local-only by design. It exercises all registered CLI commands and can skip unavailable API/local prerequisites in tolerant mode. It uses the same auth sources as normal CLI runs (`BLUEBUBBLES_*` env vars or persisted `bluebubbles config` values).
 
 The API Reference tab renders from `docs/openapi.yaml`, which is a pinned copy of the official BlueBubbles OpenAPI source:
 

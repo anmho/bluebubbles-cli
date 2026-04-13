@@ -12,7 +12,7 @@ bun run test:commands
 bun run build
 ```
 
-`test:commands` runs a local command sweep from `scripts/test-commands.ts` and is intentionally not part of CI-required checks.
+`test:commands` runs a local command sweep from `scripts/test-commands.ts` and is intentionally not part of CI-required checks. It uses the same credentials sources as the CLI itself (`BLUEBUBBLES_*` env vars or persisted config).
 
 ## Docs workflow
 

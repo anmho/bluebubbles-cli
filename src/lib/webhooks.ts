@@ -1,7 +1,6 @@
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import {
-  BLUEBUBBLES_WEBHOOK_EVENT_TYPES,
   isBlueBubblesWebhookPayload,
 } from "@jgoon/bluebubbles/webhooks";
 import { CliError } from "./errors.js";
@@ -24,15 +23,6 @@ export async function validateWebhookPayload(filePath?: string): Promise<unknown
   }
 
   return payload;
-}
-
-export function printWebhookTypes(json = false): void {
-  if (json) {
-    console.log(JSON.stringify({ ok: true, data: [...BLUEBUBBLES_WEBHOOK_EVENT_TYPES] }, null, 2));
-    return;
-  }
-
-  console.log(BLUEBUBBLES_WEBHOOK_EVENT_TYPES.join("\n"));
 }
 
 export async function serveWebhookReceiver(input: {
