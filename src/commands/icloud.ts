@@ -1,6 +1,7 @@
 import type { Command } from "commander";
 import {
   addConnectionOptions,
+  isWideOutput,
   maybePrint,
   withBlueBubblesDeps,
 } from "~/lib/cli-helpers.js";
@@ -53,7 +54,7 @@ export function registerICloudCommands(program: Command): void {
         console.log("No devices found or FindMy not enabled.");
         return;
       }
-      printFindMyDevices(result.data);
+      printFindMyDevices(result.data, isWideOutput(options));
     });
   }));
 
@@ -75,7 +76,7 @@ export function registerICloudCommands(program: Command): void {
         console.log("No friends found or FindMy not enabled.");
         return;
       }
-      printFindMyFriends(result.data);
+      printFindMyFriends(result.data, isWideOutput(options));
     });
   }));
 

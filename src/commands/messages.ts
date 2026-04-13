@@ -4,6 +4,7 @@ import {
   addDangerousOption,
   maybePrint,
   requireConfirmation,
+  isWideOutput,
   withBlueBubblesDeps,
   withPaging,
 } from "~/lib/cli-helpers.js";
@@ -31,7 +32,7 @@ import type { EditMessageInput, SendReactInput } from "~/lib/bluebubbles/message
 import type { CommandOverrides, MessageSummary, OutputOptions } from "~/lib/types.js";
 
 export function registerMessageCommands(program: Command): void {
-  const messageCommand = program.command("message").description("Message resource operations");
+  const messageCommand = program.command("messages").description("Message resource operations");
 
   addConnectionOptions(
     withPaging(messageCommand.command("list").description("List messages (POST /api/v1/message/query)"), 50),
@@ -175,7 +176,7 @@ export function registerMessageCommands(program: Command): void {
           from: options.from,
           hasAttachments: options.hasAttachments,
         });
-        maybePrint(filtered, options, () => printMessages(filtered));
+        maybePrint(filtered, options, () => printMessages(filtered, isWideOutput(options)));
       }),
     );
 
@@ -311,7 +312,7 @@ export function registerMessageCommands(program: Command): void {
         console.log("No scheduled messages.");
         return;
       }
-      printScheduledMessages(result.data);
+      printScheduledMessages(result.data, isWideOutput(options));
     });
   }));
 

@@ -20,16 +20,24 @@ export function addConnectionOptions(command: Command): Command {
     .option("--config <path>", "Override the config file location")
     .option("--base-url <url>", "BlueBubbles API base URL")
     .option("--password <password>", "BlueBubbles server password")
-    .option("-o, --output <format>", "Output format (table|json)", parseOutputFormat)
+    .option("-v, --verbose", "Enable verbose API diagnostics to stderr")
+    .option("-o, --output <format>", "Output format (table|wide|json)", parseOutputFormat)
     .option("--json", "Alias for -o json");
 }
 
 function parseOutputFormat(value: string): OutputFormat {
   const normalized = value.trim().toLowerCase();
-  if (normalized !== "table" && normalized !== "json") {
-    throw new CliError(`Unsupported output format "${value}". Use: table, json`, "validation");
+  if (normalized !== "table" && normalized !== "wide" && normalized !== "json") {
+    throw new CliError(`Unsupported output format "${value}". Use: table, wide, json`, "validation");
   }
   return normalized as OutputFormat;
+}
+
+export function isWideOutput(output: OutputOptions): boolean {
+  if (output.json || output.output === "json") {
+    return false;
+  }
+  return output.output === "wide";
 }
 
 export function getConfigOverride(options: { config?: string }): Pick<CommandOverrides, "configPath"> {
@@ -56,6 +64,7 @@ export async function apiConfigFromOptions(
   return {
     baseUrl: config.baseUrl,
     password: config.password,
+    verbose: options.verbose ?? process.env.BLUEBUBBLES_VERBOSE === "1",
   };
 }
 

@@ -2,6 +2,7 @@ import type { Command } from "commander";
 import {
   addConnectionOptions,
   addDangerousOption,
+  isWideOutput,
   maybePrint,
   requireConfirmation,
   withBlueBubblesDeps,
@@ -51,7 +52,7 @@ export function registerServerCommands(program: Command): void {
         console.log("No alerts.");
         return;
       }
-      printAlerts(result.data);
+      printAlerts(result.data, isWideOutput(options));
     });
   }));
 

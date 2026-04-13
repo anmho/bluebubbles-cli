@@ -302,8 +302,8 @@ describe("help surface", () => {
     const r = await cli(["--help"]);
     expect(r.exitCode).toBe(0);
     expect(r.stdout).toContain("server");
-    expect(r.stdout).toContain("chat");
-    expect(r.stdout).toContain("message");
+    expect(r.stdout).toContain("chats");
+    expect(r.stdout).toContain("messages");
     expect(r.stdout).toContain("contact");
     expect(r.stdout).toContain("webhook");
     expect(r.stdout).not.toContain("fcm");
@@ -362,31 +362,31 @@ describe("server flows", () => {
 
 describe("chat and message flows", () => {
   test("chat commands work", async () => {
-    expect((await cli(["chat", "list"])).exitCode).toBe(0);
-    expect((await cli(["chat", "get", CHAT_GUID])).exitCode).toBe(0);
-    expect((await cli(["chat", "messages", CHAT_GUID])).exitCode).toBe(0);
-    expect((await cli(["chat", "update", CHAT_GUID, "--name", "Renamed"])).exitCode).toBe(0);
-    expect((await cli(["chat", "group", "participant", "add", CHAT_GUID, "user@example.com"])).exitCode).toBe(0);
-    expect((await cli(["chat", "group", "icon", "set", CHAT_GUID])).exitCode).toBe(0);
-    expect((await cli(["chat", "typing", "start", CHAT_GUID])).exitCode).toBe(0);
-    expect((await cli(["chat", "typing", "stop", CHAT_GUID])).exitCode).toBe(0);
+    expect((await cli(["chats", "list"])).exitCode).toBe(0);
+    expect((await cli(["chats", "get", CHAT_GUID])).exitCode).toBe(0);
+    expect((await cli(["chats", "messages", CHAT_GUID])).exitCode).toBe(0);
+    expect((await cli(["chats", "update", CHAT_GUID, "--name", "Renamed"])).exitCode).toBe(0);
+    expect((await cli(["chats", "group", "participant", "add", CHAT_GUID, "user@example.com"])).exitCode).toBe(0);
+    expect((await cli(["chats", "group", "icon", "set", CHAT_GUID])).exitCode).toBe(0);
+    expect((await cli(["chats", "typing", "start", CHAT_GUID])).exitCode).toBe(0);
+    expect((await cli(["chats", "typing", "stop", CHAT_GUID])).exitCode).toBe(0);
   });
 
   test("message commands work", async () => {
-    expect((await cli(["message", "list"])).exitCode).toBe(0);
-    expect((await cli(["message", "get", MSG_GUID])).exitCode).toBe(0);
-    expect((await cli(["message", "send", "--chat", CHAT_GUID, "--message", "hello"])).exitCode).toBe(0);
-    expect((await cli(["message", "react", MSG_GUID, "--chat", CHAT_GUID, "--reaction", "love"])).exitCode).toBe(0);
-    expect((await cli(["message", "edit", MSG_GUID, "--message", "updated"])).exitCode).toBe(0);
-    expect((await cli(["message", "unsend", MSG_GUID, "--yes"])).exitCode).toBe(0);
+    expect((await cli(["messages", "list"])).exitCode).toBe(0);
+    expect((await cli(["messages", "get", MSG_GUID])).exitCode).toBe(0);
+    expect((await cli(["messages", "send", "--chat", CHAT_GUID, "--message", "hello"])).exitCode).toBe(0);
+    expect((await cli(["messages", "react", MSG_GUID, "--chat", CHAT_GUID, "--reaction", "love"])).exitCode).toBe(0);
+    expect((await cli(["messages", "edit", MSG_GUID, "--message", "updated"])).exitCode).toBe(0);
+    expect((await cli(["messages", "unsend", MSG_GUID, "--yes"])).exitCode).toBe(0);
   });
 
   test("message schedule commands work", async () => {
-    expect((await cli(["message", "schedule", "list"])).exitCode).toBe(0);
-    expect((await cli(["message", "schedule", "get", "1"])).exitCode).toBe(0);
-    expect((await cli(["message", "schedule", "create", "--chat", CHAT_GUID, "--message", "later", "--date", "1893456000000"])).exitCode).toBe(0);
-    expect((await cli(["message", "schedule", "update", "1", "--message", "updated"])).exitCode).toBe(0);
-    expect((await cli(["message", "schedule", "delete", "1", "--yes"])).exitCode).toBe(0);
+    expect((await cli(["messages", "schedule", "list"])).exitCode).toBe(0);
+    expect((await cli(["messages", "schedule", "get", "1"])).exitCode).toBe(0);
+    expect((await cli(["messages", "schedule", "create", "--chat", CHAT_GUID, "--message", "later", "--date", "1893456000000"])).exitCode).toBe(0);
+    expect((await cli(["messages", "schedule", "update", "1", "--message", "updated"])).exitCode).toBe(0);
+    expect((await cli(["messages", "schedule", "delete", "1", "--yes"])).exitCode).toBe(0);
   });
 });
 
@@ -417,7 +417,7 @@ describe("resource sidecars", () => {
 
 describe("confirmation and diagnostics", () => {
   test("destructive commands require --yes in non-interactive mode", async () => {
-    const r = await cli(["chat", "delete", CHAT_GUID]);
+    const r = await cli(["chats", "delete", CHAT_GUID]);
     expect(r.exitCode).toBe(2);
     expect(r.stderr).toContain("--yes");
   });
