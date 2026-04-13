@@ -48,6 +48,14 @@ Alex Rivera     +1-555-0100       alex@example.com
 Taylor Kim      +1-555-0199       taylor@example.com
 ```
 
+`message list` uses the same default table style:
+
+```text
+GUID                        FROM       TEXT                          AGE   CHAT
+4b2f...e91                  me         hello from bluebubbles        2m    iMessage;+;chat123
+9aa1...77c                  +1555...   sounds good, see you soon     8m    iMessage;+;chat123
+```
+
 JSON output is available with `-o json` or `--json`:
 
 ```json
@@ -61,6 +69,13 @@ JSON output is available with `-o json` or `--json`:
     }
   ]
 }
+```
+
+For messages:
+
+```bash
+bluebubbles message list --chat 'iMessage;+;chat123'
+bluebubbles message list --chat 'iMessage;+;chat123' --json
 ```
 
 ## Command shape
