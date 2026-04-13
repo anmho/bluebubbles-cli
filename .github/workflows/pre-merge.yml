@@ -1,0 +1,38 @@
+name: Pre-Merge
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  version-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build
+        run: bun run build
+
+      - name: Verify CLI Version Matches package.json
+        run: |
+          cli_version="$(bun dist/index.js --version)"
+          pkg_version="$(node -p "require('./package.json').version")"
+          if [ "$cli_version" != "$pkg_version" ]; then
+            echo "Version mismatch: cli=$cli_version package=$pkg_version"
+            exit 1
+          fi
+          echo "Version OK: $cli_version"

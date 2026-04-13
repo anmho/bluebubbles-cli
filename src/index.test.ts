@@ -312,6 +312,14 @@ describe("help surface", () => {
     expect(r.stdout).not.toContain("\n  themes");
     expect(r.stdout).not.toContain("\n  settings");
   });
+
+  test("--version matches package.json version", async () => {
+    const packageJsonPath = new URL("../package.json", import.meta.url);
+    const packageJson = JSON.parse(await readFile(packageJsonPath, "utf8")) as { version: string };
+    const r = await cli(["--version"]);
+    expect(r.exitCode).toBe(0);
+    expect(r.stdout.trim()).toBe(packageJson.version);
+  });
 });
 
 describe("config", () => {

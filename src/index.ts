@@ -14,6 +14,7 @@ import { registerContactCommands } from "~/commands/contacts.js";
 import { registerPingCommands } from "~/commands/ping.js";
 import { registerDoctorCommands } from "~/commands/doctor.js";
 import { registerWebhookCommands } from "~/commands/webhooks.js";
+import { getCliVersion } from "~/lib/version.js";
 
 function wantsJsonOutput(argv: string[]): boolean {
   for (let index = 0; index < argv.length; index += 1) {
@@ -38,7 +39,7 @@ export function createProgram(): Command {
   program
     .name(APP_NAME)
     .description("Curated BlueBubbles CLI organized around relevant resources and endpoint-mapped actions")
-    .version("0.1.0");
+    .version(getCliVersion());
 
   registerConfigCommands(program);
   registerDoctorCommands(program);
