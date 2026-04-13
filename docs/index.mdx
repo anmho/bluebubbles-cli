@@ -25,7 +25,7 @@ description: "A curated BlueBubbles terminal CLI organized around the resources 
     icon="power-off"
     href="/local-server"
   >
-    Manage a local BlueBubbles Server app through `bluebubbles server start|stop|restart|status|logs`.
+    Manage a local BlueBubbles Server app through `bluebubbles server open|start|stop|restart|status|logs`.
   </Card>
   <Card
     title="Webhooks"
@@ -38,7 +38,7 @@ description: "A curated BlueBubbles terminal CLI organized around the resources 
     title="API reference"
     icon="square-code"
   >
-    Mintlify renders a pinned copy of the official BlueBubbles OpenAPI spec from `docs/openapi.yaml`.
+    Scalar renders the official BlueBubbles OpenAPI spec as an interactive API reference.
   </Card>
 </Columns>
 
@@ -46,7 +46,7 @@ description: "A curated BlueBubbles terminal CLI organized around the resources 
 
 This CLI is intentionally curated.
 
-- Root help is resource-first: `ping`, `server`, `chat`, `message`, `handle`, `attachment`, `contact`, `icloud`, `webhook`, `config`, `doctor`.
+- Root help is resource-first: `ping`, `server`, `chats`, `messages`, `handle`, `attachment`, `contact`, `icloud`, `webhook`, `config`, `doctor`.
 - Low-value or risky clutter like `fcm`, `mac`, and web-only commands is removed.
 - Server-owned admin state is nested under `server`, including `server settings` and `server theme`.
 - Each retained command is documented with the API endpoint it corresponds to.
@@ -55,4 +55,4 @@ This CLI is intentionally curated.
 
 - API commands go through the `@anmho/bluebubbles-sdk` client layer in this repo.
 - Local lifecycle commands manage an installed BlueBubbles Server app on macOS.
-- Mintlify uses `docs/openapi.yaml`, a pinned copy of the official BlueBubbles OpenAPI spec.
+- Scalar docs read the official BlueBubbles OpenAPI spec from upstream.

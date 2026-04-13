@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueBubbles CLI Docs</title>
+    <meta
+      name="description"
+      content="BlueBubbles CLI documentation and interactive API reference powered by Scalar."
+    />
+    <style>
+      :root {
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      }
+      body {
+        margin: 0;
+        background: #ffffff;
+        color: #111827;
+      }
+      .topbar {
+        padding: 20px 24px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .topbar h1 {
+        margin: 0 0 10px;
+        font-size: 1.25rem;
+      }
+      .links {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .links a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      .links a:hover {
+        text-decoration: underline;
+      }
+      .note {
+        margin-top: 10px;
+        color: #4b5563;
+        font-size: 0.92rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>BlueBubbles CLI Docs</h1>
+      <div class="links">
+        <a href="https://github.com/anmho/bluebubbles-cli#readme">README</a>
+        <a href="https://github.com/anmho/bluebubbles-cli/blob/main/docs/quickstart.mdx">Quickstart</a>
+        <a href="https://github.com/anmho/bluebubbles-cli/blob/main/docs/cli-reference.mdx">CLI Reference</a>
+        <a href="https://github.com/anmho/bluebubbles-cli/blob/main/docs/local-server.mdx">Local Server</a>
+      </div>
+      <div class="note">
+        Interactive API reference from the official OpenAPI spec.
+      </div>
+    </header>
+
+    <script
+      id="api-reference"
+      data-url="https://raw.githubusercontent.com/Jish2/bluebubbles-sdk/main/openapi.yaml"
+      data-proxy-url="https://proxy.scalar.com"
+      data-theme="alternate"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+  </body>
+  </html>

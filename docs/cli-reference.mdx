@@ -10,8 +10,8 @@ bluebubbles config ...
 bluebubbles doctor
 bluebubbles ping
 bluebubbles server ...
-bluebubbles chat ...
-bluebubbles message ...
+bluebubbles chats ...
+bluebubbles messages ...
 bluebubbles handle ...
 bluebubbles attachment ...
 bluebubbles contact ...
@@ -23,8 +23,9 @@ bluebubbles webhook ...
 
 Most API commands support:
 
-- `-o, --output <format>` where format is `table` or `json`
+- `-o, --output <format>` where format is `table`, `wide`, or `json`
 - `--json` as an alias for `-o json`
+- `-v, --verbose` for API diagnostics to stderr
 
 ## Endpoint-mapped commands
 
@@ -41,6 +42,8 @@ Most API commands support:
   Local process manager, no API endpoint
 - `bluebubbles server logs --source api [--count <n>]`
   API: `GET /api/v1/server/logs`
+- `bluebubbles server open`
+  Local process manager, no API endpoint
 - `bluebubbles server start`
   Local process manager, no API endpoint
 - `bluebubbles server status`
@@ -76,59 +79,59 @@ Most API commands support:
 
 ### Chat
 
-- `bluebubbles chat list`
+- `bluebubbles chats list`
   API: `POST /api/v1/chat/query`
-- `bluebubbles chat get <guid>`
+- `bluebubbles chats get <guid>`
   API: `GET /api/v1/chat/<Chat GUID>`
-- `bluebubbles chat messages <guid>`
+- `bluebubbles chats messages <guid>`
   API: `GET /api/v1/chat/<Chat GUID>/message`
   Notes: defaults to `--limit 50`; supports `--after` and `--before`
-- `bluebubbles chat update <guid> --name <name>`
+- `bluebubbles chats update <guid> --name <name>`
   API: `PUT /api/v1/chat/<Chat GUID>`
-- `bluebubbles chat delete <guid> [--yes]`
+- `bluebubbles chats delete <guid> [--yes]`
   API: `DELETE /api/v1/chat/<Chat GUID>`
-- `bluebubbles chat group leave <guid> [--yes]`
+- `bluebubbles chats group leave <guid> [--yes]`
   API: `POST /api/v1/chat/<Chat GUID>/leave`
-- `bluebubbles chat group participant add <guid> <address>`
+- `bluebubbles chats group participant add <guid> <address>`
   API: `POST /api/v1/chat/<Chat GUID>/participant`
-- `bluebubbles chat group participant remove <guid> <address> [--yes]`
+- `bluebubbles chats group participant remove <guid> <address> [--yes]`
   API: `DELETE /api/v1/chat/<Chat GUID>/participant`
-- `bluebubbles chat group icon set <guid>`
+- `bluebubbles chats group icon set <guid>`
   API: `POST /api/v1/chat/<Chat GUID>/icon`
-- `bluebubbles chat group icon remove <guid> [--yes]`
+- `bluebubbles chats group icon remove <guid> [--yes]`
   API: `DELETE /api/v1/chat/<Chat GUID>/icon`
-- `bluebubbles chat typing start <guid>`
+- `bluebubbles chats typing start <guid>`
   API: `POST /api/v1/chat/<Chat GUID>/typing`
-- `bluebubbles chat typing stop <guid>`
+- `bluebubbles chats typing stop <guid>`
   API: `DELETE /api/v1/chat/<Chat GUID>/typing`
 
 ### Message
 
-- `bluebubbles message list`
+- `bluebubbles messages list`
   API: `POST /api/v1/message/query`
   Notes: defaults to `--limit 50`; supports `--chat`, `--after`, `--before`, common filters (`--text`, `--from`, `--from-me`, `--not-from-me`, `--has-attachments`), and raw `--where '<json>'`. `--text`, `--from`, and `--has-attachments` are applied client-side to the returned page.
-- `bluebubbles message get <guid>`
+- `bluebubbles messages get <guid>`
   API: `GET /api/v1/message/<GUID>`
-- `bluebubbles message send --chat <guid> --message <text>`
+- `bluebubbles messages send --chat <guid> --message <text>`
   API: `POST /api/v1/message/text`
-- `bluebubbles message react <guid> --chat <guid> --reaction <type>`
+- `bluebubbles messages react <guid> --chat <guid> --reaction <type>`
   API: `POST /api/v1/message/react`
-- `bluebubbles message edit <guid> --message <text>`
+- `bluebubbles messages edit <guid> --message <text>`
   API: `POST /api/v1/message/<GUID>/edit`
-- `bluebubbles message unsend <guid> [--yes]`
+- `bluebubbles messages unsend <guid> [--yes]`
   API: `POST /api/v1/message/<GUID>/unsend`
 
 ### Message Schedule
 
-- `bluebubbles message schedule list`
+- `bluebubbles messages schedule list`
   API: `GET /api/v1/message/schedule`
-- `bluebubbles message schedule get <id>`
+- `bluebubbles messages schedule get <id>`
   API: `GET /api/v1/message/schedule/<ID>`
-- `bluebubbles message schedule create --chat <guid> --message <text> --date <date>`
+- `bluebubbles messages schedule create --chat <guid> --message <text> --date <date>`
   API: `POST /api/v1/message/schedule`
-- `bluebubbles message schedule update <id>`
+- `bluebubbles messages schedule update <id>`
   API: `PUT /api/v1/message/schedule/<ID>`
-- `bluebubbles message schedule delete <id> [--yes]`
+- `bluebubbles messages schedule delete <id> [--yes]`
   API: `DELETE /api/v1/message/schedule/<ID>`
 
 ### Handle
