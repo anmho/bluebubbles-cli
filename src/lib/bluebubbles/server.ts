@@ -1,9 +1,6 @@
-import type { paths } from "@jgoon/bluebubbles";
 import type { ApiEnvelope, BlueBubblesClient } from "~/lib/bluebubbles/client.js";
 
-export type ServerInfo = NonNullable<
-  paths["/api/v1/server/info"]["get"]["responses"][200]["content"]["application/json"]["data"]
->;
+export type ServerInfo = Record<string, unknown>;
 
 export const getServerInfo = (client: BlueBubblesClient) =>
   client.getFixed<ApiEnvelope<ServerInfo>>("/api/v1/server/info");

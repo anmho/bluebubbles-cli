@@ -1,10 +1,18 @@
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
-import {
-  isBlueBubblesWebhookPayload,
-} from "@jgoon/bluebubbles/webhooks";
 import { CliError } from "~/lib/errors.js";
 import type { OutputOptions } from "~/lib/types.js";
+
+type BlueBubblesWebhookPayload = {
+  type: string;
+  [key: string]: unknown;
+};
+
+function isBlueBubblesWebhookPayload(value: unknown): value is BlueBubblesWebhookPayload {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const payload = value as { type?: unknown };
+  return typeof payload.type === "string" && payload.type.trim().length > 0;
+}
 
 async function readStdin(): Promise<string> {
   const chunks: Buffer[] = [];

@@ -1,5 +1,4 @@
-import { createClient } from "@jgoon/bluebubbles";
-import type { paths } from "@jgoon/bluebubbles";
+import { BlueBubblesClient as SdkClient } from "@anmho/bluebubbles-sdk";
 import { CliError } from "~/lib/errors.js";
 
 export interface ApiConfig {
@@ -16,40 +15,91 @@ export interface ApiEnvelope<T = unknown> {
 
 type QueryValue = string | number | boolean | undefined;
 type QueryParams = Record<string, QueryValue>;
+type SdkFieldsResult = {
+  data?: unknown;
+  error?: unknown;
+  response?: Response;
+};
 
 export class BlueBubblesClient {
   private readonly baseUrl: string;
   private readonly fetchImpl: typeof fetch;
-  private readonly sdkClient: ReturnType<typeof createClient>;
+  private readonly sdkClient: SdkClient;
 
   constructor(private readonly config: ApiConfig) {
     this.baseUrl = this.normalizeBaseUrl(config.baseUrl);
     this.fetchImpl = config.fetchImpl ?? fetch;
-    this.sdkClient = createClient({
+    this.sdkClient = new SdkClient({
       baseUrl: this.baseUrl,
+      password: this.config.password,
       fetch: this.fetchImpl,
     });
   }
 
-  async getFixed<T>(pathName: keyof paths, query: QueryParams = {}): Promise<T> {
-    const { data, error, response } = await this.sdkClient.GET(pathName, {
-      params: { query: { password: this.config.password, ...query } },
-    } as never);
-    if (!response.ok || error) {
-      throw this.responseError(response, error, { method: "GET", endpoint: String(pathName) });
+  async getFixed<T>(pathName: string, query: QueryParams = {}): Promise<T> {
+    switch (pathName) {
+      case "/api/v1/ping":
+        return this.unwrapSdk<T>(this.sdkClient.server.ping({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/server/info":
+        return this.unwrapSdk<T>(this.sdkClient.server.info({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/server/logs":
+        return this.unwrapSdk<T>(this.sdkClient.server.logs({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/server/update/check":
+        return this.unwrapSdk<T>(this.sdkClient.server.checkUpdate({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/server/restart/soft":
+        return this.unwrapSdk<T>(this.sdkClient.server.restartServices({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/server/restart/hard":
+        return this.unwrapSdk<T>(this.sdkClient.server.restartApp({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/server/alert":
+        return this.unwrapSdk<T>(this.sdkClient.server.listAlerts({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/icloud/account":
+        return this.unwrapSdk<T>(this.sdkClient.icloud.accountInfo({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/icloud/findmy/devices":
+        return this.unwrapSdk<T>(this.sdkClient.icloud.listDevices({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/icloud/findmy/friends":
+        return this.unwrapSdk<T>(this.sdkClient.icloud.listFriends({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/contact":
+        return this.unwrapSdk<T>(this.sdkClient.contacts.list({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/backup/settings":
+        return this.unwrapSdk<T>(this.sdkClient.backups.getSettings({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/backup/theme":
+        return this.unwrapSdk<T>(this.sdkClient.backups.listThemes({ query }), { method: "GET", endpoint: pathName });
+      case "/api/v1/message/schedule":
+        return this.unwrapSdk<T>(this.sdkClient.messages.listScheduled({ query }), { method: "GET", endpoint: pathName });
+      default:
+        return this.fetchRawJson<T>("GET", pathName, undefined, query);
     }
-    return data as T;
   }
 
-  async postFixed<T>(pathName: keyof paths, body: unknown, query: QueryParams = {}): Promise<T> {
-    const { data, error, response } = await this.sdkClient.POST(pathName, {
-      params: { query: { password: this.config.password, ...query } },
-      body,
-    } as never);
-    if (!response.ok || error) {
-      throw this.responseError(response, error, { method: "POST", endpoint: String(pathName) });
+  async postFixed<T>(pathName: string, body: unknown, query: QueryParams = {}): Promise<T> {
+    switch (pathName) {
+      case "/api/v1/server/alert/read":
+        return this.unwrapSdk<T>(this.sdkClient.server.readAlerts({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/icloud/findmy/devices/refresh":
+        return this.unwrapSdk<T>(this.sdkClient.icloud.refreshDevices({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/icloud/findmy/friends/refresh":
+        return this.unwrapSdk<T>(this.sdkClient.icloud.refreshFriends({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/contact/query":
+        return this.unwrapSdk<T>(this.sdkClient.contacts.query({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/chat/query":
+        return this.unwrapSdk<T>(this.sdkClient.chats.query({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/handle/query":
+        return this.unwrapSdk<T>(this.sdkClient.handles.query({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/backup/settings":
+        return this.unwrapSdk<T>(this.sdkClient.backups.saveSettings({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/backup/theme":
+        return this.unwrapSdk<T>(this.sdkClient.backups.saveTheme({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/message/query":
+        return this.unwrapSdk<T>(this.sdkClient.messages.query({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/message/text":
+        return this.unwrapSdk<T>(this.sdkClient.messages.sendText({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/message/react":
+        return this.unwrapSdk<T>(this.sdkClient.messages.react({ query, body }), { method: "POST", endpoint: pathName });
+      case "/api/v1/message/schedule":
+        return this.unwrapSdk<T>(this.sdkClient.messages.createScheduled({ query, body }), { method: "POST", endpoint: pathName });
+      default:
+        return this.fetchRawJson<T>("POST", pathName, body, query);
     }
-    return data as T;
   }
 
   async fetchTemplated<T>(
@@ -95,6 +145,47 @@ export class BlueBubblesClient {
     }
 
     return response;
+  }
+
+  private async unwrapSdk<T>(
+    resultPromise: Promise<SdkFieldsResult>,
+    context: { method: string; endpoint: string },
+  ): Promise<T> {
+    const result = await resultPromise;
+    const response = result.response;
+    if (!response) {
+      throw new CliError(`${context.method} ${context.endpoint}: No response from SDK request`, "network", result);
+    }
+    if (!response.ok || result.error) {
+      throw this.responseError(response, result.error ?? result, context);
+    }
+    return result.data as T;
+  }
+
+  private async fetchRawJson<T>(
+    method: string,
+    pathName: string,
+    body?: unknown,
+    query: QueryParams = {},
+  ): Promise<T> {
+    const url = this.buildUrl(pathName, {
+      password: this.config.password,
+      ...query,
+    });
+
+    const response = await this.fetchImpl(url, {
+      method,
+      ...(body !== undefined && {
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(body),
+      }),
+    });
+
+    const payload = await this.parseResponse<T>(response);
+    if (!response.ok) {
+      throw this.responseError(response, payload, { method, endpoint: pathName });
+    }
+    return payload;
   }
 
   responseError(
