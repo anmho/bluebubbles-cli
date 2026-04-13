@@ -19,8 +19,9 @@
     "test": "bun test src/index.test.ts src/lib/*.test.ts",
     "test:commands": "bun run scripts/test-commands.ts",
     "test:commands:strict": "TEST_COMMANDS_STRICT=1 bun run scripts/test-commands.ts",
-    "docs:dev": "python3 -m http.server 3005 --directory scalar",
-    "docs:validate": "test -f scalar/index.html",
+    "docs:dev": "npm --prefix website run start",
+    "docs:build": "npm --prefix website run build",
+    "docs:validate": "npm --prefix website run build",
     "release": "bun run check && bun run build && npm publish --cache /tmp/npm-cache"
   },
   "devDependencies": {
