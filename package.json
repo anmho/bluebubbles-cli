@@ -1,6 +1,6 @@
 {
   "name": "bluebubbles-cli",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Curated BlueBubbles CLI organized around terminal-friendly resources",
   "type": "module",
   "bin": {
