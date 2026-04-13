@@ -4,6 +4,7 @@ import {
   addDangerousOption,
   maybePrint,
   requireConfirmation,
+  isWideOutput,
   withBlueBubblesDeps,
   withPaging,
 } from "~/lib/cli-helpers.js";
@@ -30,7 +31,7 @@ import { DEFAULT_CHAT_WITH, DEFAULT_MESSAGE_WITH } from "~/lib/constants.js";
 import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerChatCommands(program: Command): void {
-  const chatCommand = program.command("chat").description("Chat resource operations");
+  const chatCommand = program.command("chats").description("Chat resource operations");
 
   addConnectionOptions(
     withPaging(chatCommand.command("list").description("List chats (POST /api/v1/chat/query)")),
@@ -51,7 +52,7 @@ export function registerChatCommands(program: Command): void {
         with: options.with.length > 0 ? options.with : [...DEFAULT_CHAT_WITH],
       });
       const chats = result.data ?? [];
-      maybePrint(chats, options, () => printChats(chats));
+      maybePrint(chats, options, () => printChats(chats, isWideOutput(options)));
     }),
   );
 
@@ -97,7 +98,7 @@ export function registerChatCommands(program: Command): void {
           before: options.before,
           with: options.with.length > 0 ? options.with : [...DEFAULT_MESSAGE_WITH],
         });
-        maybePrint(result.data ?? [], options, () => printMessages(result.data ?? []));
+        maybePrint(result.data ?? [], options, () => printMessages(result.data ?? [], isWideOutput(options)));
       }),
     );
 

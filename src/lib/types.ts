@@ -23,7 +23,7 @@ export interface RuntimeState {
   args: string[];
 }
 
-export type OutputFormat = "table" | "json";
+export type OutputFormat = "table" | "wide" | "json";
 
 export interface OutputOptions {
   json?: boolean;
@@ -32,6 +32,7 @@ export interface OutputOptions {
 
 export interface CommandOverrides extends CliConfig {
   configPath?: string;
+  verbose?: boolean;
 }
 
 export interface ChatSummary {

@@ -15,6 +15,7 @@ import {
 } from "~/lib/output.js";
 import { getRemoteLogs } from "~/lib/bluebubbles/server.js";
 import {
+  openServerApp,
   restartServer,
   serverStatus,
   showLogs,
@@ -24,6 +25,24 @@ import {
 import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
 export function registerServerLifecycleCommands(serverCommand: Command): void {
+  addConnectionOptions(
+    serverCommand.command("open").description("Open the local BlueBubbles desktop app (local process manager, no API endpoint)"),
+  )
+    .option("--app-path <path>", "Override the BlueBubbles app bundle or executable path")
+    .action(
+      async (options: CommandOverrides & OutputOptions & { appPath?: string; config?: string }) => {
+        const context = await withConfig({
+          configPath: options.config,
+          appPath: options.appPath,
+        });
+        const result = await openServerApp({
+          config: context.config,
+          appPath: options.appPath,
+        });
+        maybePrint(result, options, () => printSuccess(`Opened BlueBubbles app: ${result.appPath}`, false));
+      },
+    );
+
   addConnectionOptions(
     serverCommand.command("start").description("Start the local BlueBubbles app (local process manager, no API endpoint)"),
   )

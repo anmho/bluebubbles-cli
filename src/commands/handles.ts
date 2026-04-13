@@ -1,6 +1,7 @@
 import type { Command } from "commander";
 import {
   addConnectionOptions,
+  isWideOutput,
   maybePrint,
   withBlueBubblesDeps,
   withPaging,
@@ -33,7 +34,7 @@ export function registerHandleCommands(program: Command): void {
             console.log("No handles found.");
             return;
           }
-          printHandles(result.data);
+          printHandles(result.data, isWideOutput(options));
         });
       }),
     );

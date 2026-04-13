@@ -2,6 +2,7 @@ import type { Command } from "commander";
 import {
   addConnectionOptions,
   collect,
+  isWideOutput,
   maybePrint,
   withBlueBubblesDeps,
 } from "~/lib/cli-helpers.js";
@@ -24,7 +25,7 @@ export function registerContactCommands(program: Command): void {
         console.log("No contacts found.");
         return;
       }
-      printContacts(result.data);
+      printContacts(result.data, isWideOutput(options));
     });
   }));
 
@@ -41,7 +42,7 @@ export function registerContactCommands(program: Command): void {
           console.log("No contacts found.");
           return;
         }
-        printContacts(result.data);
+        printContacts(result.data, isWideOutput(options));
       });
     }));
 }

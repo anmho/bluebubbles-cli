@@ -190,8 +190,8 @@ export function printKeyValue(data: Record<string, unknown>): void {
   console.log(renderRows(rows, ["key", "value"]));
 }
 
-export function printChats(chats: ChatSummary[]): void {
-  printTableRows(chats, [
+export function printChats(chats: ChatSummary[], wide = false): void {
+  const columns: ColumnSpec<ChatSummary>[] = [
     { name: "guid", value: (chat) => chat.guid, maxWidth: 28 },
     { name: "name", value: (chat) => chat.displayName, maxWidth: 28 },
     { name: "identifier", value: (chat) => chat.chatIdentifier, maxWidth: 28 },
@@ -206,17 +206,41 @@ export function printChats(chats: ChatSummary[]): void {
     },
     { name: "last_message", value: (chat) => chat.lastMessage?.text, maxWidth: 40 },
     { name: "age", value: (chat) => formatAge(chat.lastMessage?.dateCreated) },
-  ]);
+  ];
+  if (wide) {
+    columns.push(
+      {
+        name: "participant_count",
+        value: (chat) => chat.participants?.length ?? 0,
+        maxWidth: 16,
+      },
+      {
+        name: "last_timestamp",
+        value: (chat) => formatTimestamp(chat.lastMessage?.dateCreated),
+        maxWidth: 24,
+      },
+    );
+  }
+  printTableRows(chats, columns);
 }
 
-export function printMessages(messages: MessageSummary[]): void {
-  printTableRows(messages, [
+export function printMessages(messages: MessageSummary[], wide = false): void {
+  const columns: ColumnSpec<MessageSummary>[] = [
     { name: "guid", value: (message) => message.guid, maxWidth: 28 },
     { name: "from", value: (message) => (message.isFromMe ? "me" : message.handle?.address), maxWidth: 20 },
     { name: "text", value: (message) => message.text, maxWidth: 48 },
     { name: "age", value: (message) => formatAge(message.dateCreated) },
     { name: "chat", value: (message) => message.chats?.[0]?.guid, maxWidth: 28 },
-  ]);
+  ];
+  if (wide) {
+    columns.push(
+      { name: "from_me", value: (message) => (message.isFromMe ? "yes" : "no"), maxWidth: 8 },
+      { name: "attachments", value: (message) => message.attachments?.length ?? 0, maxWidth: 12 },
+      { name: "created_at", value: (message) => formatTimestamp(message.dateCreated), maxWidth: 24 },
+      { name: "chat_name", value: (message) => message.chats?.[0]?.displayName, maxWidth: 28 },
+    );
+  }
+  printTableRows(messages, columns);
 }
 
 export function printDoctorChecks(checks: DoctorCheck[]): void {
@@ -227,14 +251,21 @@ export function printDoctorChecks(checks: DoctorCheck[]): void {
   ]);
 }
 
-export function printAlerts(alerts: unknown[]): void {
-  printTableRows(alerts, [
+export function printAlerts(alerts: unknown[], wide = false): void {
+  const columns: ColumnSpec<unknown>[] = [
     { name: "id", value: (alert) => firstPath(alert, ["id"]) },
     { name: "type", value: (alert) => firstPath(alert, ["type"]), maxWidth: 12 },
     { name: "message", value: (alert) => firstPath(alert, ["value", "message"]), maxWidth: 80 },
     { name: "age", value: (alert) => formatAge(firstPath(alert, ["created", "createdAt", "dateCreated"])) },
     { name: "read", value: (alert) => (firstPath(alert, ["isRead"]) ? "yes" : "no") },
-  ]);
+  ];
+  if (wide) {
+    columns.push(
+      { name: "created_at", value: (alert) => formatTimestamp(firstPath(alert, ["created", "createdAt", "dateCreated"])), maxWidth: 24 },
+      { name: "data", value: (alert) => firstPath(alert, ["value"]), maxWidth: 50 },
+    );
+  }
+  printTableRows(alerts, columns);
 }
 
 function extractPrimary(list: unknown, path = "address"): string {
@@ -245,21 +276,36 @@ function extractPrimary(list: unknown, path = "address"): string {
   return `${firstText} (+${list.length - 1})`;
 }
 
-export function printContacts(contacts: unknown[]): void {
-  printTableRows(contacts, [
+export function printContacts(contacts: unknown[], wide = false): void {
+  const columns: ColumnSpec<unknown>[] = [
     { name: "name", value: (contact) => firstPath(contact, ["displayName", "firstName"]), maxWidth: 32 },
     { name: "phone", value: (contact) => extractPrimary(firstPath(contact, ["phoneNumbers"])), maxWidth: 24 },
     { name: "email", value: (contact) => extractPrimary(firstPath(contact, ["emails"])), maxWidth: 32 },
     { name: "source", value: (contact) => firstPath(contact, ["sourceType"]), maxWidth: 10 },
-  ]);
+  ];
+  if (wide) {
+    columns.push(
+      { name: "phones", value: (contact) => firstPath(contact, ["phoneNumbers"]), maxWidth: 40 },
+      { name: "emails", value: (contact) => firstPath(contact, ["emails"]), maxWidth: 48 },
+      { name: "id", value: (contact) => firstPath(contact, ["id", "identifier", "originalROWID"]), maxWidth: 18 },
+    );
+  }
+  printTableRows(contacts, columns);
 }
 
-export function printHandles(handles: unknown[]): void {
-  printTableRows(handles, [
+export function printHandles(handles: unknown[], wide = false): void {
+  const columns: ColumnSpec<unknown>[] = [
     { name: "address", value: (handle) => firstPath(handle, ["address", "handle.address"]), maxWidth: 32 },
     { name: "country", value: (handle) => firstPath(handle, ["country"]), maxWidth: 12 },
     { name: "id", value: (handle) => firstPath(handle, ["id", "originalROWID"]), maxWidth: 10 },
-  ]);
+  ];
+  if (wide) {
+    columns.push(
+      { name: "service", value: (handle) => firstPath(handle, ["service"]), maxWidth: 14 },
+      { name: "uncanonicalized", value: (handle) => firstPath(handle, ["uncanonicalizedId"]), maxWidth: 28 },
+    );
+  }
+  printTableRows(handles, columns);
 }
 
 export function printThemes(themes: unknown[]): void {
@@ -269,15 +315,23 @@ export function printThemes(themes: unknown[]): void {
   ]);
 }
 
-export function printScheduledMessages(items: unknown[]): void {
-  printTableRows(items, [
+export function printScheduledMessages(items: unknown[], wide = false): void {
+  const columns: ColumnSpec<unknown>[] = [
     { name: "id", value: (item) => firstPath(item, ["id"]), maxWidth: 8 },
     { name: "type", value: (item) => firstPath(item, ["type"]), maxWidth: 16 },
     { name: "status", value: (item) => firstPath(item, ["status", "schedule.type"]), maxWidth: 14 },
     { name: "message", value: (item) => firstPath(item, ["payload.message"]), maxWidth: 40 },
     { name: "when", value: (item) => formatTimestamp(firstPath(item, ["scheduledFor"])), maxWidth: 28 },
     { name: "age", value: (item) => formatAge(firstPath(item, ["scheduledFor"])) },
-  ]);
+  ];
+  if (wide) {
+    columns.push(
+      { name: "chat", value: (item) => firstPath(item, ["payload.chatGuid"]), maxWidth: 28 },
+      { name: "created_at", value: (item) => formatTimestamp(firstPath(item, ["createdAt", "created"])), maxWidth: 24 },
+      { name: "updated_at", value: (item) => formatTimestamp(firstPath(item, ["updatedAt", "updated"])), maxWidth: 24 },
+    );
+  }
+  printTableRows(items, columns);
 }
 
 function formatCoordinates(value: unknown): string {
@@ -294,22 +348,33 @@ function formatBattery(value: unknown): string {
   return `${Math.round(batteryLevel)}%`;
 }
 
-export function printFindMyDevices(devices: unknown[]): void {
-  printTableRows(devices, [
+export function printFindMyDevices(devices: unknown[], wide = false): void {
+  const columns: ColumnSpec<unknown>[] = [
     { name: "name", value: (device) => firstPath(device, ["name", "displayName", "title"]), maxWidth: 28 },
     { name: "model", value: (device) => firstPath(device, ["model", "deviceClass", "deviceModel"]), maxWidth: 20 },
     { name: "battery", value: (device) => formatBattery(device), maxWidth: 8 },
     { name: "location", value: (device) => formatCoordinates(device), maxWidth: 24 },
     { name: "age", value: (device) => formatAge(firstPath(device, ["location.timeStamp", "updated", "updatedAt"])) },
-  ]);
+  ];
+  if (wide) {
+    columns.push(
+      { name: "id", value: (device) => firstPath(device, ["id", "identifier"]), maxWidth: 20 },
+      { name: "raw", value: (device) => device, maxWidth: 50 },
+    );
+  }
+  printTableRows(devices, columns);
 }
 
-export function printFindMyFriends(friends: unknown[]): void {
-  printTableRows(friends, [
+export function printFindMyFriends(friends: unknown[], wide = false): void {
+  const columns: ColumnSpec<unknown>[] = [
     { name: "name", value: (friend) => firstPath(friend, ["name", "displayName", "title"]), maxWidth: 28 },
     { name: "location", value: (friend) => formatCoordinates(friend), maxWidth: 24 },
     { name: "age", value: (friend) => formatAge(firstPath(friend, ["location.timeStamp", "updated", "updatedAt"])) },
-  ]);
+  ];
+  if (wide) {
+    columns.push({ name: "raw", value: (friend) => friend, maxWidth: 50 });
+  }
+  printTableRows(friends, columns);
 }
 
 export function tailLines(contents: string, count: number): string {

@@ -1,6 +1,6 @@
 {
   "name": "bluebubbles-cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Curated BlueBubbles CLI organized around terminal-friendly resources",
   "type": "module",
   "bin": {
@@ -33,7 +33,7 @@
     "yaml": "^2.8.3"
   },
   "dependencies": {
-    "@anmho/bluebubbles-sdk": "^0.1.0",
+    "@anmho/bluebubbles-sdk": "0.1.1",
     "columnify": "^1.6.0",
     "commander": "^14.0.3",
     "zod": "^4.3.6"

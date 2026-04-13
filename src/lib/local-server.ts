@@ -157,6 +157,38 @@ export async function startServer(input: {
   return state;
 }
 
+export async function openServerApp(input: {
+  config: CliConfig;
+  appPath?: string;
+}): Promise<{ appPath: string }> {
+  ensureMacOS();
+  const appPath = input.appPath ?? discoverAppPath({ ...input.config, appPath: input.appPath });
+  if (!appPath) {
+    throw new CliError(
+      "Unable to find an installed BlueBubbles app. Set one with `bluebubbles config set appPath /Applications/BlueBubbles.app`.",
+      "process",
+    );
+  }
+
+  if (appPath.endsWith(".app")) {
+    const child = spawn("open", [appPath], {
+      detached: true,
+      stdio: "ignore",
+    });
+    child.unref();
+    return { appPath };
+  }
+
+  const executablePath = await resolveBundleExecutable(appPath);
+  const child = spawn(executablePath, [], {
+    cwd: path.dirname(executablePath),
+    detached: true,
+    stdio: "ignore",
+  });
+  child.unref();
+  return { appPath };
+}
+
 export async function stopServer(statePath: string): Promise<RuntimeState> {
   ensureMacOS();
   const state = await readRuntimeState(statePath);
