@@ -22,7 +22,7 @@
     "docs:sync-openapi": "bun run scripts/sync-openapi.ts",
     "docs:dev": "bun run docs:sync-openapi && cd docs && mint dev --no-open",
     "docs:validate": "bun run docs:sync-openapi && cd docs && mint validate",
-    "publish:package": "bun run check && bun run build && npm publish --cache /tmp/npm-cache"
+    "release": "bun run check && bun run build && npm publish --cache /tmp/npm-cache"
   },
   "devDependencies": {
     "@types/bun": "^1.3.12",
