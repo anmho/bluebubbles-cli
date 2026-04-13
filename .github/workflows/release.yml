@@ -49,8 +49,29 @@ jobs:
           fi
           echo "Version OK: $cli_version"
 
+      - name: Resolve publish mode
+        id: publish
+        run: |
+          wants_publish="false"
+          if [[ "${{ github.event_name }}" == "push" || "${{ github.event.inputs.publish }}" == "true" ]]; then
+            wants_publish="true"
+          fi
+
+          if [[ "$wants_publish" != "true" ]]; then
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [[ -z "${{ secrets.NPM_TOKEN }}" ]]; then
+            echo "::warning::Skipping npm publish because NPM_TOKEN is not configured."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "enabled=true" >> "$GITHUB_OUTPUT"
+
       - name: Publish To npm
-        if: ${{ github.event_name == 'push' || github.event.inputs.publish == 'true' }}
+        if: ${{ steps.publish.outputs.enabled == 'true' }}
         run: npm publish --cache /tmp/npm-cache
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
