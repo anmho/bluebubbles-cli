@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 import { Command } from "commander";
 import { APP_NAME } from "~/lib/constants.js";
 import { printError } from "~/lib/output.js";
