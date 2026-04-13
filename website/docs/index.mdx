@@ -1,0 +1,29 @@
+---
+title: BlueBubbles CLI
+description: A curated BlueBubbles terminal CLI organized around the resources that matter in day-to-day use.
+slug: /
+---
+
+## What it covers
+
+- [Quickstart](./quickstart): install, configure, and run first commands.
+- [CLI Reference](./cli-reference): command tree and endpoint mappings.
+- [Local Server](./local-server): local server open/start/stop/restart/status/logs.
+- [Webhooks](./webhooks): validate payloads and run a local receiver.
+- [Doctor](./doctor): diagnose config, local runtime, and API reachability.
+- [API Reference](./api/): generated from the official BlueBubbles OpenAPI spec.
+
+## Positioning
+
+This CLI is intentionally curated.
+
+- Root help is resource-first: `ping`, `server`, `chats`, `messages`, `handle`, `attachment`, `contact`, `icloud`, `webhook`, `config`, `doctor`.
+- Low-value or risky clutter like `fcm`, `mac`, and web-only commands is removed.
+- Server-owned admin state is nested under `server`, including `server settings` and `server theme`.
+- Each retained command is documented with the API endpoint it corresponds to.
+
+## Architecture
+
+- API commands flow through the `@anmho/bluebubbles-sdk` client layer in this repo.
+- Local lifecycle commands manage an installed BlueBubbles Server app on macOS.
+- API docs are generated from `docs/openapi.yaml` (source synced from upstream BlueBubbles OpenAPI).

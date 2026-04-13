@@ -190,14 +190,14 @@ export BLUEBUBBLES_PASSWORD='your#server#password'
 
 ## Docs
 
-Docs are served via Scalar and deployed to GitHub Pages.
+Docs are served via Docusaurus and deployed to GitHub Pages.
 
 ```bash
 bun run docs:dev
 bun run docs:validate
 ```
 
-GitHub Pages workflow publishes `scalar/index.html` at:
+GitHub Pages workflow publishes `website/build` at:
 
 ```text
 https://anmho.github.io/bluebubbles-cli/
