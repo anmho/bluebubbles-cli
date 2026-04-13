@@ -57,10 +57,12 @@ bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 0 --jso
 bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 50 --json
 ```
 
-Filter by date range or `where` clause:
+Filter by date range, common flags, or raw `where`:
 
 ```bash
 bluebubbles message list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
+bluebubbles message list --chat 'iMessage;+;chat123' --text 'hello' --not-from-me --json
+bluebubbles message list --chat 'iMessage;+;chat123' --from-me --has-attachments --json
 bluebubbles message list --where '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]' --json
 ```
 

@@ -23,6 +23,17 @@ type Result = {
   reason?: string;
 };
 
+type ParsedCliError = {
+  kind?: string;
+  message?: string;
+  status?: number;
+};
+
+type ApiPreflight = {
+  ready: boolean;
+  reason?: string;
+};
+
 const strict = process.env.TEST_COMMANDS_STRICT === "1";
 const allowDestructive = process.env.TEST_COMMANDS_ALLOW_DESTRUCTIVE === "1";
 const runLongRunning = process.env.TEST_COMMANDS_RUN_LONG_RUNNING === "1";
@@ -66,10 +77,22 @@ async function resolveConnectionArgs(): Promise<string[]> {
     return ["--base-url", rawEnvBaseUrl, "--password", rawEnvPassword];
   }
 
+  const rawDefaultBaseUrl = await readRawDotEnvValue("BLUEBUBBLES_BASE_URL");
+  const rawDefaultPassword = await readRawDotEnvValue("BLUEBUBBLES_PASSWORD");
+  if (rawDefaultBaseUrl && rawDefaultPassword) {
+    return ["--base-url", rawDefaultBaseUrl, "--password", rawDefaultPassword];
+  }
+
   const envBaseUrl = process.env.TEST_COMMANDS_BASE_URL;
   const envPassword = process.env.TEST_COMMANDS_PASSWORD;
   if (envBaseUrl && envPassword) {
     return ["--base-url", envBaseUrl, "--password", envPassword];
+  }
+
+  const envDefaultBaseUrl = process.env.BLUEBUBBLES_BASE_URL;
+  const envDefaultPassword = process.env.BLUEBUBBLES_PASSWORD;
+  if (envDefaultBaseUrl && envDefaultPassword) {
+    return ["--base-url", envDefaultBaseUrl, "--password", envDefaultPassword];
   }
 
   const configPath = resolveConfigPath(
@@ -130,7 +153,7 @@ function firstNonEmpty(...values: string[]): string | undefined {
   return undefined;
 }
 
-function extractJsonError(stream: string): string | undefined {
+function parseCliJson(stream: string): { error?: ParsedCliError } | undefined {
   const text = stream.trim();
   if (!text) return undefined;
 
@@ -146,11 +169,16 @@ function extractJsonError(stream: string): string | undefined {
     try {
       const parsed = JSON.parse(candidate.trim()) as {
         ok?: boolean;
-        error?: { kind?: string; message?: string };
+        error?: { kind?: string; message?: string; details?: { status?: number } };
       };
-      if (parsed.ok === false && parsed.error?.message) {
-        const kind = parsed.error.kind ? `[${parsed.error.kind}] ` : "";
-        return `${kind}${parsed.error.message}`;
+      if (parsed.ok === false) {
+        return {
+          error: {
+            kind: parsed.error?.kind,
+            message: parsed.error?.message,
+            status: parsed.error?.details?.status,
+          },
+        };
       }
     } catch {
       // ignore malformed candidates
@@ -158,6 +186,13 @@ function extractJsonError(stream: string): string | undefined {
   }
 
   return undefined;
+}
+
+function extractJsonError(stream: string): string | undefined {
+  const parsed = parseCliJson(stream);
+  if (!parsed?.error?.message) return undefined;
+  const kind = parsed.error.kind ? `[${parsed.error.kind}] ` : "";
+  return `${kind}${parsed.error.message}`;
 }
 
 function summarizeFailure(
@@ -176,6 +211,28 @@ function summarizeFailure(
 function withConnection(argv: string[], connectionArgs: string[], acceptsConnection = true): string[] {
   if (!acceptsConnection || connectionArgs.length === 0) return argv;
   return [...argv, ...connectionArgs];
+}
+
+function classifyApiPreflight(result: { exitCode: number; stdout: string; stderr: string }): ApiPreflight {
+  if (result.exitCode === 0) {
+    return { ready: true };
+  }
+
+  const parsed = parseCliJson(result.stdout) ?? parseCliJson(result.stderr);
+  const kind = parsed?.error?.kind ?? "";
+  const status = parsed?.error?.status;
+
+  if (kind === "auth" || status === 401) {
+    return {
+      ready: false,
+      reason: "API unauthorized in preflight (401). Check TEST_COMMANDS_PASSWORD / BLUEBUBBLES_PASSWORD.",
+    };
+  }
+
+  return {
+    ready: false,
+    reason: "API unavailable in preflight. Check TEST_COMMANDS_BASE_URL and server reachability.",
+  };
 }
 
 async function getFreePort(): Promise<number> {
@@ -232,7 +289,7 @@ async function probeWebhookServe(): Promise<Result> {
   };
 }
 
-async function runCase(testCase: Case, apiReady: boolean, connectionArgs: string[]): Promise<Result> {
+async function runCase(testCase: Case, apiPreflight: ApiPreflight, connectionArgs: string[]): Promise<Result> {
   if (testCase.requiresDarwin && process.platform !== "darwin") {
     return { name: testCase.name, status: "SKIP", reason: "macOS-only command." };
   }
@@ -242,8 +299,8 @@ async function runCase(testCase: Case, apiReady: boolean, connectionArgs: string
   if (testCase.longRunning) {
     return probeWebhookServe();
   }
-  if (testCase.requiresApi && !apiReady) {
-    return { name: testCase.name, status: "SKIP", reason: "API unavailable in preflight." };
+  if (testCase.requiresApi && !apiPreflight.ready) {
+    return { name: testCase.name, status: "SKIP", reason: apiPreflight.reason ?? "API unavailable in preflight." };
   }
 
   const argv = withConnection(testCase.argv, connectionArgs, testCase.acceptsConnection ?? true);
@@ -276,10 +333,10 @@ async function main(): Promise<number> {
 
   const connectionArgs = await resolveConnectionArgs();
   const pingPreflight = await runCliCaptured(withConnection(["ping", "--json"], connectionArgs, true));
-  const apiReady = pingPreflight.exitCode === 0;
+  const apiPreflight = classifyApiPreflight(pingPreflight);
 
-  if (strict && !apiReady) {
-    console.error("FAIL preflight: API unavailable. Set TEST_COMMANDS_BASE_URL/TEST_COMMANDS_PASSWORD or configure bluebubbles config.");
+  if (strict && !apiPreflight.ready) {
+    console.error(`FAIL preflight: ${apiPreflight.reason ?? "API unavailable."}`);
     await rm(tmpDir, { recursive: true, force: true });
     return 1;
   }
@@ -322,6 +379,8 @@ async function main(): Promise<number> {
     { name: "chat typing stop", argv: ["chat", "typing", "stop", chatGuid], ok: [0, 6], requiresApi: true },
 
     { name: "message list", argv: ["message", "list"], ok: [0], requiresApi: true },
+    { name: "message list common filters", argv: ["message", "list", "--chat", chatGuid, "--text", "hello", "--not-from-me", "--limit", "20"], ok: [0, 6], requiresApi: true },
+    { name: "message list raw where", argv: ["message", "list", "--where", '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]'], ok: [0], requiresApi: true },
     { name: "message get", argv: ["message", "get", messageGuid], ok: [0, 6], requiresApi: true },
     { name: "message send", argv: ["message", "send", "--chat", chatGuid, "--message", "hello"], ok: [0, 6], requiresApi: true, destructive: true },
     { name: "message react", argv: ["message", "react", messageGuid, "--chat", chatGuid, "--reaction", "love"], ok: [0, 6], requiresApi: true, destructive: true },
@@ -360,7 +419,7 @@ async function main(): Promise<number> {
 
   const results: Result[] = [];
   for (const testCase of cases) {
-    results.push(await runCase(testCase, apiReady, connectionArgs));
+    results.push(await runCase(testCase, apiPreflight, connectionArgs));
   }
 
   const pass = results.filter((result) => result.status === "PASS").length;

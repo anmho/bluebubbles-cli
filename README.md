@@ -99,7 +99,15 @@ Filter by date window (epoch seconds):
 bluebubbles message list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
 ```
 
-Advanced text filtering via API `where` clauses:
+Common filters:
+
+```bash
+bluebubbles message list --chat 'iMessage;+;chat123' --text 'invoice' --limit 50 --json
+bluebubbles message list --chat 'iMessage;+;chat123' --from '+15551234567' --not-from-me --json
+bluebubbles message list --chat 'iMessage;+;chat123' --from-me --has-attachments --json
+```
+
+Advanced filtering via raw API `where` clauses:
 
 ```bash
 bluebubbles message list \

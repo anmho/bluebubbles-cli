@@ -39,9 +39,14 @@ export function registerMessageCommands(program: Command): void {
     .option("--chat <guid>", "Limit messages to a specific chat")
     .option("--after <epochSeconds>", "Only include messages after this epoch seconds value")
     .option("--before <epochSeconds>", "Only include messages before this epoch seconds value")
+    .option("--text <value>", "Filter messages containing text")
+    .option("--from <address>", "Filter messages by sender address")
+    .option("--from-me", "Only include messages sent by this account")
+    .option("--not-from-me", "Only include messages not sent by this account")
+    .option("--has-attachments", "Only include messages with attachments")
     .option(
       "--where <json>",
-      "TypeORM-style where clauses JSON (array or object). Example: '[{\"statement\":\"message.text LIKE :q\",\"args\":{\"q\":\"%hello%\"}}]'",
+      "Advanced escape hatch: raw TypeORM-style where clauses JSON (array or object).",
     )
     .action(
       withBlueBubblesDeps(({ client }) => async (
@@ -54,6 +59,11 @@ export function registerMessageCommands(program: Command): void {
             chat?: string;
             after?: string;
             before?: string;
+            text?: string;
+            from?: string;
+            fromMe?: boolean;
+            notFromMe?: boolean;
+            hasAttachments?: boolean;
             where?: string;
           },
       ) => {
@@ -83,6 +93,69 @@ export function registerMessageCommands(program: Command): void {
           throw new CliError("--where must be a JSON object or array of objects.", "validation");
         };
 
+        const buildCommonWhere = (
+          value: {
+            text?: string;
+            from?: string;
+            fromMe?: boolean;
+            notFromMe?: boolean;
+            hasAttachments?: boolean;
+          },
+        ): Array<Record<string, unknown>> => {
+          if (value.fromMe && value.notFromMe) {
+            throw new CliError("Use either --from-me or --not-from-me, not both.", "validation");
+          }
+
+          const clauses: Array<Record<string, unknown>> = [];
+
+          if (value.text) {
+            clauses.push({
+              statement: "message.text LIKE :text",
+              args: { text: `%${value.text}%` },
+            });
+          }
+
+          if (value.from) {
+            clauses.push({
+              statement: "handle.address = :fromAddress",
+              args: { fromAddress: value.from },
+            });
+          }
+
+          if (value.fromMe) {
+            clauses.push({
+              statement: "message.isFromMe = :isFromMe",
+              args: { isFromMe: true },
+            });
+          }
+
+          if (value.notFromMe) {
+            clauses.push({
+              statement: "message.isFromMe = :isFromMe",
+              args: { isFromMe: false },
+            });
+          }
+
+          if (value.hasAttachments) {
+            clauses.push({
+              statement: "message.hasAttachments = :hasAttachments",
+              args: { hasAttachments: true },
+            });
+          }
+
+          return clauses;
+        };
+
+        const rawWhere = parseWhere(options.where);
+        const commonWhere = buildCommonWhere({
+          text: options.text,
+          from: options.from,
+          fromMe: options.fromMe,
+          notFromMe: options.notFromMe,
+          hasAttachments: options.hasAttachments,
+        });
+        const mergedWhere = [...(rawWhere ?? []), ...commonWhere];
+
         const result = await listMessages(client, {
           chatGuid: options.chat,
           limit: options.limit,
@@ -90,7 +163,7 @@ export function registerMessageCommands(program: Command): void {
           sort: options.sort,
           after: parseEpoch(options.after),
           before: parseEpoch(options.before),
-          where: parseWhere(options.where),
+          where: mergedWhere.length > 0 ? mergedWhere : undefined,
           with: options.with.length > 0 ? options.with : [...DEFAULT_MESSAGE_WITH],
         });
         maybePrint(result.data ?? [], options, () => printMessages(result.data ?? []));
