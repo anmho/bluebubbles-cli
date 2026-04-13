@@ -37,7 +37,8 @@ Output controls:
 
 ```bash
 bluebubbles contact list
-bluebubbles chat list -o json
+bluebubbles chats list -o wide
+bluebubbles chats list -o json
 ```
 
 Human-readable output (`columnify`) is the default:
@@ -48,7 +49,7 @@ Alex Rivera     +1-555-0100       alex@example.com
 Taylor Kim      +1-555-0199       taylor@example.com
 ```
 
-`message list` uses the same default table style:
+`messages list` uses the same default table style:
 
 ```text
 GUID                        FROM       TEXT                          AGE   CHAT
@@ -74,37 +75,37 @@ JSON output is available with `-o json` or `--json`:
 For messages:
 
 ```bash
-bluebubbles message list --chat 'iMessage;+;chat123'
-bluebubbles message list --chat 'iMessage;+;chat123' --json
+bluebubbles messages list --chat 'iMessage;+;chat123'
+bluebubbles messages list --chat 'iMessage;+;chat123' --json
 ```
 
 Pagination defaults are conservative for message-heavy commands:
 
-- `bluebubbles message list` defaults to `--limit 50`
-- `bluebubbles chat messages <guid>` defaults to `--limit 50`
+- `bluebubbles messages list` defaults to `--limit 50`
+- `bluebubbles chats messages <guid>` defaults to `--limit 50`
 
 ## Query and filter examples
 
 Get all messages for one conversation in pages:
 
 ```bash
-bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 0 --json
-bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 50 --json
-bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 100 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --limit 50 --offset 0 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --limit 50 --offset 50 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --limit 50 --offset 100 --json
 ```
 
 Filter by date window (epoch seconds):
 
 ```bash
-bluebubbles message list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
 ```
 
 Common filters:
 
 ```bash
-bluebubbles message list --chat 'iMessage;+;chat123' --text 'invoice' --limit 50 --json
-bluebubbles message list --chat 'iMessage;+;chat123' --from '+15551234567' --not-from-me --json
-bluebubbles message list --chat 'iMessage;+;chat123' --from-me --has-attachments --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --text 'invoice' --limit 50 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --from '+15551234567' --not-from-me --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --from-me --has-attachments --json
 ```
 
 Common filters are applied client-side to the returned page. Use `--where` for raw server-side filtering.
@@ -112,7 +113,7 @@ Common filters are applied client-side to the returned page. Use `--where` for r
 Advanced filtering via raw API `where` clauses:
 
 ```bash
-bluebubbles message list \
+bluebubbles messages list \
   --where '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]' \
   --limit 50 \
   --json
@@ -121,8 +122,8 @@ bluebubbles message list \
 Conversation endpoint alternative:
 
 ```bash
-bluebubbles chat messages 'iMessage;+;chat123' --limit 50 --offset 0 --json
-bluebubbles chat messages 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
+bluebubbles chats messages 'iMessage;+;chat123' --limit 50 --offset 0 --json
+bluebubbles chats messages 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
 ```
 
 ## Command shape
@@ -130,17 +131,28 @@ bluebubbles chat messages 'iMessage;+;chat123' --after 1710000000 --before 17100
 ```bash
 bluebubbles ping
 bluebubbles server info
+bluebubbles server open
 bluebubbles server status
 bluebubbles server logs
 bluebubbles server logs --source api
-bluebubbles chat list
-bluebubbles message send --chat <guid> --message "hello"
-bluebubbles message schedule list
+bluebubbles chats list
+bluebubbles messages send --chat <guid> --message "hello"
+bluebubbles messages schedule list
 bluebubbles handle availability <address>
 bluebubbles attachment download <guid>
 bluebubbles contact query --address user@example.com
 bluebubbles icloud account
 ```
+
+Verbose diagnostics:
+
+```bash
+bluebubbles messages list --chat 'iMessage;+;chat123' --verbose
+```
+
+`--verbose` prints request/response diagnostics to stderr. You can also set `BLUEBUBBLES_VERBOSE=1`.
+
+Request timeout defaults to `10000ms` and can be overridden with `BLUEBUBBLES_REQUEST_TIMEOUT_MS`.
 
 ## Configuration
 
@@ -166,12 +178,17 @@ export BLUEBUBBLES_PASSWORD='your#server#password'
 
 ## Docs
 
-Mintlify is configured through the local `mint` dev dependency.
+Docs are served via Scalar and deployed to GitHub Pages.
 
 ```bash
-bun run docs:sync-openapi
 bun run docs:dev
 bun run docs:validate
+```
+
+GitHub Pages workflow publishes `scalar/index.html` at:
+
+```text
+https://anmho.github.io/bluebubbles-cli/
 ```
 
 `test:commands` is local-only by design. It exercises all registered CLI commands and can skip unavailable API/local prerequisites in tolerant mode. It uses the same auth sources as normal CLI runs (`BLUEBUBBLES_*` env vars or persisted `bluebubbles config` values).

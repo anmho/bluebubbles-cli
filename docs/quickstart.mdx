@@ -45,28 +45,30 @@ export BLUEBUBBLES_PASSWORD=your-server-password
 bluebubbles doctor
 bluebubbles ping
 bluebubbles server info
-bluebubbles chat list
-bluebubbles message list --chat 'iMessage;+;chat123'
-bluebubbles message send --chat 'iMessage;+;chat123' --message 'hello from bluebubbles'
+bluebubbles chats list
+bluebubbles messages list --chat 'iMessage;+;chat123'
+bluebubbles messages send --chat 'iMessage;+;chat123' --message 'hello from bluebubbles'
 ```
 
 Message pagination defaults to `--limit 50`. Page manually with offset:
 
 ```bash
-bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 0 --json
-bluebubbles message list --chat 'iMessage;+;chat123' --limit 50 --offset 50 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --limit 50 --offset 0 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --limit 50 --offset 50 --json
 ```
 
 Filter by date range, common flags, or raw `where`:
 
 ```bash
-bluebubbles message list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
-bluebubbles message list --chat 'iMessage;+;chat123' --text 'hello' --not-from-me --json
-bluebubbles message list --chat 'iMessage;+;chat123' --from-me --has-attachments --json
-bluebubbles message list --where '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]' --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --after 1710000000 --before 1710086400 --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --text 'hello' --not-from-me --json
+bluebubbles messages list --chat 'iMessage;+;chat123' --from-me --has-attachments --json
+bluebubbles messages list --where '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]' --json
 ```
 
 `--text`, `--from`, and `--has-attachments` apply client-side to the returned page; use `--where` for raw server-side filtering.
+
+Use `-o wide` for richer human-readable list output, and `--verbose` for API diagnostics to stderr.
 
 ## Local server lifecycle
 

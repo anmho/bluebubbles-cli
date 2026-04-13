@@ -1,6 +1,6 @@
 ---
 title: "Development"
-description: "Build, test, and validate the curated BlueBubbles CLI and Mintlify docs."
+description: "Build, test, and validate the curated BlueBubbles CLI and Scalar docs."
 ---
 
 ## CLI workflow
@@ -16,24 +16,22 @@ bun run build
 
 ## Docs workflow
 
-The repo uses the local `mint` dev dependency. There is no separate scraper step in the current setup.
+Docs are served from the `scalar/` directory and deployed with GitHub Pages.
 
 ```bash
-bun run docs:sync-openapi
 bun run docs:dev
 bun run docs:validate
 ```
 
-Mintlify reads `docs/openapi.yaml`, which is kept as a pinned copy of the official upstream spec:
+Scalar reads the official upstream OpenAPI spec directly:
 
 ```text
-docs/openapi.yaml
+https://raw.githubusercontent.com/Jish2/bluebubbles-sdk/main/openapi.yaml
 ```
 
 ## Notes
 
 - CLI usage docs are hand-curated.
-- API reference pages are rendered from the pinned OpenAPI file rather than maintained as generated MDX snapshots.
+- API reference pages are rendered by Scalar from the upstream OpenAPI file.
 - The upstream source of truth remains `https://raw.githubusercontent.com/Jish2/bluebubbles-sdk/main/openapi.yaml`.
-- `docs:sync-openapi` applies a minimal Mint compatibility patch when the upstream file has empty `responses` objects.
 - The CLI runtime uses the repo's `@anmho/bluebubbles-sdk` client layer.
