@@ -107,6 +107,8 @@ bluebubbles message list --chat 'iMessage;+;chat123' --from '+15551234567' --not
 bluebubbles message list --chat 'iMessage;+;chat123' --from-me --has-attachments --json
 ```
 
+Common filters are applied client-side to the returned page. Use `--where` for raw server-side filtering.
+
 Advanced filtering via raw API `where` clauses:
 
 ```bash

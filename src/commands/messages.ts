@@ -28,7 +28,7 @@ import {
 } from "../lib/bluebubbles/message.js";
 import { DEFAULT_MESSAGE_WITH } from "../lib/constants.js";
 import type { EditMessageInput, SendReactInput } from "../lib/bluebubbles/message.js";
-import type { CommandOverrides, OutputOptions } from "../lib/types.js";
+import type { CommandOverrides, MessageSummary, OutputOptions } from "../lib/types.js";
 
 export function registerMessageCommands(program: Command): void {
   const messageCommand = program.command("message").description("Message resource operations");
@@ -93,7 +93,7 @@ export function registerMessageCommands(program: Command): void {
           throw new CliError("--where must be a JSON object or array of objects.", "validation");
         };
 
-        const buildCommonWhere = (
+        const buildServerWhere = (
           value: {
             text?: string;
             from?: string;
@@ -107,20 +107,6 @@ export function registerMessageCommands(program: Command): void {
           }
 
           const clauses: Array<Record<string, unknown>> = [];
-
-          if (value.text) {
-            clauses.push({
-              statement: "message.text LIKE :text",
-              args: { text: `%${value.text}%` },
-            });
-          }
-
-          if (value.from) {
-            clauses.push({
-              statement: "handle.address = :fromAddress",
-              args: { fromAddress: value.from },
-            });
-          }
 
           if (value.fromMe) {
             clauses.push({
@@ -136,25 +122,43 @@ export function registerMessageCommands(program: Command): void {
             });
           }
 
-          if (value.hasAttachments) {
-            clauses.push({
-              statement: "message.hasAttachments = :hasAttachments",
-              args: { hasAttachments: true },
-            });
-          }
-
           return clauses;
         };
 
+        const applyLocalCommonFilters = (
+          messages: MessageSummary[],
+          value: {
+            text?: string;
+            from?: string;
+            hasAttachments?: boolean;
+          },
+        ): MessageSummary[] => {
+          const query = value.text?.trim().toLowerCase();
+          return messages.filter((message) => {
+            if (query && !(message.text ?? "").toLowerCase().includes(query)) {
+              return false;
+            }
+            if (value.from && message.handle?.address !== value.from) {
+              return false;
+            }
+            if (value.hasAttachments) {
+              if (!Array.isArray(message.attachments) || message.attachments.length === 0) {
+                return false;
+              }
+            }
+            return true;
+          });
+        };
+
         const rawWhere = parseWhere(options.where);
-        const commonWhere = buildCommonWhere({
+        const serverWhere = buildServerWhere({
           text: options.text,
           from: options.from,
           fromMe: options.fromMe,
           notFromMe: options.notFromMe,
           hasAttachments: options.hasAttachments,
         });
-        const mergedWhere = [...(rawWhere ?? []), ...commonWhere];
+        const mergedWhere = [...(rawWhere ?? []), ...serverWhere];
 
         const result = await listMessages(client, {
           chatGuid: options.chat,
@@ -166,7 +170,12 @@ export function registerMessageCommands(program: Command): void {
           where: mergedWhere.length > 0 ? mergedWhere : undefined,
           with: options.with.length > 0 ? options.with : [...DEFAULT_MESSAGE_WITH],
         });
-        maybePrint(result.data ?? [], options, () => printMessages(result.data ?? []));
+        const filtered = applyLocalCommonFilters(result.data ?? [], {
+          text: options.text,
+          from: options.from,
+          hasAttachments: options.hasAttachments,
+        });
+        maybePrint(filtered, options, () => printMessages(filtered));
       }),
     );
 

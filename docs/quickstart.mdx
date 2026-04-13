@@ -66,6 +66,8 @@ bluebubbles message list --chat 'iMessage;+;chat123' --from-me --has-attachments
 bluebubbles message list --where '[{"statement":"message.text LIKE :q","args":{"q":"%hello%"}}]' --json
 ```
 
+`--text`, `--from`, and `--has-attachments` apply client-side to the returned page; use `--where` for raw server-side filtering.
+
 ## Local server lifecycle
 
 ```bash

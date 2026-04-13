@@ -51,6 +51,7 @@ export interface MessageSummary {
   isFromMe?: boolean;
   dateCreated?: number;
   handle?: { address?: string } | null;
+  attachments?: unknown[];
   chats?: Array<{ guid?: string; displayName?: string | null }>;
 }
 

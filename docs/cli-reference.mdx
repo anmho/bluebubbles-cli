@@ -106,7 +106,7 @@ Most API commands support:
 
 - `bluebubbles message list`
   API: `POST /api/v1/message/query`
-  Notes: defaults to `--limit 50`; supports `--chat`, `--after`, `--before`, common filters (`--text`, `--from`, `--from-me`, `--not-from-me`, `--has-attachments`), and raw `--where '<json>'`
+  Notes: defaults to `--limit 50`; supports `--chat`, `--after`, `--before`, common filters (`--text`, `--from`, `--from-me`, `--not-from-me`, `--has-attachments`), and raw `--where '<json>'`. `--text`, `--from`, and `--has-attachments` are applied client-side to the returned page.
 - `bluebubbles message get <guid>`
   API: `GET /api/v1/message/<GUID>`
 - `bluebubbles message send --chat <guid> --message <text>`
