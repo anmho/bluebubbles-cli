@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           registry-url: https://registry.npmjs.org
 
       - name: Install Dependencies
@@ -75,5 +75,3 @@ jobs:
       - name: Publish To npm
         if: ${{ github.event_name == 'push' || github.event.inputs.publish == 'true' }}
         run: npm publish --cache /tmp/npm-cache
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
