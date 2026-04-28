@@ -2,6 +2,10 @@
   "name": "bluebubbles-cli",
   "version": "0.1.6",
   "description": "Curated BlueBubbles CLI organized around terminal-friendly resources",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anmho/bluebubbles-cli"
+  },
   "type": "module",
   "bin": {
     "bluebubbles": "dist/index.js"
