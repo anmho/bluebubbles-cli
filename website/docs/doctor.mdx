@@ -1,0 +1,23 @@
+---
+title: "Doctor"
+description: "Diagnostic checks for API connectivity, local server readiness, and docs wiring."
+---
+
+## What it checks
+
+`bluebubbles doctor` verifies:
+
+- config file presence
+- base URL and password availability
+- local app discovery on macOS
+- local process state
+- BlueBubbles API reachability via `ping`
+- the official OpenAPI spec URL used to generate API docs
+- configured log path availability
+
+## Example
+
+```bash
+bluebubbles doctor
+bluebubbles doctor --json
+```
