@@ -342,6 +342,10 @@ describe("server flows", () => {
 
   test("server alert, update, and restart commands work", async () => {
     expect((await cli(["server", "logs", "--source", "api"])).exitCode).toBe(0);
+    const defaultLogs = await cli(["server", "logs"]);
+    expect(defaultLogs.exitCode).toBe(0);
+    expect(defaultLogs.stdout).toContain("log line 1");
+    expect((await cli(["logs"])).exitCode).not.toBe(0);
     expect((await cli(["server", "alert", "list"])).exitCode).toBe(0);
     expect((await cli(["server", "alert", "read", "1"])).exitCode).toBe(0);
     expect((await cli(["server", "update", "check"])).exitCode).toBe(0);
@@ -435,7 +439,7 @@ describe("server lifecycle", () => {
 
     const freshConfig = path.join(tmpDir, "local-config.json");
     const stop = await cli(["server", "stop", "--yes"], { BLUEBUBBLES_CONFIG: freshConfig });
-    const logs = await cli(["server", "logs"], { BLUEBUBBLES_CONFIG: freshConfig });
+    const logs = await cli(["server", "logs", "--source", "local"], { BLUEBUBBLES_CONFIG: freshConfig });
     const status = await cli(["server", "status"], { BLUEBUBBLES_CONFIG: freshConfig });
     const expected = process.platform === "darwin" ? 6 : 5;
     const expectedStatus = process.platform === "darwin" ? 0 : 5;

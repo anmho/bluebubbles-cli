@@ -24,6 +24,54 @@ import {
 } from "~/lib/local-server.js";
 import type { CommandOverrides, OutputOptions } from "~/lib/types.js";
 
+type LogOptions = CommandOverrides & OutputOptions & {
+  count: number;
+  follow?: boolean;
+  config?: string;
+  source?: string;
+  logPath?: string;
+};
+
+async function printRemoteLogs(options: LogOptions): Promise<void> {
+  if (options.follow) {
+    throw new CliError("`--follow` is only supported with local log files.", "validation");
+  }
+  const client = await clientFromOptions(options);
+  const result = await getRemoteLogs(client, options.count);
+  maybePrint(result.data, options, () => printSuccess(result.data ?? "", false));
+}
+
+function registerLogsCommand(command: Command): void {
+  addConnectionOptions(
+    command
+      .description("Show BlueBubbles server logs (API by default; local for CLI-managed log files)")
+      .option("--source <source>", "Log source (api|local)"),
+  )
+    .option("--log-path <path>", "Override the local log file path")
+    .option("--count <number>", "Number of log lines to show", (value) => Number.parseInt(value, 10), 100)
+    .option("-f, --follow", "Follow the local log file")
+    .action(async (options: LogOptions) => {
+      const source = (options.source ?? (options.follow ? "local" : "api")).toLowerCase();
+      if (source === "api") {
+        await printRemoteLogs(options);
+        return;
+      }
+      if (source !== "local") {
+        throw new CliError(`Unsupported log source "${options.source}". Use: api, local`, "validation");
+      }
+
+      const context = await withConfig(options);
+      await showLogs({
+        statePath: context.statePath,
+        config: context.config,
+        defaultLogPath: context.defaultLogPath,
+        count: options.count,
+        follow: options.follow,
+        logPath: options.logPath,
+      });
+    });
+}
+
 export function registerServerLifecycleCommands(serverCommand: Command): void {
   addConnectionOptions(
     serverCommand.command("open").description("Open the local BlueBubbles desktop app (local process manager, no API endpoint)"),
@@ -127,36 +175,5 @@ export function registerServerLifecycleCommands(serverCommand: Command): void {
       maybePrint(state, options, () => printSuccess(`Restarted BlueBubbles with PID ${state.pid}`, false));
     });
 
-  addConnectionOptions(
-    serverCommand
-      .command("logs")
-      .description("Show server logs (local process manager by default; use --source api for GET /api/v1/server/logs)")
-      .option("--source <source>", "Log source (local|api)", "local"),
-  )
-    .option("--log-path <path>", "Override the local log file path")
-    .option("--count <number>", "Number of log lines to show", (value) => Number.parseInt(value, 10), 100)
-    .option("-f, --follow", "Follow the log file")
-    .action(async (options: CommandOverrides & OutputOptions & { count: number; follow?: boolean; config?: string; source?: string }) => {
-      const source = (options.source ?? "local").toLowerCase();
-      if (source === "api") {
-        if (options.follow) {
-          throw new CliError("`--follow` is only supported with `--source local`.", "validation");
-        }
-        const client = await clientFromOptions(options);
-        const result = await getRemoteLogs(client, options.count);
-        maybePrint(result.data, options, () => printSuccess(result.data ?? "", false));
-        return;
-      }
-      if (source !== "local") {
-        throw new CliError(`Unsupported log source "${options.source}". Use: local, api`, "validation");
-      }
-      const context = await withConfig(options);
-      await showLogs({
-        statePath: context.statePath,
-        config: context.config,
-        count: options.count,
-        follow: options.follow,
-        logPath: options.logPath,
-      });
-    });
+  registerLogsCommand(serverCommand.command("logs"));
 }

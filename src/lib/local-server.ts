@@ -268,23 +268,20 @@ export async function serverStatus(input: {
 export async function showLogs(input: {
   statePath: string;
   config: CliConfig;
+  defaultLogPath: string;
   count: number;
   follow?: boolean;
   logPath?: string;
 }): Promise<void> {
   ensureMacOS();
   const state = await readRuntimeState(input.statePath);
-  const logPath = input.logPath ?? input.config.logPath ?? state?.logPath;
-
-  if (!logPath) {
-    throw new CliError(
-      "No local BlueBubbles log file is configured yet. Start the server through the CLI or set `bluebubbles config set logPath /path/to/log`.",
-      "not-found",
-    );
-  }
+  const logPath = input.logPath ?? input.config.logPath ?? state?.logPath ?? input.defaultLogPath;
 
   if (!existsSync(logPath)) {
-    throw new CliError(`Log file does not exist: ${logPath}`, "not-found");
+    throw new CliError(
+      `Local log file does not exist: ${logPath}. Use \`bluebubbles logs --source api\` for live server logs, or start the app with \`bluebubbles server start\` to create the local log file.`,
+      "not-found",
+    );
   }
 
   if (input.follow) {

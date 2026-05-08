@@ -48,10 +48,10 @@ bluebubbles server start --arg --headless --arg --foreground
 
 ## Logs
 
-The CLI prefers a configured log file or the log captured from CLI-owned launches.
+`bluebubbles server logs` reads live logs from the BlueBubbles API by default. Use `--source local` for the configured or CLI-owned local log file.
 
 ```bash
 bluebubbles server logs --count 100
-bluebubbles server logs --follow
+bluebubbles server logs --source local --follow
 bluebubbles config set logPath /path/to/bluebubbles.log
 ```
