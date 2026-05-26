@@ -1,9 +1,17 @@
 name: Auto Release
 
-# On every push to `main`, open (or update) an automated release PR that
-# bumps the package version and CHANGELOG from conventional-commit
-# messages (feat:/fix:/etc). Merging that PR creates the matching
-# `vX.Y.Z` tag, which triggers `release.yml` to npm-publish.
+# On every push to `main`:
+# 1. Open (or update) a release PR that bumps package.json + CHANGELOG.md
+#    from conventional-commit messages since the last release.
+# 2. When that release PR is merged (which lands a release commit on main),
+#    create the matching vX.Y.Z tag AND inline-publish to npm + create a
+#    GitHub Release.
+#
+# Why inline publish: workflow runs initiated via GITHUB_TOKEN do not
+# trigger other workflows (GitHub's anti-recursion rule). So a release-PR
+# merge tagging vX.Y.Z would NOT fire the existing tag-triggered
+# release.yml. Running publish here, gated on release_created, avoids
+# needing a PAT or GitHub App token.
 
 on:
   push:
@@ -12,12 +20,61 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write
 
 jobs:
-  open-release-pr:
+  auto-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: googleapis/release-please-action@v4
+      - id: release
+        uses: googleapis/release-please-action@v4
         with:
           config-file: auto-release-config.json
           manifest-file: .auto-release-manifest.json
+
+      # Only the steps below run when this push *was* the release-PR merge
+      # that landed the version bump. For ordinary feature merges,
+      # release_created is false and the job ends here.
+
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+
+      - name: Setup Bun
+        if: ${{ steps.release.outputs.release_created }}
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Setup Node
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      - name: Install
+        if: ${{ steps.release.outputs.release_created }}
+        run: bun install --frozen-lockfile
+
+      - name: Type Check
+        if: ${{ steps.release.outputs.release_created }}
+        run: bun run check
+
+      - name: Build
+        if: ${{ steps.release.outputs.release_created }}
+        run: bun run build
+
+      - name: Verify CLI Version Matches package.json
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          cli_version="$(bun dist/index.js --version)"
+          pkg_version="$(node -p "require('./package.json').version")"
+          if [ "$cli_version" != "$pkg_version" ]; then
+            echo "Version mismatch: cli=$cli_version package=$pkg_version"
+            exit 1
+          fi
+          echo "Version OK: $cli_version"
+
+      - name: Publish to npm
+        if: ${{ steps.release.outputs.release_created }}
+        run: npm publish --cache /tmp/npm-cache
