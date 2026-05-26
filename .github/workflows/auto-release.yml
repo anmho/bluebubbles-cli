@@ -1,0 +1,23 @@
+name: Auto Release
+
+# On every push to `main`, open (or update) an automated release PR that
+# bumps the package version and CHANGELOG from conventional-commit
+# messages (feat:/fix:/etc). Merging that PR creates the matching
+# `vX.Y.Z` tag, which triggers `release.yml` to npm-publish.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  open-release-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: googleapis/release-please-action@v4
+        with:
+          config-file: auto-release-config.json
+          manifest-file: .auto-release-manifest.json
