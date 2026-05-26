@@ -14,6 +14,7 @@ import { registerContactCommands } from "~/commands/contacts.js";
 import { registerPingCommands } from "~/commands/ping.js";
 import { registerDoctorCommands } from "~/commands/doctor.js";
 import { registerWebhookCommands } from "~/commands/webhooks.js";
+import { registerUpdateCommands } from "~/commands/update.js";
 import { getCliVersion } from "~/lib/version.js";
 
 function wantsJsonOutput(argv: string[]): boolean {
@@ -52,6 +53,7 @@ export function createProgram(): Command {
   registerContactCommands(program);
   registerICloudCommands(program);
   registerWebhookCommands(program);
+  registerUpdateCommands(program);
 
   return program;
 }
