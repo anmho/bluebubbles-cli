@@ -1,0 +1,35 @@
+{
+  "id": "api/add-participant-to-chat",
+  "title": "Add Participant to Chat",
+  "description": "Adds a participant to an existing chat.",
+  "source": "@site/docs/api/add-participant-to-chat.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/add-participant-to-chat",
+  "permalink": "/bluebubbles-cli/api/add-participant-to-chat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "add-participant-to-chat",
+    "title": "Add Participant to Chat",
+    "description": "Adds a participant to an existing chat.",
+    "sidebar_label": "Add Participant to Chat",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVt1v2zYQ/1cOzEPbTJWStd0Gb+iQfqzIQ5AgTjoUdYCcqZPFliJZHmXXMPy/D0epidNkwx73ML/IOvK+f/c7bVTAiB0liqwmHzfKYUdqogIyr3ysVaGMUxP1pae4VoWqiXU0IRkv0g++j/DK9vSqn88tMUwpLinCjjbrljpUk41K6yCWOUXjFmpbKPqKXbAi22y+aWy3antVqEgcvGNiUfzx4EAed11Pe62JuektfLustttCJVxIImp5qAr1usWkCvUu+j48nQbSpjFaXX2fxlFdMyAEjMloE9AlSB7QAX01nIxbgG4xlTM3c8dO274mSC2B9r1LcQ3a1wSPTQPBM5u5pScl/OEjGMcJnabi/u3Gxyy8dCZRDdOEiRgMw/UPh9cFsAczOkK4PrwGTPk6J4wJfJNfQusdgeu7OUVoou8Gi9Mc5/7+iXGm67uH2vOeIhvv9vcncFA+Kw8GhXP60ptIPNnfh7NolpgIjs6O5XBvb28P5Jw4wStfr0V4fX0Nn9i7mdvMHABAVcGFxLVTRqzrSMy5nHU9XJupUTpTE5ipmZq57WhPSeezF3EiTdfeJXJJ/mII1miUnlXiV2T30OXnn0hLz0P0gWIyA4RGjw/AcLsLxJ2LSo62heootb6WifCc7WJq1URVGEy1PKwEGNVvgjN4d3n85mW1k72gPxd8mKw+2gz11nMaYS5pnN8m/PahOG7nxbjG5wxMylOz01lVqOXQVDVRh+VBeXBvVi9akxEmIDk6O4Y3XvcduZQLegPIB9ByFMIjhvO30wvRy+h6CdnaaSAnpp6VB8CBNKyQYUGOIgqqbzDpm8Zog/aO9TPPqUMH2ltLWoKYQJtS4ElV1WNsFMsFpTDcLLXvqqWhVfXzTy9+ef68unz/4tw1q5MBofCnNMHwrhM52fVpZMx19MxPg8XU+NgBhgCkPa85UQdoOqoFrnOpOpgTYsYFZQBbC2shvJqWRhOXQxE6QscFIIP1biHPte+hxaXMbof6dDoqVDUF69eSF8TeObH/9yUvxMwja2FOgHObI2ByNaCrIZIms6Sb8LjcrUHtSdpsOPfZNw3F3+X84o6IAefGGpmQbDv5SDBH/bkPLBTDlIT6uEotdTRkuCJr5WmkNagzNa5ManMevasp2rXIdtMu4cO9RBpKus2kygV0Yw4FYEqoWykQF9Ciq+13fr/l7XwSJs/QZVgaBPb6MyWGx9P8pzw+/RWOYTVSuW7RSRPzCLgcbdOnPlJZlk9ktEaIyXSNC/CoruHs7kIYt8mdsdphqP/XyH9ojYwsn+hrqoJF46TLmYE3I4V/VBiM8KZ8KOihtTtEnqn+lsqvCiW8LWqbzRyZLqPdbkU8fBkJwdeGBeC1mjRomf4BKf/iu+nBBD7T+u632RJtT3lZXclLNBKAmny82haqJawp5sgGvdeD/6cXYvpW995eFVs3a+/sdHqhCjUf93Hna9GJuJJdjSvxXSifc8zrNcs2yqJb9LiQu4NN+f0F9zybeA==",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/bluebubbles-cli/api/bluebubbles"
+  },
+  "next": {
+    "title": "Check for Server Update",
+    "permalink": "/bluebubbles-cli/api/check-for-server-update"
+  }
+}

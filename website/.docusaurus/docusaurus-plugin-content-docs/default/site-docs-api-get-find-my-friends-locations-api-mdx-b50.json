@@ -1,0 +1,35 @@
+{
+  "id": "api/get-find-my-friends-locations",
+  "title": "Get FindMy Friends Locations",
+  "description": "Fetch your FindMy Friends locations. If your macOS version doesn't support it, or you've never opened the FindMy app, this endpoint may *not* return `data`.",
+  "source": "@site/docs/api/get-find-my-friends-locations.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-find-my-friends-locations",
+  "permalink": "/bluebubbles-cli/api/get-find-my-friends-locations",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-find-my-friends-locations",
+    "title": "Get FindMy Friends Locations",
+    "description": "Fetch your FindMy Friends locations. If your macOS version doesn't support it, or you've never opened the FindMy app, this endpoint may *not* return `data`.",
+    "sidebar_label": "Get FindMy Friends Locations",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVdtu3DYQ/ZUp8+A2UKV1mrTFFmjhtHFgoIaD2GkRJAYyS41WjCmS4Yx2s1jsvxcjyc760stjnySQnDNzZg4PtyZhxo6EMpv5u60J2JGZm4TM65hrUxgXzNx86ilvTGFqYptdEhd19W3sMzz3PT3vFwtPDOeUV5RhL5ptSx2a+dbIJikyS3ZhaXaFoc/YJa9r2+11xG5ndpeFycQpBibWwCezmX5up35JAscu1KcbOM6OQs3we7Sou2wKY2MQCqJxmJJ34071kTV4e7+quPhIVkxhUo6JsrgxNQtKz3vnXBBaUtbyO2LGJT1IrUZ5iPNun/UX9Cez2R6cOe+tJVYWI8z1QtN7v4GGxLZUX5NvJvL+mvxXmkYTCS51pGZ1qEP81ce+Npd3J3isaLDROd7p5g1gCSfNeKJDe3YOK8rsYoA6EocDAe5TilnASQEx68mDFUEgFUJMFKgGaekaHlMqQFrHQKFO0QWBDjfwOER5DJmkzwE+KO8PpdGmSBtrMzdLGoaD0pq5qTC5anVYOaukqsaFuttUUydUc4MKRz332Q8CayPLJC4XmjgMx8mgvj0Bm8JM9MzcHJazcnZP8xdau+OB09GrE/gt2r6jIEOzoIl52HngUhyldMDw+sX5hcaV78P78DMMaGeJgkJ9V86AE1lYI8OSAmUUqqHJsRtAY9M469DfQn8VWToMYKP3ZLWIObQiiedVVU+1US6XJGk8WdrYVStH6+qH75/9+PRp9eaPZ69Dsz7Vih49gj9bFCW4l0R39nM6BgSbI/O3yaM0MXc6WCAbecNCHaDrdO4RFqp8cKejunUFvR/lVNPKWeJybEJHGLgAVOWFpX43sYcWVwQ4KW8MqGpKPm6UF+Q+BMX/+5YXgyC9hwUBLvxQAVOoAUMNmSy5Fd2Ux+V+D1Tgo1R1OLFpKP+i+xe3lhhw4bxTxxiwJWaCBdqrPjHEBphEXFhyJS11NDJck/f6VTfJaHUf1k7agUcfasp+o2v7tEt4e4/I4AVgWxQuYDIQzSCCttUGcQEthtrfyXvNO0RxzeSNDCuHwNFekTB8fT78lCdnP8EJrDGI5rMtBh3icAXCUG3TS5+pLMtv1Pcmientmh6Sf/HpW3dr+8W2/+/GNBm70GepkkcXlP3gNdvJpd4ZTE79ZLDfwalMYUav0p/JrS4Lo9ak57fbBTK9yX630+XxyVUPqx3rxGszb9Az/UPX/sOD/GDlV7S5/eiv0Pd6bDDMFWanBZj5u8tdYVrCmvJQ2Rh3ZC0l2Yu69+Qqyo2Xv3xxYXa7vwD8C/Wu",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get FindMy Devices Locations",
+    "permalink": "/bluebubbles-cli/api/get-find-my-devices-locations"
+  },
+  "next": {
+    "title": "Get Handle by Address",
+    "permalink": "/bluebubbles-cli/api/get-handle-by-address"
+  }
+}

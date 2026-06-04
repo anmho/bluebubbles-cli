@@ -1,0 +1,367 @@
+{
+  "/bluebubbles-cli/-480": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/bluebubbles-cli/-0d0": {
+    "__comp": "a7bd4aaa",
+    "__props": "cd307efe"
+  },
+  "/bluebubbles-cli/-a49": {
+    "__comp": "a94703ab"
+  },
+  "/bluebubbles-cli/api-7d2": {
+    "__comp": "14eb3368",
+    "__props": "73e33ed9"
+  },
+  "/bluebubbles-cli/api/add-participant-to-chat-f38": {
+    "__comp": "4c5e977b",
+    "content": "28f6507d"
+  },
+  "/bluebubbles-cli/api/bluebubbles-1ac": {
+    "__comp": "4c5e977b",
+    "content": "4ab74564"
+  },
+  "/bluebubbles-cli/api/check-for-server-update-dd6": {
+    "__comp": "4c5e977b",
+    "content": "4c0dcc0c"
+  },
+  "/bluebubbles-cli/api/create-new-chat-5f1": {
+    "__comp": "4c5e977b",
+    "content": "02f61976"
+  },
+  "/bluebubbles-cli/api/delete-chat-0ad": {
+    "__comp": "4c5e977b",
+    "content": "e3476e37"
+  },
+  "/bluebubbles-cli/api/delete-scheduled-message-by-id-c83": {
+    "__comp": "4c5e977b",
+    "content": "aa3cb391"
+  },
+  "/bluebubbles-cli/api/delete-settings-136": {
+    "__comp": "4c5e977b",
+    "content": "3e59fdad"
+  },
+  "/bluebubbles-cli/api/delete-theme-399": {
+    "__comp": "4c5e977b",
+    "content": "57342f25"
+  },
+  "/bluebubbles-cli/api/download-attachment-aac": {
+    "__comp": "4c5e977b",
+    "content": "79e63550"
+  },
+  "/bluebubbles-cli/api/edit-message-ccf": {
+    "__comp": "4c5e977b",
+    "content": "4e47c0c2"
+  },
+  "/bluebubbles-cli/api/force-download-attachment-264": {
+    "__comp": "4c5e977b",
+    "content": "2ac03de2"
+  },
+  "/bluebubbles-cli/api/get-account-info-05f": {
+    "__comp": "4c5e977b",
+    "content": "1f635029"
+  },
+  "/bluebubbles-cli/api/get-alerts-b47": {
+    "__comp": "4c5e977b",
+    "content": "f383e957"
+  },
+  "/bluebubbles-cli/api/get-attachment-blurhash-940": {
+    "__comp": "4c5e977b",
+    "content": "66039452"
+  },
+  "/bluebubbles-cli/api/get-attachment-by-guid-285": {
+    "__comp": "4c5e977b",
+    "content": "535836af"
+  },
+  "/bluebubbles-cli/api/get-attachment-count-920": {
+    "__comp": "4c5e977b",
+    "content": "ffaa8295"
+  },
+  "/bluebubbles-cli/api/get-attachment-live-photo-ebe": {
+    "__comp": "4c5e977b",
+    "content": "3e5883ee"
+  },
+  "/bluebubbles-cli/api/get-chat-by-guid-790": {
+    "__comp": "4c5e977b",
+    "content": "777e3dc7"
+  },
+  "/bluebubbles-cli/api/get-chat-count-254": {
+    "__comp": "4c5e977b",
+    "content": "33003937"
+  },
+  "/bluebubbles-cli/api/get-chat-messages-abc": {
+    "__comp": "4c5e977b",
+    "content": "a2403b68"
+  },
+  "/bluebubbles-cli/api/get-contact-card-550": {
+    "__comp": "4c5e977b",
+    "content": "64e31b03"
+  },
+  "/bluebubbles-cli/api/get-contact-share-status-654": {
+    "__comp": "4c5e977b",
+    "content": "90293f71"
+  },
+  "/bluebubbles-cli/api/get-contacts-793": {
+    "__comp": "4c5e977b",
+    "content": "f38980f0"
+  },
+  "/bluebubbles-cli/api/get-face-time-availability-107": {
+    "__comp": "4c5e977b",
+    "content": "49039c05"
+  },
+  "/bluebubbles-cli/api/get-fcm-client-config-a8c": {
+    "__comp": "4c5e977b",
+    "content": "438c0bc4"
+  },
+  "/bluebubbles-cli/api/get-find-my-devices-locations-7d8": {
+    "__comp": "4c5e977b",
+    "content": "2126bfbf"
+  },
+  "/bluebubbles-cli/api/get-find-my-friends-locations-3e4": {
+    "__comp": "4c5e977b",
+    "content": "b50d2c78"
+  },
+  "/bluebubbles-cli/api/get-handle-by-address-52f": {
+    "__comp": "4c5e977b",
+    "content": "7be8bd4e"
+  },
+  "/bluebubbles-cli/api/get-handle-count-bf6": {
+    "__comp": "4c5e977b",
+    "content": "7853a337"
+  },
+  "/bluebubbles-cli/api/get-handles-focus-status-1c9": {
+    "__comp": "4c5e977b",
+    "content": "9342f328"
+  },
+  "/bluebubbles-cli/api/get-i-message-availability-a08": {
+    "__comp": "4c5e977b",
+    "content": "e1a00e2f"
+  },
+  "/bluebubbles-cli/api/get-i-message-entity-totals-3a4": {
+    "__comp": "4c5e977b",
+    "content": "b71c7c01"
+  },
+  "/bluebubbles-cli/api/get-landing-page-0dc": {
+    "__comp": "4c5e977b",
+    "content": "57628042"
+  },
+  "/bluebubbles-cli/api/get-media-totals-d44": {
+    "__comp": "4c5e977b",
+    "content": "794ee71e"
+  },
+  "/bluebubbles-cli/api/get-media-totals-per-chat-f38": {
+    "__comp": "4c5e977b",
+    "content": "d27cd68b"
+  },
+  "/bluebubbles-cli/api/get-message-by-guid-85a": {
+    "__comp": "4c5e977b",
+    "content": "f7aea9f8"
+  },
+  "/bluebubbles-cli/api/get-message-count-581": {
+    "__comp": "4c5e977b",
+    "content": "b5135574"
+  },
+  "/bluebubbles-cli/api/get-messages-embedded-media-d31": {
+    "__comp": "4c5e977b",
+    "content": "e72c9719"
+  },
+  "/bluebubbles-cli/api/get-my-sent-message-count-dfa": {
+    "__comp": "4c5e977b",
+    "content": "23131219"
+  },
+  "/bluebubbles-cli/api/get-scheduled-message-by-id-285": {
+    "__comp": "4c5e977b",
+    "content": "329fda71"
+  },
+  "/bluebubbles-cli/api/get-scheduled-messages-dff": {
+    "__comp": "4c5e977b",
+    "content": "b9165c96"
+  },
+  "/bluebubbles-cli/api/get-server-logs-2bc": {
+    "__comp": "4c5e977b",
+    "content": "16a989cc"
+  },
+  "/bluebubbles-cli/api/get-server-metadata-f4f": {
+    "__comp": "4c5e977b",
+    "content": "2f611698"
+  },
+  "/bluebubbles-cli/api/get-settings-84d": {
+    "__comp": "4c5e977b",
+    "content": "b3896c0f"
+  },
+  "/bluebubbles-cli/api/get-themes-ade": {
+    "__comp": "4c5e977b",
+    "content": "f6cb63d1"
+  },
+  "/bluebubbles-cli/api/install-server-update-e1b": {
+    "__comp": "4c5e977b",
+    "content": "f1a4dc3e"
+  },
+  "/bluebubbles-cli/api/leave-chat-ae1": {
+    "__comp": "4c5e977b",
+    "content": "75042779"
+  },
+  "/bluebubbles-cli/api/lock-mac-d90": {
+    "__comp": "4c5e977b",
+    "content": "b1c5f3b3"
+  },
+  "/bluebubbles-cli/api/mark-alert-as-read-ed6": {
+    "__comp": "4c5e977b",
+    "content": "610aa3b0"
+  },
+  "/bluebubbles-cli/api/mark-chat-as-read-81d": {
+    "__comp": "4c5e977b",
+    "content": "2da8172a"
+  },
+  "/bluebubbles-cli/api/mark-chat-as-unread-d3a": {
+    "__comp": "4c5e977b",
+    "content": "939c862f"
+  },
+  "/bluebubbles-cli/api/modify-active-alias-8e6": {
+    "__comp": "4c5e977b",
+    "content": "acd9cc1d"
+  },
+  "/bluebubbles-cli/api/notify-for-silenced-message-22d": {
+    "__comp": "4c5e977b",
+    "content": "58400877"
+  },
+  "/bluebubbles-cli/api/ping-43a": {
+    "__comp": "4c5e977b",
+    "content": "272a537e"
+  },
+  "/bluebubbles-cli/api/query-chats-a39": {
+    "__comp": "4c5e977b",
+    "content": "91f8927d"
+  },
+  "/bluebubbles-cli/api/query-contacts-a46": {
+    "__comp": "4c5e977b",
+    "content": "4136d369"
+  },
+  "/bluebubbles-cli/api/query-handles-8b8": {
+    "__comp": "4c5e977b",
+    "content": "d88a084f"
+  },
+  "/bluebubbles-cli/api/query-messages-104": {
+    "__comp": "4c5e977b",
+    "content": "1d1bb038"
+  },
+  "/bluebubbles-cli/api/refresh-find-my-devices-67d": {
+    "__comp": "4c5e977b",
+    "content": "9745a5d4"
+  },
+  "/bluebubbles-cli/api/refresh-find-my-friends-b9c": {
+    "__comp": "4c5e977b",
+    "content": "96aa2cbf"
+  },
+  "/bluebubbles-cli/api/register-device-e7a": {
+    "__comp": "4c5e977b",
+    "content": "4ab497eb"
+  },
+  "/bluebubbles-cli/api/remove-group-icon-c6e": {
+    "__comp": "4c5e977b",
+    "content": "8f89257a"
+  },
+  "/bluebubbles-cli/api/remove-participant-from-chat-f90": {
+    "__comp": "4c5e977b",
+    "content": "b1654fdf"
+  },
+  "/bluebubbles-cli/api/restart-server-b92": {
+    "__comp": "4c5e977b",
+    "content": "93035e4c"
+  },
+  "/bluebubbles-cli/api/restart-services-e92": {
+    "__comp": "4c5e977b",
+    "content": "9f8fc68e"
+  },
+  "/bluebubbles-cli/api/save-settings-eaf": {
+    "__comp": "4c5e977b",
+    "content": "74e4a3d4"
+  },
+  "/bluebubbles-cli/api/save-theme-505": {
+    "__comp": "4c5e977b",
+    "content": "78c8f9f2"
+  },
+  "/bluebubbles-cli/api/schedule-a-message-75c": {
+    "__comp": "4c5e977b",
+    "content": "07fa3c01"
+  },
+  "/bluebubbles-cli/api/send-attachment-dcd": {
+    "__comp": "4c5e977b",
+    "content": "8fe792b9"
+  },
+  "/bluebubbles-cli/api/send-multipart-message-754": {
+    "__comp": "4c5e977b",
+    "content": "fbada8d1"
+  },
+  "/bluebubbles-cli/api/send-reaction-1be": {
+    "__comp": "4c5e977b",
+    "content": "2f2a6fa9"
+  },
+  "/bluebubbles-cli/api/send-text-ca3": {
+    "__comp": "4c5e977b",
+    "content": "abab6864"
+  },
+  "/bluebubbles-cli/api/set-group-icon-e6b": {
+    "__comp": "4c5e977b",
+    "content": "21382171"
+  },
+  "/bluebubbles-cli/api/share-contact-info-08c": {
+    "__comp": "4c5e977b",
+    "content": "8a42f696"
+  },
+  "/bluebubbles-cli/api/start-send-typing-indicator-3f7": {
+    "__comp": "4c5e977b",
+    "content": "f5a08f4d"
+  },
+  "/bluebubbles-cli/api/stop-send-typing-indicator-0c2": {
+    "__comp": "4c5e977b",
+    "content": "915a787e"
+  },
+  "/bluebubbles-cli/api/unsend-message-d36": {
+    "__comp": "4c5e977b",
+    "content": "793dac63"
+  },
+  "/bluebubbles-cli/api/update-a-chat-1db": {
+    "__comp": "4c5e977b",
+    "content": "5351994a"
+  },
+  "/bluebubbles-cli/api/update-a-scheduled-message-by-id-3ca": {
+    "__comp": "4c5e977b",
+    "content": "6bfb03f5"
+  },
+  "/bluebubbles-cli/api/upload-attachment-5b2": {
+    "__comp": "4c5e977b",
+    "content": "4733a359"
+  },
+  "/bluebubbles-cli/cli-reference-c89": {
+    "__comp": "4c5e977b",
+    "content": "14be23d4"
+  },
+  "/bluebubbles-cli/development-a75": {
+    "__comp": "4c5e977b",
+    "content": "a19b665e"
+  },
+  "/bluebubbles-cli/doctor-17f": {
+    "__comp": "4c5e977b",
+    "content": "234db96e"
+  },
+  "/bluebubbles-cli/local-server-81a": {
+    "__comp": "4c5e977b",
+    "content": "fa776899"
+  },
+  "/bluebubbles-cli/quickstart-24f": {
+    "__comp": "4c5e977b",
+    "content": "74876495"
+  },
+  "/bluebubbles-cli/webhooks-238": {
+    "__comp": "4c5e977b",
+    "content": "d5e52131"
+  },
+  "/bluebubbles-cli/-755": {
+    "__comp": "4c5e977b",
+    "content": "4edc808e"
+  }
+}

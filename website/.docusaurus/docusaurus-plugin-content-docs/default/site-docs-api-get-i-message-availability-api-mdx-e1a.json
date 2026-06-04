@@ -1,0 +1,35 @@
+{
+  "id": "api/get-i-message-availability",
+  "title": "Get iMessage Availability",
+  "description": "Checks if a given address has iMessage enabled for it.",
+  "source": "@site/docs/api/get-i-message-availability.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-i-message-availability",
+  "permalink": "/bluebubbles-cli/api/get-i-message-availability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-i-message-availability",
+    "title": "Get iMessage Availability",
+    "description": "Checks if a given address has iMessage enabled for it.",
+    "sidebar_label": "Get iMessage Availability",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJylVVFv2zYQ/isH9qEboEnJ1m6DB2xLt6LLQ5EiSTcMqR/O1MniQpEs7yTXMPTfh5OcxE5WYECfZJO84/fdd/dxZxJm7Egos1nc7EzAjszCJGTexFybwrhgFuZjT3lrCsO2pQ7NYmdkm/QgS3ZhbcbC0Cfskte13e4ufBzNWNwnxbrOxPw4Z01ss0vioq5e0sfeZapLuG4J9iEgEWxL9hZcA06gRQb3lphxTYBW3IBC9f/F909sQ1lH+tVZH/u6tLEz47IwmTjFwMQa/+3JiX6OwV311hJz03u4O2zGsTCCay2fGU5NYf7AUHsyy8fMflMCrAwQ1m6gcM/uiA4FXHmqoYkZnJSmMB1JG2uzMGsSU5iE0pqFqTC5ajit2um6Cgd0HlfOO9lWrpuTaUUoD3fi9tlP8rSRRaVZqhJNnMrlZKrNK9/Tq3618qQ6aeQM/rQ8KU+eiHXdOgbHIC3B2btz+D3avqMgqPsTA905yAlXExw4S+k5w+Xrq2uNKz+ED+FnmLJdJAqa6rvyBDiRhQ0yrClQVomhybGbksamcdahP8r+LrJ0GMBG78kqiAW0IokXVVXvsVEu1yRpPqnaV4OjTfXD9y9/fPGiev/ny8vQbN4qomfP4K8WRQkeXKI7h3c6BgSbI/M3yaM0MXeAKQHZyFsW6gBdR7W28Ep78UFpiYDewzb2GWoanCUu5yJ0hIELQAYfw1q/29hDiwMBQof24mofUNWUfNwqL8h9CJr/8yUvNM1z72FFoE2mCJhCDRhqyGTJDXQPj8vDGtSRVGbHk86xaSj/ovvXR0sMcwc6mkaWJWaCFdrbPjHEBphEXFhzJS11NDPckPf6dSqNznJYw8ZJO/HoQ03Zb3XtkHYJfz8h0pDYFmyLwgXs+19vEEHbaoG4gHlWju+94x2iuMbZqXUZBofA0d6SMHx1Nf0ozy9+gnPYYJDZjzCoiNMIhAlt00ufqSzLr9Vw9i2m07U3wDckD+qfHQzs48HaGRuDUJAvsY29Awp9kip5dEFBTRaw23vIjcHkdMzVtubamMLgMbB7L1kWRo1Dw3a7FTK9z34cdXl2cnWY2vEEwywa9EyFuaXt8XMyoO8V1vQwPDn+2Sp82bPwn6WYoT08Sg/IlvonO4VmFjfL8cCC37y+NuP4Lz+HgW4=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Handle's Focus Status",
+    "permalink": "/bluebubbles-cli/api/get-handles-focus-status"
+  },
+  "next": {
+    "title": "Get iMessage Entity Totals",
+    "permalink": "/bluebubbles-cli/api/get-i-message-entity-totals"
+  }
+}

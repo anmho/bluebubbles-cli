@@ -1,0 +1,1593 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "3693": [
+      "3693"
+    ],
+    "4214": [
+      "2",
+      "4014",
+      "5005",
+      "4214"
+    ],
+    "5062": [
+      "5062"
+    ],
+    "21382171": [
+      "4014",
+      "5005",
+      "1235"
+    ],
+    "23131219": [
+      "4014",
+      "5005",
+      "4630"
+    ],
+    "33003937": [
+      "4014",
+      "5005",
+      "8196"
+    ],
+    "57628042": [
+      "4014",
+      "5005",
+      "6950"
+    ],
+    "58400877": [
+      "4014",
+      "5005",
+      "5123"
+    ],
+    "66039452": [
+      "4014",
+      "5005",
+      "659"
+    ],
+    "74876495": [
+      "5005",
+      "7314"
+    ],
+    "75042779": [
+      "4014",
+      "5005",
+      "4383"
+    ],
+    "f5a08f4d": [
+      "4014",
+      "5005",
+      "2314"
+    ],
+    "f6cb63d1": [
+      "4014",
+      "5005",
+      "445"
+    ],
+    "f7aea9f8": [
+      "4014",
+      "5005",
+      "8829"
+    ],
+    "fa776899": [
+      "5005",
+      "9695"
+    ],
+    "fbada8d1": [
+      "4014",
+      "5005",
+      "4215"
+    ],
+    "ffaa8295": [
+      "4014",
+      "5005",
+      "4962"
+    ],
+    "styles": [
+      "1074",
+      "1235",
+      "1326",
+      "1400",
+      "1550",
+      "1748",
+      "1889",
+      "1905",
+      "2",
+      "2018",
+      "2029",
+      "2194",
+      "2314",
+      "2408",
+      "2653",
+      "2721",
+      "2784",
+      "2822",
+      "2870",
+      "2874",
+      "3135",
+      "3300",
+      "3527",
+      "4025",
+      "4029",
+      "4214",
+      "4215",
+      "4264",
+      "4383",
+      "445",
+      "4552",
+      "4630",
+      "494",
+      "4962",
+      "5005",
+      "5112",
+      "5123",
+      "5149",
+      "5356",
+      "5459",
+      "5481",
+      "550",
+      "5563",
+      "5566",
+      "5773",
+      "5985",
+      "6165",
+      "6250",
+      "6337",
+      "6406",
+      "659",
+      "6785",
+      "6950",
+      "6969",
+      "6988",
+      "7013",
+      "7234",
+      "7329",
+      "7414",
+      "7541",
+      "7645",
+      "7756",
+      "8023",
+      "8045",
+      "8076",
+      "8196",
+      "8274",
+      "8547",
+      "8560",
+      "8579",
+      "8605",
+      "8636",
+      "8704",
+      "8739",
+      "8752",
+      "8796",
+      "8829",
+      "8868",
+      "9021",
+      "9027",
+      "9089",
+      "9158",
+      "9453",
+      "9502",
+      "9600",
+      "9783",
+      "9862",
+      "4014"
+    ],
+    "common": [
+      "1074",
+      "1235",
+      "1326",
+      "1400",
+      "1550",
+      "1748",
+      "1905",
+      "2",
+      "2018",
+      "2029",
+      "2119",
+      "2194",
+      "2314",
+      "2408",
+      "2653",
+      "2677",
+      "2721",
+      "2784",
+      "2822",
+      "2870",
+      "2874",
+      "3135",
+      "3300",
+      "3527",
+      "4014",
+      "4025",
+      "4029",
+      "4214",
+      "4215",
+      "4264",
+      "4383",
+      "445",
+      "4552",
+      "4630",
+      "494",
+      "4952",
+      "4962",
+      "5112",
+      "5123",
+      "5149",
+      "5231",
+      "5356",
+      "5459",
+      "5481",
+      "550",
+      "5563",
+      "5566",
+      "5773",
+      "5985",
+      "6165",
+      "6250",
+      "6337",
+      "6406",
+      "659",
+      "6785",
+      "6950",
+      "6969",
+      "6988",
+      "7013",
+      "7234",
+      "7275",
+      "7314",
+      "7329",
+      "7414",
+      "7541",
+      "7645",
+      "7756",
+      "8023",
+      "8045",
+      "8076",
+      "8196",
+      "8274",
+      "8547",
+      "8560",
+      "8579",
+      "8605",
+      "8636",
+      "8704",
+      "8739",
+      "8752",
+      "8796",
+      "8829",
+      "8868",
+      "9021",
+      "9027",
+      "9089",
+      "9158",
+      "9453",
+      "9502",
+      "9600",
+      "9695",
+      "9862",
+      "5005"
+    ],
+    "main": [
+      "4014",
+      "9783",
+      "1889"
+    ],
+    "runtime~main": [
+      "1889",
+      "4014",
+      "9783"
+    ],
+    "02f61976": [
+      "4014",
+      "5005",
+      "4029"
+    ],
+    "07fa3c01": [
+      "4014",
+      "5005",
+      "8605"
+    ],
+    "14be23d4": [
+      "5005",
+      "2119"
+    ],
+    "14eb3368": [
+      "4014",
+      "5005",
+      "7234"
+    ],
+    "16a989cc": [
+      "4014",
+      "5005",
+      "8868"
+    ],
+    "1d1bb038": [
+      "4014",
+      "5005",
+      "5459"
+    ],
+    "1f635029": [
+      "4014",
+      "5005",
+      "8752"
+    ],
+    "2126bfbf": [
+      "4014",
+      "5005",
+      "2653"
+    ],
+    "234db96e": [
+      "5005",
+      "5231"
+    ],
+    "272a537e": [
+      "4014",
+      "5005",
+      "7414"
+    ],
+    "28f6507d": [
+      "4014",
+      "5005",
+      "1400"
+    ],
+    "2ac03de2": [
+      "4014",
+      "5005",
+      "1550"
+    ],
+    "2da8172a": [
+      "4014",
+      "5005",
+      "2194"
+    ],
+    "2f2a6fa9": [
+      "4014",
+      "5005",
+      "8579"
+    ],
+    "2f611698": [
+      "4014",
+      "5005",
+      "8547"
+    ],
+    "329fda71": [
+      "4014",
+      "5005",
+      "9453"
+    ],
+    "3e5883ee": [
+      "4014",
+      "5005",
+      "1074"
+    ],
+    "3e59fdad": [
+      "4014",
+      "5005",
+      "5149"
+    ],
+    "4136d369": [
+      "4014",
+      "5005",
+      "550"
+    ],
+    "438c0bc4": [
+      "4014",
+      "5005",
+      "6165"
+    ],
+    "4733a359": [
+      "4014",
+      "5005",
+      "6969"
+    ],
+    "49039c05": [
+      "4014",
+      "5005",
+      "5985"
+    ],
+    "4ab497eb": [
+      "4014",
+      "5005",
+      "6250"
+    ],
+    "4ab74564": [
+      "4014",
+      "5005",
+      "8045"
+    ],
+    "4c0dcc0c": [
+      "4014",
+      "5005",
+      "2870"
+    ],
+    "4c5e977b": [
+      "4014",
+      "4214",
+      "5005",
+      "2"
+    ],
+    "4e47c0c2": [
+      "4014",
+      "5005",
+      "8076"
+    ],
+    "4edc808e": [
+      "5005",
+      "2677"
+    ],
+    "5351994a": [
+      "4014",
+      "5005",
+      "9027"
+    ],
+    "535836af": [
+      "4014",
+      "5005",
+      "8739"
+    ],
+    "57342f25": [
+      "4014",
+      "5005",
+      "9502"
+    ],
+    "5e95c892": [
+      "1668"
+    ],
+    "610aa3b0": [
+      "4014",
+      "5005",
+      "5356"
+    ],
+    "64e31b03": [
+      "4014",
+      "5005",
+      "9600"
+    ],
+    "6bfb03f5": [
+      "4014",
+      "5005",
+      "4552"
+    ],
+    "73e33ed9": [
+      "4981"
+    ],
+    "74e4a3d4": [
+      "4014",
+      "5005",
+      "8274"
+    ],
+    "777e3dc7": [
+      "4014",
+      "5005",
+      "3135"
+    ],
+    "7853a337": [
+      "4014",
+      "5005",
+      "7329"
+    ],
+    "78c8f9f2": [
+      "4014",
+      "5005",
+      "5773"
+    ],
+    "793dac63": [
+      "4014",
+      "5005",
+      "4264"
+    ],
+    "794ee71e": [
+      "4014",
+      "5005",
+      "9089"
+    ],
+    "79e63550": [
+      "4014",
+      "5005",
+      "2822"
+    ],
+    "7be8bd4e": [
+      "4014",
+      "5005",
+      "7541"
+    ],
+    "8a42f696": [
+      "4014",
+      "5005",
+      "2874"
+    ],
+    "8f89257a": [
+      "4014",
+      "5005",
+      "2408"
+    ],
+    "8fe792b9": [
+      "4014",
+      "5005",
+      "6988"
+    ],
+    "90293f71": [
+      "4014",
+      "5005",
+      "2029"
+    ],
+    "915a787e": [
+      "4014",
+      "5005",
+      "3527"
+    ],
+    "91f8927d": [
+      "4014",
+      "5005",
+      "1748"
+    ],
+    "93035e4c": [
+      "4014",
+      "5005",
+      "2018"
+    ],
+    "9342f328": [
+      "4014",
+      "5005",
+      "8023"
+    ],
+    "939c862f": [
+      "4014",
+      "5005",
+      "1326"
+    ],
+    "96aa2cbf": [
+      "4014",
+      "5005",
+      "9862"
+    ],
+    "9745a5d4": [
+      "4014",
+      "5005",
+      "6337"
+    ],
+    "9f8fc68e": [
+      "4014",
+      "5005",
+      "5563"
+    ],
+    "a19b665e": [
+      "5005",
+      "7275"
+    ],
+    "a2403b68": [
+      "4014",
+      "5005",
+      "5112"
+    ],
+    "a7bd4aaa": [
+      "5575"
+    ],
+    "a94703ab": [
+      "4014",
+      "5005",
+      "6785"
+    ],
+    "aa3cb391": [
+      "4014",
+      "5005",
+      "2721"
+    ],
+    "aba21aa0": [
+      "3747"
+    ],
+    "abab6864": [
+      "4014",
+      "5005",
+      "8796"
+    ],
+    "acd9cc1d": [
+      "4014",
+      "5005",
+      "8560"
+    ],
+    "b1654fdf": [
+      "4014",
+      "5005",
+      "8704"
+    ],
+    "b1c5f3b3": [
+      "4014",
+      "5005",
+      "1905"
+    ],
+    "b3896c0f": [
+      "4014",
+      "5005",
+      "9021"
+    ],
+    "b50d2c78": [
+      "4014",
+      "5005",
+      "7645"
+    ],
+    "b5135574": [
+      "4014",
+      "5005",
+      "7756"
+    ],
+    "b71c7c01": [
+      "4014",
+      "5005",
+      "9158"
+    ],
+    "b9165c96": [
+      "4014",
+      "5005",
+      "5481"
+    ],
+    "cd307efe": [
+      "4693"
+    ],
+    "d27cd68b": [
+      "4014",
+      "5005",
+      "8636"
+    ],
+    "d5e52131": [
+      "5005",
+      "4952"
+    ],
+    "d88a084f": [
+      "4014",
+      "5005",
+      "4025"
+    ],
+    "e1a00e2f": [
+      "4014",
+      "5005",
+      "3300"
+    ],
+    "e3476e37": [
+      "4014",
+      "5005",
+      "5566"
+    ],
+    "e72c9719": [
+      "4014",
+      "5005",
+      "6406"
+    ],
+    "f1a4dc3e": [
+      "4014",
+      "5005",
+      "7013"
+    ],
+    "f383e957": [
+      "4014",
+      "5005",
+      "2784"
+    ],
+    "f38980f0": [
+      "4014",
+      "5005",
+      "494"
+    ]
+  },
+  "assets": {
+    "2": {
+      "js": [
+        {
+          "file": "assets/js/4c5e977b.2e179a02.js",
+          "hash": "374fc2db95789914",
+          "publicPath": "/bluebubbles-cli/assets/js/4c5e977b.2e179a02.js"
+        }
+      ]
+    },
+    "445": {
+      "js": [
+        {
+          "file": "assets/js/f6cb63d1.0dd350e7.js",
+          "hash": "2f626b271bc6a213",
+          "publicPath": "/bluebubbles-cli/assets/js/f6cb63d1.0dd350e7.js"
+        }
+      ]
+    },
+    "494": {
+      "js": [
+        {
+          "file": "assets/js/f38980f0.39d17dbd.js",
+          "hash": "cc4b896e7a628671",
+          "publicPath": "/bluebubbles-cli/assets/js/f38980f0.39d17dbd.js"
+        }
+      ]
+    },
+    "550": {
+      "js": [
+        {
+          "file": "assets/js/4136d369.7d4875ef.js",
+          "hash": "3976e9c1b2f62760",
+          "publicPath": "/bluebubbles-cli/assets/js/4136d369.7d4875ef.js"
+        }
+      ]
+    },
+    "659": {
+      "js": [
+        {
+          "file": "assets/js/66039452.22dfa562.js",
+          "hash": "34a4c2e6fc2cdfe1",
+          "publicPath": "/bluebubbles-cli/assets/js/66039452.22dfa562.js"
+        }
+      ]
+    },
+    "1074": {
+      "js": [
+        {
+          "file": "assets/js/3e5883ee.4cd4d285.js",
+          "hash": "45c0090e20f65206",
+          "publicPath": "/bluebubbles-cli/assets/js/3e5883ee.4cd4d285.js"
+        }
+      ]
+    },
+    "1235": {
+      "js": [
+        {
+          "file": "assets/js/21382171.bb39ae60.js",
+          "hash": "45c76edd55f6b0c8",
+          "publicPath": "/bluebubbles-cli/assets/js/21382171.bb39ae60.js"
+        }
+      ]
+    },
+    "1326": {
+      "js": [
+        {
+          "file": "assets/js/939c862f.e9de9282.js",
+          "hash": "dcd28f9ca7df3e45",
+          "publicPath": "/bluebubbles-cli/assets/js/939c862f.e9de9282.js"
+        }
+      ]
+    },
+    "1400": {
+      "js": [
+        {
+          "file": "assets/js/28f6507d.9bfadcb9.js",
+          "hash": "553a347cdf9e908f",
+          "publicPath": "/bluebubbles-cli/assets/js/28f6507d.9bfadcb9.js"
+        }
+      ]
+    },
+    "1550": {
+      "js": [
+        {
+          "file": "assets/js/2ac03de2.6694f6ee.js",
+          "hash": "6b16f4d85a34a290",
+          "publicPath": "/bluebubbles-cli/assets/js/2ac03de2.6694f6ee.js"
+        }
+      ]
+    },
+    "1668": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.b5e0d8f4.js",
+          "hash": "c1a3387c5792e68d",
+          "publicPath": "/bluebubbles-cli/assets/js/5e95c892.b5e0d8f4.js"
+        }
+      ]
+    },
+    "1748": {
+      "js": [
+        {
+          "file": "assets/js/91f8927d.79b7569f.js",
+          "hash": "498736573a30730d",
+          "publicPath": "/bluebubbles-cli/assets/js/91f8927d.79b7569f.js"
+        }
+      ]
+    },
+    "1889": {
+      "js": [
+        {
+          "file": "assets/js/main.c87feac5.js",
+          "hash": "41b2b7f2ae9e5647",
+          "publicPath": "/bluebubbles-cli/assets/js/main.c87feac5.js"
+        }
+      ]
+    },
+    "1905": {
+      "js": [
+        {
+          "file": "assets/js/b1c5f3b3.29dbeded.js",
+          "hash": "3dd4dfb494405f51",
+          "publicPath": "/bluebubbles-cli/assets/js/b1c5f3b3.29dbeded.js"
+        }
+      ]
+    },
+    "2018": {
+      "js": [
+        {
+          "file": "assets/js/93035e4c.f908de01.js",
+          "hash": "d7f29df273b322dc",
+          "publicPath": "/bluebubbles-cli/assets/js/93035e4c.f908de01.js"
+        }
+      ]
+    },
+    "2029": {
+      "js": [
+        {
+          "file": "assets/js/90293f71.b4d080ec.js",
+          "hash": "392694b2d0371f26",
+          "publicPath": "/bluebubbles-cli/assets/js/90293f71.b4d080ec.js"
+        }
+      ]
+    },
+    "2119": {
+      "js": [
+        {
+          "file": "assets/js/14be23d4.37a77d5b.js",
+          "hash": "d7accae38fa2997d",
+          "publicPath": "/bluebubbles-cli/assets/js/14be23d4.37a77d5b.js"
+        }
+      ]
+    },
+    "2194": {
+      "js": [
+        {
+          "file": "assets/js/2da8172a.6a6b59c6.js",
+          "hash": "1817aa646bf3a766",
+          "publicPath": "/bluebubbles-cli/assets/js/2da8172a.6a6b59c6.js"
+        }
+      ]
+    },
+    "2314": {
+      "js": [
+        {
+          "file": "assets/js/f5a08f4d.53367201.js",
+          "hash": "bfd9f5e02d41905c",
+          "publicPath": "/bluebubbles-cli/assets/js/f5a08f4d.53367201.js"
+        }
+      ]
+    },
+    "2408": {
+      "js": [
+        {
+          "file": "assets/js/8f89257a.7e2b39a2.js",
+          "hash": "682365db3b1ccb71",
+          "publicPath": "/bluebubbles-cli/assets/js/8f89257a.7e2b39a2.js"
+        }
+      ]
+    },
+    "2653": {
+      "js": [
+        {
+          "file": "assets/js/2126bfbf.82bc71d4.js",
+          "hash": "fb66ff577f9aa20f",
+          "publicPath": "/bluebubbles-cli/assets/js/2126bfbf.82bc71d4.js"
+        }
+      ]
+    },
+    "2677": {
+      "js": [
+        {
+          "file": "assets/js/4edc808e.9b978c9e.js",
+          "hash": "a0ad0ca32f7168f6",
+          "publicPath": "/bluebubbles-cli/assets/js/4edc808e.9b978c9e.js"
+        }
+      ]
+    },
+    "2721": {
+      "js": [
+        {
+          "file": "assets/js/aa3cb391.e4b67290.js",
+          "hash": "094c776dc728a2de",
+          "publicPath": "/bluebubbles-cli/assets/js/aa3cb391.e4b67290.js"
+        }
+      ]
+    },
+    "2784": {
+      "js": [
+        {
+          "file": "assets/js/f383e957.175506e5.js",
+          "hash": "98590ef3a92c95c6",
+          "publicPath": "/bluebubbles-cli/assets/js/f383e957.175506e5.js"
+        }
+      ]
+    },
+    "2822": {
+      "js": [
+        {
+          "file": "assets/js/79e63550.a07a621c.js",
+          "hash": "b7ca94d14f538f25",
+          "publicPath": "/bluebubbles-cli/assets/js/79e63550.a07a621c.js"
+        }
+      ]
+    },
+    "2870": {
+      "js": [
+        {
+          "file": "assets/js/4c0dcc0c.eb4c0121.js",
+          "hash": "a92b330a0eae0675",
+          "publicPath": "/bluebubbles-cli/assets/js/4c0dcc0c.eb4c0121.js"
+        }
+      ]
+    },
+    "2874": {
+      "js": [
+        {
+          "file": "assets/js/8a42f696.52955e11.js",
+          "hash": "de3710b7d4848823",
+          "publicPath": "/bluebubbles-cli/assets/js/8a42f696.52955e11.js"
+        }
+      ]
+    },
+    "3135": {
+      "js": [
+        {
+          "file": "assets/js/777e3dc7.b6133973.js",
+          "hash": "9d259cd5acf92f1f",
+          "publicPath": "/bluebubbles-cli/assets/js/777e3dc7.b6133973.js"
+        }
+      ]
+    },
+    "3300": {
+      "js": [
+        {
+          "file": "assets/js/e1a00e2f.ff7ef4ec.js",
+          "hash": "aa8a5f1ebdf95c9e",
+          "publicPath": "/bluebubbles-cli/assets/js/e1a00e2f.ff7ef4ec.js"
+        }
+      ]
+    },
+    "3527": {
+      "js": [
+        {
+          "file": "assets/js/915a787e.0efcbdab.js",
+          "hash": "f580642ba59854fe",
+          "publicPath": "/bluebubbles-cli/assets/js/915a787e.0efcbdab.js"
+        }
+      ]
+    },
+    "3693": {
+      "js": [
+        {
+          "file": "assets/js/3693.752785ba.js",
+          "hash": "a82deb80e124e82b",
+          "publicPath": "/bluebubbles-cli/assets/js/3693.752785ba.js"
+        }
+      ]
+    },
+    "3747": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.377ad74b.js",
+          "hash": "67d0ebd5f155145e",
+          "publicPath": "/bluebubbles-cli/assets/js/aba21aa0.377ad74b.js"
+        }
+      ]
+    },
+    "4014": {
+      "css": [
+        {
+          "file": "assets/css/styles.22905028.css",
+          "hash": "8888b12221af862d",
+          "publicPath": "/bluebubbles-cli/assets/css/styles.22905028.css"
+        }
+      ]
+    },
+    "4025": {
+      "js": [
+        {
+          "file": "assets/js/d88a084f.347dab4c.js",
+          "hash": "6a9412b4b1e04638",
+          "publicPath": "/bluebubbles-cli/assets/js/d88a084f.347dab4c.js"
+        }
+      ]
+    },
+    "4029": {
+      "js": [
+        {
+          "file": "assets/js/02f61976.4457eb69.js",
+          "hash": "b5fe03207cd3c64c",
+          "publicPath": "/bluebubbles-cli/assets/js/02f61976.4457eb69.js"
+        }
+      ]
+    },
+    "4214": {
+      "js": [
+        {
+          "file": "assets/js/4214.45e811ea.js",
+          "hash": "93b365cd8f29848a",
+          "publicPath": "/bluebubbles-cli/assets/js/4214.45e811ea.js"
+        }
+      ]
+    },
+    "4215": {
+      "js": [
+        {
+          "file": "assets/js/fbada8d1.17f80380.js",
+          "hash": "536f683cd5782f1f",
+          "publicPath": "/bluebubbles-cli/assets/js/fbada8d1.17f80380.js"
+        }
+      ]
+    },
+    "4264": {
+      "js": [
+        {
+          "file": "assets/js/793dac63.96cabb64.js",
+          "hash": "be31f6b1af413cce",
+          "publicPath": "/bluebubbles-cli/assets/js/793dac63.96cabb64.js"
+        }
+      ]
+    },
+    "4383": {
+      "js": [
+        {
+          "file": "assets/js/75042779.60eb950d.js",
+          "hash": "3f0928d6cf0a967a",
+          "publicPath": "/bluebubbles-cli/assets/js/75042779.60eb950d.js"
+        }
+      ]
+    },
+    "4552": {
+      "js": [
+        {
+          "file": "assets/js/6bfb03f5.2646cb05.js",
+          "hash": "dbe657f153342f1a",
+          "publicPath": "/bluebubbles-cli/assets/js/6bfb03f5.2646cb05.js"
+        }
+      ]
+    },
+    "4630": {
+      "js": [
+        {
+          "file": "assets/js/23131219.4bf8115e.js",
+          "hash": "ab6f82c0e19994b8",
+          "publicPath": "/bluebubbles-cli/assets/js/23131219.4bf8115e.js"
+        }
+      ]
+    },
+    "4693": {
+      "js": [
+        {
+          "file": "assets/js/cd307efe.60f20e21.js",
+          "hash": "bdb041343c50cbdf",
+          "publicPath": "/bluebubbles-cli/assets/js/cd307efe.60f20e21.js"
+        }
+      ]
+    },
+    "4952": {
+      "js": [
+        {
+          "file": "assets/js/d5e52131.bf1f44a0.js",
+          "hash": "fcf46ca980510901",
+          "publicPath": "/bluebubbles-cli/assets/js/d5e52131.bf1f44a0.js"
+        }
+      ]
+    },
+    "4962": {
+      "js": [
+        {
+          "file": "assets/js/ffaa8295.9c784347.js",
+          "hash": "8feede801e099775",
+          "publicPath": "/bluebubbles-cli/assets/js/ffaa8295.9c784347.js"
+        }
+      ]
+    },
+    "4981": {
+      "js": [
+        {
+          "file": "assets/js/73e33ed9.c1a3b94e.js",
+          "hash": "1849c674ebd0e7a7",
+          "publicPath": "/bluebubbles-cli/assets/js/73e33ed9.c1a3b94e.js"
+        }
+      ]
+    },
+    "5005": {
+      "js": [
+        {
+          "file": "assets/js/common.726aec99.js",
+          "hash": "d2c10e8173ebbc6c",
+          "publicPath": "/bluebubbles-cli/assets/js/common.726aec99.js"
+        }
+      ]
+    },
+    "5062": {
+      "js": [
+        {
+          "file": "assets/js/5062.cae03a7d.js",
+          "hash": "46e68840becfe595",
+          "publicPath": "/bluebubbles-cli/assets/js/5062.cae03a7d.js"
+        }
+      ]
+    },
+    "5112": {
+      "js": [
+        {
+          "file": "assets/js/a2403b68.8528b3e8.js",
+          "hash": "91da8c7197e3cb99",
+          "publicPath": "/bluebubbles-cli/assets/js/a2403b68.8528b3e8.js"
+        }
+      ]
+    },
+    "5123": {
+      "js": [
+        {
+          "file": "assets/js/58400877.c9e62f7b.js",
+          "hash": "ec4aeae2cc5d2286",
+          "publicPath": "/bluebubbles-cli/assets/js/58400877.c9e62f7b.js"
+        }
+      ]
+    },
+    "5149": {
+      "js": [
+        {
+          "file": "assets/js/3e59fdad.b05eb480.js",
+          "hash": "1802a9d91083d56f",
+          "publicPath": "/bluebubbles-cli/assets/js/3e59fdad.b05eb480.js"
+        }
+      ]
+    },
+    "5231": {
+      "js": [
+        {
+          "file": "assets/js/234db96e.8f21d5de.js",
+          "hash": "72a5601ad61d5cef",
+          "publicPath": "/bluebubbles-cli/assets/js/234db96e.8f21d5de.js"
+        }
+      ]
+    },
+    "5356": {
+      "js": [
+        {
+          "file": "assets/js/610aa3b0.377a5c1f.js",
+          "hash": "08181ab717671b75",
+          "publicPath": "/bluebubbles-cli/assets/js/610aa3b0.377a5c1f.js"
+        }
+      ]
+    },
+    "5459": {
+      "js": [
+        {
+          "file": "assets/js/1d1bb038.30d76bdf.js",
+          "hash": "ba9f253cfeb8ca82",
+          "publicPath": "/bluebubbles-cli/assets/js/1d1bb038.30d76bdf.js"
+        }
+      ]
+    },
+    "5481": {
+      "js": [
+        {
+          "file": "assets/js/b9165c96.c9e276b1.js",
+          "hash": "01e60f936e389ae1",
+          "publicPath": "/bluebubbles-cli/assets/js/b9165c96.c9e276b1.js"
+        }
+      ]
+    },
+    "5563": {
+      "js": [
+        {
+          "file": "assets/js/9f8fc68e.5c10f2d5.js",
+          "hash": "bc47c70d0a8f5941",
+          "publicPath": "/bluebubbles-cli/assets/js/9f8fc68e.5c10f2d5.js"
+        }
+      ]
+    },
+    "5566": {
+      "js": [
+        {
+          "file": "assets/js/e3476e37.aa86d62c.js",
+          "hash": "2547598c1d2f0ac7",
+          "publicPath": "/bluebubbles-cli/assets/js/e3476e37.aa86d62c.js"
+        }
+      ]
+    },
+    "5575": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.871229fa.js",
+          "hash": "23b46c89f249c654",
+          "publicPath": "/bluebubbles-cli/assets/js/a7bd4aaa.871229fa.js"
+        }
+      ]
+    },
+    "5773": {
+      "js": [
+        {
+          "file": "assets/js/78c8f9f2.a3526926.js",
+          "hash": "6b23af65f55c55f9",
+          "publicPath": "/bluebubbles-cli/assets/js/78c8f9f2.a3526926.js"
+        }
+      ]
+    },
+    "5985": {
+      "js": [
+        {
+          "file": "assets/js/49039c05.a0ee42b7.js",
+          "hash": "882b2dee44db3c1a",
+          "publicPath": "/bluebubbles-cli/assets/js/49039c05.a0ee42b7.js"
+        }
+      ]
+    },
+    "6165": {
+      "js": [
+        {
+          "file": "assets/js/438c0bc4.07a158ef.js",
+          "hash": "c52deb31c8440ba1",
+          "publicPath": "/bluebubbles-cli/assets/js/438c0bc4.07a158ef.js"
+        }
+      ]
+    },
+    "6250": {
+      "js": [
+        {
+          "file": "assets/js/4ab497eb.9a82856c.js",
+          "hash": "7d6e60c7d8c6e380",
+          "publicPath": "/bluebubbles-cli/assets/js/4ab497eb.9a82856c.js"
+        }
+      ]
+    },
+    "6337": {
+      "js": [
+        {
+          "file": "assets/js/9745a5d4.e73a864c.js",
+          "hash": "61231bf9cbf901cd",
+          "publicPath": "/bluebubbles-cli/assets/js/9745a5d4.e73a864c.js"
+        }
+      ]
+    },
+    "6406": {
+      "js": [
+        {
+          "file": "assets/js/e72c9719.93b7a1e1.js",
+          "hash": "be3381ee5b5bdd21",
+          "publicPath": "/bluebubbles-cli/assets/js/e72c9719.93b7a1e1.js"
+        }
+      ]
+    },
+    "6785": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.d1a6d5e0.js",
+          "hash": "2b8515f5f76de248",
+          "publicPath": "/bluebubbles-cli/assets/js/a94703ab.d1a6d5e0.js"
+        }
+      ]
+    },
+    "6950": {
+      "js": [
+        {
+          "file": "assets/js/57628042.e283bac7.js",
+          "hash": "9104ed3e99a7898f",
+          "publicPath": "/bluebubbles-cli/assets/js/57628042.e283bac7.js"
+        }
+      ]
+    },
+    "6969": {
+      "js": [
+        {
+          "file": "assets/js/4733a359.cc82b268.js",
+          "hash": "00e459460d37e4b3",
+          "publicPath": "/bluebubbles-cli/assets/js/4733a359.cc82b268.js"
+        }
+      ]
+    },
+    "6988": {
+      "js": [
+        {
+          "file": "assets/js/8fe792b9.2402d013.js",
+          "hash": "7bbe85dc618455c3",
+          "publicPath": "/bluebubbles-cli/assets/js/8fe792b9.2402d013.js"
+        }
+      ]
+    },
+    "7013": {
+      "js": [
+        {
+          "file": "assets/js/f1a4dc3e.39feb849.js",
+          "hash": "5e583798d8e667e9",
+          "publicPath": "/bluebubbles-cli/assets/js/f1a4dc3e.39feb849.js"
+        }
+      ]
+    },
+    "7234": {
+      "js": [
+        {
+          "file": "assets/js/14eb3368.d28e71a6.js",
+          "hash": "6a3ce3b21d1278ca",
+          "publicPath": "/bluebubbles-cli/assets/js/14eb3368.d28e71a6.js"
+        }
+      ]
+    },
+    "7275": {
+      "js": [
+        {
+          "file": "assets/js/a19b665e.d8ba00a2.js",
+          "hash": "77d2862d2bdfeeb4",
+          "publicPath": "/bluebubbles-cli/assets/js/a19b665e.d8ba00a2.js"
+        }
+      ]
+    },
+    "7314": {
+      "js": [
+        {
+          "file": "assets/js/74876495.693f9c92.js",
+          "hash": "2f27dddb6d1d6d21",
+          "publicPath": "/bluebubbles-cli/assets/js/74876495.693f9c92.js"
+        }
+      ]
+    },
+    "7329": {
+      "js": [
+        {
+          "file": "assets/js/7853a337.f1048a13.js",
+          "hash": "47ad3dfbf32af87b",
+          "publicPath": "/bluebubbles-cli/assets/js/7853a337.f1048a13.js"
+        }
+      ]
+    },
+    "7414": {
+      "js": [
+        {
+          "file": "assets/js/272a537e.3122eb62.js",
+          "hash": "80dbc1a1e7e13f59",
+          "publicPath": "/bluebubbles-cli/assets/js/272a537e.3122eb62.js"
+        }
+      ]
+    },
+    "7541": {
+      "js": [
+        {
+          "file": "assets/js/7be8bd4e.09c2e470.js",
+          "hash": "798cef04d1999c85",
+          "publicPath": "/bluebubbles-cli/assets/js/7be8bd4e.09c2e470.js"
+        }
+      ]
+    },
+    "7645": {
+      "js": [
+        {
+          "file": "assets/js/b50d2c78.15db700b.js",
+          "hash": "2433b4647b85857e",
+          "publicPath": "/bluebubbles-cli/assets/js/b50d2c78.15db700b.js"
+        }
+      ]
+    },
+    "7756": {
+      "js": [
+        {
+          "file": "assets/js/b5135574.27c39c88.js",
+          "hash": "91510987eae0781f",
+          "publicPath": "/bluebubbles-cli/assets/js/b5135574.27c39c88.js"
+        }
+      ]
+    },
+    "8023": {
+      "js": [
+        {
+          "file": "assets/js/9342f328.3f6175f7.js",
+          "hash": "15e557d2afa7d01a",
+          "publicPath": "/bluebubbles-cli/assets/js/9342f328.3f6175f7.js"
+        }
+      ]
+    },
+    "8045": {
+      "js": [
+        {
+          "file": "assets/js/4ab74564.96da0017.js",
+          "hash": "d648ca3ebcb27b21",
+          "publicPath": "/bluebubbles-cli/assets/js/4ab74564.96da0017.js"
+        }
+      ]
+    },
+    "8076": {
+      "js": [
+        {
+          "file": "assets/js/4e47c0c2.db08a6f7.js",
+          "hash": "af0eabb87ac13b2a",
+          "publicPath": "/bluebubbles-cli/assets/js/4e47c0c2.db08a6f7.js"
+        }
+      ]
+    },
+    "8196": {
+      "js": [
+        {
+          "file": "assets/js/33003937.29460243.js",
+          "hash": "46d458b13ca89f35",
+          "publicPath": "/bluebubbles-cli/assets/js/33003937.29460243.js"
+        }
+      ]
+    },
+    "8274": {
+      "js": [
+        {
+          "file": "assets/js/74e4a3d4.df8691b4.js",
+          "hash": "199b828e69dd4d30",
+          "publicPath": "/bluebubbles-cli/assets/js/74e4a3d4.df8691b4.js"
+        }
+      ]
+    },
+    "8547": {
+      "js": [
+        {
+          "file": "assets/js/2f611698.47327978.js",
+          "hash": "6a59f142c0f21444",
+          "publicPath": "/bluebubbles-cli/assets/js/2f611698.47327978.js"
+        }
+      ]
+    },
+    "8560": {
+      "js": [
+        {
+          "file": "assets/js/acd9cc1d.dfaef2c0.js",
+          "hash": "09807f3412ad1090",
+          "publicPath": "/bluebubbles-cli/assets/js/acd9cc1d.dfaef2c0.js"
+        }
+      ]
+    },
+    "8579": {
+      "js": [
+        {
+          "file": "assets/js/2f2a6fa9.063eed59.js",
+          "hash": "4b1f3874f86c2373",
+          "publicPath": "/bluebubbles-cli/assets/js/2f2a6fa9.063eed59.js"
+        }
+      ]
+    },
+    "8605": {
+      "js": [
+        {
+          "file": "assets/js/07fa3c01.d3e7904a.js",
+          "hash": "b1007dab2539ddde",
+          "publicPath": "/bluebubbles-cli/assets/js/07fa3c01.d3e7904a.js"
+        }
+      ]
+    },
+    "8636": {
+      "js": [
+        {
+          "file": "assets/js/d27cd68b.2c84dd8b.js",
+          "hash": "6e38ac6c35458a54",
+          "publicPath": "/bluebubbles-cli/assets/js/d27cd68b.2c84dd8b.js"
+        }
+      ]
+    },
+    "8704": {
+      "js": [
+        {
+          "file": "assets/js/b1654fdf.bd839d99.js",
+          "hash": "b482f23a0089caba",
+          "publicPath": "/bluebubbles-cli/assets/js/b1654fdf.bd839d99.js"
+        }
+      ]
+    },
+    "8739": {
+      "js": [
+        {
+          "file": "assets/js/535836af.549d51b6.js",
+          "hash": "df58f9fafe74ec2b",
+          "publicPath": "/bluebubbles-cli/assets/js/535836af.549d51b6.js"
+        }
+      ]
+    },
+    "8752": {
+      "js": [
+        {
+          "file": "assets/js/1f635029.4de50adf.js",
+          "hash": "a77b1943721fc3af",
+          "publicPath": "/bluebubbles-cli/assets/js/1f635029.4de50adf.js"
+        }
+      ]
+    },
+    "8796": {
+      "js": [
+        {
+          "file": "assets/js/abab6864.63575908.js",
+          "hash": "1b33b3550fb3a198",
+          "publicPath": "/bluebubbles-cli/assets/js/abab6864.63575908.js"
+        }
+      ]
+    },
+    "8829": {
+      "js": [
+        {
+          "file": "assets/js/f7aea9f8.13e55910.js",
+          "hash": "8b4ecf41c1965da6",
+          "publicPath": "/bluebubbles-cli/assets/js/f7aea9f8.13e55910.js"
+        }
+      ]
+    },
+    "8868": {
+      "js": [
+        {
+          "file": "assets/js/16a989cc.6ec3590b.js",
+          "hash": "01e3c9ce628a0e1a",
+          "publicPath": "/bluebubbles-cli/assets/js/16a989cc.6ec3590b.js"
+        }
+      ]
+    },
+    "9021": {
+      "js": [
+        {
+          "file": "assets/js/b3896c0f.ed8aa387.js",
+          "hash": "c9ba42a101ad9aab",
+          "publicPath": "/bluebubbles-cli/assets/js/b3896c0f.ed8aa387.js"
+        }
+      ]
+    },
+    "9027": {
+      "js": [
+        {
+          "file": "assets/js/5351994a.87175fdf.js",
+          "hash": "601b2f28014179f5",
+          "publicPath": "/bluebubbles-cli/assets/js/5351994a.87175fdf.js"
+        }
+      ]
+    },
+    "9089": {
+      "js": [
+        {
+          "file": "assets/js/794ee71e.48a3fb36.js",
+          "hash": "f25988ec1079ad61",
+          "publicPath": "/bluebubbles-cli/assets/js/794ee71e.48a3fb36.js"
+        }
+      ]
+    },
+    "9158": {
+      "js": [
+        {
+          "file": "assets/js/b71c7c01.77215265.js",
+          "hash": "f2576f140f1ec90e",
+          "publicPath": "/bluebubbles-cli/assets/js/b71c7c01.77215265.js"
+        }
+      ]
+    },
+    "9453": {
+      "js": [
+        {
+          "file": "assets/js/329fda71.1a09c5ef.js",
+          "hash": "8172bbd70399c59c",
+          "publicPath": "/bluebubbles-cli/assets/js/329fda71.1a09c5ef.js"
+        }
+      ]
+    },
+    "9502": {
+      "js": [
+        {
+          "file": "assets/js/57342f25.4e2dd5e0.js",
+          "hash": "a3ae4ae270383b60",
+          "publicPath": "/bluebubbles-cli/assets/js/57342f25.4e2dd5e0.js"
+        }
+      ]
+    },
+    "9600": {
+      "js": [
+        {
+          "file": "assets/js/64e31b03.54c2a994.js",
+          "hash": "721092b7cc552b8d",
+          "publicPath": "/bluebubbles-cli/assets/js/64e31b03.54c2a994.js"
+        }
+      ]
+    },
+    "9695": {
+      "js": [
+        {
+          "file": "assets/js/fa776899.54129616.js",
+          "hash": "33ede5e0a0155303",
+          "publicPath": "/bluebubbles-cli/assets/js/fa776899.54129616.js"
+        }
+      ]
+    },
+    "9783": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.7bdfa93b.js",
+          "hash": "d0eacd0c6dc61594",
+          "publicPath": "/bluebubbles-cli/assets/js/runtime~main.7bdfa93b.js"
+        }
+      ]
+    },
+    "9862": {
+      "js": [
+        {
+          "file": "assets/js/96aa2cbf.9c234e62.js",
+          "hash": "d44cde8f5acf38fe",
+          "publicPath": "/bluebubbles-cli/assets/js/96aa2cbf.9c234e62.js"
+        }
+      ]
+    }
+  }
+}

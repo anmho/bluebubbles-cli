@@ -1,0 +1,27 @@
+{
+  "id": "doctor",
+  "title": "Doctor",
+  "description": "Diagnostic checks for API connectivity, local server readiness, and docs wiring.",
+  "source": "@site/docs/doctor.mdx",
+  "sourceDirName": ".",
+  "slug": "/doctor",
+  "permalink": "/bluebubbles-cli/doctor",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/anmho/bluebubbles-cli/tree/main/website/docs/doctor.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Doctor",
+    "description": "Diagnostic checks for API connectivity, local server readiness, and docs wiring."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "CLI Reference",
+    "permalink": "/bluebubbles-cli/cli-reference"
+  },
+  "next": {
+    "title": "Local Server",
+    "permalink": "/bluebubbles-cli/local-server"
+  }
+}

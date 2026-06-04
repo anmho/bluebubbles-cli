@@ -1,0 +1,35 @@
+{
+  "id": "api/schedule-a-message",
+  "title": "Schedule a Message",
+  "description": "Schedules a message to be sent at a future time.",
+  "source": "@site/docs/api/schedule-a-message.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/schedule-a-message",
+  "permalink": "/bluebubbles-cli/api/schedule-a-message",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "schedule-a-message",
+    "title": "Schedule a Message",
+    "description": "Schedules a message to be sent at a future time.",
+    "sidebar_label": "Schedule a Message",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "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",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Save Theme",
+    "permalink": "/bluebubbles-cli/api/save-theme"
+  },
+  "next": {
+    "title": "Send Attachment",
+    "permalink": "/bluebubbles-cli/api/send-attachment"
+  }
+}

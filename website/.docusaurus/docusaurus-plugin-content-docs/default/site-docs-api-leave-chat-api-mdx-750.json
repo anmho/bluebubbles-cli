@@ -1,0 +1,35 @@
+{
+  "id": "api/leave-chat",
+  "title": "Leave Chat",
+  "description": "Allows you to leave a group chat that you are in.",
+  "source": "@site/docs/api/leave-chat.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/leave-chat",
+  "permalink": "/bluebubbles-cli/api/leave-chat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "leave-chat",
+    "title": "Leave Chat",
+    "description": "Allows you to leave a group chat that you are in.",
+    "sidebar_label": "Leave Chat",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzVVd9v2zYQ/lcO7EO3QJGSrd0Gb+iQtEURoEWCONlQpHk4UyeLDUUyPMqqYeh/H45yFrvphr3OD6ZA8n5839193KiAETtKFFnNbjbKYUdqpgIyDz7WqlDGqZm67ymuVaFqYh1NSMbL7kffRzi1PZ32i4UlhjnFFUXYsWbdUodqtlFpHcQzp2jcUo2Foi/YBSt7m82DxTiq8bZQkTh4x8Ri+MPRkSz7oee91sTc9BYeLqtxLFTCpQBRq2NVqNctJlWod9H34XAeSJvGaHX7NYwTa/3AsPY9JA+WcEWAsBQr0C0mSPInxxgJjCs/uU/uxAHF6CMMxlpYEKQ2+sGBaSC1NNk9mKS4Nm756NwwOJ/2YmSfBweXdN+bSDw7OICLaFaYCE4uzpRQct8Tp1Nfr4UN7V0il+QTQ7BGo4CpPrMg2jyl3S8+k05qHIWkjlLraymzZyEoYGrVTFUYTLU6riSf6jchD95dn715VeWspZi5vFOj9NHmyrWe07ZqEvzyMc23D/XdjNJFjc/pmJRLvtM1qlDidarFcXlUHj1ptKvWsLAmzJ5cnMEbr/uOXMqgofExn3yjE09CeM5w+XZ+JXaZ5FeQvZ0HcuLqx/IIOJCGARmW5Chiohqa6Lvs1DeN0QbtnvcLz6lDB9pbS1qSmEGbUuBZVdXb3CiWS0phullq31UrQ0P1808vf3nxorr+4+Wla4YPktGzZ/CnkG14N4ic7MY0DAg6eubDYDE1PnaAIQBpz2tO1AGajmrpsoWMGJgPxIxLkh20VroxQk0ro4nLiYSO0HEByGC9W8oqLdtOA9ChPp9vDaqagvVrwQWxdy638z9SXoib59NY4MLmDJhcDehqiKTJyBBs0+Nyl4Pak5TZcK6zbxqKv8v51d4WAy6MNcnIZQ+cfCRYoL7rA4NvgCkl45ZcpZY6mhAOZK2sRkqDWs5hMKnNOHpXU7R5Sndhl/DxCZCGkm7zzHIB3RZDAZgS6lYI4gJadLX9Ku4DbueTyFBuXYaVQWCv7ygxfDfPH+XZ+a9wBgO6JPF0i06KmEfA5WybPvWRyrL8XnR022IyXVv1fp9VZqt+e5O0Ixz/D9nbyleiL6kKFo0TxFl7NlvZulEYjGiIKL6eMO+IlyrUJF+3hRKtEoPNZoFM19GOo2xPj5uIWm1YylyrWYOW6V/I+w9P3zdTv6P1/vO6QtvLtaygK4xGElCzm9uxUC1hTTFnNtm9nuIfXonrR9snL4D4+lvkL87nV6pQi+3L0flabCIO8qrgILEL5TPG/N7mvY2y6JY9LuXu5FN+fwH0/9fk",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Install Server Update",
+    "permalink": "/bluebubbles-cli/api/install-server-update"
+  },
+  "next": {
+    "title": "Lock Mac",
+    "permalink": "/bluebubbles-cli/api/lock-mac"
+  }
+}

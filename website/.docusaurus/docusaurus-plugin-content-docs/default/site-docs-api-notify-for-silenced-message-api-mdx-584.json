@@ -1,0 +1,35 @@
+{
+  "id": "api/notify-for-silenced-message",
+  "title": "Notify for Silenced Message",
+  "description": "Notify for a sent message that has been silenced by the recipient's focus mode status",
+  "source": "@site/docs/api/notify-for-silenced-message.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/notify-for-silenced-message",
+  "permalink": "/bluebubbles-cli/api/notify-for-silenced-message",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "notify-for-silenced-message",
+    "title": "Notify for Silenced Message",
+    "description": "Notify for a sent message that has been silenced by the recipient's focus mode status",
+    "sidebar_label": "Notify for Silenced Message",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVd9v2zYQ/lcO7EO2QJWSrd0Gb+iQosOQhzRGnGwo0jycqZNFhCJZ3kmuYeh/H062Byfthj3uidLxfn5393FrEmbsSCizmd1vTcCOzMwkZF7HXJvCuGBm5lNPeWMKUxPb7JK4qNIPsc/w1vf0tl8uPTEsKA+U4ciabUsdmtnWyCapZ5bswsqMhaHP2CWvsu32YDGOZnwoTCZOMTCxGn53dqbH09CL3lpibnoPB2UzjoURXGkhZjg3hbkiZlyReXie+PsortlAEzMgMAWBbqcK0qJAiwxLogDsPAVLNSw3IC1BJuuSoyAnDE20PUMXawIWlJ4/ho/h9PSGPvUuE5+ezlTwEubZDSgEF/NL/e3QXi/gKgahTAppR9LGWjGPLKYwCaU1M1NhctVwXu0Tq375/e7y3ZsqTJkrsBPUu6b12U8otpFlj6ALTZxQdzJBfNQlUxi13CFxXp6VZ1809rZ1DI6nmi/ml/Au2r6jIKj3E2x685XOX6R0wnDz2+JW7UpF4A1M3q4TBXX1fXkGnMjCGhlWFCijUA1Njt3kNDaNsw79E+/zyNJhABu9J6tJzKAVSTyrqnqfG+VyRZJ2mqWNXTU4Wlc//vD6p1evqrs/Xt+EZn2lGb14AX9qmx0fB9Gb45iOAcHmyPwyeZQm5g4wJSAbecNCHaDrqAaJsNSRBnd1mKEI6D1sdDtqGpwlLncgdISBC0AGH8NKz03socWBAPeTsTOoako+brQuyH0I6v+fIS/UzYn3sCTApZ8yYAo1YKh1ZskN9Hd6XB5jUEfSNjue+hybhvKven/7RMSAS+edOFWOwBIzwRLtY58YYgNMIi6suJKWOtpVuCbv9XTaGrR6D2sn7VRHH2rKfqOy47JL+PBFIQ2JbcG2KFwc1lQjiKBtFSAuoMVQ+2dxD3VPG+PsNLoMg0PgaB9JGL5ZTB/l5fXPcAlrDKLxbIthIgJdgTBl2/TSZyrL8lvlrf2I6Xbt2fKIThYHxjhwz7PV2hqrqx/kf8ZCe3YW+ixV8uiCVjrxynbPSPcGk1PuOJ9I61DdjpdMYfbM9FAYpSHV326XyHSX/TiqePeGKF/VjrW7tZk16Jn+BaL/8MJ8NfNH2jx9xQb0vapN5DhgdpqAmd0/jEcMPL9e3Jpx/Av0DHhP",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Modify Active Alias",
+    "permalink": "/bluebubbles-cli/api/modify-active-alias"
+  },
+  "next": {
+    "title": "Ping",
+    "permalink": "/bluebubbles-cli/api/ping"
+  }
+}

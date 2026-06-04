@@ -1,0 +1,35 @@
+{
+  "id": "api/update-a-scheduled-message-by-id",
+  "title": "Update a Scheduled Message by ID",
+  "description": "Updates a scheduled message by ID",
+  "source": "@site/docs/api/update-a-scheduled-message-by-id.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/update-a-scheduled-message-by-id",
+  "permalink": "/bluebubbles-cli/api/update-a-scheduled-message-by-id",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "update-a-scheduled-message-by-id",
+    "title": "Update a Scheduled Message by ID",
+    "description": "Updates a scheduled message by ID",
+    "sidebar_label": "Update a Scheduled Message by ID",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "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",
+    "sidebar_class_name": "put api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Update a Chat",
+    "permalink": "/bluebubbles-cli/api/update-a-chat"
+  },
+  "next": {
+    "title": "Upload Attachment",
+    "permalink": "/bluebubbles-cli/api/upload-attachment"
+  }
+}

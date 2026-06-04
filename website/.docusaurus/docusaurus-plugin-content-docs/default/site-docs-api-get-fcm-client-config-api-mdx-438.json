@@ -1,0 +1,35 @@
+{
+  "id": "api/get-fcm-client-config",
+  "title": "Get FCM Client Config",
+  "description": "Fetches your Server's FCM Client Configuration so you can register your device with Google Firebase.",
+  "source": "@site/docs/api/get-fcm-client-config.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-fcm-client-config",
+  "permalink": "/bluebubbles-cli/api/get-fcm-client-config",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-fcm-client-config",
+    "title": "Get FCM Client Config",
+    "description": "Fetches your Server's FCM Client Configuration so you can register your device with Google Firebase.",
+    "sidebar_label": "Get FCM Client Config",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNV21v2zYQ/isE+6EboMhJ3+sBG9q06botaNekHYo0ME7USWJDkSyPsusZ/u/DSXIiv6RNsWKYv9imeC/Pkc9zp4X0EKDGiIHk+GwhLdQox9ID0cyFXCZSWzmWnxoMc5nIHEkF7aN2vPreNUE8NQ0+bbLMIIkTDFMMYmBNqsIa5Hgh49yzZ4pB21IuE4mfofaG1xaLlcVyKZfniQxI3llCYsMcC2hM7H4Ow7/AKI4Oj8Wh0WijOHS20KVMpHI2om0NwHujFbDB6COx1WI7JZd9RBVlIn1wHkPUXVyKEBsa7NM2YomBc6+RCErciSuHeAPvPjhen2hbuJvvtk2dYdgOm8jChRqiHMsmqr1aG6MJFadT6IAZEE6aYL5sGDTvv0ws34mOogtQ4iRr1AXGHVuWy0Sq9kQGDyEE4PujI9b0dbid/Q1rU7tMG6T8YgLe70x7AJLi3CDjAJsHp/PJN4XyoC4YfMeSHdAZvIMmVpPvVYLdp9A/7da3L2ibB3g9ucD5v0ihCYGjrDsZgE0kYZhqhTdwBt5rO9URJ73N101crDBMvIHIxzf5f9S1/7QqU+iyCa24TKYYSHf6ckNmdl4uRfBKb+7s7w8ERp40SiFR0RgzF6XrJK/VmCup2RSTTbmQB3fu3rv/4OGjx/tyUxFkFaOn8WiUmQazTsjB+z3IVH5w5+5eL797IeZZujLVLlWulutqIXd7kNuicc3OFLwn72LreyAjZ1uKsM15eTC+Ajnu2T1ew30N5ddJLZWr00F6aXcS3ZXfJPfZ2n0aVLlFhEVZ6Y8XprbOfwoUm+ns8/zvFmRaOlcabAhD3636eq5dwLvcCy9pfLbBSAlPsqfqMH+Gz4uj8kX1q3758beL380f9bF75V9/+jO8oZPT+LZ5N917/PBZ2XbWIWF3UvKLpNvAe82NuXle31aL5ZIRXMM7eSBXzIxQ8jAjpwcykUeHx/J8c3A5wqgqJDHnAaYbWm7T9izRBxHkeKdQYEXAUlPE0JnmyGUTMx0r8aJFIY56hqSSx5hPDVJ86vJWQL/TXHJN80mkztFGXehdA8Km2KzmPP0ZzX2WkqGx7NW9xlg5PugS2zQgVnIsR+D1aHowKlQ96i9Gd69WM2QnK4tF5Sj2Ax1jfHNVjedbiVyq5VoeA2yr/qxjOzIOpk6ZyMEtSPfT/a1B9bTSJDSJWKF48vqleOZUU6ON3fEWLrRPdkyyT7y/TeLN85NTtks/2A/2Z9F6e+XRsqu76b4gj0rMgESJFgNEzEURXN06dUWhlQaz5v21o1iDFcoZg4qTGIuVDOd9bhjSEqPvdjIjRlONs9HDB/cf3bs3evvu/htbzI45o1u3xF8VRAY4CMJPhjE1CRAqOKK9FbsFeC9QOZpTxFqArjEX0YmMqy70cdeDeAWMGd54Srsi1AiWEgEkjLMlfzNPKpiiAFGDenXSG4xy9MbNGZcIjbXs//qSJ+zmtjEiQwGZaTMgtLkAm4uACvUUL9OjdFiD3CEfs6b2nF1RYPiFn5+uLZGATBvNjGp9RxdQZKAuGk/CFYIwRm1LGsUKa+wQztAY/uZhIIDi5x3xGUdjcwxmzmtD2Kl4vwWkYO0RqoJIiejbPEeIEVTFBaJEVGBzsxF3hds6pkenHSSmGgQ57qokfjhpf6QvX/0kXooZ2MjxVAWWD7GlgG2zLZrYBEzT9Md24O+u2ICM171YrZFqoGf/lZ72khbxcxx5A9py+v1rTSdOZ9wuWRBY+gt11UW4B7Ae8ZbFgh2+DWa55OXu3ZaFK9fEp5TLcQGG8AuAb/DmuzPZrnEPdk3BNNgq7jn/CZoTkOOz82UiK4ScZfBs0dsddvH3Ttn1le1WM1kmK4snSqGPX9x7PtD5F89PZSKzvl/VLmeTADPuZTDjNBPp2nK0nahdW0gDtmy6YbVzyZ9/APo+vc0=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get FaceTimeAvailability",
+    "permalink": "/bluebubbles-cli/api/get-face-time-availability"
+  },
+  "next": {
+    "title": "Get FindMy Devices Locations",
+    "permalink": "/bluebubbles-cli/api/get-find-my-devices-locations"
+  }
+}

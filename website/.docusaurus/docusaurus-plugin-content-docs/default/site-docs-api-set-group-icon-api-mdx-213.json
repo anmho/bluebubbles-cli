@@ -1,0 +1,35 @@
+{
+  "id": "api/set-group-icon",
+  "title": "Set Group Icon",
+  "description": "Set a group chat's icon/photo.",
+  "source": "@site/docs/api/set-group-icon.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/set-group-icon",
+  "permalink": "/bluebubbles-cli/api/set-group-icon",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "set-group-icon",
+    "title": "Set Group Icon",
+    "description": "Set a group chat's icon/photo.",
+    "sidebar_label": "Set Group Icon",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJylVd9v2zYQ/lcO7EO2QJWcrd0Gb+jQrkPhhyJBnLQo0jycqZNFhCJZ3kmuYeh/H052BrvthgF7onC8H999x/u0MwkzdiSU2czvdiZgR2ZuEjJvYq5NYVwwc/Opp7w1hamJbXZJXFTrh9hneOV7etWvVp4YlpQHynAUzbalDs18Z2SbNDNLdmFtxsLQZ+ySV9tu9xgxjma8L0wmTjEwsQb+MJvpcVp62VtLzE3v4dHZjGNhBNfaiBkuTGH+aFFMYd7k2Keny0TWNc6a+y/bWJIAwlq9wLYoZwzOxlClNkosP4aP4fz8mj71LhPPz8/hKrsBheDl1cIUpiNpY62cRdZqCaU1c1NhctVwUWnC6jdFAm9uF69fVJpaiZmo2pPeZz+x0EaWAwMuNHFizclE0RHLpjAaucd+Uc7K2VeDuWkdg2OQdkIJr6PtOwqCeg9NzNPNNyb3MqUzhus/lzcaN/X+AqZsl4mCpvqxnAEnsrBBhjUFyihUQ5NjNyWNTeOsQ3+S/SqydBjARu/JKog5tCKJ51VVH7BRLtckae9Z2thVg6NN9fNPz3959qy6fff8OjSbt4royRN4r3w6Pi6iN8c1HQOCzZH5afIoTcwdYEpANvKWhTpA11ENEmGlTxLcW2LGNakFvYetvu6aBmeJyz0JHWHgApDBx7DWcxt7aHEgQOjQXi4PAVVNycet9gW5D0Hz/zPlhaY58x5WBLjyEwKmUAOGGjJZcgP9DY/LYw7qSDpmx9OcY9NQ/l3vb05MDLhy3olT5wgsMROs0D70iSE2wCTiwporaamjfYcb8l5Pp6NBq/ewcdJOffShpuy3ajtuu4QPXzXSkNh22isuoDv0UACKoG2VIC6gxVD7L+o+9h2i6NpOT5dhcAgc7QMJw3fL6aNcXP4KC9hgEK1nWww6xGkFwoS26aXPVJbl96o7hyem23VQOxWASSRgsV/Ok23aGRuDUJD/LRUHCRT6LFXy6ILCmZZ/d5CNO4PJ6YKrfNm9fB2Jh8qxIrwvjGqF+u92K2S6zX4c1bwXahWV2rGOoDbzBj3TvzT1H2T8m8gfaHv6qxjQ9+o2KdiA2SkAM7+7H49k8upyeWPG8S9GJD1S",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Send Text",
+    "permalink": "/bluebubbles-cli/api/send-text"
+  },
+  "next": {
+    "title": "Share Contact Info",
+    "permalink": "/bluebubbles-cli/api/share-contact-info"
+  }
+}

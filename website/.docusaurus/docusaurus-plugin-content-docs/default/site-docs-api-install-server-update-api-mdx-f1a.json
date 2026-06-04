@@ -1,0 +1,35 @@
+{
+  "id": "api/install-server-update",
+  "title": "Install Server Update",
+  "description": "Installs an update if one is available.",
+  "source": "@site/docs/api/install-server-update.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/install-server-update",
+  "permalink": "/bluebubbles-cli/api/install-server-update",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "install-server-update",
+    "title": "Install Server Update",
+    "description": "Installs an update if one is available.",
+    "sidebar_label": "Install Server Update",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzVVlGP2zYM/iuE+tAW8Jyka7chwza02x4OWHFF725F0R5QRqZj9WRJE+mkQZD/PtD25Xy9a9GHvSwvdmSR/Eh9/Ki9SZixJaHMZvlubwK2ZJYmIfM25soUxgWzNP90lHemMBWxzS6Ji7r6NnYZXviOXnSrlSeGM8obyjCxZttQi2a5N7JL6pklu7A2h8LQJ2yT17X9/tricDCH4ohii06+juDRaf+G/jG8QScMdcwgDUGXKhQCiWCjRhneM0mXAzyqqMbOyxJq9EyP78O5itEThttAJXdkDpeFycQpBiZWiyfzuT5uI/u9IXvVwxmLctEjMoWxMQgFURNMyTuLajL7yGq3v4skrj6S1TqkHBNlcUNUFpSOJ/tcEFpTVsQtMeOa7i17hfIN3nGDzuPK0/0lsV3OYw53ArQkeB0kdH70oqU76G9Sz5sknsznE9TmrLOWmM0N2gme/swmEMxiUS7KhZlG1riHMZzgWrltNrplOAxz+TmRTgILes+A4Zo7roYYCBzDMXj5PrwPb2MHLe56lgPCB2XpL5reB7h4/RccG0oJ1+CGej5SqFJ0QUB3QxfE+SlPHd/D0xJOpaG8dUwFOIGt8x5CFFjtYGRwOWTdxEqbNnJ/kCiNWZoZJjfbLGbcZzwbAs3ckKcyvl8fur7Lvm/DJrJoC15q09WxP14nPfUnbW4Ko5ZD4RblvJzf6cvzxrEmpSk+f3UCf0TbtRSkp/qxSe+RjucpPWR4/efZudr19f4Vem+niYK6+r6cAyeysEWGNQXKKFRBnWPbO4117axDf8v7q8jSYgAbvSerIJbQiCRezmbViI1yuSZJw87Sxna2cbSd/fjDs5+ePp1d/P3sdai3LxXRgwfwpkHRBCdB9Ms0phIHbI7M3yWPUsfcAqYEZCPvWKgFdC1Vet4r7R1wL4cG0BX0HnYqrxVtnCUuhyK0hIELQAYfw1qfu9gNLENo0Z6ejQazipKPO80LcheC+v9yyQt189B7WBEozxUBU6gAQwWZLLkNHeFxOa1BFUmP2XF/zrGuKf+m389vLTHgynmn6tL7lpgJVmivusQQa2AScWHNM2mopSHDLXmvT9W1jFa/w9ZJM/RNqCj7na5N0y7h7Z1EahLbgG1QuIBRYzSCCNpGC8QFNBgq/1nc67xDFFePKs2wcQgc7RUJw6Oz/qU8Of0ZTmCLQfqB02DQQ+xbIPRo6066TGVZPlaBHCnW6+Mw6Eb1uTMqbjXV/mZy/J/lapwXQp9kljy6fp70ArQfpeudweRUZBZHmTKF6a6Lci1hl4VRvdL9+/0KmS6yPxx0ebgrqLBVjrUQ1XFqfLGi33CXuRf5Fe1u35c26Dvd1l9kvj3+f3aT+QrK8T51g/BS/2Q3zNV3l4fCNIQV5b52g81zaylNre7cWdTLcQa9Oj07N4fDv1xMm/U=",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Themes",
+    "permalink": "/bluebubbles-cli/api/get-themes"
+  },
+  "next": {
+    "title": "Leave Chat",
+    "permalink": "/bluebubbles-cli/api/leave-chat"
+  }
+}

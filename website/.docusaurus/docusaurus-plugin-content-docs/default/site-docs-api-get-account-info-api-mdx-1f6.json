@@ -1,0 +1,35 @@
+{
+  "id": "api/get-account-info",
+  "title": "Get Account Info",
+  "description": "Fetches your iCloud Account info. Details include your iCloud aliases, SMS forwarding, and more. See the sample response below",
+  "source": "@site/docs/api/get-account-info.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-account-info",
+  "permalink": "/bluebubbles-cli/api/get-account-info",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-account-info",
+    "title": "Get Account Info",
+    "description": "Fetches your iCloud Account info. Details include your iCloud aliases, SMS forwarding, and more. See the sample response below",
+    "sidebar_label": "Get Account Info",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztV21v2zYQ/itX9kM3QJPdt23wgG1p0xYZFqSo0w5FHDhn6mSxpUiOR9k1DP/34SQ5sRsX6DDsw4b4i6zjvTx3p3vhWgWMWFOiyGp0sVYOa1IjFZB56WOhMmWcGqk/G4orlamCWEcTkvFCfe+bCM9sQ8+a2cwSw5jigiLsSLOuqEY1Wqu0CqKZUzRurjaZok9YByu09XorsdmozWWmInHwjolF8NFwKI99068owUvjitMVHNPCaGL43WuUU1aZ0t4lcknkMARrupPBBxbh9W1UfvaBdFKZCtEHisl0pjlhaniHz7hEc4oCvyZmnNNB1wpMh3ze7Hp9o/3RcLijTo0brYnFi07NllA21q6gpKQrKrbOF73zduv8PTEjhhLOJaVq8VCS+Nz6plCXn2fwZauNYSWZ7JjgSGvfuATGlT6HY0poLINx2jYF7XGiNcjEGYxPx1D6uMRYGDfPAF0BtY+Uw5gIUkXArdewTSzMyPrlxE3c1dUVSFombj1xAACTPi4TNQKJzJbaB0jIk8MhwR3g9ybqWlLCKGK9gY7YM0/lg+90/uYrB8eeriU7xgWlRMW091VYL26O5bfef+2kjoS90/vBVy4vPP1qtEQt177eM3EjNL52/PHB8xN+yxTfGTYz24JOsaF9xk32N8EJsHmNxv7LuG5eL/fC+8/j+ugusIcCyzVPb2pySg5nlgpRUqJl2k9CCJampvi6D/aWbo0Be4C3dVs/N27a1fR0r4ife+dIJwHVCWwmbiM9Aa6urpS0xFT5Qo3UnNrWjKlSIzXAYAaLh4MO3KCvYxk17fDpxlgTbTtXKs+pnynSFdqebFI7dHbmlsqUSHYt8WE+zIe3Rt15ZRgMt73s6PUJHHvd1ORS23Sl97UnB2bhUQgPGN68GJ+LXC7u/QyttrNATlQ9zofAgTQskWFOjiImKqCMvm6V+rI02qDd0/7ac6rRgfbWkhYQI6hSCjwaDIoeG8V8Til0nJLFwcLQcvDD909/fPJk8Pbd0zeuXJ4Kovv34Y8Kkzi4Y0ROdm0aBgQdPfN3wWIqfawBQwDSnlecqAY0NRWQPMxk4IE57dItFLS2mx39xMq7INSEjjNAmWBuLs+Vb6DCBQFCjfps3AsMCgrWr8QviI1zov/LIc9EzQNrYUYgn6YgYHJFO5kiaTILuobH+W4MCk+SZsNtnn1ZUvxFzs/3SAw4M9bIotDqTj4SzFB/bAKDL4EpJePmPEgV1dR5uCRr5SlLREQt57A0qWr9aFxB0a6Etut2Du9vOdLOO9AVJs6gryixkBLqSgLEGVToCvuZ3a3fzidT9isRw8IgsNcfKTF8M27/5CdnP8EJLNElsacrdJLEtgRci7ZsUhMpz/NvZd3pPzGprn5/lPVsu0ecSOF9Vk/rmw3tbge520HudpD/Z2D/+ztIf4NL9CkNgkXjpN+128W6X0guFAYjG0R7z2rRqmxb2nLjkh1E2NbrGTK9jXazEXJ3pZZlpTDcxkWNOuRfbpVfceE+CPgjrfYv9Qu0jbC1m9ECoxEAanRxuclURVhQbJF1ckdaU0g7Ureu1KLlelt79eJcbTZ/AbolDIU=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Force Download Attachment",
+    "permalink": "/bluebubbles-cli/api/force-download-attachment"
+  },
+  "next": {
+    "title": "Get Alerts",
+    "permalink": "/bluebubbles-cli/api/get-alerts"
+  }
+}

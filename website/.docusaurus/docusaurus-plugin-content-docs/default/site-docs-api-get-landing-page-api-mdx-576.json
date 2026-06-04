@@ -1,0 +1,35 @@
+{
+  "id": "api/get-landing-page",
+  "title": "Get Landing Page",
+  "description": "Get the server's landing page (index.html)",
+  "source": "@site/docs/api/get-landing-page.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-landing-page",
+  "permalink": "/bluebubbles-cli/api/get-landing-page",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-landing-page",
+    "title": "Get Landing Page",
+    "description": "Get the server's landing page (index.html)",
+    "sidebar_label": "Get Landing Page",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJyVVFGP1EYM/iuWeTiQQrK0QKtUKgKB0ElFd2KPInTcg3fiJCMmM+nY2WW1yn9Hzi7VclUfeJrJePz5++x8c8DMMqYoLFgf8JfVypaGxWU/qk8Ra1xPzrFIOwX4fhnnuUClTrC+xe0TLPAjb/CuuJf5lhW0ZxDOW84XAoFi42MHI3UMD31s+GvZ6xAeYYEDa58arLFjxQJH0h5rrLDAY7rVOuCUA9Z4OPRJdJ5xvivQxzYZa/UaGGt8FSZ+NW02gQULtMwjmyflqlzhfY43vRfwsvB8eX0Jr5ObBo5KFoc25SVyhgnrhQ68HMcLgfdv1jeWV36On+OfsKBdjRwN6tdyBTKygx0JdBw5k3IDbU7DApra1jtP4Qf06yQ6UASXQmBnJGroVUepq6o5ceNcdqzj8Wbp0lBtPe+q354/+/3p0+rD38/ex3b3zhg9eAAfe1ITeFbEIuc1vQCBy0nk8RhI25QHoHEEdkn2ojwA+YEb0ASbbPPz71jEZqgJKATYpylDw1vvWMpjEwamKAWQQEixs3WfJuhpy0AwkLtanxKqhseQ9qYL8hSj4f9/ywuDuQgBNgy0CQsD4dgAxQYyO/Zb/peelOc9aBLbmL0sc05ty/mFxW9+OBKgjQ9evV1OIJoyw4bcl2kUSC0Iq/rYSaU9D3xUuOMQbPU2GnIWh53XftExxYZz2NvZuewSPv1HSMvqenA9qRQwnDQUQKrkemuQFNBTbMK9ut91x6S+9W75dQW2nkCS+8Iq8HC9bMrLqz/gEnYU1eq5nqINcbFAXNi2k06Zy7J8hHOBp1/M3BVp4JOl/zq5+Jo6vu+nA7oUlaP+rP11Pxq+8letxkA+Wv3F7YfTW3CL9sKY8W1/OGxI+EMO82zH/0yc91jf3hW4peyto/Y1n70rb9/c4Dx/A9sct5Q=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get iMessage Entity Totals",
+    "permalink": "/bluebubbles-cli/api/get-i-message-entity-totals"
+  },
+  "next": {
+    "title": "Get Media Totals Per Chat",
+    "permalink": "/bluebubbles-cli/api/get-media-totals-per-chat"
+  }
+}

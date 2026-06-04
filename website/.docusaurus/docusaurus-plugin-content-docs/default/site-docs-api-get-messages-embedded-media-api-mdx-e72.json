@@ -1,0 +1,35 @@
+{
+  "id": "api/get-messages-embedded-media",
+  "title": "Get Message's Embedded Media",
+  "description": "Gets a message's embedded media such as a digital touch message's `.mov` or a handwritten message",
+  "source": "@site/docs/api/get-messages-embedded-media.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-messages-embedded-media",
+  "permalink": "/bluebubbles-cli/api/get-messages-embedded-media",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-messages-embedded-media",
+    "title": "Get Message's Embedded Media",
+    "description": "Gets a message's embedded media such as a digital touch message's `.mov` or a handwritten message",
+    "sidebar_label": "Get Message's Embedded Media",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy9Vd9v20YM/leI60M2QJWSrd0Gb+jQokGQhyBFnXQo0gClT5R1yOnudqTkGob+94Ky3dppN+xpTxL4mx/J7zYmYcaOhDKb2d3GBOzIzExC5lXMtSmMC2Zm/u4pr01hamKbXRIXVfo+9hle+Z5e9YuFJ4Y55YEyHHizbalDM9sYWSeNzJJdWJqxMPQJu+RVttnsPcbRjPeFycQpBiZWx59OT/VznHreW0vMTe9hb2zGsTCCS23EDGemMFfEjEsy948LvyBhQOi2+hMG6hZU11RDR7VD4N62gGpSu6UT9CBRRV8dPpZdHD5CzIDQYqhX2YlQ2FuYwnQkbazNzCxJTGESSmtmpsLkquGs2tlVf1zcXr5+Ue3zP53yK24TktuZ9NlPILWRZQeQC02cQHUyIXgwBFMY9dw2elaelqffzO2mdQyOQVqCl28u4XW0fUdBUPXQxDxpvjPYlymdMLw9n9+oX/khfAgvYIp2nShoqJ/LU+BEFlbIsKRAGYVqaHLspqCxaZx16I+iv4ksHQaw0XuyWsQMWpHEs6qqd7VRLpckaWtZ2thVg6NV9esvz3979qy6fff8bWhWV1rRkyfwV4uiDR4kUc1hTqfTtTkyP00epYm5A0wJyEZes1AH6DqqQSIsdGPB7bZJJeg9rHX5axqcJS63IHSEgQtdHB/DUr/r2EOLA+myob2e7xyqmpKPa+0Lch+Cxv9nyAsNc+I9LAhw4acKmEINGGrIZMkN9KU8Lg8xqCPpmB1Pc45NQ/lP1d8ciRhw4bwTp8YRWGImWKB96BNDbIBJxIUlV9JSR9sOV+S9fp2OBq3qYeWknfroQ03Zr1V22HYJ779ppCGxLdgWhYv99WgGEbStAsTFdGD+Ud593yGKa5ydVpdh0OON9kHv+4f59FNeXv8Ol7DCIJrPthh0iNMJhKnappc+U1mWPyot7VZMr2tHhhckcPXl8s/3VHG1O9Wj29oYG4NQkP+JZXasKvRJquTRBW1hIozNjnLuDCanpHA2kdLecUs8pjCPqOe+MMoz6rfZLJDpNvtxVPH2DVBCqh3r+Goza9Az/QsE/+GF+G4HD7Q+foUG9L2aTew3YHZagJnd3Y8HTHtxfmPG8TMDp2By",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Message Count",
+    "permalink": "/bluebubbles-cli/api/get-message-count"
+  },
+  "next": {
+    "title": "Get My Sent Message Count",
+    "permalink": "/bluebubbles-cli/api/get-my-sent-message-count"
+  }
+}

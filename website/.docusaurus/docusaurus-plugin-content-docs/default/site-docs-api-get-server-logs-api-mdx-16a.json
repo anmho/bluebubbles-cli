@@ -1,0 +1,35 @@
+{
+  "id": "api/get-server-logs",
+  "title": "Get Server Logs",
+  "description": "Fetch logs from your BlueBubbles Server.",
+  "source": "@site/docs/api/get-server-logs.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-server-logs",
+  "permalink": "/bluebubbles-cli/api/get-server-logs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-server-logs",
+    "title": "Get Server Logs",
+    "description": "Fetch logs from your BlueBubbles Server.",
+    "sidebar_label": "Get Server Logs",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy1Vm1v2zYQ/isH9kMTQNWLHaeJNnRt0a4o0DZFkm4rHH+gqZPFhiJVHmXHMPzfh5OcxGm8Lt1QfZFE8e6ee6h77laikV7WGNCTyMcrYWWNIheNJFo4X4hIaCty8bVFvxSRKJCU103Qjlc/u9bDS9Piy3Y6NUhwhn6OHrasSVVYS5GvRFg27JmC13Ym1pHAK1k3htdWq2uL9VqsoxsUyrU2fB/C3kn3JM0+nFcItq2n6MGVYNyMIDgoMagK9ihIH7SdQeldDaFCqB0F8KjQhv0YXmEpWxNyyNJ0F2xtA87Q38XNe9eTSHikxllCYoNBmvLtLsw3GK7JeedmJCKhnA1oA2+VTWO0krw1+UK8f3UfgJt+QcVkNN416IPuo1GQoaXdQGskkjPcSX4hw45TiUTpfC1Dt7I0KNbr7YRvww3SdMu/OGuVQuK0er9iPEgH2ZMsfZJlkA3y4ShPj+LjLJ3AuMBpO5vAKX5tkQIfUSIbncyzhDqCEo6hKWhFSY2FlomqZIC9T6fv4CP/rJTDar1/Ye/HyLJ4mB78zBiH+WAQp8P/FONB7g/SePTDNAUXpKEH+D/Oh1mcHWYTGGtbugl8wAVsjrGvjPFVfz1f9lesXD3JYfzrBwfneBWeTXZ6HcTHx8Mbr2+8axvgIobSeRgzuX9tXRNQlbQzLDit8ZaA7HQ+yuKj0eFDKGmbQgZMVIXq8kFsjIbxIDv6Nzae/wATo1GcZqP/zwSchbYs74c4SPODwzhLhw/ho9PAuzxc9KJ6IfILkaUXgnnhKuc6D3LGTUDMMxGJXq3E5FvB/b3T085zR9Fydw+IBetDqFwhcjHDTrhkqEQudmBkwe3e+h7UetM1hcpR4IYw4Q5Quk6udOiUdyugiARb9uiyOI3Te03ivNIEmjrZf/HxLbxyqq3Rhk5yu4PhLzsa2YumeUxw+vrsnO3iC3thn0Hn7aRBy66GcQrUoIKFJJihRS8DFrddxpWlVlqaO94/Ogq1tKCcMagYRA5VCA3lSVJssKGPZxiafif/e8lc4yJ5ejg6OjhIPv0xOrXl4j0jevQI/mT10rQdhL9sx9QEEpR3RE8aIwPrPMimAVSOlhSwBqnr/j+cci8A/X5TCcGBNKY/6ALnWiHFPQk1SksRSALj7IzvS9dCJecIEmqpTs42BkmBjXFLzgt8ay37/2fKI3bz2BiYIsip6RAQ2gKkLbqOred4A4/ibQ4Kh3zMmrpzdmWJ/jf+fn5niUBOtdHcQzvfwXmEqVSXbUM8OxAGnhUoCRXW2Ge4QGP4zv3VS9XNEgsdqi6P1hbozZLXttOO4fO9RPp5hHWAomux4QghSFUxQRRBJW1hvol7nbd1QZebaYFgriWQU5cYCPbOuof47ckv8BYW0naS0OtLz4m2HdqyDa3HOI73eRLY/GJcXZux6/6wcqecVrezy4+owWbSCHgVksZIbTl4V+qrjTSMhWw0l3N2IwgiEp1ATCLBasB7VqupJPzkzXrNy/1YyLJRaGKSC5GX0hB+B/UD5tadaC9xeXc2nkvT8rZuaH14/J80tH4H8/UkfQt4wi9eM2KRjyfrSFQoC/Qdlb3RC6Ww2ba6N6iylxuVf/P6XKzXfwPokSS9",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Scheduled Messages",
+    "permalink": "/bluebubbles-cli/api/get-scheduled-messages"
+  },
+  "next": {
+    "title": "Get Server Metadata",
+    "permalink": "/bluebubbles-cli/api/get-server-metadata"
+  }
+}

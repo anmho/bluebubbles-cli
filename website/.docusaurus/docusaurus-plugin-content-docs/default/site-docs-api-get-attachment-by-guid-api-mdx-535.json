@@ -1,0 +1,35 @@
+{
+  "id": "api/get-attachment-by-guid",
+  "title": "Get Attachment by GUID",
+  "description": "Fetch an Attachment's database information by ID",
+  "source": "@site/docs/api/get-attachment-by-guid.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-attachment-by-guid",
+  "permalink": "/bluebubbles-cli/api/get-attachment-by-guid",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-attachment-by-guid",
+    "title": "Get Attachment by GUID",
+    "description": "Fetch an Attachment's database information by ID",
+    "sidebar_label": "Get Attachment by GUID",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJydVd9v2zYQ/lcO14dsgCY5W7sV2tAhRbrAD0WKOulQpHk4UyeLCEVyPMquYeh/H052GifthmFPFI734/vueJ92GClRz5mTYH2zQ089Y42RRDYhNVig9VjjXwOnLRbYsJhkY7ZBrR/DkOC1G/j1sFw6FlhwWnOCo2gxHfeE9Q7zNmpmycn6FY4F8mfqo1PbbncfMY443haYWGLwwqKBP85mejwuvRiMYZF2cHDvjONYYKaVEsH1KRZ4ljOZrmef8fYp9j84mw7Iw4PTiUBDmZYkDNa3IfWkzrDcwvwcC+w5d6HBGlecscBIucMaK4q2Wp9W9CVP9dvF9fz8lbKf+rHv7JDcRLULkg80tcjUGpunPhy1EgvUyD3W03JWzr7q/lVnBaxA7hjO3s3hPJhBy+9BtyFNN98Yz1mMJwLv3yyuNK785D/5VzBlu4zsNdVP5QwksoENCazYc6LMDbQp9FPS0LbWWHKPsr8LknvyYIJzbBREDV3OUeqqag7YOJUrznHvWZrQV2vLm+qXn1+8fP68uv7w4r1vN28V0bNn8GdHWQkeFdGb45pWgMCkIPJDdJR1ZkAxApsgW8ncA9meG8gBlvruwL5lEVqxWsg52OoTbnhtDUu5b0LP5KUAEnDBr/TchgE6WjMQ9GQuF4eAquHowlZ5QRq81/z/3PJC05w4B0sGWroJgbBvgHwDiQ3bNX+BJ+VxD5rAOmYr05xD23L6Xe+vHpkEaGmdzVadA0gOiWFJ5m6IAqEF4ZytX0mVO+55z3DDzulpdTRk9B42NncTj8E3nNxWbce0S/j4FZF22ibTUZYC+gOHAh52QgroyDfuSd173j5k21ozPV2BtSWQYO44C3y3mD7K+eWvMIcN+az1TEdehzitgJ/QtkMeEpdl+b2Ky+GJ6XYdJO2C89Gu61Lrlj7dqh2a4LMqxv+SiIPIZf6cq+jIesUybf7uoBc3SNHqdqtAPfQHCzyoxm2BKhHqudtpoevkxlHNexFWLWmsaOcbrFtywv/C4T9I9Dcx3/H28W9gTW5Qt0m41pSsAsD65nY8EsaLN1c4jn8D9hAziw==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Attachment Blurhash",
+    "permalink": "/bluebubbles-cli/api/get-attachment-blurhash"
+  },
+  "next": {
+    "title": "Get Attachment Count",
+    "permalink": "/bluebubbles-cli/api/get-attachment-count"
+  }
+}

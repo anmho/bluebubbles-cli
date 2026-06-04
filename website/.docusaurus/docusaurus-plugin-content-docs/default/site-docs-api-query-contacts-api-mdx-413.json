@@ -1,0 +1,35 @@
+{
+  "id": "api/query-contacts",
+  "title": "Query Contacts",
+  "description": "Query your contacts from your macOS device.",
+  "source": "@site/docs/api/query-contacts.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/query-contacts",
+  "permalink": "/bluebubbles-cli/api/query-contacts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "query-contacts",
+    "title": "Query Contacts",
+    "description": "Query your contacts from your macOS device.",
+    "sidebar_label": "Query Contacts",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzVVUtvGzcQ/isD+pAE2GjtNmkLFWhhpzn4ENixnBaBJcAj7qyWMZdkOFwpgrD/vRju2pFst+i1uqwwnMc3r292KmDElhJFVtObnXLYkpqqgMwbHytVKOPUVH3tKG5VoSpiHU1Ixov0s+8inNmOzrrl0hLDjOKaIuxZs26oRTXdqbQN4plTNG6l+kLRN2yDFdlud2/R96pfFCoSB++YWAx/OD6Wz2HoWac1MdedhXtl1feFSriSRNT6RBXqnXcJdVKLx8A/SjqwFfh60GGoo28HUYv6YgYVrY2mydzN3dHR0RFc0deOOMGZr7YivL29/cLezd1u7gAAyhJeXuQAaF/BKVjDCXwN3hH4CK2PBFhVkZiJIXmIlLrooMKEUPs4eJmrB525msLNYu76HEtJVTICASAFEeTkkvzFEKzRKMFLASWyJ5X3yy+kkypUiD5QTGYo70O8PVWMEaXdJlEr8r7v9xt2YHSzGF5bSo2vZHY85yiYGjVVJQZTrk/Ksc7l/SRxHpVh6Lpo8xQ0ntM4AZLF1fd83z8f2nXWLnqZ0dpn+CblgdqbSVUoiTP0/WRyPDl+MsbXjWEwDKkhOL08hz+87lpyKddTWpNfnpnz0xBeMFy9n12LXR6V3yB7uwjkxNWPk2PgQBo2yLAiRxETVcOsiVNf10YbtAfeLz2nFh1oby1pATGFJqXA07KsRmwUJytKYdCcaN+Wa0Ob8uef3v7y5k356c+3V67efBiGF/5qMEmCe0HkZT+mYUDQ0TO/DhZT7WMLGAKQ9rzlRC2gaamSuV3KAoP5QMy4IpGgtcPmDDvDk6EILaHjApDBereS79Z30OCaAA+WrKwoWL+VvCB2zon/fy55IW5eWAtLAlzajIDJVYCugkiazJoe4PFkvwaVl9UTbNIcX9cUf5f36wMRAy6NNbIg2XeS1V2ivusCy0YzpWTcisvUUEtDhhuyVr5GWoNa3mFjUpPz6FxF0W5FdsAt8PlJIjUl3YBuMHEB7ZhDAZgS6kYKxAU06Cr7KO593s4nU49UwLA2COz1HSWGl7P8Z3J+8SucwwZdkni6QSdNzCvgMtq6S12kyWTySlh6HDHZrvE2DOQ5cis/3qY9Xvqf0uzIgYm+pTJYNE7KkClqN5LajcJghFjkyIyZqWI8kotCCY+J1m63RKZP0fa9iId3IbzKsDS8UtMaLdO/lPA/nNhn8d7R9vCMr9F2opbZdY3RCIDM3oVqCCuKGdlg926I//paXH+3fXJmxNcD719ezK5VoZbjeWp9JTYRN3K6cCOxC+VzjvnWZNlOWXSrDleiO/iU39+joP70",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Query Chats",
+    "permalink": "/bluebubbles-cli/api/query-chats"
+  },
+  "next": {
+    "title": "Query Handles",
+    "permalink": "/bluebubbles-cli/api/query-handles"
+  }
+}

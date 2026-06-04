@@ -1,0 +1,24 @@
+{
+  "id": "index",
+  "title": "BlueBubbles CLI",
+  "description": "A curated BlueBubbles terminal CLI organized around the resources that matter in day-to-day use.",
+  "source": "@site/docs/index.mdx",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/bluebubbles-cli/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/anmho/bluebubbles-cli/tree/main/website/docs/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BlueBubbles CLI",
+    "description": "A curated BlueBubbles terminal CLI organized around the resources that matter in day-to-day use.",
+    "slug": "/"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "Quickstart",
+    "permalink": "/bluebubbles-cli/quickstart"
+  }
+}

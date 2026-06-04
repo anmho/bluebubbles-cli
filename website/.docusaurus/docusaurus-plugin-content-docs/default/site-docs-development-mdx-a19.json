@@ -1,0 +1,27 @@
+{
+  "id": "development",
+  "title": "Development",
+  "description": "Build, test, and validate the curated BlueBubbles CLI and Docusaurus docs.",
+  "source": "@site/docs/development.mdx",
+  "sourceDirName": ".",
+  "slug": "/development",
+  "permalink": "/bluebubbles-cli/development",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/anmho/bluebubbles-cli/tree/main/website/docs/development.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Development",
+    "description": "Build, test, and validate the curated BlueBubbles CLI and Docusaurus docs."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Webhooks",
+    "permalink": "/bluebubbles-cli/webhooks"
+  },
+  "next": {
+    "title": "API Reference",
+    "permalink": "/bluebubbles-cli/api"
+  }
+}

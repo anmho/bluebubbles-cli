@@ -1,0 +1,33 @@
+{
+  "id": "api/bluebubbles",
+  "title": "BlueBubbles",
+  "description": "This is the API Documentation for the BlueBubbles Server App's REST API.",
+  "source": "@site/docs/api/bluebubbles.info.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/bluebubbles",
+  "permalink": "/bluebubbles-cli/api/bluebubbles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {
+    "id": "bluebubbles",
+    "title": "BlueBubbles",
+    "description": "This is the API Documentation for the BlueBubbles Server App's REST API.",
+    "sidebar_label": "Introduction",
+    "sidebar_position": 0,
+    "hide_title": true,
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "API Reference",
+    "permalink": "/bluebubbles-cli/api"
+  },
+  "next": {
+    "title": "Add Participant to Chat",
+    "permalink": "/bluebubbles-cli/api/add-participant-to-chat"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/get-scheduled-message-by-id",
+  "title": "Get Scheduled Message by ID",
+  "description": "Gets a single scheduled message by its' ID.",
+  "source": "@site/docs/api/get-scheduled-message-by-id.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-scheduled-message-by-id",
+  "permalink": "/bluebubbles-cli/api/get-scheduled-message-by-id",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-scheduled-message-by-id",
+    "title": "Get Scheduled Message by ID",
+    "description": "Gets a single scheduled message by its' ID.",
+    "sidebar_label": "Get Scheduled Message by ID",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy1VU1v20YQ/SuDycGtwZJy67QFW6RI4MDQwXAQOSkCx4fRciguvNxld5ZUBIH/vRhKSiXXLXrpaYn5fG9m93GLHUVqOXEULO+36KllLLEjkXWIFWZoPZb4R89xgxlWLCbaLtmg1k+hj/DG9fymXy4dCyw4DhzhKFtMwy1hucW06bSypGj9CscM+Qu1nVPbdnvIGEccHzKMLF3wwqKJ389mepy2XvTGsEjdOzgE4zhmmGilRHC4wAxvWIRWjBkuTMNV77Tzw1MW15wECMT6lWOQXSRX0O6yYbkBm+QM5lf5Z//Zn5/fWG/bvn2O+UeOYoMvz8/hIr/MZ5hhy6kJFZa44oQZdpQaLLGgzhbDRbFvUhzaFr/Or17p3KZ6u5300U1DaoKk/YCsr8M0VJumCR5BwQyHHQos8SKfTSBOGd81VsAKpIbh9bs5XAXTt+wTqR/qECfPM/Red92ZwPu3izvNm8bxCqZqtx17LfVDPgPp2MCaBFbsOVLiCuoY2qloqGtrLLmT6u+CpJY8mOAcGwVRQpNSJ2VRVHtsHPMVp24XmZvQFoPldfHTjy9/vrwsPnx8+d7X6xtF9OIF/N5QUoJHTdRz3NPqzk0MIt91jlIdYgvUdcAmyEYSt0C25QpSgKXeWLD726QWcg42evkrHqxhyXdDaJm8ZEACLviVnpvQQ0MDA0FL5naxTygq7lzYKC+Ivfda/59HnmmZM+dgyUBLNyEQ9hWQryCyYTvwV3iSH8+gCqxrtjLtOdQ1x9/Uf3diEqCldTZZDQ4gKUSGJZnHvhMINQinZP1KitRwyzuGa3ZOT6urIaN+WNvUTDx6X3F0G7Ud087h09+I1JxMA6ahJNnhyWmHlMg0OiDJoCFfuSd9D7x9SLa2Zrq6AoMlkGAe9Ul/s5g+8vntLzCHNfmk/UxDXpc4PQE/oa371EfO8/xblaX9FdPXtRfDa06w+CoLN3/Jwvzq6dPaogk+sU//v67s9TTxl1R0jqxX8JNUbPcic4/UWZWDi0mGDlp4QIIZTmLzkKEqi8Zvt0sS/hDdOKp5p/oqQZUVXViFZU1O+F9Y/4d/wrPIH3lz+t8ZyPUaNundQNEqACzvH8YjTb1+e4fj+CdGVFgJ",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get My Sent Message Count",
+    "permalink": "/bluebubbles-cli/api/get-my-sent-message-count"
+  },
+  "next": {
+    "title": "Get Scheduled Messages",
+    "permalink": "/bluebubbles-cli/api/get-scheduled-messages"
+  }
+}

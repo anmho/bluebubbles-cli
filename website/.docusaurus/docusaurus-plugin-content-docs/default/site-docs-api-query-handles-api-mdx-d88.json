@@ -1,0 +1,35 @@
+{
+  "id": "api/query-handles",
+  "title": "Query Handles",
+  "description": "Query for Chats from the database",
+  "source": "@site/docs/api/query-handles.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/query-handles",
+  "permalink": "/bluebubbles-cli/api/query-handles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "query-handles",
+    "title": "Query Handles",
+    "description": "Query for Chats from the database",
+    "sidebar_label": "Query Handles",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztV21v2zYQ/isH5kNTQJWdvs8DVvQNWD4U6ZJ0QxEH8Jk6WWwoUuVRdg3D/304SnaUxBj2eau/SD7yXsl7ntNGNRiwpkiB1eRqoxzWpCaqQeaVD4XKlHFqor63FNYqUwWxDqaJxov0q28DvLMtvWvnc0sMFxSWFGCgzbqiGtVko+K6Ecscg3ELtc0U/cC6sSLbbHYa263aXmcqEDfeMbEoPh2P5XHX9UWrNTGXrYXdZrXdZiriQhJRyxOVqd/RFZbU9f24/5BsoPQB3lcYGcrga4gVQYER58g0dVN3dHR0BOf0vSWO8M4XaxHOZrNv7N3UbaYOAGA0guOzZBbtY3gLrq3nFCBQE4jJReMWybAvS6aYXA79QKprvrd1WRkGw9AySWayvcFFZyT4dlElzYfxQvRQ481AoNFahkCxDQ6Q4Xtr9I28NJ7ZzC3dOj3+QCW2Nk5g/LgTTpU1tYlTNYGT8Xic7bYew38x1y5eSfY20+Gp/lVhhEAWIxVgXOlDjbIGhYe1b2GFLvbeqYCViVWKtyZmXBC/2dv81HKEOYF3UqQJzBoM0WjToIs8y2BmkWOvJn+5TlIMujJLKma7gMWFhHvVCfoTQ46fOt2pyoYrQy/3lri+L9k5m6pOen2wJL/7Vcpxn3U6Kq58awvJkH2IVNyW/dSBDwUFOTtZu5cr1H1ljNO2LVKZk/2ZpDqDPUbl92s5uWtoVyHxIRXqylLvyjJ129TCShAmNbb0tYCL9i6Si/KKTWONTic8kl4X2QMU8/NvpKPKVBN8QyGaDqpS2wy2GRdpQUHQrrtlh9cky8EKhoACtiZSzQegc5spLIpAfGAxU939VBPVRv2kNtYaJq222yHi7iNN7b2PbbwL5UrpCiU9eeTDCyRguneuTp4+e/7i5avXv4zFwTZTNcXKF0IgnlN5UMypETZmtDwZVQmQRzs24UQXHfG0wSYmqDzHngWk+ue35/TxQfSHQ+8rcSfQW9aRBk5lMzFxz4C+VKYknI4jTvJxPn7AeDvQksv59vMpfPC6rcnFDhB2kHeAEt82zSOG848Xl6KXC5f81kHgWUNOTD3Lx8ANaVghw4IchQQ4e/zzZWm0QXvH+mfPsUYH2ltLWoKYQBVjw5PRqOhjo5AvKDbdzlz7erQ0tBq9evni9fPnoy9/vjh35epTR3kd2BkeOpGVoU/DgKCDZ37SWIxy3wCbBkh7XnOkGtDUVEivz6XqYHpcEglaK6AZoKCl0cR5V4Sa0HEmmG29W8hTkLXCJQFCjfrsolcYFdRYv5a8ILTO7UjncMkzMfPIWsEWnNsUAZMrAF0BgTSZJe3D43xYg8KTHLPhdM6+LCm8kfXLOyIGnBtrpP+T7egDwRz1Tdsw+BKYovAij2JFNXUZrshaeQoABNSJN/es0bqCgl2LbJh2Dl8fJFJS1BVIh3K2Z5sMMEbUlRSIM+ga7q7fXd7OR1P2SMewNAjs9Q1FhuOL9JKfnv0Kpx2/RS+enBxiaoEOn8s2toHyPH8srdVfMemufozsBq1uDOP7zTRA3Z8T2c+J7OdE9v+eyPo5JtKPOGosGieQkqaCTT9GXClsjJC0fNt1yKay/tP0OlMyOcimzUbu4Jdgt1sRd+syYhSGBTsLNSnRMv0DHP2LD9uD4d7Q+u7H8xJtK9vSPLPEYCQANbm63maqIiwopMg6vfed/yeXYvpW98FAKrb2g9bns4tLlal5P8jWvhCdgCsZcnElvjPlU45pXEyyjbLoFi0uZG9nU35/A9RFcP4=",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Query Contacts",
+    "permalink": "/bluebubbles-cli/api/query-contacts"
+  },
+  "next": {
+    "title": "Query Messages",
+    "permalink": "/bluebubbles-cli/api/query-messages"
+  }
+}

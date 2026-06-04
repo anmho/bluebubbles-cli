@@ -1,0 +1,35 @@
+{
+  "id": "api/lock-mac",
+  "title": "Lock Mac",
+  "description": "Lock your macOS device directly via the API. This endpoint can be useful if you believe your macOS device has been compromised. Locking it will prevent the adversary from accessing your account. This will not log you out, but will lock your account.",
+  "source": "@site/docs/api/lock-mac.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/lock-mac",
+  "permalink": "/bluebubbles-cli/api/lock-mac",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "lock-mac",
+    "title": "Lock Mac",
+    "description": "Lock your macOS device directly via the API. This endpoint can be useful if you believe your macOS device has been compromised. Locking it will prevent the adversary from accessing your account. This will not log you out, but will lock your account.",
+    "sidebar_label": "Lock Mac",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzlVk1vGzcQ/StT5pAW2O7KadIWKtDCQXswUMNG5LQIHB9G3FktYy7JcmZXFgT992Io2ZFjt+i9pxXImTdfbx61NQkzDiSU2cyvtybgQGZuEjKvY25NZVwwc/PXSHljKtMS2+ySuKinH+KY4a0f6e24XHpiWFCeKMORN9ueBjTzrZFNUmSW7MLK7CpDdzgkr2fb7b3Hbmd2N5XJxCkGJlbHV7OZfh6H/j3aWzhHaypjYxAKojaYkncW1ab5xGq4fZpBXH4iK6YyKcdEWdw+DAvKyEd2LgitKGuqAzHjip4to0V5rr7dcYWf0V/NZkdwZjFaS8zmHub+oBu93wDdkR2FWvBarY3DgKH9SrEVXXClMzPTianMOdqLhbn5ckKlTRsd06AG0NLkLEHrMlnxG5gcgvQEp5dnNVz1joFCm6ILAhYDLAlGpm704DqFgSV5RxM9A9kjw5IoaJopx8ExtTVofBdW4ATWzntImSYKUmJiO1FmzBvochwAS+FqXMDR2jgGOWRVnEMU8LHcQxylguV4gPUPZd67Ge2y9LFVMkcu40bpzdw0mFwznTQD2kb9lKSFtvsFGLMvjOwjy4GNLnSxTNhJoesR401l1HPf7JN6Vs+eLEnJ3/F9m+HXaMeBghSWQhdzuXlmi05Tesnw7rfFVRnPx/Ax/LzvxkWioFDf1TPgRBbWyLCiQBmVLaWdChq7zlmH/hH6ZWQZUOfkPVlNYg69SOJ507SH3CjXK5K0t6xtHJrJ0br54fs3P75+3bz/48270K3PNaMXL+DPHkULPAqiN8cxHQOCzZH52+RRupgHwJSAbOQNCw2AbqAWJMIyF76c71dET9D7/Wz3TOMDJQbCwBUgg49hpV/lRY8TAT6iZtNS8nGjdUEeQ1D8f255pTAvvVfu49KXDJhCCxhayGTJTfSQHtfHPWgj6ZgdlznHrqP8i95fPTpiwKXzTmWnYEvMBEu0t2NiiB0wibiw4kZ6Gmhf4Zq8169KUkar97B20pc6xtBS9hs9Oy67hg9PCulIbA+2R+EKDiqkEUTQ9togrqDH0Pov4t7XHaK47iCwXMSDo70lYfh6UX7UZxc/wRmsUXc8aqSgQywrEEq23Shjprquv1HxPFBMt+vw8hwJ+6M92n7W+f+1qh2eGaE7aZJHF7SNRbS2B4W7NpicCpO+C0PpZNG5m8qoqKnBdrtEpvfZ73Z6vH/dVf1ax8qV1sw79Ez/MoP/8PY/m+otbR7/v5jQj2pWpHbC7DQBM7++2VWmJ2wpl8z2fqfWUpIjrycvvqI8KP/lxeLK7HZ/A8f6HHU=",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Leave Chat",
+    "permalink": "/bluebubbles-cli/api/leave-chat"
+  },
+  "next": {
+    "title": "Mark Alert as Read",
+    "permalink": "/bluebubbles-cli/api/mark-alert-as-read"
+  }
+}

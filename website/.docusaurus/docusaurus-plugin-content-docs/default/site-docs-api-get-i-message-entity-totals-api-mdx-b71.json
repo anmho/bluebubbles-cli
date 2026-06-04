@@ -1,0 +1,35 @@
+{
+  "id": "api/get-i-message-entity-totals",
+  "title": "Get iMessage Entity Totals",
+  "description": "Fetches the database totals for the iMessage entities (i.e. handles, messages, chats, etc.)",
+  "source": "@site/docs/api/get-i-message-entity-totals.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-i-message-entity-totals",
+  "permalink": "/bluebubbles-cli/api/get-i-message-entity-totals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-i-message-entity-totals",
+    "title": "Get iMessage Entity Totals",
+    "description": "Fetches the database totals for the iMessage entities (i.e. handles, messages, chats, etc.)",
+    "sidebar_label": "Get iMessage Entity Totals",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVm1v2zYQ/isH9kNTQJPspC+bB2xI0a7ohyBFk24o0gA5UyeLLUVqvJNdw/B/H07yW5Y0yJcB8xfJpO74PMd7HnJlWkzYkFBiM7lamYANmYlpkXkRU2ky44KZmL87SkuTmZLYJteKizr6OXYJXvuOXnfTqSeGC0pzSnAQzbamBs1kZWTZamaW5MLMrDND37FpvY6tVtuI9dqssx2KGPzyYQRH5/0b+mdwCjsqIOS9CzOQmuD0w3tY1M7WIFHQM0gEi952HoVyOOtYYEoQA0GsJnBTYyg93WRw0xAzzvpXW6PoE0XQ1g0FuYGjN1Rh52UCp94/e4jr+jozibiNgYl1/ng00sdtLu9IwJ0Na8LbIE6WcNlDNpmxMQgF0ShsW+8salTxlTV0dXfpOP1KVkxm2hRbSuKGhVlQOj74zgWhGSXdjw3de/eqRHlE9qF0D6f/wawW+AdT+5rf+4H+Dpppz/F4NDogZS46a4m1llsyO7jjk9EhvvHx89HJLztMxzp7C8R4fPLy1XqzsuBMpWPmY5OZQQD6IiiOxVk21/9u2j9IbE3cd6dimSLTtjmrmPrxXSOQNoIjhiOXUw4bzBls4WbQw8yAxObahQ1JHUszMTPqdwilNhNTYOuK+bjgHmDBO3iFbFtsmBpsoEu+12UdWVST16rCKvb1d9KL9kD3JjMaObAb56N8dEeol7VjcLxT5JtoO61m38Y71vd4yWnbPmX4+PbiUuPyL+FL+A36bOctBU11ko+AW7KwQIYZBUooVEKVYtMnjVXlrEN/K/uHyNJgABu9J6sgJlCLtDwpinKDjVI+I2mHL3Mbm2LuaFG8evni5+fPi09/vvgYqsWZInryBP6qUZTgwSI6c7imY0CwKTL/1HqUKqYGsG2BbOQlCzWArqFSDWqqwts3gURA72GpflvS3FnifChCQxg4A2TwMcz0uYwd1DgnQGjQnl9sAoqSWh+XygtSF8LWHu8veaZpnnqvzohT3yNgCiVgKCGRJTff9yjnhzUoY9/ajvt9jlVF6Xedv7w1xIBT54fO1twSE8EU7beuZYgVMIm4MONCampoYLgg7/Wp0k9odR4WTuqeRxdKSn6pY4e0c/h8h0il+tvKZq+jA4lne50drLvlHaK4auPADHOHwNF+I2E4uuhf8vfnv8J7WGCQ/rSpMegm9hIIPdqqky5RnufP1OE2Labq2px8D54Ft5S12h8N/7GxbIxX6LsUrUcXFHpvFKuNy1wZbJ2awXhnJ/qyt8LMbNzmOjNqLRqyWinMT8mv1zo8nPPqQaVj3bHSTCr0TA/wfsQ95F7w32h5+64zR9/pZ/0l5PHr/69uIQ8w3dyn9iyv9U9yStNMrq7XmakJS0p9/YeYU2uplYOoO9cPzbI7dN69vTTr9T8JZJR/",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get iMessage Availability",
+    "permalink": "/bluebubbles-cli/api/get-i-message-availability"
+  },
+  "next": {
+    "title": "Get Landing Page",
+    "permalink": "/bluebubbles-cli/api/get-landing-page"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/check-for-server-update",
+  "title": "Check for Server Update",
+  "description": "Check to see if the BlueBubbles Server App has an update available. If an update is available, the update metadata will be returned.",
+  "source": "@site/docs/api/check-for-server-update.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/check-for-server-update",
+  "permalink": "/bluebubbles-cli/api/check-for-server-update",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "check-for-server-update",
+    "title": "Check for Server Update",
+    "description": "Check to see if the BlueBubbles Server App has an update available. If an update is available, the update metadata will be returned.",
+    "sidebar_label": "Check for Server Update",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVk1v3DYQ/SsD5pAWUKXdNGmLLdAiaYPCh8BBbLcIHB9mqdGKMUWynNFuFov978VIsi3HNpBjfZEx5Lx588E3ezAJM3YklNmsLg8mYEdmZRIy72KuTWFcMCvzb095bwpTE9vskrio1o+xz/DG9/SmX689MZxR3lKGmTfbljo0q4ORfVJkluzCxhwLQ1+wS15th8ONx/FojleFycQpBiZWxxeLhX7uh/6jJXsNTcw3MS9SjUKmMDYGoSDqgil5Z1Fdqs+sfoeHhOL6M1kxhUk5JsrixqgsKD3P7rkgtKGszDtixg09mlWN8g3ouEXnce3nGOsYPWFQENvnPOXwIEBHgjdBQu8nFMk9HfVvVte7JF4sFjPW5qy3lpjNHdsZnwY904yCWS7LZbk088ga9ziFE9zo6JitXhmbYa6+npSxXRKBicA1IC09NjivU4IWGTBAP/QTbomVcNLM7I7vjooBbjq4IQk75z2sCTJJnwPV5ZhBG2uzMhsaeoLSmpWpMLlqu6x4IFGNQJVVyjrBg3V8HX32w7i2kWUaVReaOPTJyTDLs6xMYdRzrMCyXJSLBy/ovHWsuWgCr9+fwJ/R9h0FGWZ2GO+nK/Wc4cPbs3P1Kz+FT+E3GNBOEwWF+rFcACeysEOGDQXKKFRDk2M3gMamcdahv4f+PrJ0GMBG78kqiRW0IolXVVVP3CiXG5I03ixt7Kqto13180+vfnn5srr4+9WH0OzeKaNnz+CfFkUTnAXRk3lMbSXYHJl/SB6libkDTAnIRt6zUAfoOqp1etb6CMC9GydZLeg97FWGato6S1yORegIAxeADD6GjX73sYcWtwQIHdrTs8mhqin5uNe8IPchKP7TJS8U5vk4Vzp540SHGjDUkMmS29ItPS7nNagjaZsdD32OTUP5dz0/v2diwLXzTmViwJaYCdZor/vEEBtgEnFhw5W01NGY4Y68168KVEar57Bz0o6vItSU/V5t87RL+PggkYbEtmBbFC5gEguNIIK21QJxAS2G2n8V9ybvEMU1k9wybB0CR3tNwvDd2fBPeXL6K5zADoNoPNti0CYOTyAMbJte+kxlWX6vSjeN2CB041p6WvXvPavD3RL4vyjPJONCX6RKHt0g84OcHCYZujSYnErG8lZ0TGH627U2yNFVYVR79PbhsEami+yPRzWPG1pFqnas3OpbKX+yNt+wvx/lfU37+78Rtuh7vTYo4hazG1fJ5dWxMC1hTXlgNvq9tpaSzLwerGlFuZXqv96em+PxPy0BArI=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Add Participant to Chat",
+    "permalink": "/bluebubbles-cli/api/add-participant-to-chat"
+  },
+  "next": {
+    "title": "Create New Chat",
+    "permalink": "/bluebubbles-cli/api/create-new-chat"
+  }
+}

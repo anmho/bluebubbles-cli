@@ -1,0 +1,35 @@
+{
+  "id": "api/send-multipart-message",
+  "title": "Send Multipart Message",
+  "description": "Send a multipart message",
+  "source": "@site/docs/api/send-multipart-message.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/send-multipart-message",
+  "permalink": "/bluebubbles-cli/api/send-multipart-message",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "send-multipart-message",
+    "title": "Send Multipart Message",
+    "description": "Send a multipart message",
+    "sidebar_label": "Send Multipart Message",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "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",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Send Attachment",
+    "permalink": "/bluebubbles-cli/api/send-attachment"
+  },
+  "next": {
+    "title": "Send Reaction",
+    "permalink": "/bluebubbles-cli/api/send-reaction"
+  }
+}

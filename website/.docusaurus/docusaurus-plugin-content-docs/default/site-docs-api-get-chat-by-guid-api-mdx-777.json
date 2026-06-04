@@ -1,0 +1,35 @@
+{
+  "id": "api/get-chat-by-guid",
+  "title": "Get Chat by GUID",
+  "description": "Fetch a Chat's database information by ID",
+  "source": "@site/docs/api/get-chat-by-guid.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-chat-by-guid",
+  "permalink": "/bluebubbles-cli/api/get-chat-by-guid",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-chat-by-guid",
+    "title": "Get Chat by GUID",
+    "description": "Fetch a Chat's database information by ID",
+    "sidebar_label": "Get Chat by GUID",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "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",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Attachment Live Photo",
+    "permalink": "/bluebubbles-cli/api/get-attachment-live-photo"
+  },
+  "next": {
+    "title": "Get Chat Count",
+    "permalink": "/bluebubbles-cli/api/get-chat-count"
+  }
+}

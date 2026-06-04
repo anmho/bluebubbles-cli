@@ -1,0 +1,35 @@
+{
+  "id": "api/get-my-sent-message-count",
+  "title": "Get My Sent Message Count",
+  "description": "Get the total number of messages that you have sent, for your iMessage account (on the device)",
+  "source": "@site/docs/api/get-my-sent-message-count.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-my-sent-message-count",
+  "permalink": "/bluebubbles-cli/api/get-my-sent-message-count",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-my-sent-message-count",
+    "title": "Get My Sent Message Count",
+    "description": "Get the total number of messages that you have sent, for your iMessage account (on the device)",
+    "sidebar_label": "Get My Sent Message Count",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy9VVFv3DYM/iuE+tAW8OzL1m7DDdjQbkWRhyBFL91QpHngyfRZiCxpIn3Xw8H/faB8yS5pN+xpTzIokfzIj/x8MAkzDiSU2SyvDybgQGZpEjLvYm5NZVwwS/PnSHlvKtMS2+ySuKjWj3HM8NqP9Hpcrz0xrChvKcOJN9ueBjTLg5F90sgs2YWNmSpDn3FIXm2Hw53HNJnppjKZOMXAxOr47WKhx8PUq9FaYu5GD3ePzTRVRnCjhZjtmanMBTHjhszNY+BvSUB6AomCHsI4rClD7GCYHRikR4F9HKHHLQFTkAq6mNWUwR3jAlobxyDwLIYSrqWts/TcVGYg6WNrlmZDYiqTUHqzNA0m12zPmmOapng3A2mfSudmDsbsS1P6yHJsiAtdLE10Ujp20nRTGfWcCzurF/XiC56uesfguGB89e4cfot2HCgI6n2pS2++QuSrlJ4yvH+zulK/+lP4FH6GEu0yUdBQ39UL4EQWdsiwoUAZhVrochxK0Nh1zjr0D6K/iywDBrDRe7IKYgm9SOJl07RHbJTrDUmaX9Y2Ds3W0a754fuXP7540Xz4/eX70O0uFNGTJ/CH0uX4NInenOZ0DAg2R+ZvkkfpYh4AUwKykfcsNAC6gVqQCGud0L9Zlgjo/Uz9zDDXcxMGwsAVIIOPYaPn/cggDGgvV0eHpqXk417rgjyGoPH/ueWVhnnqPawJcO0LAqbQAoYWMllyW7qHx/VpD9pYhtdx4Tl2HeVf9P7qgYkB1847cfo4AkvMBGu0t2NiXQMmERc23EhPA80V7sh7PZ1Sg1bvYeekL3WMoaXs92o7LbuGj18U0pHYHmyPwtX9vlWAImh7bRBX0GNo/aO8d3WHKK5ztowuw9YhcLS3JAzPVuWjPr/8Cc5hh0E0n+0xKIllBeY17UYZM9V1/Vxl6Dhiul1H8VN1uNjDStm6G4JfdVUfL9bB2BiEgvwfknLUT6HP0iSPLij4IhWHo75cG0xO5eCsKNCsfZWxR+hDEUIVFX16OKyR6UP206TmWeBVfVrHylVrlh16pn8p+T/I/1dB39L+4S9mi37UZ0XqtpidAjDL65vpREnfvrky0/QX8cRVVw==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Message's Embedded Media",
+    "permalink": "/bluebubbles-cli/api/get-messages-embedded-media"
+  },
+  "next": {
+    "title": "Get Scheduled Message by ID",
+    "permalink": "/bluebubbles-cli/api/get-scheduled-message-by-id"
+  }
+}

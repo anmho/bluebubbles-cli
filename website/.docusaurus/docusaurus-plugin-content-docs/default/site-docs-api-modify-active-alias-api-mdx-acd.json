@@ -1,0 +1,35 @@
+{
+  "id": "api/modify-active-alias",
+  "title": "Modify Active Alias",
+  "description": "**Private API Only**",
+  "source": "@site/docs/api/modify-active-alias.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/modify-active-alias",
+  "permalink": "/bluebubbles-cli/api/modify-active-alias",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "modify-active-alias",
+    "title": "Modify Active Alias",
+    "description": "**Private API Only**",
+    "sidebar_label": "Modify Active Alias",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVk1vGzcQ/StT5pDE2KyUNGkLFWhj5wPwwbBhOy2CxIcROatlwiUZDleKIOi/F8Nd23LkBj3kWF9kkJyPN/PmzW5UxIQdZUqsZh82ymNHaqYiMq9CMqpS1quZ+tJTWqtKGWKdbMw2yOn70Cc4cj0d9fO5I4YLSktKsGPNuqUO1Wyj8jqKZ87J+oXaVoq+YhednG021xbbrdpeVSoRx+CZWAyfTafyczf0OTWJuIW31puTNbxNlrxhVSkdfCafxQJjdFajWEw+sZht9vMJ80+ks6pUTCFSynYIyhlzzzvvrM+0oCSJd8SMC7oXlMF8H9rtLt5b78+m0x136qLXmlhQDG6uD5reuTWkATKZa9DNABpcGEDyTxJIQmVcSDvV8qk08JULvVFX33bv4OAs2SVmgsOzYzj1bn1w8NF/9K9a9AuCVWt1C4MxoDGJmGEdemDyBuzJkDVDk0JXw3FT7lpcEnS9yzY6AnQWWZ6EJLfpxpvWofcZmHIfq2Ko0YNuQ2CC4Ak4kraN1SjAcxhidndDHq3BUIO9yxXY/JCHECHZhfXo4DBKCseva8F03EBux4RKvJjC0hoCy+BDBoQl5UwGHmGUKzKPh8cV5NYySCKwss5BblNYAXqglEKqlZD1S0+cj4JZS29/EAFL9H0mVaoJqcOsZoo6tG6PWqOd+mQCvVzIk1qHTg286Ci3wch8By4hMbdqpiYYJ8unE6ulO5OxO5PBU6W4DPUgD31yZV7bwHmcVQF2fluCN/up9Ezp5ZjikIyoShMKOpuLBOyoiKqUxBtI+rSe1tM94bmUnlguPRXyvg6678jnUupCN7m5R5kOY3zIcP7m4lLsCjX+gOLtNJIXVz/X08I+WCHDgjwlFF4I5YrT0DRWW3R3vJ8Fzp0wODhHWpKYQZtz5NlkYsbcKNULynF4KWWYLC2tJr/+8uK3588n7/56ce6b1Ylk9OAB/N1iFoA7QeRmN6ZlQNApMD+JDrPQAjBGIB14zZk6QNuRkemZC3VuRlZOhM5lXAwtrSauhyJ0hJ4rQNEUv4BxVspQI3SoTy9Gg4mh6MJacEHqvRf//17yMuIPnYM5Ac4d3Uw0egOJNNkl3SpKvVsDE4iHEZTmhKah9KfcX945YsC5dVZmp/jOIRHMUX/uI0NoRGiy9Que5JY6GhCuyDn5FWFPqOUeVja3BUfvDSW3lrNd2DW83wPSUNYt6BYzVzcSVQHmjLqVAnEFLXrjvol7jduHXJSuKDgsLQIH/Zkyw6OL8k99fPo7HMMKfZZ4epDnUhPrS7ZNn/tEdV0/ltEaKSbTNW7zk2Bss4ZDnSXg4TjXd0ZqR7f+Xww/aDGMyp3pa55Eh9ZLd4qCbkbl/aAwityVNV3UV1VqLIL8Vzp1VSmRW3m92cyR6V1y260cD19losvGsvDRqFmDjuk7zf0P32z35v2Z1ne/C5foenlWlsASk5UE1OzD1bZSLaGhVDIb7F4N8Z9ciutb270Fua2uLQ61ppi/+/ZqZ6GdnV5cqkrNxyXcBSM2CVeyoHEleVYqlHqUrVrONsqhX/TDx9fgU/7+AV8l4NE=",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Mark Chat as Unread",
+    "permalink": "/bluebubbles-cli/api/mark-chat-as-unread"
+  },
+  "next": {
+    "title": "Notify for Silenced Message",
+    "permalink": "/bluebubbles-cli/api/notify-for-silenced-message"
+  }
+}

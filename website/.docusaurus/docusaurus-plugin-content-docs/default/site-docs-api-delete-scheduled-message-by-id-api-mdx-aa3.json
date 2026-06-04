@@ -1,0 +1,35 @@
+{
+  "id": "api/delete-scheduled-message-by-id",
+  "title": "Delete Scheduled Message by ID",
+  "description": "Delets a scheduled message by its' ID",
+  "source": "@site/docs/api/delete-scheduled-message-by-id.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/delete-scheduled-message-by-id",
+  "permalink": "/bluebubbles-cli/api/delete-scheduled-message-by-id",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "delete-scheduled-message-by-id",
+    "title": "Delete Scheduled Message by ID",
+    "description": "Delets a scheduled message by its' ID",
+    "sidebar_label": "Delete Scheduled Message by ID",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy1VU1v20YQ/SuDycGtwZJ267QFW6RIIB8E1HAQOSkCx4fRciguvNxld5ZUBIH/PRhKSiXXLXrpaYn5fG9m93GLHUVqOXEULO+36KllLLEjkXWIFWZoPZb4Z89xgxlWLCbaLtmg1o+hj/DG9fymXy4dCyw4DhzhKFtMwy1hucW06bSypGj9CscM+TO1nVPbdnvIGEccHzKMLF3wwqKJ319c6HHaetEbwyJ17+AQjOOYYaKVEsHhEjO8YRFaMWa4MA1XvdPOD09ZzNhxEiCQXRBX0O4SYbkBm+QM5rNP/pM/P7+x3rZ9+xznDxzFBl+en8NlfpVfYIYtpyZUWGKlHRRGR6nBEgvqbDFcFvs2xaFx8et89kqHNpXcLaSPbppQEyTtp2N9HaaJ2jSN7wgNZjjsgGCJl/nFhOOU7l1jBaxAahhev53DLJi+ZZ9I/VCHOHmeYfi6684E3l0v7jQv14m8gqnabcdeS/2QX4B0bGBNAiv2HClxBXUM7VQ01LU1ltxJ9bdBUkseTHCOjYIooUmpk7Ioqj02jvmKU7eLzE1oi8Hyuvjpx5c/X10V7z+8fOfr9Y0ievEC/mgoKcGjJuo57ml13SYGke86R6kOsQXqOmATZCOJWyDbcgUpwFKvK9j9VVILOQcbvfkVD9aw5LshtExeMiABF/xKz03ooaGBgaAlc7vYJxQVdy5slBfE3nut/88jz7TMmXOwZKClmxAI+wrIVxDZsB34KzzJj2dQBdY1W5n2HOqa42/qvzsxCdDSOpusBgeQFCLDksxj3wmEGoRTsn4lRWq45R3DNTunp9XVkFE/rG1qJh69rzi6jdqOaefw8W9Eak6mAdNQkuzw6LRDSmQaHZBk0JCv3JO+B94+JFtbM11dgcESSDCP+pq/WUwf+fz2F5jDmnzSfqYhr0ucnoCf0NZ96iPnef6tatL+iunr2ivhpA4Mi6/acPOXNsxnT1/XFk3wiX36P3Vlr6SJP6eic2S9Ip90YrtXmHukzqoWXE4ydFDBAxDMcFKahwxVVjR+u12S8PvoxlHNO71X/ams6LYqLGtywv/C9z/8DZ5F/sib0z/OQK7XsEnsBopWAWB5/zAeaers+vfru2scxy/A0Vc+",
+    "sidebar_class_name": "delete api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Delete Chat",
+    "permalink": "/bluebubbles-cli/api/delete-chat"
+  },
+  "next": {
+    "title": "Delete Settings",
+    "permalink": "/bluebubbles-cli/api/delete-settings"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/get-scheduled-messages",
+  "title": "Get Scheduled Messages",
+  "description": "Gets the messages you currently have scheduled, or have been scheduled in the past.",
+  "source": "@site/docs/api/get-scheduled-messages.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-scheduled-messages",
+  "permalink": "/bluebubbles-cli/api/get-scheduled-messages",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-scheduled-messages",
+    "title": "Get Scheduled Messages",
+    "description": "Gets the messages you currently have scheduled, or have been scheduled in the past.",
+    "sidebar_label": "Get Scheduled Messages",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVVFv3DYM/iuE+tAt8OxkS7fBAza0WBHkIUjRSzsUaR54Mn0WIkuaSPt6ONx/L2jfZZcsG/a4JxsURfL7SH7amoQZexLKbOrbrQnYk6lNQuZ1zI0pjAumNn8OlDemMA2xzS6Ji2r9FIcMb/xAb4bl0hPDgvJIGY5us+2oR1NvjWySRmbJLqzMrjD0Bfvk1bbdHm7sdmZ3V5hMnGJgYr34/empfh6nXgzWEnM7eDg4m92uMIIrBWLGM1OYK2LGFZnCLGxHzeA1891TFBckDNIR9LM7wyYOYIecKYjfQIcjAc8BqCkg5tm0JAp/2cGFKUhClvJz+BxOTq5ccP3QP8fQR8rsYqhPTuCsPC9PTWF6ki42pjYrElOYhNKZ2lSYXDWeVfvaqkM+pXYKNbdtyH7isYssew5daOPEu5OJ5KMqTGHGuQBTm7PydMr/mJSbzjG4mZfX7y7h92iHnoKgnkMb83TyDLLXKb1keP92caP3JiZ+hSnadaKgoX4oT4ETWVgjw4oCZRRqoM2xn4LGtnXWoX8U/V1k6TGAjd6T1SJq6EQS11XV7GujXK5I0uxZ2thXo6N19dOPr34+P68+fHz1PrTrK63oxQv4o0NRgEdJ9OQ4p2NAsDkyf5c8ShtzD5gSkI28YaEe0PXUgERY6lCD2w+cWtB7naMMDY3OEpczCT1h4AKQwcew0q8O2zRPCD3a68X+QtVQ8nGjuCAPIWj8f6a80DAvvYclAS79VAFTaABDA5ksuZEeyuPymIMmkrbZ8dTn2LaUf9Pzm0cmBlw678SpcwSWmAmWaO+HxBBbYBJxYcWVdNTTjHBN3uvXaWvQ6jmsnXQTjiE0lP1GbcewS/j0NyAtie3AdihcPCxpASiCtlOCuIAOQ+Of5D3gDlFc6+w0ugyjQ+Bo73Xrv1lMP+Xl9S9wCWsMovlsh0GbOK3AvNXtIEOmsiy/VeXaj5hu114vL0hg8SAFB56fbtXW2BiEgvx/VGevykJfpEoeXVB8k5ps9xJ0azA5VYyzSaQOivogRHeFUdVRx+12iUwfst/t1Dw/GipPjWNtZmPqFj3Tv9DyH56UZ0u+p83jZ2tEP6jbpIUjZqcFmPr2bncktRdvb8xu9xXw83L1",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Scheduled Message by ID",
+    "permalink": "/bluebubbles-cli/api/get-scheduled-message-by-id"
+  },
+  "next": {
+    "title": "Get Server Logs",
+    "permalink": "/bluebubbles-cli/api/get-server-logs"
+  }
+}

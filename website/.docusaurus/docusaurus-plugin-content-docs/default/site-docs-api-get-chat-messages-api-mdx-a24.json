@@ -1,0 +1,35 @@
+{
+  "id": "api/get-chat-messages",
+  "title": "Get Chat Messages",
+  "description": "Fetch messages associated with a specified chat",
+  "source": "@site/docs/api/get-chat-messages.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-chat-messages",
+  "permalink": "/bluebubbles-cli/api/get-chat-messages",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-chat-messages",
+    "title": "Get Chat Messages",
+    "description": "Fetch messages associated with a specified chat",
+    "sidebar_label": "Get Chat Messages",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "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",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Chat Count",
+    "permalink": "/bluebubbles-cli/api/get-chat-count"
+  },
+  "next": {
+    "title": "Get Contact Card",
+    "permalink": "/bluebubbles-cli/api/get-contact-card"
+  }
+}

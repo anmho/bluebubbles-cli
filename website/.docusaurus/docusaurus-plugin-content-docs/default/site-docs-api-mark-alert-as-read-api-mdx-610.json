@@ -1,0 +1,35 @@
+{
+  "id": "api/mark-alert-as-read",
+  "title": "Mark Alert as Read",
+  "description": "Marks alerts as read based on the provided IDs",
+  "source": "@site/docs/api/mark-alert-as-read.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/mark-alert-as-read",
+  "permalink": "/bluebubbles-cli/api/mark-alert-as-read",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "mark-alert-as-read",
+    "title": "Mark Alert as Read",
+    "description": "Marks alerts as read based on the provided IDs",
+    "sidebar_label": "Mark Alert as Read",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytVk1vGzcQ/SsD5pAW2OxKadIWKtDC+Tj4ENjwR4vA8WFEzmoZc0mGw5UiCPrvwXBlex0nRQp0LyvMcua9GfI9aqciJuwpU2K1uNopjz2phYrIvAnJqEpZrxbq00BpqypliHWyMdsg0fdhSPDKDfRqWC4dMZxTWlOCSTbrjnpUi53K2yiVOSfrV2pfKfqMfXQS2+1uM/Z7tb+uVCKOwTOxJD6fzeT1EPp1R/oG2pBuMS+jwUyqUjr4TD5LCsborEZJaT6y5O0eEwrLj6SzqlRMIVLKdkTljHngyTrrM60oCfOemHFF3+zKYP6B6rhG63DppjWWIThCL0X0kNKhh0cAPWW8BfGDO1TJaaC9PJO53jfxfDabsFbng9bErO7ZTvi06JgmFNR8Xs/ruZoiC+7+AJdxJUdHrWXJuBnq+uuT8g7TDQM6SpkBGRKhgSUyGQgeckcQU1hbQwaO3wixRJ8G4vwqmK3w+5821ZrpjmJKKIfaZuol/mh8ZfnV9RjvKXfBiDYCl8qYO7VQDUbbrOcNl86b0mIj7cnhL7FRWENy5aR3gfPhlAv7s/s+334NLFO+3osC21Bo21zkMlGcqpQgjEOe17N69kikF51lsFyGfHR6DG+CHnryuUywKEi+fEPFRzE+ZTh7e34hefUH/8H/CaXaSSQvpX6pZ8CRNGyQYUWeEmYy0KbQl6Khba226B5UPw2ce/Sgg3OkhcQCupwjL5rGHLhRqleU47iy1qFv1pY2zW+/vvz9xYvm8u+XZ77dvBNGT57APx1maXACIl+mmJYBQafA/Cw6zG1IPWCMQDrwljP1gLYnAznAUnQG9t0oFomgc7AVpzO0tpq4HofQE3qu5DC74Ffy3oYBOlwTIPSoT84PCY2h6MJW+oI0eC/1vz/ySso8dQ6WBCJIYcDkDaA3kEiTXdMdPa6nMzCBZJstl30ObUvpL/l+8SDEgEvrrEii1M4hESxR3wyRIbTAlLP1K25yRz2NHW7IOXmLBybU8h02Nnelj8EbSm4rsWnbNbx/1EhLWXegO8xcwcGPBCFn1J0MiCvo0Bv3Fe5t3z5k2x7Ez7C2CBz0DWWGn87Lj/r45A84hg36LHi6Qy+bWCQw+kw75CFRXdc/i5kejljx0vHmE6eCI1GxAJ+NQn6gqIkb/XdfO1hPps+5iQ5tsfviDbuDo1wpjFZ0Pb9zEFWpAlF8EY3Yq9iIrN3tBO0yuf1ewuM9LX5jLMvUzZ2hf7eHH7jFv8n6hrYP/yms0Q2yrJjbGpMdL5Qr8bCO0FAqzMa81yP+swspfZ/7yN331W3GkdYU87+uvZ7Y9OnJ+YWq1PJwg/TBSE7CjUwRN8KzUqHMo1wKJbZTDv1qGK/JsaY8XwDPzS1H",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Lock Mac",
+    "permalink": "/bluebubbles-cli/api/lock-mac"
+  },
+  "next": {
+    "title": "Mark Chat as Read",
+    "permalink": "/bluebubbles-cli/api/mark-chat-as-read"
+  }
+}

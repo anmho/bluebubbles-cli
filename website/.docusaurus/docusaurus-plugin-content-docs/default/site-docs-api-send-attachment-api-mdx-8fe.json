@@ -1,0 +1,35 @@
+{
+  "id": "api/send-attachment",
+  "title": "Send Attachment",
+  "description": "Send an attachment via iMessage.",
+  "source": "@site/docs/api/send-attachment.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/send-attachment",
+  "permalink": "/bluebubbles-cli/api/send-attachment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "send-attachment",
+    "title": "Send Attachment",
+    "description": "Send an attachment via iMessage.",
+    "sidebar_label": "Send Attachment",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVm1v2zYQ/isH9kM3Q5Gctd0GDdjQYsOWD12COu1QtIF7pk4WV4pkeZQcw/B/H45yUifNhn0e9knSvfFennuonQoYsadEkVX9bqcc9qRqFZB542OjCmWcqtWngeJWFaoh1tGEZLxI3/ohwgs70IthtbLEsKA4UoQjb9Yd9ajqnUrbIJE5RePWal8ousY+WJHtdjce+73aXxUqEgfvmFgcv5nP5XH36MWgNTG3g4UbY7XfFyrhWgpR46kq1EtixjWpq/uJL8g1gA4wJdRdTy7BaBDMwaF879672eylcaYf+ocqfEORjXezWQ3z8kk5F4flbPa7TzSbLZc1pI6WsPwQMKYz19D1hyUsb1sNhsE7uwUeQvAxUQPeQY/6fAEvztawGCKga8DRhmKRXyN9GkwkfiiZ8bR8Ws6XX+Rw2RkGck3wxiXQ3jVG6kdrtzAwsSQJF9GMmAieX5yBaUFTTGgcfIYFYCQIkZhcKuE3ipQl4ntklDpMsDHWSuT7geuc2wkse0qdb2oIk+4Eg1lmBQ+rP0mn6YPalnQ6aw4qsqQTNYfZ/DqYZqkKNYUSqHpOqlABU6dqVWEw1Xha9ZN19XnCAsbcrwnoQ7QZeZ3ndECdca3PSDUpw/Ko1apQ4zRyVavTcl7Ov1iG3G0zNVWa+bPXg5yLoofWx6x5YHzPQ3jM8OqXxaX4Zez9OM3uPJCTUE/KOXAgDRtkWJOjiIKZNvo+B/Vta7RBeyf6hefUowPtrTTQeFdDl1LguqqaQ24UyzWlMFmW2vfVaGhTfffts++fPq1ev3n2yrWbl5LRo0fwh4zY3EGgaI7PNAwIOnrmk2AxtT72gCEAac9bTtQDmp4aSB5WQgO3GycStBa2wigNjUYTl1MTekLHBSCD9W4tz60foMORAA87MzlUDQXrt3mb4+CcxP/7lhcS5rG1sCLAlc0Z8EQLsm2azEi36XF53IPG590xnOfs25biT6K/vCNiwJWxJhkx9sDJR4IV6o9DYPAtMKVk3Jqr1FFPU4UbslaeRkaDWvSwManLdQyuoWi3Ijsuu4S3XxTSUtId6A4TF3BYBTnhdhm4gA5dY++de1O388m0RmfocqZG9vojJYavFvmlPDv/Ac5ggy7JebpDJ0PMK+Bytu2QhkhlWX4tXH+AmGzX4YbJFPz8eDvvrNNOae+SKP5n6/8AWx8u/0TXqQoWjRNQZAreHZj7ncJghGZPM7lPF3ehjvj7qlBC1mK6262Q6XW0+72Ip78TYfXGsOxAo+oWLdM/gOpf/Ls8mPRH2t79PxrRDmKWr5ARo5EEVP3uan90SV2cLy7Vfv8XwsZPVA==",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Schedule a Message",
+    "permalink": "/bluebubbles-cli/api/schedule-a-message"
+  },
+  "next": {
+    "title": "Send Multipart Message",
+    "permalink": "/bluebubbles-cli/api/send-multipart-message"
+  }
+}

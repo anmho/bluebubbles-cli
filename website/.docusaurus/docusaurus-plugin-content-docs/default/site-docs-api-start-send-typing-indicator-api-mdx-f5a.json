@@ -1,0 +1,35 @@
+{
+  "id": "api/start-send-typing-indicator",
+  "title": "Start Send Typing Indicator",
+  "description": "Allows you to start sending typing indicators to a chat",
+  "source": "@site/docs/api/start-send-typing-indicator.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/start-send-typing-indicator",
+  "permalink": "/bluebubbles-cli/api/start-send-typing-indicator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "start-send-typing-indicator",
+    "title": "Start Send Typing Indicator",
+    "description": "Allows you to start sending typing indicators to a chat",
+    "sidebar_label": "Start Send Typing Indicator",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzVVVFvGzcM/iuE+tAtuN0lW7sN3tAhXYfBD12CONlQtHmgdTyfEJ2kirxzDcP/faDsbE7SDXvd0x1Ekfz4kfy0NQkzDiSU2czeb03AgczMJGRex9yayrhgZubjSHljKtMS2+ySuKin7+KY4bUf6fW4XHpiWFCeKMORN9ueBjSzrZFN0sgs2YWV2VWGPuGQvJ5tt/ceu53Z3VYmE6cYmFgdvz491c/D1IvRWmLuRg/3l81uVxnBlRZipjNTmZ97FHP7GPW593HNsIkjSAQWzAJMoXVhBbJJ+nGhdRYlZtYrCLZH+RA+hJOTK/o4ukw8OzmBy+wmFILzy/ne+FsUUsP1kyhr5z3gKHFAcRa93wBLTLDuKRQkCgAQBmLGFWlW6Qk4kXWdo7YgqE1lBpI+ttqhyGIqk1B6MzMNJtdMZ41ea37UuuHXm/mbV82+IG1Eac2+yWP2hfU+shwYd6GLpUtOSkuOumoqo5578s7q0/r0ySBc947BccF8fjmHN9GOAwVBtUMXc7F8ZlLOU3rOcPXL4lr9aqXxFZRoF4mChvqmPi00wBoZVhQoo1ALXY5DCRq7zlmH/kH0y8gyYAAbvSerIGbQiySeNU17wEa5XpGk/c3axqGZHK2b7759+f2LF83N7y+vQrd+q4iePYM/lFHHx0nUcpzTsQ5KjsxfJY/SxTwApgRkI29YaAB0A7Xa2mUu4/H272aj9zoGGVqanCWu9yQMhIErQAYfw0q/Ois9TqSzgvZicXBoWko+brQuyGMIZZb/kfJKwzz3HpYEuPQFwX4AQwuZLLmJ/oLH9TEHbSRts+PS59h1lH9S+/WDIwZcOu/EEe93LGaCJdq7MTHEDphEXFhxIz0NtK9wTboiDE5bg1btsHbSlzrG0FL2Gz07LruGd08K6UhsX/aFq/t90gwiaHsliCvoMbT+Ud77ukMU1+neuhgYJofA0d6RMHyxKD/1/OIHmMMag2g+22PQJpYVCAVtN8qYqa7rL1XnDiOm23VQ10XRnIUyfpCK+b1UPF6trbExCAX5vwvXQf6FPkmTPLqg1BQh2h5E7L3B5FRsVLrVzVTmSMr2MVTMbiujyqUe2+0SmW6y3+30eP9MqcS1jnUgWjPr0DP9C6v/4RH7LPY72jx8KCf0o14rejphdgrAzN7f7o5k+/JicW12uz8Bp9WccA==",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Share Contact Info",
+    "permalink": "/bluebubbles-cli/api/share-contact-info"
+  },
+  "next": {
+    "title": "Stop Send Typing Indicator",
+    "permalink": "/bluebubbles-cli/api/stop-send-typing-indicator"
+  }
+}

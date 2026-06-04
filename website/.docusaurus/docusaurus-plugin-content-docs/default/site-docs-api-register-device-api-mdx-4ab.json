@@ -1,0 +1,35 @@
+{
+  "id": "api/register-device",
+  "title": "Register Device",
+  "description": "Registers a device for Google FCM Notifications",
+  "source": "@site/docs/api/register-device.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/register-device",
+  "permalink": "/bluebubbles-cli/api/register-device",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "register-device",
+    "title": "Register Device",
+    "description": "Registers a device for Google FCM Notifications",
+    "sidebar_label": "Register Device",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVt9v2zYQ/lcOzEM3QJWSrdkGD9jQpu3QhyxFkm4o4gA5UyeLDUUyPMquYfh/H46yEznJhj3taX6RfOLdfffju+NaBYzYUaLIanK1Vg47UhMVkHnpY60KZZyaqLue4koVqibW0YRkvEg/+z7CG9vTm342s8RwQXFBEUbarFvqUE3WKq2CWOYUjZurTaHoK3bBimy93mlsNmpzXahIHLxjYlH87vBQHvuuL3qtibnpLewOq82mUAnnEohaHKlCvT85VdePQZ/T3LDECwg1LYwmaHyE37yfW4L3J6fwu0+mMRpFgadu6g4ODg7gnO564gRvfL0S4c3NzRf2burWUwcAUFXwGiR92VxqaWd95XvASBC3jo2bDxrTnO2pmsBUBfOV7DFOVTGy1jtz1xOYmpwgoghD9iC1mMaIl8Za6JkgeWByNbhxCCJdSakGQOW9h8vWMBiGtApGo7UrmJOjiIlqWLbkBuh9asW/xkSwNKkdOS53gTxAHMKZqqnb5BwpqWbOnCROCqm9S+SSvGIIdouykmSK7EnH+NkX0kkVKkQfKCYztMXQqc/01QOWZz5vxo330O5D9tW+spLjm0J1lFpfyzHPGQemVk1UhcFUi6Oq0V01ZFb6PTNg4FIfbW7u1nPaNrYEef6QjndPkGxxPgIyCs41PodlUqbOiH2qUOJ66PKj8rA8fELY+4K3BK8/foC3XvcduZQrcN+3zzD6dQgvGM7fXVyKXin9/8vQPmeBnJj6vjwEDqRhiTxqoyb6Lhv1TWO0Qbtn/aPn1KED7a0lLSAm0KYUeFJV9RYbxXJOKQwnS+27amFoWf34w/FPr15Vn/44PnfN8nSgKfwpxDA8diJfxj6NEF9Hz/wyWEyNjx1gCEDa84oTdYCmo1pIM8tkM6fEjPNMLrR2TCUuhyR0hI4LQAbr3VyewpwWFwQIHeqzi61CVVOwfiVxQeydG8j8dykvxMwLa2FGgDP7QG90NUTSZBZ0D4/LcQ5qT1Jmw7nOvmko/irfL/dEDDgz1gilsu3kI8EM9W0fGHwDTCkZN+cqtdTREOGSrJWnkdKglu/DWJA4eldTtCuRjcMu4fOTQBpKugXdYuICum0MBWBKqFtJEBfQoqvtI7+7uPdH3MIgsNe3lBi+ucgv5Yezn+EDLNEl8adbdFLETAGX0TZ96iOVZfmtUGvbYiMy7lYFvN3Re49Oo1H2/1b5z7fKdrAn+pqqYNE4qWEeuevthL5SGIxMRbkLNLrL9cuFvC6UDGU5sl7PkOlTtJuNiIeLjkzv2rC0aq0mDVqmf6j9v7gGPQv2llb7V60F2p7y3rmWP9EIADW5ut4UqiWsZRdcrbd6J4P/l5di+kH3yUoVW/cb7OPZxaUq1Gy7ijtfi07EpaxpXIrvQvkcY16yWbZWFt28x7mcHWzK7y86HooN",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Refresh FindMy Friends",
+    "permalink": "/bluebubbles-cli/api/refresh-find-my-friends"
+  },
+  "next": {
+    "title": "Remove Group Icon",
+    "permalink": "/bluebubbles-cli/api/remove-group-icon"
+  }
+}

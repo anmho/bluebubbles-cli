@@ -1,0 +1,27 @@
+{
+  "id": "cli-reference",
+  "title": "CLI Reference",
+  "description": "Curated command surface for the bluebubbles executable, with endpoint mappings.",
+  "source": "@site/docs/cli-reference.mdx",
+  "sourceDirName": ".",
+  "slug": "/cli-reference",
+  "permalink": "/bluebubbles-cli/cli-reference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/anmho/bluebubbles-cli/tree/main/website/docs/cli-reference.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "CLI Reference",
+    "description": "Curated command surface for the bluebubbles executable, with endpoint mappings."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Quickstart",
+    "permalink": "/bluebubbles-cli/quickstart"
+  },
+  "next": {
+    "title": "Doctor",
+    "permalink": "/bluebubbles-cli/doctor"
+  }
+}

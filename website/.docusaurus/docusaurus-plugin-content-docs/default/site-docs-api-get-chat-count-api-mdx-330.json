@@ -1,0 +1,35 @@
+{
+  "id": "api/get-chat-count",
+  "title": "Get Chat Count",
+  "description": "Get the total number of chats for your iMessage account (on the device)",
+  "source": "@site/docs/api/get-chat-count.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-chat-count",
+  "permalink": "/bluebubbles-cli/api/get-chat-count",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-chat-count",
+    "title": "Get Chat Count",
+    "description": "Get the total number of chats for your iMessage account (on the device)",
+    "sidebar_label": "Get Chat Count",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytVVFv20YM/ivE9aEtoElO0m6DB2xIu6LoQ5GiSTcUaR6oE2Vdc7q7HSm7huH/PlByEifOtj7MLzLuyI8fjx/JjUmYsSehzGZ+uTEBezJzk5B5FXNjCuOCmZu/BsprU5iG2GaXxEU9/RyHDK/8QK+GuvbEcE55SRn2vNl21KOZb4yskyKzZBcWZlsY+oZ98nq22dx4bLdme1WYTJxiYGJ1PJ7N9HM/9FsSeN2hwOs4BDGFsTEIBVFLTMk7i2pZfWU13xzyiPVXsuqYckyUxU3BWFAG3rNzQWhBWQn3xIwLejSZBuU70CUK+sfB60x43cRV+G8U9/6AyC3Q9Nt73LuUjmezvRzM+WAtMZs97hO745PZAzp3AY9PZrchBBeqGbM8MoXRWpirhwLRKklHMCJDGPqaMsQWbIfC0MYMa5XQDT6gtVpOeBbD6NfQ0ll6bpS3dLExc7Og8UFQOjM3FSZXLY8qxavsTgk8inCS85D9qK8usuy05UIbx2ydjOLb068pjHpO3I/KWTk7kPxF5xgcj+xOP7yD36Mdegoyqm3MSG8e6YnTlJ4yfHxzfqF+5ZfwJfwKI9pZoqBQJ+UMOJGFFTIsKFBGoQbaHPsRNLatsw79PfQPkaXHADZ6T1ZJzKETSTyvqmbHjXK5IEmTZWljXy0draqffnz584sX1ac/Xn4M7eq9MnryBP7UpnK8H0Rv9mM6BgSbI/MPyaO0MfeAKQHZyGsW6gFdTw1IhFr7466+EgG9n4o+1ZbL6RF6wsAFIIOPYaHfdRygwyUBQo/27HznUDWUfFxrXpCHEBT/n5+8UJin3kNNgLUfGTCFBjA0kMmSW9ItPS7336CJpGV2PNY5ti3l3/T+4t4RA9bOO23NEVtiJqjRXg+JVelMIi4suJKOepoyXJH3+tWmzWj1HlZOujGPITSU/VrP9tMu4fNBIi2J7aZeKmDX2BpBBG2nD8QFdBga/yDuTd4himt3g5Jh6RA42msShmfn45/y3dkv8A5WGETj2Q6DFnFsgalB20GGTGVZPtcZtpOYdtdujxyM6XvdtLmb2v/jqNiNRKFvUiWPLii1cRBsdnPj0mBy2uw6uTTAuD+U4FVhdFSoyWZTI9On7LdbPZ42oM6UxrFWoDHzFj3Tv+T0HfvxUbLXtL6/g5foBzUbB9gSs1MCZn55tS1MR9hQHplNfqfWUpI9r4N9qCi3A/Xtmwuz3f4Nh53Jpw==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Chat by GUID",
+    "permalink": "/bluebubbles-cli/api/get-chat-by-guid"
+  },
+  "next": {
+    "title": "Get Chat Messages",
+    "permalink": "/bluebubbles-cli/api/get-chat-messages"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/remove-participant-from-chat",
+  "title": "Remove Participant from Chat",
+  "description": "Removes a participant from an existing chat",
+  "source": "@site/docs/api/remove-participant-from-chat.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/remove-participant-from-chat",
+  "permalink": "/bluebubbles-cli/api/remove-participant-from-chat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "remove-participant-from-chat",
+    "title": "Remove Participant from Chat",
+    "description": "Removes a participant from an existing chat",
+    "sidebar_label": "Remove Participant from Chat",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzlVm1v2zYQ/isH5kM3Q5Hctd0GbejQl6AIsCJBknYo6gA9UyeLLUWyPMquYfi/D0c5jZ1kw77PXyQfeS/PvTynjQoYsadEkVX9caMc9qRqFZB55WOjCmWcqtXXgeJaFaoh1tGEZLxIP/ghwks70MthPrfEcElxSRH2tFl31KOqNyqtg1jmFI1bqG2h6Bv2wYpss7nR2G7V9rpQkTh4x8Si+NN0Ko9D15eD1sTcDhZuLqvttlAJFwJELR+rQr3qMKlCvYl+CMeXgbRpjVbXd2FcUO+XxIAQMCajTUCXoI2+B3RA3wwn4xagO0wzN3OTyVvjTD/0D0F/T5GNd5NJDdPySTkdFS7o62AicT2ZwHk0S0wEL85P5fDo6OgI5Jw4wUvfrEX46dOnz+zdzG1mDgCgquCqo4PwsGkiMUPyEHP8482Z2h3MVA0zNVMzt832lGQ1exEnklDtXSKX5BVDsEaj5KMSxyK7Vzk//0xa8hmiDxSTGcuz8/dAibf7Rd67qORoW6ieUucbVauGLCUSy5g6VasKg6mWjyvJePW7VBHevDt9/bzaS4D0Vk752LdDtLmROs9p10QC5OIW8slDkdx2o3GtzxhMyj25V1tVqOVYVlWrx+W0nN6bhKvOMBiG1OXCwmuvh55cyimF1sd88kC/vAjhEcPFyeWV6JVS/OeQrZ0FcmLqSTkFDqRhhQwLchQxUTO2pxj1bWu0QXtg/dxz6tGB9taSliBq6FIKXFdVs4uNYrmgFMabpfZ9tTS0qn75+dmvT59W794/u3Dt6u3Yo/CXFMHwvhM52fdpZIJ09MzHwWJqfewBQwDSntecqAc0PTXSsXPJOpi3xIwLEglaC2uhk4aWRhOXYxJ6QscFIIP1biHPtR+gwyUBQo/67HKnUDUUrF8LLoiDc2L/n1NeiJlH1sKcAOc2R8DkGkDXQCRNZknfw+NyPweNJymz4Vxn37YU/5DzqwMRA86NNTIj2XbykWCO+ssQGHwLTEk4havUUU8jwhVZK08jpUGdOWdlUpdxDK6haNci24ddwod7QFpKustsxQX0OwwFYEqoO0kQF9Cha+wdvze4nU/Ck7l1GZYGgb3+Qonhh8v8Up6e/QansBIaSl48OSliHgGXo22HNEQqy/JHGa1di8l07dbLyLhwfpdud4R9MFt7RPW/YeodkSb6lqpg0ThJY6a4zY4jPyoMRohJ9pwe07bHlJlLb7nyulBCjKK22cyR6V20262Ix8UuDNoYlg5qVN2iZfqXKvyHtf8ggC+0Pvy0WKIdKO+Da/kTjQSg6o/X20J1hA3FHNmo92r0f3wlpm91760usfV9s7w++fPk6kQVar5ber1vRCviShYirsR7oXxGmXdYlm2URbcYcCF3R6vy+xtx2y5e",
+    "sidebar_class_name": "delete api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Remove Group Icon",
+    "permalink": "/bluebubbles-cli/api/remove-group-icon"
+  },
+  "next": {
+    "title": "Restart Server",
+    "permalink": "/bluebubbles-cli/api/restart-server"
+  }
+}

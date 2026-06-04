@@ -1,0 +1,468 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/bluebubbles-cli/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/bluebubbles-cli/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "api/add-participant-to-chat",
+              "path": "/bluebubbles-cli/api/add-participant-to-chat",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/bluebubbles",
+              "path": "/bluebubbles-cli/api/bluebubbles",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/check-for-server-update",
+              "path": "/bluebubbles-cli/api/check-for-server-update",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/create-new-chat",
+              "path": "/bluebubbles-cli/api/create-new-chat",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/delete-chat",
+              "path": "/bluebubbles-cli/api/delete-chat",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/delete-scheduled-message-by-id",
+              "path": "/bluebubbles-cli/api/delete-scheduled-message-by-id",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/delete-settings",
+              "path": "/bluebubbles-cli/api/delete-settings",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/delete-theme",
+              "path": "/bluebubbles-cli/api/delete-theme",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/download-attachment",
+              "path": "/bluebubbles-cli/api/download-attachment",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/edit-message",
+              "path": "/bluebubbles-cli/api/edit-message",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/force-download-attachment",
+              "path": "/bluebubbles-cli/api/force-download-attachment",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-account-info",
+              "path": "/bluebubbles-cli/api/get-account-info",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-alerts",
+              "path": "/bluebubbles-cli/api/get-alerts",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-attachment-blurhash",
+              "path": "/bluebubbles-cli/api/get-attachment-blurhash",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-attachment-by-guid",
+              "path": "/bluebubbles-cli/api/get-attachment-by-guid",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-attachment-count",
+              "path": "/bluebubbles-cli/api/get-attachment-count",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-attachment-live-photo",
+              "path": "/bluebubbles-cli/api/get-attachment-live-photo",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-chat-by-guid",
+              "path": "/bluebubbles-cli/api/get-chat-by-guid",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-chat-count",
+              "path": "/bluebubbles-cli/api/get-chat-count",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-chat-messages",
+              "path": "/bluebubbles-cli/api/get-chat-messages",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-contact-card",
+              "path": "/bluebubbles-cli/api/get-contact-card",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-contact-share-status",
+              "path": "/bluebubbles-cli/api/get-contact-share-status",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-contacts",
+              "path": "/bluebubbles-cli/api/get-contacts",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-face-time-availability",
+              "path": "/bluebubbles-cli/api/get-face-time-availability",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-fcm-client-config",
+              "path": "/bluebubbles-cli/api/get-fcm-client-config",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-find-my-devices-locations",
+              "path": "/bluebubbles-cli/api/get-find-my-devices-locations",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-find-my-friends-locations",
+              "path": "/bluebubbles-cli/api/get-find-my-friends-locations",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-handle-by-address",
+              "path": "/bluebubbles-cli/api/get-handle-by-address",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-handle-count",
+              "path": "/bluebubbles-cli/api/get-handle-count",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-handles-focus-status",
+              "path": "/bluebubbles-cli/api/get-handles-focus-status",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-i-message-availability",
+              "path": "/bluebubbles-cli/api/get-i-message-availability",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-i-message-entity-totals",
+              "path": "/bluebubbles-cli/api/get-i-message-entity-totals",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-landing-page",
+              "path": "/bluebubbles-cli/api/get-landing-page",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-media-totals",
+              "path": "/bluebubbles-cli/api/get-media-totals",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-media-totals-per-chat",
+              "path": "/bluebubbles-cli/api/get-media-totals-per-chat",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-message-by-guid",
+              "path": "/bluebubbles-cli/api/get-message-by-guid",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-message-count",
+              "path": "/bluebubbles-cli/api/get-message-count",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-messages-embedded-media",
+              "path": "/bluebubbles-cli/api/get-messages-embedded-media",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-my-sent-message-count",
+              "path": "/bluebubbles-cli/api/get-my-sent-message-count",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-scheduled-message-by-id",
+              "path": "/bluebubbles-cli/api/get-scheduled-message-by-id",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-scheduled-messages",
+              "path": "/bluebubbles-cli/api/get-scheduled-messages",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-server-logs",
+              "path": "/bluebubbles-cli/api/get-server-logs",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-server-metadata",
+              "path": "/bluebubbles-cli/api/get-server-metadata",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-settings",
+              "path": "/bluebubbles-cli/api/get-settings",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/get-themes",
+              "path": "/bluebubbles-cli/api/get-themes",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/install-server-update",
+              "path": "/bluebubbles-cli/api/install-server-update",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/leave-chat",
+              "path": "/bluebubbles-cli/api/leave-chat",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/lock-mac",
+              "path": "/bluebubbles-cli/api/lock-mac",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/mark-alert-as-read",
+              "path": "/bluebubbles-cli/api/mark-alert-as-read",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/mark-chat-as-read",
+              "path": "/bluebubbles-cli/api/mark-chat-as-read",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/mark-chat-as-unread",
+              "path": "/bluebubbles-cli/api/mark-chat-as-unread",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/modify-active-alias",
+              "path": "/bluebubbles-cli/api/modify-active-alias",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/notify-for-silenced-message",
+              "path": "/bluebubbles-cli/api/notify-for-silenced-message",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/ping",
+              "path": "/bluebubbles-cli/api/ping",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/query-chats",
+              "path": "/bluebubbles-cli/api/query-chats",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/query-contacts",
+              "path": "/bluebubbles-cli/api/query-contacts",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/query-handles",
+              "path": "/bluebubbles-cli/api/query-handles",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/query-messages",
+              "path": "/bluebubbles-cli/api/query-messages",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/refresh-find-my-devices",
+              "path": "/bluebubbles-cli/api/refresh-find-my-devices",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/refresh-find-my-friends",
+              "path": "/bluebubbles-cli/api/refresh-find-my-friends",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/register-device",
+              "path": "/bluebubbles-cli/api/register-device",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/remove-group-icon",
+              "path": "/bluebubbles-cli/api/remove-group-icon",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/remove-participant-from-chat",
+              "path": "/bluebubbles-cli/api/remove-participant-from-chat",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/restart-server",
+              "path": "/bluebubbles-cli/api/restart-server",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/restart-services",
+              "path": "/bluebubbles-cli/api/restart-services",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/save-settings",
+              "path": "/bluebubbles-cli/api/save-settings",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/save-theme",
+              "path": "/bluebubbles-cli/api/save-theme",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/schedule-a-message",
+              "path": "/bluebubbles-cli/api/schedule-a-message",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/send-attachment",
+              "path": "/bluebubbles-cli/api/send-attachment",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/send-multipart-message",
+              "path": "/bluebubbles-cli/api/send-multipart-message",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/send-reaction",
+              "path": "/bluebubbles-cli/api/send-reaction",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/send-text",
+              "path": "/bluebubbles-cli/api/send-text",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/set-group-icon",
+              "path": "/bluebubbles-cli/api/set-group-icon",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/share-contact-info",
+              "path": "/bluebubbles-cli/api/share-contact-info",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/start-send-typing-indicator",
+              "path": "/bluebubbles-cli/api/start-send-typing-indicator",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/stop-send-typing-indicator",
+              "path": "/bluebubbles-cli/api/stop-send-typing-indicator",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/unsend-message",
+              "path": "/bluebubbles-cli/api/unsend-message",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/update-a-chat",
+              "path": "/bluebubbles-cli/api/update-a-chat",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/update-a-scheduled-message-by-id",
+              "path": "/bluebubbles-cli/api/update-a-scheduled-message-by-id",
+              "sidebar": "docs"
+            },
+            {
+              "id": "api/upload-attachment",
+              "path": "/bluebubbles-cli/api/upload-attachment",
+              "sidebar": "docs"
+            },
+            {
+              "id": "cli-reference",
+              "path": "/bluebubbles-cli/cli-reference",
+              "sidebar": "docs"
+            },
+            {
+              "id": "development",
+              "path": "/bluebubbles-cli/development",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doctor",
+              "path": "/bluebubbles-cli/doctor",
+              "sidebar": "docs"
+            },
+            {
+              "id": "index",
+              "path": "/bluebubbles-cli/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "local-server",
+              "path": "/bluebubbles-cli/local-server",
+              "sidebar": "docs"
+            },
+            {
+              "id": "quickstart",
+              "path": "/bluebubbles-cli/quickstart",
+              "sidebar": "docs"
+            },
+            {
+              "id": "webhooks",
+              "path": "/bluebubbles-cli/webhooks",
+              "sidebar": "docs"
+            },
+            {
+              "id": "/api",
+              "path": "/bluebubbles-cli/api",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/bluebubbles-cli/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

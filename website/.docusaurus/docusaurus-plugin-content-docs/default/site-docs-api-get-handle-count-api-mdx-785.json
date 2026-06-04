@@ -1,0 +1,35 @@
+{
+  "id": "api/get-handle-count",
+  "title": "Get Handle Count",
+  "description": "Get the total number of handles for your iMessage account (on the device)",
+  "source": "@site/docs/api/get-handle-count.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-handle-count",
+  "permalink": "/bluebubbles-cli/api/get-handle-count",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-handle-count",
+    "title": "Get Handle Count",
+    "description": "Get the total number of handles for your iMessage account (on the device)",
+    "sidebar_label": "Get Handle Count",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytVU2P1EYQ/Sul5gBIjj2bQIgcKREkiOwBLWKWRGjZQ027PG5tu7vTVfYwGvm/o7JnyUwgUQ45tdX19V5V1/PBJMzYk1BmU98cTMCeTG0SMu9ibkxhXDC1+XOgvDeFaYhtdklc1Nv3ccjwwg/0YthsPDGsKY+U4SSabUc9mvpgZJ80M0t2YWumwtBH7JPXu8PhPmKazHRbmEycYmBiDfx2tdLjvPR6sJaY28HDvbOZpsIIbpWIGS9MYX7D0Hgyt3/H/YoEpCOQKOghDP2GMsQWutmfoY0Z9srNvSZm3BKgtXEIAo9imCMbGp2lx6YwPUkXG1ObLYkpTELpTG0qTK4aL6olYzUHazfm/iydHrKfqXeR5UjbhTbOrXIy9+WktaYwGrngvyhX5eqLaVx3jsHxjO/5m0v4NdqhpyCo9pmTWr4yrucpPWR4+3J9rXHlh/Ah/ARztqtEQVN9V66AE1nYIcOWAmUUaqDNsZ+TxrZ11qE/y/4msvQYwEbvySqIGjqRxHVVNUdslMstSVo8Sxv7anS0q559//SHJ0+qd78/fRva3WtF9OAB/NGhKMGTImo5rekYEGyOzN8kj9LG3AOmBGQj71moB3Q9NSARNvoO/5qwREDvl7Ev0+VyaUJPGLgAZPAxbPXcxwE6HAkQerRX62NA1VDyca+8IA8haP5/bnmhaR56DxsC3PgZAVNoAEMDmSy5kT7D4/K0B00kHbPjec6xbSn/rPbrsysG3DjvxKlzBJaYCTZo74bE+tqZRFzYciUd9bQw3JH3ejodDVq1w85JN/MYQkPZ7/XulHYJ778g0pLYDmyHwgX0Rw4FoAjaThvExf22ndW95x2iuNbZ+ekyjA6Bo70jYXi0nj/Ky6sf4RJ2GETr2Q6DDnFegWVF20GGTGVZPlaxOT4x3a6jxKkILAIBvxzX82yfDsbGIBTkfxaMow4KfZQqeXRB4c1icDiqx43B5HThVcOWEqYwi4bcFkYFQ50Ohw0yvct+mvR6kWhVlsaxzqExdYue6V94/QcB/yrcO9qf/yRG9IO6zTI2YnYKwNQ3t9OJQr56eW2m6RMMyz9u",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Handle by Address",
+    "permalink": "/bluebubbles-cli/api/get-handle-by-address"
+  },
+  "next": {
+    "title": "Get Handle's Focus Status",
+    "permalink": "/bluebubbles-cli/api/get-handles-focus-status"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/delete-chat",
+  "title": "Delete Chat",
+  "description": "Deletes a chat from the iMessage client on the macOS server. This will only apply to the macOS server's iMessage client, and no other Apple devices.",
+  "source": "@site/docs/api/delete-chat.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/delete-chat",
+  "permalink": "/bluebubbles-cli/api/delete-chat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "delete-chat",
+    "title": "Delete Chat",
+    "description": "Deletes a chat from the iMessage client on the macOS server. This will only apply to the macOS server's iMessage client, and no other Apple devices.",
+    "sidebar_label": "Delete Chat",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVm1v2zYQ/isH5kM2Q5Wctd0GbeiQNMEQoFmCvHQo0nw4UyeLDUWqPEquYfi/D0fZi/OyYT9g/kLhyHt77rk7r1SHAVuKFFiVtyvlsCVVqg6ZFz5UKlPGqVJ97SksVaYqYh1MF40X6SffBziyPR31s5klhisKAwXY0WbdUIuqXKm47MQyx2DcXK0zRd+w7azIVqutxnqt1neZCsSdd0wsij9Mp3I8dn3Va03MdW9h+1it15mKOJdE1HCgMvW+wajunkZ9TJYiMSDoBiPUwbcQGwJzRsw4J9DWkIvgXRK3qM+vgFNmOVw3hmFhrAXv7BKw6+wSon/2cp+f2ssAXQXOg48NBTjsOktQ0WA0cf7ZfXaTyZlxpu3blyD9SIGNd5NJCQf563w6KlzS194E4nIygYtgBowEhxencrm3t7cHck8c4chXSxH+URwqQTdJRSjAau8iuSifko7RKEAVX1jQWj2voJ99IR3Vei14txQbX6lSVQlVlakOY6NKVWBniuGgEIyLX6US8PvN6fE74URKaeRbH2wiQOM5boovji8fQjzZ0mS1FjLWPoViYmLODlIqU8MIkirVQT7Np8/4mopnOBXr8OIUjr3uW3IxJQy1D+nmBfQPu26f4fLk6lr0UrXejVQ478iJqdf5FLgjDQtkmJOjgJGqB3L5ujbaoH1k/cJzbNGB9taSliBKaGLsuCyKahMbhXxOsRtf5tq3xWBoUfz049uf37wpbj6+vXT14mysOPwpMBvedSI3uz5NIn7wzK86i7H2oRUWA2nPS47UApqWKuH0TDr1gcbRA1oLS2n6LW9HEFpCxxkgg/VuLufS99DgQICbrhgVioo665eSF4TeObH/z5BnYmbfWpgR4MymCJhclRopkCYzPHTt2ENbDCpPUmbDqc6+rin8JvfXj0QMODPWRCOPPXD0gWCG+r7vGHwNTDEaN+ciNtTSmOGCrJXTSGlQyz0sTGxSHr2rKNilyHbTzuHTs0RqirpJE4gzaDc5ZIAxom4EIM6gQVfZJ363eTsfTb3pVYbBILDX9xQZvrtKH/np+S9wCgt0UfzpBp0UMbXAONnqPvaB8jz/XsbxhmLSXZslMA5KSFP0SSvtTI3/5+lmLkb6FovOonECZxpsq800vFXYGRlQspX0iOfuTLzLlAxAebhazZDpJtj1WsTj4pVJWRkW7lSqrNEy/UtB/sNafjHke1o+Xv0D2l6epbE8YDASgCpv79aZaggrCimyUe/96P/VtZh+0H22UsTW31vj+OTDyfWJytRss4xaX4lWwIUsKlyI90z5lGX6N5BkK2XRzXucy9vRqvz+AiWRDGA=",
+    "sidebar_class_name": "delete api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Create New Chat",
+    "permalink": "/bluebubbles-cli/api/create-new-chat"
+  },
+  "next": {
+    "title": "Delete Scheduled Message by ID",
+    "permalink": "/bluebubbles-cli/api/delete-scheduled-message-by-id"
+  }
+}

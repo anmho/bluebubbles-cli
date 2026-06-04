@@ -1,0 +1,35 @@
+{
+  "id": "api/get-face-time-availability",
+  "title": "Get FaceTimeAvailability",
+  "description": "Checks if a given address has FaceTime enabled for it.",
+  "source": "@site/docs/api/get-face-time-availability.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-face-time-availability",
+  "permalink": "/bluebubbles-cli/api/get-face-time-availability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-face-time-availability",
+    "title": "Get FaceTimeAvailability",
+    "description": "Checks if a given address has FaceTime enabled for it.",
+    "sidebar_label": "Get FaceTimeAvailability",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJylVVFv2zYQ/isH9qEboEnJ1m6DB2xLt67NQ5EicTcMqR/O1MniQpEs7yTXMPTfh5Md105WYECfZB95x++7j/dxaxJm7Egos5ndbk3AjszMJGRex1ybwrhgZuZDT3ljCsO2pQ7NbGtkk3QjS3ZhZcbC0EfsktfYdnufPo5mLA5Fsa4zMT+sWRPb7JK4qNFr+tC7THUJ85ZgnwISwbZk78A14ARaZPgDLc1dR4BW3IBC9f/F909sQ1lH+tVZH/u6tLEz46IwmTjFwMSa/+3ZmX5Owd301hJz03u432zGsTCCK22fGc5NYV5jqD2ZxUNmvykBVgYIKzdQOLA7oUMBl55qaGIGJ6UpTEfSxtrMzIrEFCahtGZmKkyuGs6rdjquwgGdx6XzTjZVg5bEdaQdoTzci9tnP8nTRhaVZqFKNHFql5OpNy98Ty/65dKT6qSZO/Dn5Vl59kiseesYHIO0BBdvL+H3aPuOgqCuTwx05agm3Exw4CKlpwzXL2/mmle+D+/DzzBVu0oUtNR35RlwIgtrZFhRoKwSQ5NjNxWNTeOsQ39S/W1k6TCAjd6TVRAzaEUSz6qq3mOjXK5I0m6nal8NjtbVD98///HZs+rdn8+vQ7N+o4iePIG/WhQleHSIrhyf6RgQbI7M3ySP0sTcAaYEZCNvWKgDdB3VeoWXehfBvSFmXJFG0HvYxD5DTYOzxOWuCR1h4AKQwcew0u8m9tDiQIDQob262SdUNSUfN8oLch+C1v98ywst89R7WBLoJVMETKEGDDVksuQGOsDj8rgHdSSV2fGkc2wayr/o+vwkxLC7gY6mkWWJmWCJ9q5PDLEBJhEXVlxJSx3tGK7Je/06lUZnOaxg7aSdePShpuw3GjumXcLfj4g0JLYF26JwAd2eQwEogrbVBnEBu1k5Pfeed4jiGmenq8swOASO9o6E4aub6Ud5efUTXMIag+z8CIOKOI1AmNA2vfSZyrL8Wg1nf8V0uvYG+IrkMOcXR/P6cK62xsYgFORLXGNvgEIfpUoeXVBMkwNs9xZyazA5nXJ1rV1rTGHwFNjBShaFUd/QtO12iUzvsh9HDe+MXA2mdjzBMLMGPVNh7mhz+poM6HuFNb0Lj7Z/tgtf9ir8Zyt20D69SZ+QLfRPdgrNzG4X45EDv3o5N+P4L8LHgD4=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Contacts",
+    "permalink": "/bluebubbles-cli/api/get-contacts"
+  },
+  "next": {
+    "title": "Get FCM Client Config",
+    "permalink": "/bluebubbles-cli/api/get-fcm-client-config"
+  }
+}

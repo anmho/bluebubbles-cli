@@ -1,0 +1,35 @@
+{
+  "id": "api/get-themes",
+  "title": "Get Themes",
+  "description": "Fetches themes saved to your BlueBubbles Server.",
+  "source": "@site/docs/api/get-themes.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-themes",
+  "permalink": "/bluebubbles-cli/api/get-themes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-themes",
+    "title": "Get Themes",
+    "description": "Fetches themes saved to your BlueBubbles Server.",
+    "sidebar_label": "Get Themes",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytVd9v3DYM/lcI9aEt4NnJ1m7DDdjQYG2RhyJFk24o0nvgyfRZiCxpIn3Xw8H/+0D52l3SLCiGPckmRfL7+Et7kzDjQEKZzeJ6bwIOZBYmIfM25tZUxgWzMH+NlHemMi2xzS6Jiyr9EMcMZ36ks3G18sRwSXlDGY6s2fY0oFnsjeySembJLqzNVBn6hEPyKtvvP1tMk5mqLyjK8SCCJxflC/1TeOVCCwjS00Cw2oEa13DeQYgwoNgeHEMXx9BWEEbv9TeTjDlQWz+EdFpWJhOnGJhY9d+fnOhxG8nlaC0xd6OHz5fNNFVGcK2ZNZtTU5kztDdjMsu7NF6R2J54Bs/AuKEWJMLu/gQr3IGkj61ZmDWJqUxC6c3CNJhcszltViVQU/wpt2I2V3jMvqS8jyya7qUmuIuFuJNSj6OIpjJqOcM8rU/qk69qcNU71mRKT/Di7Tn8Hu04UBBUPXQxF809bfIipccM715eXqld/TF8DL9C8XaRKKirH+oT4EQWtsiwpkAZhVrochyK09h1zjr0t7y/jSwDBrDRe7IKYgG9SOJF07QHbJTrNUmab9Y2Ds3G0bb56cfnPz971rz/4/m70G3fKKJHj+DPHkUJHgVRzXFMx4Bgc2T+LnmULuYBMCUgG3nHQgOgG+aarrSrwL0hZlyTStD7udItbZwlruckDISBK0AGH8Naz10coccNAcKA9uLyYNC0lHzcKS/IYwjq/99TXqmbx97DigBXviBg0tkJLWSy5Db0BR7XxzloY+lRx6XOseso/6b6q1siBlw578Tp5QgsMRPMDckQO2AScWHNc3fODLfkvZ5OS4NW9bB10hceY2gp+53KjmnX8OErIp0OEtgehSsYDhwqQBG0vSaIK+gxtP5O3M+8QxTXOVtal2HjEDjaGxKGJ5floz6/+AXOYYtBNJ7tMWgRywiEgrYbZcxU1/VTXXKHFtPpOiy11yRwVZjfnaS9sTEIBflvG+GwtoQ+SZM8uqDxy7TvD+vh2mByOtG6i+aKqF1ZEsvK6EbQS/v9CpneZz9NKp43r66O1rEmujWLDj3TA/C/4WW4F+4N7W6/Phv0o14rz8K3x/8f34UHcB7ep38wLvUnOwVpFtfL6WhNv355Zabpb8lHlAc=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Settings",
+    "permalink": "/bluebubbles-cli/api/get-settings"
+  },
+  "next": {
+    "title": "Install Server Update",
+    "permalink": "/bluebubbles-cli/api/install-server-update"
+  }
+}

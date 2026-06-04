@@ -1,0 +1,31 @@
+{
+  "id": "api/upload-attachment",
+  "title": "Upload Attachment",
+  "description": "Upload an attachment to the server's iMessage attachments directory.",
+  "source": "@site/docs/api/upload-attachment.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/upload-attachment",
+  "permalink": "/bluebubbles-cli/api/upload-attachment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "upload-attachment",
+    "title": "Upload Attachment",
+    "description": "Upload an attachment to the server's iMessage attachments directory.",
+    "sidebar_label": "Upload Attachment",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVs1u20YQfpXB+uDWYCg5chxXBVokaA45BDbiuEUQGcloORS3We4yO0MpgsB3L4akbMVxiz5ATpTmf3a/b2Z3psGENQklNvMPOxOwJjM3DTJvYipMZlwwc/OlpbQ1mSmIbXKNuKjS97FN8NK39LJdLj0xXFNaU4IDb7YV1WjmOyPbRiOzJBdWpssMfcW68Srb7fYeXWe628wk4iYGJlbHp9Opfr5Nfd1aS8xl62FvbLouM4IrbcSsT01mXoigrWoKYm4f1n7T+IgFYAC8swKJIBUB920cM7g3xIwrOrBhKFwiKzFt80VYhHeVY3AMCE2iJ4m+tI6dEGAo4GPdsnyEJUERA8GSypg0eihcWD1IjQwNJoFYAqqjF6f/P0I9lJDDPtPJSYhycgJ9rkQFbCoK91EhxFSjP4g91kl3J6VJRKNRKJrogsDGea91IrTBfWkJXEFBXOkogVQosI0tWAzQMj3M91ixmvHo6OgIXg2XDG/H1Kr49OkT/M0xLMJuEQAAFoYFpeWFmcPT6TTbS8doKl7sb3xh7tQFCqpujDIIK+RqcMDpGT6d4fRiNlvOZsXyAs9nRNOL0/Nfzi6eX5wvzODXLUI3lmUyU5NUsVAKRBaTmQalMnMzwcZN1qeT+1OdtD2CFOM9XAb+tMn3gK4iywhmF8rYE8BJj/YDwpjMqOeAyNN8mk+/49j+1hWXL65ewx/RtpoeVQ9lTL3mERK+aJpjhrevrt+pX38jvw0YumwoaKhZPgVuyMIGGVYUKKFQAWWKdR80lqWzDv030a8iS40BbPSerBYxh0qk4flkUoy1UcpXJM1gmdtYT9aONpPn588uzs4mN38+exvKzZsBI/CXwsvxYRLVHObs6WVTZH7SeJQyphqwaYBs5C0L1YCupkLpu9Tpcs9biYDeK3oTFLR2lngkUk0YOFPa+agw5h7iFa6VBDXay+vRYVJQ4+O2J2lqQ9D4/37kmYY5Hsm09H0FSpV+HiSy5NZ0Vx7nh2dQROKBlno5sSwp/X43Ye5EDLh03olT4wgsOlKWaD+3DSuvmURcWPFEKqpp6HBD3uvX6dWgVT1snFR9H20oKPmtyg7bzuH9d42UJLYCW6Fwtqe6ZrgfjhlUGAr/IO++7xB1pNgeugxrh8DRfiZh+Om6/5G/vvwVXsMGh1lsKwx6iT0FQl9t2UqbKM/zn3WFjBBTdo2LaxzrB5P/AaF2xsYgqvixA37sgMd3wPhUEfoqk8ajC4q1frLvxn3wwWDjdHrrMwMPwTZuhdvM6ApQy91uiUw3yXedioenlO6KwrEyqzDzEj3TfwD1fzy0Hq35M22/fcyt0bdq1i+mNSanBZj5h9vuYPNdXV6/M133Dzlsf2s=",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Update a Scheduled Message by ID",
+    "permalink": "/bluebubbles-cli/api/update-a-scheduled-message-by-id"
+  }
+}

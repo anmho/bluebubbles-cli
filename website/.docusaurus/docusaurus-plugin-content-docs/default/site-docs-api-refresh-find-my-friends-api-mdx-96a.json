@@ -1,0 +1,35 @@
+{
+  "id": "api/refresh-find-my-friends",
+  "title": "Refresh FindMy Friends",
+  "description": "Refresh your FindMy Friends locations by using Accessibility to open the FindMy app. This endpoint returns the location data after the locations update.",
+  "source": "@site/docs/api/refresh-find-my-friends.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/refresh-find-my-friends",
+  "permalink": "/bluebubbles-cli/api/refresh-find-my-friends",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "refresh-find-my-friends",
+    "title": "Refresh FindMy Friends",
+    "description": "Refresh your FindMy Friends locations by using Accessibility to open the FindMy app. This endpoint returns the location data after the locations update.",
+    "sidebar_label": "Refresh FindMy Friends",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVU1v20YQ/SvTzSEtwJJymrSFCrRw2gbIwbBhOy0Cx4fRcihuvNzd7gylEIL+ezCkZEuxU/TYE4nZnY838+btxiTM2JFQZjO/2ZiAHZm5Sci8jrk2hXHBzM0/PeXBFKYmttklcVGt72Of4bXv6XW/WHhiuKK8ogwH3mxb6tDMN0aGpJFZsgtLsy0MfcIuebVtNnuP7dZsbwuTiVMMTKyOL2Yz/RynvqQmE7fwxoX6bIA32VGo2RTGxiAURD0wJe8sqkf1kdVt87ieuPhIVkxhUo6JsrgpKQtKzwf3XBBaUtbCO2LGJT0JqkZ5Cu32EO9D9Bez2UE4c9VbS6wopjB7Q9N7P0CeIFO9B91MoMHHCSR/o4k0leBSx2lWJzrA333sa3P75fT2LRx0isd9fAgJiwF6dmEJp2MpbuG8kwEkQkwUQFra+2JKJVy3joFCnaILApmkz4HHW/uQoNgAG6F8ZGfoU41CpdGWSBtr5WHkcTYorZmbCpOrVieVs4qoalyou6HataHa9UdJN9JwInSf/ciwNrLs2OVCE8cZORnpd8BgUxj1nBp0Us7K2SPSjwjdhOn04i38EW3fUZAJXBMnVE9sxWlKzxku/7y6Vr/yQ/gQfp36dZ4oaKgfyhlwIgtrZFhSoIxCNTQ5dmPQ2DTOOvRH0S8iS4cBbPSerBYxh1Yk8byq6l1tlMslSZpuljZ21crRuvrpx1c/v3xZvfvr1WVo1mda0bNn8HeLogAPkujJYU7HgGBzZP4+eZQm5k7HD2QjDyzUAbqOamXJQhcA3NlEcrWg9xPnalo5S7wjTUcYuABU8oWlfofYQ4srAoQO7fnVzqGqKfk4KC7IfQga/+stLzTMc+9hQYALP1bAFGrAUEMmS25F9+VxediDOpKO2fE459g0lH/T8+sjEwOOO+H0cgSWmAkWaO/6xBAbYBJxYcmVtNTRhHBN3utXRSWj1XNYO2lHHH2oKftBbYewS3j/CEhDYluwLQoXsNMRzSCCttUGcQEthtp/kXePO0Rxjdvv38ohcLR3JAzfXo0/5dvzX+AtrDGI5rMtBh3iuALT8je99JnKsvxO5W9HMd2u3UvyVaE+2qrNg27/n3Vpp+pCn6RKHl1QzKPCbHYadWMwOVWRUXlHnTKFmZRKf+7h79XqtjAqTeq52SyQ6V32262apzdXNax2rBOvzbxBz/QvvfsPL/KTGO5oOH71V+h7vTYK5gqz0wLM/OZ2W5iWsKY8Vjb56QiSHHg9enk1yr2oX5xfXZvt9jPpzPoe",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Refresh FindMy Devices",
+    "permalink": "/bluebubbles-cli/api/refresh-find-my-devices"
+  },
+  "next": {
+    "title": "Register Device",
+    "permalink": "/bluebubbles-cli/api/register-device"
+  }
+}

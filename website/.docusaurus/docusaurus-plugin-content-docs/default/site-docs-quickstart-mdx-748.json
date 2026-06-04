@@ -1,0 +1,27 @@
+{
+  "id": "quickstart",
+  "title": "Quickstart",
+  "description": "Install the CLI and run the first BlueBubbles resource commands.",
+  "source": "@site/docs/quickstart.mdx",
+  "sourceDirName": ".",
+  "slug": "/quickstart",
+  "permalink": "/bluebubbles-cli/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/anmho/bluebubbles-cli/tree/main/website/docs/quickstart.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Quickstart",
+    "description": "Install the CLI and run the first BlueBubbles resource commands."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "BlueBubbles CLI",
+    "permalink": "/bluebubbles-cli/"
+  },
+  "next": {
+    "title": "CLI Reference",
+    "permalink": "/bluebubbles-cli/cli-reference"
+  }
+}

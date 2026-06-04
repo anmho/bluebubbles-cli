@@ -1,0 +1,35 @@
+{
+  "id": "api/ping",
+  "title": "Ping",
+  "description": "Send a quick ping to your BlueBubbles Server to make sure it's online and responding to requests",
+  "source": "@site/docs/api/ping.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/ping",
+  "permalink": "/bluebubbles-cli/api/ping",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "ping",
+    "title": "Ping",
+    "description": "Send a quick ping to your BlueBubbles Server to make sure it's online and responding to requests",
+    "sidebar_label": "Ping",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy9VU2P3DYM/SuEctgWcO3ZNmkLF2iRoEGxh2AXmU2LYLMHjkyPhZUlrUh7Mhj4vxf0eIuZfBQ99SSDFMn3SOr5YBJm7Ekos6nvDiZgT6Y2CZl3MTemMC6Y2jwOlPemMA2xzS6Ji2p9H4cMr/xAr4bNxhPDmvJIGU6i2XbUo6kPRvZJM7NkF7ZmKgx9xD55tR0OTxHTZKb7wmTiFAMTa+D3q5Ue56XXg7XE3A4eni6baSqM4FaJmPHSFOZaOsrm/lPYawoNIDwOzj5AcmELEmH/FS4SoccHAh4ygZMLhhi8CwQYmqV0s6TI9DgQC5vC9CRdbExttiSmMAmlM7WpMLlqvKy0pvZmrnDs+5D93IgusixNcKGNc+OczF06AWcKo5FHOpflqlx9NpvbzjE4BukIXt5cwe/RDj0FQfVDG/Ps+QLhlyldMLx9vb7VuPJD+BB+hTnbdaKgqX4oV8CJLOyQYUuBMgo10ObYz0lj2zrr0J9lv4ksPQaw0XuyCqKGTiRxXVXNgo1yuSVJx5uljX01OtpVP/344ufnz6t3f754G9rdG0X07Bn81aEowZMi6jmt6RgQbI7M3yWP0sbcA6YEZCPvWagHdD01OruNbiW4N8SMW1ILen9cioZGZ4nLYxN6wsAFIIOPYavnPg7Q4UiA0KO9Xi8BVUPJx73ygjyEMC/JV1teaJoL72FDgBs/I+B5T+c1s+RG+gcel6c9aCLpmB3Pc45tS/k39d+emRhw47wTp5cjsMRMsEH7MCSG2AKTiAtbrqSjno4Md+S9nk5Hg1b9sHPSzTyG0FD2e7Wd0i7h/WdEWhLbge1QuIB+4VAAiqDttEFcQIeh8Z/UfeIdorjW2Xl1GUaHwNE+kDB8s54/yqvrX+AKdhhE69kOgw5xfgJhRtsOMmQqy/JblZ5lxfR1LYJ3c3ySZ2/oYGwMQkH+H81YBFLoo1TJowuKdNaFwyIgdwaT07ev4jaLyH1hVDHUdThskOld9tOk5qNiq7Q0jnUQjalb9Ez/QvI/6PkXQT7Q/vyfMaIf9NqsYyNmpwBMfXc/nUjjH69vzTT9DUKPRkY=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notify for Silenced Message",
+    "permalink": "/bluebubbles-cli/api/notify-for-silenced-message"
+  },
+  "next": {
+    "title": "Query Chats",
+    "permalink": "/bluebubbles-cli/api/query-chats"
+  }
+}

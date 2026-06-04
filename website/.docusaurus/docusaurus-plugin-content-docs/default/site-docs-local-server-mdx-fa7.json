@@ -1,0 +1,27 @@
+{
+  "id": "local-server",
+  "title": "Local Server",
+  "description": "Manage an installed BlueBubbles Server app on macOS.",
+  "source": "@site/docs/local-server.mdx",
+  "sourceDirName": ".",
+  "slug": "/local-server",
+  "permalink": "/bluebubbles-cli/local-server",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/anmho/bluebubbles-cli/tree/main/website/docs/local-server.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Local Server",
+    "description": "Manage an installed BlueBubbles Server app on macOS."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Doctor",
+    "permalink": "/bluebubbles-cli/doctor"
+  },
+  "next": {
+    "title": "Webhooks",
+    "permalink": "/bluebubbles-cli/webhooks"
+  }
+}

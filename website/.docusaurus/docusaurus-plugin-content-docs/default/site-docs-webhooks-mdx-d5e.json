@@ -1,0 +1,27 @@
+{
+  "id": "webhooks",
+  "title": "Webhooks",
+  "description": "Validate BlueBubbles webhook payloads and run a local receiver.",
+  "source": "@site/docs/webhooks.mdx",
+  "sourceDirName": ".",
+  "slug": "/webhooks",
+  "permalink": "/bluebubbles-cli/webhooks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/anmho/bluebubbles-cli/tree/main/website/docs/webhooks.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Webhooks",
+    "description": "Validate BlueBubbles webhook payloads and run a local receiver."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Local Server",
+    "permalink": "/bluebubbles-cli/local-server"
+  },
+  "next": {
+    "title": "Development",
+    "permalink": "/bluebubbles-cli/development"
+  }
+}

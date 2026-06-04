@@ -1,0 +1,35 @@
+{
+  "id": "api/save-settings",
+  "title": "Save Settings",
+  "description": "Save a Settings configuration to your BlueBubbles Server App. This request has 2 required fields, `name` and `data`. Otherwise, the actual configuration data is up to the client. The only caveat is that clients that are pulling settings from the server need to be able to understand the format.",
+  "source": "@site/docs/api/save-settings.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/save-settings",
+  "permalink": "/bluebubbles-cli/api/save-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "save-settings",
+    "title": "Save Settings",
+    "description": "Save a Settings configuration to your BlueBubbles Server App. This request has 2 required fields, `name` and `data`. Otherwise, the actual configuration data is up to the client. The only caveat is that clients that are pulling settings from the server need to be able to understand the format.",
+    "sidebar_label": "Save Settings",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVt9v2zYQ/lcOzEM3QJXsbN0GD9jQbH3oQ5EiTjcUdYCcqZPFliJZHmXXMPS/D0fJqdOkxd43v0gm79d3d9+dDipgxI4SRVaLdwflsCO1UAGZdz7WqlDGqYX62FPcq0LVxDqakIyX07e+j3Bhe7ro12tLDEuKW4pwos26pQ7V4qDSPohlTtG4jRoKRZ+wC1bODoejxjCo4aZQkTh4x8SieD6byeO+62WvNTE3vYWjsBqGQiXcCBC1natCXaD+0Ad182XcS9wSICwpJeM2DNq7xmz6iHIPycP+K8Ceh1DCdWsYIn3siRO0yHCe/5lINTSGbM0F3EoebwFdDbc1Jrwt4TK1FHeGqYDUEqBOPdovXIsoGIY+SBQipq0hl8QpgXd2Dxq3hEmEUotpup/+YCQIvbXGbYCP4Jrou2yKRwyOqBbrawJcW5LX3tUUOUm0Itj42GEqV27lzs7OzuBqwnrh670c3t7ewnv2buUOKwcAUFU5PsEMvhmzd/Q/SqxyY63UAlbqmPaxOvAUzmfn82o+q+bzlSruWXwkO42PjzuQW3FwGFZumMJU0ko5eIldukh7l8glecUQrNHZdCVw5OxBu/r1e9JJFSpEHygmM/bkSJNHmlqieKg+DKf9fseyb2RC3ZkahqzdUWp9LdT0nOPB1KqFqjCYajuv1tlEdUyKMC+Xe2R1H22mWes5TRQTxFefc/PiQXATppM4ZBY0PqMzKRP3hCKqUOJuJNi8nJWzB+MiEyc3LsHz1y/hT6/7jlwaqyuFlZvHafeE4erF8lr0cmP+NtLwMpATUz+UM+BAGnbIsCFHEZPQ8dj7vmmMNmjvWX/tOXXoQHtrSUsQC2hTCryoqnqKjWK5oRRGyVL7rtoa2lU///Tslx9/rN789ezKNbtXI1Xg73Zk5okTuTn1aRgQdPTMT4PFJFQDDAFIe95zog7QdBNBJf9gXhEzbjJP0dqx92vaGk08zaKO0HEByGC928hz73toxyHXob5cTgpVTcH6veCC2Dsn9r+e8kLMPLH2dFIwuTpPtUiazJbuwuPyNAe1Jymz4Vxn3zQUf5f763tHDLg21ginsu3kI8HYyCxz5NjMVWqpoxHhjqyVp5HSoJZ72JnUZhx5jtm9nJ3CLuHtAyANJd2CbjFxAd2EoQBMCXUrCeICWnS1/cLvEbfzyTTT9GDYGgT2+gMlhu+W+aV8efkrvIQduiT+dItOipgp4MYx26c+UlmW38vgmFrsdDpIAZefCX2PTCeT7P919h9aZ9NeSfQpVcGicdI7ebwfppXwTmEwMo1lh4xsyttg6qObQskWELnDYY1Mb6IdBjkev/FkXdSGJZe1WjRomb7Rev/iC/DRiD/Q/v5X5hZtL2J5N20xGglALd7dDIVqCWuKObJR74/R/9NrMf1Z98FCF1t3e/P15fJaMjJ9CHS+Fp2IO/lIwJ34LpTPGPOKz2cHZdFtetyI7GhTfv8AUs/kDg==",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Restart Services",
+    "permalink": "/bluebubbles-cli/api/restart-services"
+  },
+  "next": {
+    "title": "Save Theme",
+    "permalink": "/bluebubbles-cli/api/save-theme"
+  }
+}

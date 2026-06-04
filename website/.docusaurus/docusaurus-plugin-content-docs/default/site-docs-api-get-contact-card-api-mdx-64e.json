@@ -1,0 +1,35 @@
+{
+  "id": "api/get-contact-card",
+  "title": "Get Contact Card",
+  "description": "Get your own contact information or the contact information for someone who has shared their contact card with you.",
+  "source": "@site/docs/api/get-contact-card.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-contact-card",
+  "permalink": "/bluebubbles-cli/api/get-contact-card",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-contact-card",
+    "title": "Get Contact Card",
+    "description": "Get your own contact information or the contact information for someone who has shared their contact card with you.",
+    "sidebar_label": "Get Contact Card",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVluPEzcU/isH87CApjOBLrRKpbbctRUItLu0QmSlnNhnMgaP7dqehCia/14dzySbZRfEQx95muT43D77O5et8BiwpUQhiumHrbDYkpgKjzGuXVCiENqKqfi3o7ARhVAUZdA+acfS964L8MR09KRbLAxFOKOwogAH1lE21KKYbkXaePYcU9B2KfpC0GdsvWHZdruz6HvRF/ssUKlAMX6ZxHf5/OgaWypHf2ppXKdK6VrRXxQiUPTORops/2Ay4c9VVC8pwQtt1esNvAiarIrwyknkU05FOpvIJrZD740eTqqPkY2315Nzi48kkyiED85TSHoIHROmLh7oaZtoSYFRtBQjLulGhArTTdD7Q/CX3h9MJgfuxFkn5XChg5udoO6M2UBNSTakduDrEbzZgb/FYThQwiWzRazu89M85fsVF1+Sg69xwwRxawt8aSgTaFu70GZ34AKkhm48ql2A6FpylmDdOGgwQmwwkGITHfZGEoOCtU4Nhypndmbv3TtvCOYjdebw7vQV7DkOOoLLCaIp4aRmK1DOHiWInfcupJzSXr/Ifx+/PYG1NgYCpS7Yb6Lae/XBrbQiQAtjLgXodMXP19C7Oh+NZnBH5/+boxXtLkGnuxnsWX5wOB05PWXZfD4HJuPMbmcWAGA2smEmpsB82ElHWrB4djMRDm/51kzsLZk8bDYGGIRcs4Ovv1xj4ZmjvcWggCtMGAaVsiwXGOnRMSw2iWJZljMx6PYz2zMMmM/ngrmbGqfEVCwp1xCmRkxFhV5Xq/vVUNvVmCe3htyAhlbWBZN7S+Ni4r5ywW2kdrl4dMpN4qB3iUKw5cDd++WknFxrd+eNjsygHSeeOdm1ZNMlZ/nkhn742PujCKfPz87ZLr/c75C9vfFk2dXP5QSiJwlrjLAkSwETKaiDa7NTV9daajRXvL91MbXINDSGJCcxhSYlH6dVpcbcKJRLSn7Q5CZYrTStq18ePfz1+Lh69/fDU1uvX3NGt2/DPw0mBngQhE8OY+oICDK4GH/yBhOTFtB7IOniJiZqAXXLZepgwZ0J9OuBZixBY4biUbTSkmI5XEJLaGMByK3GLvnLBdTgigChRfnmbDSoFHnjNowLQmct+//6lRfs5sgYWBDgwuQMIlkFaBUEkqRXtE8vlod3oBzxM+uY39nVNYU/+Pz8iigCLrTR3NGz7+QCwQLlp85HLuJIKWm7jFVqqKUB4ZqM4S93+4CSz4f+xTg6qyiYDcsOYZfw/hqQXKIgG0yxgLGSOUJKKBu+oFhAg1aZL+LucFuXdD3OrggrjRCd/EQpwp2z/KM8efMbnMAabeJ4skHLj5hLYGhddZe6QGVZ3uW5NFKMq2uc3jwAno4d5CnmbeBKPW0vR+mPYfFjWPwPw2LciRJ9TpU3qC0TM4+B7Tg5Pgj0mlt93lzy9BhXOp4fF4XgYcFq2y2HfBdM37N4WD15qigduQaVmNZoIn2D09+xHd+Y8CfaXN3AV2g6Vsur8bX4g/rlqnypfcF/gmZ1Mf1w0ReiIVQUMo7B7LGU5NOB1bWVlr3sh/DL5+ei7/8DsfE2Tg==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Chat Messages",
+    "permalink": "/bluebubbles-cli/api/get-chat-messages"
+  },
+  "next": {
+    "title": "Get Contact Share Status",
+    "permalink": "/bluebubbles-cli/api/get-contact-share-status"
+  }
+}

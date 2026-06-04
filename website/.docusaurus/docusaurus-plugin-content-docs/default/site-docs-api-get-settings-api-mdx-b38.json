@@ -1,0 +1,35 @@
+{
+  "id": "api/get-settings",
+  "title": "Get Settings",
+  "description": "Fetches settings saved to your BlueBubbles Server.",
+  "source": "@site/docs/api/get-settings.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-settings",
+  "permalink": "/bluebubbles-cli/api/get-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-settings",
+    "title": "Get Settings",
+    "description": "Fetches settings saved to your BlueBubbles Server.",
+    "sidebar_label": "Get Settings",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy1VVFv3DYM/iuE+tAW8Oxka7fhBrRosLbIQ5Gil24o0nvgyfRZiCxpIn3Xw8H/vaB9Se7aLCgG7Ek2RZHfx0+kdiZhxo6EMpvZ1c4E7MjMTELmTcy1KYwLZmb+6SlvTWFqYptdEhfV+in2Gc58T2f9cumJYU55TRkOTrNtqUMz2xnZJo3Mkl1YmaEw9AW75NW2292cGAYzFLcoxuVBBE8uxi/0T+GNCzUgMIm4sGKwMTRu1WdUB1huQaOVcN5AiNCh2BYcQxP7UBcQeu/1N5P0OVBdPgR9WBQmE6cYmFj3fz450eUY2ry3lpib3sONsxmGwgiutNRmfWoKc4b2uk9m8S2vNyS2Jb5jw7imGiTC9v6aK+COpI21mZkViSlMQmnNzFSYXLU+rZZjquomohIcT06699mPQrSRRUVYaNmbOLJ3Mqp0kNQURk9OWE/Lk/LkO2UuW8daUWkJXr0/hz+j7TsKMsnRxDzu3HN5XqX0mOHD6/mlnis/h8/hBYzRLhIFDfVLeQKcyMIGGVYUKKNQDU2O3Rg0No2zDv1R9PeRpcMANnpPVkHMoBVJPKuqeo+NcrkiSZNnaWNXrR1tqt9+ff77s2fVx7+efwjN5p0ievQI/m5RlOBBEt05zOkYEGyOzD8lj9LE3AGmBGQjb1moA3TdJOtSrxa4d8SMK1ILej+JXdPaWeJyKkJHGLgAZPAxrHTdxh5aXBMgdGgv5vsDVU3Jx63ygtyHoPH/veSFhnnsPSwJcOlHBEzaUaGGTJbcmm7hcXlYgzqSyux41Dk2DeWXun95ZGLApfNOnDpHYImZYLqTDLG5vemVtNTRxHBD3uvqVBq0ug8bJ+3Iow81Zb9V2yHtEj59R6TRbgLbonAB3Z5DASiCttUCcQEthtp/k/eGd4jiGmfHq8uwdggc7TUJw5P5+FGeX/wB57DBIJrPthhUxLEFwoi26aXPVJblUx19+yum3bUfdW9JYH7Xmke9tDM2BqEg/3Uw7OeX0BepkkcXFMPY8bv9lLgymJx2tQ6lSZVxQOwBLQqjg0H9drslMn3MfhjUPI1lnSC1Y613bWYNeqYHOPzAs3Ev4mvaHj9Na/S9uo1vxo/n/z8fjQeA71+zO9AL/clOUZvZ1WI4mOBvX1+aYfgKamincA==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Server Metadata",
+    "permalink": "/bluebubbles-cli/api/get-server-metadata"
+  },
+  "next": {
+    "title": "Get Themes",
+    "permalink": "/bluebubbles-cli/api/get-themes"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/remove-group-icon",
+  "title": "Remove Group Icon",
+  "description": "Removes/Unsets a group chat's icon/photo.",
+  "source": "@site/docs/api/remove-group-icon.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/remove-group-icon",
+  "permalink": "/bluebubbles-cli/api/remove-group-icon",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "remove-group-icon",
+    "title": "Remove Group Icon",
+    "description": "Removes/Unsets a group chat's icon/photo.",
+    "sidebar_label": "Remove Group Icon",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytVVFv3DYM/isE+5AtcO1ka7fBGzq0S1AEWJEgl2wo0jzwZPosRJZUUfb1cPB/H+i7DJe2G/awJxmUSH3fR/HzFiMl6jlzEqzvtuipZ6wxksg6pAYLtB5r/Dhw2mCBDYtJNmYbNPo+DAneuIHfDMulY4EFp5ETHGSL6bgnrLeYN1ErS07Wr3AqkD9RH53GttvHjGnC6b7AxBKDFxZN/O7kRJenVy8GY1ikHRw8HsZpKjDTSongeIoF/tZRxgLfpjDE54vIxrbW4P3nNK65DyNLdeuFswDBShPAdJSPBKwJvopdyKH84D/44+Nr/jjYxFIfH8NVsiNlhtdXF1hgz7kLDdbYsOPMWGCk3GGNFUVbjaeVlqx+UVjw9vbi7FWlxVWlWbddB4bkZkm6IHkvh/VtmCW0edbrQHIsUDN3RE7Lk/Lkiy7ddFbACuRuxglnwQw9+0y6D21I885X2vg6xiOB6/PFjebN7F/BXO0ystdS35cnIJENrElgxZ4TZW6gTaGfi4a2tcaSe1L9KkjuyYMJzrFREDV0OUepq6rZY+NUrjjH3cnShL4aLa+rH394+dOLF9XtHy+vfbt+p4iePYM/VU8rh5fozuGdVttqUhB5Hh3lNqQeKEZgE2QjmXsg23MDOcBS3yfYdyxCK9YIOQcbfeoNj9awlDsReiYvBZCAC36l6yYM0NHIQNCTuVzsE6qGowsb5QVp8F7r/7PkhZY5cg6WDLR0MwJh3wD5BhIbtiP/DU/KQw2awNpmK3OfQ9ty+lX3b56EBGhpnc1WDweQHBLDkszDEAVCC8I5W7+SKnfc847hmp3T1WpryOg+rG3uZh6Dbzi5jcYOaZfw/gsiLWfTzZMlBfR7DgVQzmQ6FUgK6Mg37rN7H3n7kHWG56crMFoCCeZBp/abxfxRXlz+DBewJp/1PtOR1ybOI+BntO2Qh8RlWX6rJrR/Yjpde+vbuQHMpgEXu/l8MlBbNMFn9vn/tI69O2b+lKvoyHoFN1vBdm8id0jR6rirs5mdsx1YiTq1gr0vUJ1Dz2+3SxK+TW6aNLzzcLWYxoo2pMG6JSf8L/z+g8N/FfkDb57+RUZygx6b/WykZBUA1nf304Ftnp3/fn5zjtP0F1uKSHo=",
+    "sidebar_class_name": "delete api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Register Device",
+    "permalink": "/bluebubbles-cli/api/register-device"
+  },
+  "next": {
+    "title": "Remove Participant from Chat",
+    "permalink": "/bluebubbles-cli/api/remove-participant-from-chat"
+  }
+}

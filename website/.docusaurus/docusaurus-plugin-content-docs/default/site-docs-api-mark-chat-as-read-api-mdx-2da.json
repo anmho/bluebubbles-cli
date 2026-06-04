@@ -1,0 +1,35 @@
+{
+  "id": "api/mark-chat-as-read",
+  "title": "Mark Chat as Read",
+  "description": "Marks a chat as read. This will also dispatch an event to other BlueBubbles clients indicating the chat should be marked read.",
+  "source": "@site/docs/api/mark-chat-as-read.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/mark-chat-as-read",
+  "permalink": "/bluebubbles-cli/api/mark-chat-as-read",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "mark-chat-as-read",
+    "title": "Mark Chat as Read",
+    "description": "Marks a chat as read. This will also dispatch an event to other BlueBubbles clients indicating the chat should be marked read.",
+    "sidebar_label": "Mark Chat as Read",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzlVU1v20YQ/SuD9SGtwJBym7QFW6SwnaDwwbFh2SmCxIfRcihuvNxldpZUBEH/vZglnUixUfReXSjMzvfMe7NVHQZsKVJgVX7YKoctqVJ1yLz2oVKZMk6V6nNPYaMyVRHrYLpovEjf+z7Aqe3ptF8uLTEsKAwUYM+adUMtqnKr4qYTzxyDcSu1yxR9wbazIttuHyx2O7W7y1Qg7rxjYjH8aT6Xz2HoRa81Mde9hQdltdtlKuJKClHDscrUWYNR3X2f9QWGewYE3WAEZAiEVQ43jWFYG2sBLXuoDHcYdQPogAZyEaIHHxs6LFhbQy4yGFcZjdG4FcSGRtfc+N5WsCRoMdxTNQb66D662ezCONP27VPNe0eBjXezWQnH+XE+Hw2u6XNvAnE5m8FVMANGgpOrc3k8Ojo6AnknjnDqq40I3xYnSvqYpCKUFmrvIrkof7HrbMrYu+ITS1+2j2fll59IR7XbSWdbio2vZDc8R5WpDmOjSlVgZ4rhuJCSiz+k4/DX7fnrV4VUKwuQqhqXqw82TbvxHKdJS+zrb1m+ediJ7U42r/YpGxPTmuw1S2VqGPukSnWcz/P5o+VMAzWc5nFydQ6vve5bcjHVDLUP6eWJAZx03TOG6zeLG7FLA3s1rsdlR05c/ZzPgTvSsEaGFTkKGKmCOvg2OfV1bbRBe+D9ynNs0YH21pKWJEpoYuy4LIpqyo1CvqLYjZq59m0xGFoXv/7y8rcXL4rbdy+vXb2+GIcOf0uvDe8HkZf9mCbtefDMzzuLsfahBew6IO15w5FaQNNSJbu9FFiCuSBmXJFI0FrYCMIrGowmnjDSEjrOBDjWu5V8N76HBgcChBb15WIyKCrqrN9IXRB65x7A8XTLM3HzzFrBCy5tyoDJVYBOkKPJDPQ1Pc73e1B5kjEbTnP2dU3hT3m/ORAx4NJYE40oe+DoA8ES9X3fMfgamKLgl4vYUEtjhWsSPhB4RwqoE77XJjapjt5VFOxGZPtl5/D+USE1CZUIRDiDdqohA4wRdSMN4gwadJX9Lu5D3c5HU09wZRgMAnt9T5Hhh0X6k59f/g7nsMaRqHSDToaYIOBStnUf+0B5nv8o3DutmKBrYnxhRTibKPF6xO4BoPbo4/9EoRMVRvoSi86icdK+RGTbiQI/KOyMEJKcHElbZWqPCBMNYyV3SHhP9LfbJTLdBrvbiXg8rkKQlWFZmUqVNVqmf5nAfzi9T2Z+T5vD8z6g7UUtsfGAwUgCqvxwt8tUQ1hRSJmNdmdj/Oc34vqb7aNjIr6+3oury8WNytRyOkKtr8Qm4Fo6g2uJnSmfakz3Psm2yqJb9bgS3dGn/P4BGEoCGw==",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Mark Alert as Read",
+    "permalink": "/bluebubbles-cli/api/mark-alert-as-read"
+  },
+  "next": {
+    "title": "Mark Chat as Unread",
+    "permalink": "/bluebubbles-cli/api/mark-chat-as-unread"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/edit-message",
+  "title": "Edit Message",
+  "description": "Edit a message you've sent.",
+  "source": "@site/docs/api/edit-message.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/edit-message",
+  "permalink": "/bluebubbles-cli/api/edit-message",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "edit-message",
+    "title": "Edit Message",
+    "description": "Edit a message you've sent.",
+    "sidebar_label": "Edit Message",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztV19v2zYQ/yoH5qFtoErO1m6DNnRoumDwQ5YgTjsUdZHQ0sliS5Esj7JrGAb6QbYv108yHCU7duK0fR7qF8nH+3+8352WwkkvGwzoSeRvlsLIBkUunCSaW1+KRCgjcvGhRb8QiSiRCq9cUJapr23r4Vi3eNxOJhoJRuhn6GFLmooaGynypQgLx5opeGWmYpUI/Cgbp5m2XK4lViuxepsIj+SsISQW/GEw4Meu6VFbFEhUtRrWzGK1SkSQUw5EzI5EIk6RSE5RvL3t+EmpAkhounNY2PbBDIHQhHRsxubw8FQZ1bTNvuBeoSdlzeFhDkfpk3TAAld/2YA5hBqv4OraSR+GpsSP11dwtckvKAJr9AKodc76gCVYA40szkZwPJzCqPUgTQkG5+iT+OrxQ6s80j43ZtH4VefuRc94eJgz4TGcezWTAeH5+ZD/dlZeoQmtl2MDAMB8BwcHB8CySAGObblg4vX1Nbwja8Zm2XFmGVzWuJ0smEsTIFhAzmOoOXUaCw5pzRVsb0YwD5Z9KcYih7G4rBVxOljS4HwtNBbJXovBcmlKflpdcibPRlkXUkvoaW1pIov3c+lLemEbJ4OaKK3CYsfySXSGNX3+9M89bnz+9O9tT7iiYKvIueUVh5ZuGPtSqlulvGE4i9dP6gRKrGSrA7GSwQ3DaUsBJgjSgDIBp+jhYaNMDoNH6xg3d4vjGYzNqi+Z4KaJheQ6cr8U1gQ0gV+lc1oVkq1nXFqm3WlMO3mHRRCJcN469EF13bdTvr19/MW075XYBLF12gcsVqttaLhj/767I77qx7fWXuz4N1hFhxoMtS0ZGC3FHMlQi1xk0qlsdpT10tlvf74c/vEsY58Z+2Kndrjaeh2BrrYUepDjSlzc1Ozk/pj7zH09xA3jTgSM4ZWNuVYhAu4WnohEzDpEE7k4Sgfp4A7Mb+fq+fkQ/rBF26AJ8UJBZX082YNRz517QHBxMrpkuQitzyBqO3NoWNWP6QDIYQFzSTBFg15yjSpvm6jUVpUqlNQ72s8thUYaKKxm1FHW5FCH4CjPsrL3DX06xeA6zrSwTTZTOM9+/unpL0+eZC9fPb0w1fy0A0H4u5aBA9wywifbNhWBhMJbosdOy1BZ34B0DrCwtKCADUjVdLdrwjUAdXqDE1Jrhk0PJc5UgZR2SWhQGkpAEmhrpvxkbK3lDHk2RTTpBLISnbYLjgt8awzrvz/lSZxnWkckmegb/OxGSoFqhhv3KN3OQWmRy6wo1tlWFfrf+fxyh0Qg48VTGAGMgvUIfDVbR4yShCEoM6Us1NhgF+EcteYnt7mXBZ/DXIU6xtGaEr1eMG077BRe3wmkwlDUUNQyULJuWrYQgixqThAlUEtT6lt213EbG1TVYyHBTEkgW7zHQPBwFF/S4dmvMNxMuKKWhosYW8BEb6s2tB7TNH0Usay7Ytxd/e4Ul4vTDSzt9NIWLH9fQr4vIf+/JaSf5gE/hsxpqQz3SBx+y35ovhHSKZ46vKHfTO9udIokloo3dp6UzL1cTiThS69XKyZ3XyI8UktFjAqlyCupCb/Qad/wnbLX7/e42P0WmkndMluc3zPpFTsg8jdvV4moUZboo2ed3IvO/uNLVn0je2cZY12b/eL8bHTJg75f4hpbsoyXc17w5JxtJ8LGGON6FmlLoaWZtt0O0Onk33+nGMbj",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Download Attachment",
+    "permalink": "/bluebubbles-cli/api/download-attachment"
+  },
+  "next": {
+    "title": "Force Download Attachment",
+    "permalink": "/bluebubbles-cli/api/force-download-attachment"
+  }
+}

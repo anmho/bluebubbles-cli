@@ -1,0 +1,35 @@
+{
+  "id": "api/get-media-totals",
+  "title": "Get Media Totals",
+  "description": "Fetches different types of media totals for all chats (i.e. videos & images).",
+  "source": "@site/docs/api/get-media-totals.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-media-totals",
+  "permalink": "/bluebubbles-cli/api/get-media-totals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-media-totals",
+    "title": "Get Media Totals",
+    "description": "Fetches different types of media totals for all chats (i.e. videos & images).",
+    "sidebar_label": "Get Media Totals",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzFVlFv20YM/ivEFVgbQJOSNm0KD9iQol3RhyBFk24o0gChT5R17elOO1J2DcP/feDJcZwmDfowYH7R+SiSH3n8Pt3K9JiwI6HEZnKxMgE7MhPTI/MiptoUxgUzMf8MlJamMDWxTa4XF3X3UxwSvPIDvRqmU08MZ5TmlGDHm21LHZrJysiy18gsyYWZWReGvmHXe91bra491muzLrYoYvDLhxE8Oc0r9HtwDNtSQMh7F2YgLcHx+3ewaJ1tQaKgZ5AIFr0dPAqVcDKwwJQgBoLYTOBq7mqKVwVcuQ5npAsfLWqWK3jymhocvEzg2Pu9h8pbXxYmEfcxMLHan+7v6+M2/LckcEK1QzjP2ExhbAxCQfRd7HvvxtTVF1aH1d2EcfqFrJjC9Cn2lMSN6VhQBt55zwWhGSVtfEfMOKN7D6VG+YnouTU/iJ779wPbdSfvNetvZypuani6v78D2pwN1hJrr67BXsN5cXT07AbA4ctntzIeHq03OQRnOu1mfmAKM86sLgTFsTjL5vL7OfuTxLbEULumoURBQNEzxAa6fH6b2WpiAvQebIvC8MSVVMKIB36BEeZeabQaaWNtJmZGubsorZmYCntXzQ8qzpAq3gKqchKdt2wZqTokn7nTRhblzaUypYm5tU4ysXa4aQqjnmM5B+V+uX+HTOetY3C8Zc3raIeOguQG5tLUcg/fj/v+McOHN2fn6ld+Dp/D75CjnfYUNNSzch+4JwsLZJhRoIRCNTQpdjlobBpnHfpb0d9Hlg4D2Og9WQUxgVak50lV1RtslMoZST++WdrYVXNHi+roxfOXh4fVx7+efwjN4kQRPXoEf7coWuBOErXs5nQMCDZF5l97j9LE1AH2PZCNvGShDtB1VKuITJUz4E7GwdQdPfmlamJNc2eJy7EJHWHgApDBxzDT5zIO0OKcAKFDe3q2cahq6n1cal2QhhCuJez+lhca5rH3ql449RkBU6gBQw2JLLk5beFxuduDOpIes+N8zlFn+g+1n9/aYsCp805Jn2NLTARTtF+HPk8+k4gLM66kpY7GChfkvT6V1Qmt2mHhpM11DKGm5Je6t1t2CZ/uFNIo4UYaFbDhvmYQQdtqg7iAFkPtv8t7XXeI4pqNeDLMHQJH+5WUlGd5Ub47/Q3ewQKVy1EzBT3ETIGQ0TaDDInKstxT6dqMmLJr83W6R7xv8Wl1o+X/uX5stFPom1S9RxcUYhaE1UZMLgz2Tkl/sJUNXdxonIqQisplYVRB1GO1miLTx+TXa90eP7kqNbVjPZjaTBr0TA8U+hNXgnuxf6Xl7WvHHP2gr+X7wM/n/78vBA8Ut7nN3BR2qX+S08rM5OJyXZiWsKaUWz76HFtLvex43bkTaJTt1+Ttm3OzXv8LPFdmZA==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Media Totals Per Chat",
+    "permalink": "/bluebubbles-cli/api/get-media-totals-per-chat"
+  },
+  "next": {
+    "title": "Get Message by GUID",
+    "permalink": "/bluebubbles-cli/api/get-message-by-guid"
+  }
+}

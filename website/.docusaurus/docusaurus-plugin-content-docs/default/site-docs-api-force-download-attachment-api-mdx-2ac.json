@@ -1,0 +1,35 @@
+{
+  "id": "api/force-download-attachment",
+  "title": "Force Download Attachment",
+  "description": "**Private API Required**",
+  "source": "@site/docs/api/force-download-attachment.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/force-download-attachment",
+  "permalink": "/bluebubbles-cli/api/force-download-attachment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "force-download-attachment",
+    "title": "Force Download Attachment",
+    "description": "**Private API Required**",
+    "sidebar_label": "Force Download Attachment",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztV11v3DYQ/CsLBqgTQ5HOjdMW1yKFEyepHwwHcdIiSAx4T1pJhClSIVd3uR7uvxdL3YfsGle3aYo89EkSxSVnyNlZcqFa9NgQkw9q/H6hLDakxqrFEGbOFypR2qqx+tiRn6tEFRRyr1vWTlrfuc7DU9PR024yMRTgnPyUPAyiQ15Tg2q8UDxvZeTAXttKLRNFn7BpjbQtFuuI5VItkw2KmS643g3h/ll8Q/MAjmDDBUJLuS7n2lbANcEUTUfADjwF/TvFtjg4sEvhTa0DoIQweGTtYKaNgQlBg9oyaksF6BIQatJVzaADWMfQegpkOb2NprZMFfnrPA9GoyG9frQvxW+F9e8R7BflBr9/TPBjh0bz/M4Mn9Voqx79KhRcGT91gxXB3HWAnqAkzmttqxROu8DCw1kCV47hsnKuuEzgckLM5Pu3wJe7lDgA7LyutEVzZ8THbmaNwyKCXEcDMmNeN2QZ7neBys5A6Txgx+5h7uyUPFMx6BXA6CuCX56fPINv4NnRiwd3XvGRWl4kylNonQ0UpPu3o5E8rmM+7/KcQhAo687CXDFWkvhqeqASdbRBpC5ukt7ff+X1FJng6NUJvKaPnfZU7O9/sB/sC+dzgmK9FmhBn1IIsmXbIWEyh5PjFN65Dhqcg1stopmv1bySbNaLcGtMN4QdtZDKvFHXOkChy5K8zFF618ROnqrOoN+CIlu0TlsGDMASF1OgjMglYLBn7LZhugTNe30+oPGExXzzkwpwNgafYp7CSRmZR6XqYPf+IiABtEWUdBdoN+ZEuu0Z2bqc9JQA4XB0GDGVrrOFJGhDXLtCjVVFYiktcq3GKsNWZ9ODbMsu++nl25PjJ9l6kiwugegtendfBTpvoi3XLrBY8oXkQ+miGDVH4Q1sXyVKInudHKSjdPSnlFnvlNAU/Ry7vBM0YkY2Jof8uaWUHLXtXoDXz8/fSFzc9Se9n521ZGWoR+koCghmGKAiSx4luzZKcGWpc43m2uivXOAGLeTOGMoFxBhq5jaMs6xYYSOfVsRt3zPNXZNNNc2y7797/MPhYfb218evbTk7FUT37sFvNca6MJhE/gznFA+G3LsQHrYGuXS+AWxboNyFeWBqAHVDhchvIs60TSJ2gMaICDwUNNU5hZWpN4Q2JKJp42wlTxFUjVEjDeZn56uArKDWuHnUt++sXVeO25d8I7gJAU5MRBDIFlGyaxGu4YV0uAaFo1WCyeY4ScyfN7m6aQqAE200a4rZHdh5ggnmV10bxPMDMWtbhYxraqhnOCNj5Ck+6DGX/zDTUsNrgs4W5E0siEPa0W5uEInVA/IaOSTQrDgkQztOoEZbmBvzrnlbx7rUeZRugKlGCC6/Ig5w/zy+pCdnP8IJzLD3knxd1SQF+vQvO+48pWn6QNx8JTHJrlUd6g11U1wGvnwjsRYqd5blx/8O/bU79KqMM33irDWorex9dNrFyq7fK2y1uKkUYxxuem/asvurmVWieuO+SJS4tAQvFhMM9Nab5VKa+8OL2Hmhg4i/UOMSTaAdGrrDif5WGlc0v35riCdSNVbxOHj3+b+S4/wOjus7yX9O8N89z+9guLmWfD7FL3qg30Fhe/H4fA5f8Ii/g8HgJrKlcCEfXgsHNX5/sRyc+l4+f6OWyz8A2UaEig==",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Edit Message",
+    "permalink": "/bluebubbles-cli/api/edit-message"
+  },
+  "next": {
+    "title": "Get Account Info",
+    "permalink": "/bluebubbles-cli/api/get-account-info"
+  }
+}

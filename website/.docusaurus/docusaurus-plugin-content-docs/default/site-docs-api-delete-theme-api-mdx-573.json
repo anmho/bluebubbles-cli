@@ -1,0 +1,35 @@
+{
+  "id": "api/delete-theme",
+  "title": "Delete Theme",
+  "description": "Deletes a theme backup by name.",
+  "source": "@site/docs/api/delete-theme.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/delete-theme",
+  "permalink": "/bluebubbles-cli/api/delete-theme",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "delete-theme",
+    "title": "Delete Theme",
+    "description": "Deletes a theme backup by name.",
+    "sidebar_label": "Delete Theme",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVdtu20YQ/ZXB+iEtQJOSm7SFCrSIaz8EaODAUloElgGPlkNx4+Uus7OUIgj892KWtC1HbtHH6oXC7NzOmdtetRiwoUiB1exmrxw2pGaqReatD6XKlHFqpr50FHYqUyWxDqaNxov0k+8CnNuOzrvVyhLDnMKGAhxYs66pQTXbq7hrxTPHYNxa9Zmir9i0VmT7/YNF36v+NlOBuPWOicXwbDKRz/PQ805rYq46Cw/Kqu8zFXEtQNRmqjJ1jvq+a9Xtt3lfkKVIDAixpoZglfRgtQOBny/d0p2cnJzANX3piCOc+3Inwru7O/jM3i3dfukAAIoCFjUlK/AV7ISP5HJ4XiY6l2oGSzWnGI1b85ATnMLZ5GxaTCfFdLpUS9eP/pWAT1ElqODW3kVyUf5i21qjUVAUkofIjgj2q8+ko8pUG3xLIZqBxaGwR2XoDwvxWP6FYHghU9HvM9VQrH2pZqpMREosjLWaqQJbU2ymxUBokaiQJkhtMTRYF2yqeO05jtUWKNdPoC+P0nnqGeMqn1CYmDrnoPlUpiTIUOFpPsknR/26qA2DYSkRvP3wDi687hpyMTEKlU/Fe6mh37btK4bry/lC7FKD/ArJ21VLTlz9kE+AW9KwRYY1OQoYqYQq+CY59VVltEH7zPsHz7FBB9pbS1qSmEEdY8uzoijH3Cjka4rtoJlr3xQbQ9vipx/f/Pz6dfHxzzfXrtq+H1oW/qoxCsCDIPJyGNNI2+vgmU9bi7HyoQFsWyDteceRGkDTUAnRw0pYB/OemHFNIkFrhyYvaWM0cT6Q0BA6zgAZrHdr+e58BzVuCBAa1Ffz0aAoqbV+J7ggdM6J/3+mPBM3r6yFFQGubMqAyZWAroRAmsyGHtPj/JCD0pOU2XCqs68qCr/J++KZiAFXxhoZkeQ7+vCwDFjmmceZHRp5QLgla+VrpDSo5R22JtYJR+dKCnYnskPYOXw6AlJR1DXoGiNn0IwYMsAYUddCEGdQoyvtN3EfcDsfTTUuA4aNQWCv7ykyfDdPf/J3V7/AO9iiixJP1+ikiGkEXMq26mIXKM/z72W0xhY7GLthTcJinOJns3Swl/7n63RceJG+xqK1aJyATVtoP66tG4WtkfUhN2NIXuwS7NtMyaYSpf1+hUwfg+17EQ8nUVZaaViqWqpZhZbpX5j6DwfzxXTvaff8KG/QdqKW9ucGg5EE1Ozmts9UTVhSSJkNdr8P8U8X4vrJ9uiaiK/H1X5x+cfl4lIIGe9Q40uxCriVG4VbiZ4pn1CmC5Nke2XRrTtci+7gVX5/AzNP4s4=",
+    "sidebar_class_name": "delete api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Delete Settings",
+    "permalink": "/bluebubbles-cli/api/delete-settings"
+  },
+  "next": {
+    "title": "Download Attachment",
+    "permalink": "/bluebubbles-cli/api/download-attachment"
+  }
+}

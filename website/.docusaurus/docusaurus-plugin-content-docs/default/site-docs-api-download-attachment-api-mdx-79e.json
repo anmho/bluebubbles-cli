@@ -1,0 +1,35 @@
+{
+  "id": "api/download-attachment",
+  "title": "Download Attachment",
+  "description": "Download an iMessage Attachment by ID. You may optionally specify height/width parameters to resize the image.",
+  "source": "@site/docs/api/download-attachment.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/download-attachment",
+  "permalink": "/bluebubbles-cli/api/download-attachment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "download-attachment",
+    "title": "Download Attachment",
+    "description": "Download an iMessage Attachment by ID. You may optionally specify height/width parameters to resize the image.",
+    "sidebar_label": "Download Attachment",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVm1v2zYQ/isHFlgbQJWcrd0Gb+iQNlmXD0GKJtlQtAFylk4SEYpUeZRdz/B/H46SHSULjGxdt30SRfLI57mXh7dSLXpsKJBnNX2/UhYbUlPVIvPC+UIlSls1VR878kuVqII497oN2snsO9d5eGk6etnNZoYYzsjPycPImvOaGlTTlQrLVk7m4LWt1DpR9Amb1sjcarWxWK/VOtmiWOgi1LshPDmNIzR7cABbLsAt5bpcaltBqAnmaDqC4MAT698pzsXDIbgUzmvNgGISwGPQDhbaGJgRNKhtQG2pAF0CQk26qgNoBusCtJ6YbEjvo6ltoIr8bZ77k8mYXn/al+I3YP1rBHun3OH3twl+7NDosHwww1c12qpHP5iCK+OvbrAiWLoO0BOUFPJa2yqFk46D8HCWwJVTuKqcK64SuJpRCOT7EYerXZk4Auy8rrRF82DEh25hjcMigtxYA4aAed2QDfCkYyo7A6XzgF1wT3Nn5+QDFaNdDEZfE/xydPwKvoJXBz/vPdjjE7W+TJQnbp1lYtn+9WQin9uYz7o8J2aBstkszFXASgpfzfdVog62iNTlXdJbpmhBnxCzBOTGAGZLOD5M4Z3roMEluMFFZrnJ1SEhsz7FbmTnTtrGSEvGNRRqV6ipqkhqpMVQq6nKsNXZfD+7cV724+uL48MXWTEAFNdFGeoFrfMmKkztOIi6XEpoSxf9qkP04UjBVKLEsqe8n07SyZ+iH4tJcwR78OYYDl3eCQ6pKxvjLCv3qOJB2z5meHt0di526Qf7wb7oS/O0JStHfZNOordggQwVWfIoiVJ61/QJVpY612hunf7GcWjQQu6MoVxATKEOoeVplhUDNvJpRaHtd6a5a7K5pkX23bfPv3/2LLv49flbWy5OBNGjR/BbjVHiRpfIyvhOkRPIvWN+2hoMpfMNYNsC5Y6XHKgB1A0VEtqZFNlNxgQHaIxUsoeC5jonHvSpIbScADIYZyv5SrnXOCdAaDA/PRsMsoJa45Yx63xn7UYE73d5Isc87tUOZyYiYLKSxwV4yknPaQuP07EPCkcSZs0xzq4syf8k6+e3phhwpo0OmmIqc3CeYIb5ddeyyBdTCNpWnIWaGuoZLsgY+UpJe8xlHRZanqOaoLMFeRO1fUw71tYdIlEIIa8xcALNwCEZK0sCNdrC3Ll3w9u6oEudx9RlmGsEdvk1BYYnZ3GQHp/+AMewQCsvidzUC7SUgI1oyy50ntI03RNhGlJMqmuQ1K1ujMTlTkmtVO5skIX/QGYGcQ30KWStQW2FRhSN1aA57xW2WoRBJBLHLHrlETob7blMlAiNGK1WM2S68Ga9lun+KRFFKjRL/Ao1LdEw7XDGA/qre+Ff0/J2Dxf7AzVV8XF++P3/k+ZqB8dNh/ivE/xnu6sdDLdN4udT/KLt1Q4KN23g53P4gg3XDgajvvCGwqX8eC0c1PT95XrUsrw+Olfr9R+Ns6V5",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Delete Theme",
+    "permalink": "/bluebubbles-cli/api/delete-theme"
+  },
+  "next": {
+    "title": "Edit Message",
+    "permalink": "/bluebubbles-cli/api/edit-message"
+  }
+}

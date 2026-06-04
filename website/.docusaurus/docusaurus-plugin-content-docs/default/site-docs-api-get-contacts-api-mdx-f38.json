@@ -1,0 +1,35 @@
+{
+  "id": "api/get-contacts",
+  "title": "Get Contacts",
+  "description": "Fetch contacts from your macOS device",
+  "source": "@site/docs/api/get-contacts.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-contacts",
+  "permalink": "/bluebubbles-cli/api/get-contacts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-contacts",
+    "title": "Get Contacts",
+    "description": "Fetch contacts from your macOS device",
+    "sidebar_label": "Get Contacts",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJyVVFGP2zYM/iuE+tAN8Ozc1m6DB2xot664h+KK5rqhuN4DI9OxcLKkibTTIPB/H2jn2uTaDduTBFIkv48Uv4NJmLEnocymvjmYgD2Z2iRk3sXcmMK4YGrz10B5bwrTENvskrio1ndxyPDcD/R82Gw8Mawpj5ThJJptRz2a+mBknzQzS3Zha6bC0Afsk1fb4XAfMU1mui1MJk4xMLEGfrta6XFeej1YS8zt4OH+sZmmwghulYgZL0xhfo1B0Iq5fQj8dxLbgV3cDG2OPeyVTI/2ag0Njc6SKUxP0sXG1GZLYgqTUDpTmwqTq8aL6hivLGfeSweH7GdKXWQ50nGhjXMLnMx8T1pmCqORC6yLclWuPuvydecYHIN0BM9eX8Jv0Q49BUH1Qxvz7PnCGJ6l9JjhzYv1tcaV78P78DPM2a4SBU31XbkCTmRhhwxbCpRRqFn6oUlj2zrr0J9lfx1Zegxgo/dkFUQNnUjiuqqaIzbK5ZYkLS9LG/tqdLSrfvj+6Y9PnlRv/3j6JrS7V4ro0SP4s0NRgidF1HNa0zEg2ByZv0kepY25B0wJyEbes1AP6HpqQCJs9H+Be0XMuCW1oPfLdJe5crk0oScMXAAy+Bi2eu7jAB2OBHj2EaqGko975QV5CEHz/3PLC03z2HvYEODGzwiYQgMYGshkyY30ER6Xpz1oIumYHc9zjm1L+Rf1X5+ZGHDjvBOnjyOwxEywQXs3JIbYApOIC1uupKOeFoY78l5Pp6NBq37YOelmHkNoKPu92k5pl/DuMyLtsjgdChfQHzkUgCJoO20QF9BhaPyDuve8QxTXOjt/XYbRIXC0dyQMX63nS3l59RNcwg6DaD3bYdAhzisQZrTtIEOmsiy/VhE5fjHdrqN0vSSB4+Lzw106GN1ZCvI/NOCoW0IfpEoeXdCy85IfjoJwYzA5XWTVHPtJc1QB1Hs4bJDpbfbTpOZFS1UqGsfa2MbULXqmfwH7H5T2izjvaH+u5iP6QZ/NujRidgrA1De304navXxxbabpb1I8IYE=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Contact Share Status",
+    "permalink": "/bluebubbles-cli/api/get-contact-share-status"
+  },
+  "next": {
+    "title": "Get FaceTimeAvailability",
+    "permalink": "/bluebubbles-cli/api/get-face-time-availability"
+  }
+}

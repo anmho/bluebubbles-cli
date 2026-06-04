@@ -1,0 +1,35 @@
+{
+  "id": "api/delete-settings",
+  "title": "Delete Settings",
+  "description": "Deletes a settings backup by name.",
+  "source": "@site/docs/api/delete-settings.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/delete-settings",
+  "permalink": "/bluebubbles-cli/api/delete-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "delete-settings",
+    "title": "Delete Settings",
+    "description": "Deletes a settings backup by name.",
+    "sidebar_label": "Delete Settings",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzVVdtu20YQ/ZXB+iEtQJOSm6SFCrSIaz8EaODAcloElgGPlkNx4+Uus7OUIgj892KWlC1HadDX6oXC7NzOmdtOtRiwoUiB1ex2pxw2pGaqReaND6XKlHFqpj53FLYqUyWxDqaNxov0o+8CnNuOzrvl0hLDnMKaAhxYs66pQTXbqbhtxTPHYNxK9ZmiL9i0VmS73d6i71V/l6lA3HrHxGJ4NpnI53noeac1MVedhb2y6vtMRVwJELWeqkydo37oWnX3dd4XZCkSAwJTjMatGJZJFZZbEAbyhVu4k5OTE7imzx1xhHNfbkV4f38Pn9i7hdstHABAUcBNTckKfAVboWTvddBYJFIXagYLNR9fhszgFM4mZ9NiOimm04VauH4MoYSCFFjiCnrtXSQX5S+2rTUaBUshqYjsiGa//EQ6qky1wbcUohm4HMp7VIz+sByPTfCdZMWkz1RDsfalmqkyMSrhMNZqpgpsTbGeFgOtxZ4QaYjUIkOzdcGm6tee41h5AXT9BP3yKKmn/jGu8gmLiamLDhpRZUqCDNWe5pN8ctS7N7VhMAyxJnjz/i1ceN015GLiFSof0ss3mvtN275guL6c34hd6pTfIHm7asmJq5/yCXBLGjbIsCJHASOVUAXfJKe+qow2aJ95f+85NuhAe2tJSxIzqGNseVYU5ZgbhXxFsR00c+2bYm1oU/z8+tUvL18WH/56de2qzbuhd+HvGqMAPAgiL4cxjYyADp75tLUYKx8awLYF0p63HKkBNA2VED0shXUw74gZVyQStHbo9pLWRhPnAwkNoeMMkMF6t5Lv1ndQ45oAoUF9NR8NipJa67eCC0LnnPj/d8ozcfPCWlgS4NKmDJhcCehKCKTJrOkxPc4POSg9SZkNpzr7qqLwu7zfPBMx4NJYI4OSfEcfaNwKLIO9b+Ei1tTQgHBD1srXSGlQyztsTKwTjs6VFOxWZIewc/h4BKSiqGvQNUbOoBkxZIAxoq6FIM6gRlfar+LucTsfTTWuBIa1QWCvHygy/DBPf/K3V7/CW9igixJP1+ikiGkEXMq26mIXKM/zH2W0xhY7GLthZcL8aZCfjdPBgvpfbNdx/0X6EovWonGCOq2j3bjCbhW2RvaIHJIh/7S9Rvx3mZKtJXq73RKZPgTb9yIeTqWst9KwVLhUswot03co+w+H9JsZP9D2+bFeo+1ELe3SNQYjCajZ7V2fqZqwpJAyG+z+GOKf3ojrJ9uj+yK+Hjf9xeWflzeXwsl4mRpfilXAjVwt3Ej0TPmEMt2cJNspi27V4Up0B6/y+we9hO2+",
+    "sidebar_class_name": "delete api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Delete Scheduled Message by ID",
+    "permalink": "/bluebubbles-cli/api/delete-scheduled-message-by-id"
+  },
+  "next": {
+    "title": "Delete Theme",
+    "permalink": "/bluebubbles-cli/api/delete-theme"
+  }
+}

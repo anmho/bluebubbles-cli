@@ -1,0 +1,35 @@
+{
+  "id": "api/get-alerts",
+  "title": "Get Alerts",
+  "description": "Fetch logs from your BlueBubbles Server.",
+  "source": "@site/docs/api/get-alerts.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-alerts",
+  "permalink": "/bluebubbles-cli/api/get-alerts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-alerts",
+    "title": "Get Alerts",
+    "description": "Fetch logs from your BlueBubbles Server.",
+    "sidebar_label": "Get Alerts",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy1Vm1v2zYQ/isH9kNbQNWLHWeJNnRNsa4o0JcgL9sK2x9o6mSxoUiVR9kxDP/34SQndRJvSzdMX2iTvOfuHvIe3lo00ssaA3oS+XgtrKxR5KKRREvnCxEJbUUuvrboVyISBZLyugna8exn13p4bVp83c5mBgnO0S/Qw441qQprKfK1CKuGkSl4bediEwm8lnVjeG69vrHYbMRmGgmP1DhLSGw4SFMe7rp+i+HG23s3JxEJ5WxAG3irbBqjleStyRfi/euHgbjZF1RBRKLxrkEfdO+Nggwt7ezTNuAcPUdcI5Gc495sChn2pBmJ0vlahm5mZVBsNruZf3M3SNMdfHHeKoXEafW4YjxIB9mLLH2RZZAN8uEoT4/i4yydwrjAWTufwhl+bZECBAeJbHSyyBLqCErYh6agFSU1FlomqpIBnl2evYdTPn3KYb15PrEPfWRZPEwP/k8fh/lgEKfDf+XjUfAHaTz6bpqCC9LQI/CP82EWZ4fZFMbalm4KH3EJ22OE0rsaxtf992rVf7Fy9TSH8U8fHVzgdXg53Ys6iI+Ph7eob71rG+DahNJ5GDO5f+x8U1CVtHMsOK3xTkXuBR9l8dHo8DGUtE0hAyaqQnX1KDZGw3iQHf0TG6++g4nRKE6z0X9nAs5DW5YPXRyk+cFhnKXDx/Bh3Pz+rZgI5VobJiKfiCydCOaFq5zrPMg5q6pYZCISvVqJ6X0R/RWDqqBD7iha7RfVWLA+hMoVIhdz7IRLhkrk4l6M0qDn1f5vr+qtN53MVo7CVmKZzk6vdOg0eMejiARb9uFlcRqnD5T/otIEmiBUCCen7+AXp9oabeg0tzsZXtnzNJw0zVOCszfnF2wXT+zEvoQO7VODlqGGcQrUoIKlJJijRS8DFj03DOrKUistzR30U0ehlhaUMwYVB5FDFUJDeZIU29jQx3MMTb+TL1+y0LhMfjgcHR0cJJe/jc5sufzAET15Ar+zfGnadcIruz41gQTlHdGLxsjAQg+yaQCVoxUFrEHqur+IM34MQH/YlkJwII3pT7rAhVZIcU9CjdJSBJLAODvnceVaqOQCQUIt1afzrUFSYGPcivMC31rL+H9NecQwT42BGYKcmS4CQluAtAV4VKgXeBsexbscFA75mDV15+zKEv3PvH5xZ4pAzrTR/Ih22MF5hJlUV21D4EogDEHbOSWhwhr7DJdoDI/8wHqpeB2WOlRdHq0t0JsVz+2mHcPnB4mUXQGxEFB0ozbsIQSpKiaIIqikLcw9vzd5Wxd0uW0XCBZaAjl1hYHg2Xn3I3736Ud4B0tpO03oBabnRNsu2rINrcc4jp9zK7C9Ylxd23aKu5UTrku6X0nrb33L9yjBtssIeB2Sxkht2W9X5eutLIyFbDRXcnarBSISvThMI8FKwJvW65kkvPRms+Hpvs9jySg0McGFyEtpCP8m7Ed0gXvDvcLV3U5zIU3L2zp9WkivOQCRj6ebSFQoC/RdZL3diVLYhB2rB00fo9wq5ts3F2Kz+ROQMK1j",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Account Info",
+    "permalink": "/bluebubbles-cli/api/get-account-info"
+  },
+  "next": {
+    "title": "Get Attachment Blurhash",
+    "permalink": "/bluebubbles-cli/api/get-attachment-blurhash"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/create-new-chat",
+  "title": "Create New Chat",
+  "description": "Create a new iMessage chat",
+  "source": "@site/docs/api/create-new-chat.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/create-new-chat",
+  "permalink": "/bluebubbles-cli/api/create-new-chat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "create-new-chat",
+    "title": "Create New Chat",
+    "description": "Create a new iMessage chat",
+    "sidebar_label": "Create New Chat",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVt1v2zYQ/1cOzEPbQJXcrd0GDdiQdn3IQ5cgSTsUcYCeqZPFliJZHmXXMPy/D0cpifOxYsBe5wdLOPJ+d7/71FYFjNhTosiqvtwqhz2pWgVkXvvYqEIZp2r1daC4UYVqiHU0IRkv0o9+iPDaDvR6WCwsMZxTXFGEPW3WHfWo6q1KmyDInKJxS7UrFH3DPliRbbfXGrud2l0VKhIH75hYFH+YzeRx1/T5oDUxt4OF68tqtytUwqUQUasXqlBvOkzq6r7XbyJhIkBwtAbzjphxSaA7THM3d4eH74wz/dA/RuwDRTbeHR7WMCt/LGejwhl9HUwkrg8P4TSalaAfnR7L4cHBwQHIOXGC177ZiPDTp0+f2bu5284dAEBVwRFYwwl8CwFjMtoEdImh9RFSd+2c3J0rbJpIzMRzVcPlVXGD8fQkM0T7DI6gn2glD0yuAeMykFDeB5uuCdRcHTnwE8R9/bmau132XEl2Mh+hI4nR3iVySV4xBGs0CkYlFEX2oAL84jPppAoVog8UkxnTfMNr7yrGiFJ2JlEvcsnw5NkjJbXbL6o7gJdXe3rf4ykg2UbqfCN94Dl7iqlTtaowmGr1opIIVo7WUt+5MMbeGaLNxdx5TlMhSxDObsP19nHv3GDtHQ9vm8S41meqJuVW2StKVajVWI+qVi/KWTl70KAXnWEwnFN/dHoMf3g99ORSztBNdT1S6EchPGE4e3t+IXqlVO1vkNFOAjmB+rGcAQfSsEaGJTmKmKiBNvo+g/q2NdqgvYN+6jn16EB7a0mLEzV0KQWuq6qZfKNYLimF8WapfV+tDK2rn3969cvLl9X7D6/OXLt+NzYX/NVhEoJ7RuRk36ZhQNDRMz8PFlPrYw8YApD2vOFEPaDpqZEKWEjUb0dC8oDWwkamXEMro4nLMQg9oeMCkMF6t5Tnxg/Q4UrGSo/65HxSqBoK1m+EF8TBOcH/55AXAvPEWlgQ4MLedi+6BiJpMiu6cY/L/Rg0niTNhnOefdtS/F3OL+6IGHBhrJGWy9jJR4IF6i9DYBk+TCkZt+QqddTTyHBN1srTSGpQyzmsTeoyj8E1FO1GZPu0S/j4gEhLSXd5+HBx3XZiISXUnQSIC+jQNfae3WvezifTTsOFYWUQ2OsvlBienueX8vjkVziGNbok9nSHTpKYW2Ccfu2QhkhlWT6T1ppKTLpr2nrTZviT1pBXx7122ht1/y+R/7pEptmd6FuqgkXjJCV5gm6ncXupMBgZcrLK9ZgPGbpXhZIJKxe22wUyvY92txPx+JUio7gxLHXXqLpFy/SdRP6Lb5hHXf1Cm7vfSSu0g1zLc3+F0YgDsnp2heoIG4rZs1HvzWj/+YVA3+o+2J+7q71ldHpyfqEKtZj2bu8b0Ykoe0j+a6UKNQY/L9Es2yqLbjmMe2XElN/fvMVvhg==",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Check for Server Update",
+    "permalink": "/bluebubbles-cli/api/check-for-server-update"
+  },
+  "next": {
+    "title": "Delete Chat",
+    "permalink": "/bluebubbles-cli/api/delete-chat"
+  }
+}

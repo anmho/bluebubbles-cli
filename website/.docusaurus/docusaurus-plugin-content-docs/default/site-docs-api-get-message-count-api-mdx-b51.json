@@ -1,0 +1,35 @@
+{
+  "id": "api/get-message-count",
+  "title": "Get Message Count",
+  "description": "Get the total number of messages for your iMessage account (on the device)",
+  "source": "@site/docs/api/get-message-count.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-message-count",
+  "permalink": "/bluebubbles-cli/api/get-message-count",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-message-count",
+    "title": "Get Message Count",
+    "description": "Get the total number of messages for your iMessage account (on the device)",
+    "sidebar_label": "Get Message Count",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJytVU2P1EYQ/Sul5gBIjj2bQBI5UiJIENoDWsQsRGjZQ027PG5tu7vTVfYwGvm/R2XPwgyQKIec2ur6fPW6ng8mYcaehDKb+uZgAvZkapOQeRdzYwrjgqnNXwPlvSlMQ2yzS+Ki3r6PQ4bnfqDnw2bjiWFNeaQMJ9FsO+rR1Acj+6SZWbILWzMVhj5in7zeHQ73EdNkptvCZOIUAxNr4PerlR7npdeDtcTcDh7unc00FUZwq0DMeGEK84qYcUvm9svGX5KAdAQSBT2Eod9QhthCvwQwtDHDXtG5Yw5Aa+MQBB7FMIc2NDpLj01hepIuNqY2WxJTmITSmdpUmFw1XlTHlNUcrQOZR7QMe8h+Rt9FliNyF9o4T8vJPJqT6ZrCaOSC4KJclauvCLnuHIPjucFnry/hj2iHnoKg2mdQavkGY89Sesjw5sX6WuPKD+FD+BXmbFeJgqb6oVwBJ7KwQ4YtBcoo1ECbYz8njW3rrEN/lv11ZOkxgI3ek9UmauhEEtdV1Rx7o1xuSdLiWdrYV6OjXfXTj09/fvKkevvu6ZvQ7l5pRw8ewJ8digI8KaKW05qOAcHmyPxd8ihtzD1gSkA28p6FekDXUwMSYaNP8TPFEgG9X3hf6OVyGUJPGLgAZPAxbPXcxwE6HAkQerRX62NA1VDyca+4IA8haP5/HnmhaR56DxsC3Pi5A6bQAIYGMllyI31qj8vTGTSRlGbHM8+xbSn/pvbrsysG3DjvxKlzBJaYCTZo74bE+t6ZRFzYciUd9bQg3JH3ejqlBq3aYeekm3EMoaHs93p3CruE918BaUlsB7ZD4eLTYhWAImg7HRAX0GFo/Bd173GHKK51dn66DKND4GjvSBgereeP8vLqF7iEHQbRerbDoCTOK7DsaDvIkKksy8eqN8cnptt1VDmVgXvyfz/u59lCHYyNQSjI/60ZRzEU+ihV8uiCNjjLweEoIDcGk9OVv5glZhGywiwyclsY1Qz1Ohw2yPQ2+2nS60WoVVwax0pFY+oWPdO/IPsPMv7Nfu9of/6rGNEP6jYr2YjZaQOmvrmdTlTy5YtrM01/AwQSQkQ=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Message by GUID",
+    "permalink": "/bluebubbles-cli/api/get-message-by-guid"
+  },
+  "next": {
+    "title": "Get Message's Embedded Media",
+    "permalink": "/bluebubbles-cli/api/get-messages-embedded-media"
+  }
+}

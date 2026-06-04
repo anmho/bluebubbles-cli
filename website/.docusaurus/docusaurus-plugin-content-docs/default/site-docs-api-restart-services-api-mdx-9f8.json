@@ -1,0 +1,35 @@
+{
+  "id": "api/restart-services",
+  "title": "Restart Services",
+  "description": "Restarts the services on the BlueBubbles server. Services such as the HTTP service, the FCM service, and the Private API service.",
+  "source": "@site/docs/api/restart-services.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/restart-services",
+  "permalink": "/bluebubbles-cli/api/restart-services",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "restart-services",
+    "title": "Restart Services",
+    "description": "Restarts the services on the BlueBubbles server. Services such as the HTTP service, the FCM service, and the Private API service.",
+    "sidebar_label": "Restart Services",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzNVltv2zYU/isH7ENbQNXFjrNEG7q2W9sV6CVI3G2F7QeaOrLYUKTKQ9kxDP/34UhO6ly2pRsGTC+yj87t+0h+PBvRSC9rDOhJ5JONsLJGkYtGEq2cL0QktBW5+NKiX4tIFEjK6yZox9ZPrvXwwrT4op3PDRKcoV+ih71oUhXWUuQbEdYNZ6bgtV2IbSTwQtaNYdtmcxmx3YrtLBIeqXGWkDhwkKb8ul76NYbLam/dgkQklLMBbWBX2TRGK8muyWdi/83tRtz8M6ogItF416APuq9GQYaW9vy0DbhAzx3XSCQXeCeaQoY7YEaidL6WobOsDYrtdh/513KDNN3LL85apZAYVp9XTAbpIHuSpU+yDLJBPhzl6VF8nKUzmBQ4bxczOMUvLVKA4CCRjU6WWUIdQQnX0BS0oqTGQstEVTLAo4+nb+GEV59y2GwfT+3tGlkWD9OD/7LGYT4YxOnwH9W4V/qDNB59M03BBWnoHvmP82EWZ4fZDCbalm4G73EFu2WE0rsaJhf982zdP7Fy9SyHyQ/vHYzxIjyd3Zl1EB8fD6+yvvaubYDPJpTOw4TJ/X3vmYGqpF1gwbAmeyfyzuSjLD4aHd6HkrYpZMBEVajO78XGaBgPsqO/Y+PZNzAxGsVpNvr3TMBZaMvydomDND84jLN0eB8+jFvc3BVToVxrw1TkU5GlU8G88Cnncx7kglVVLDMRiV6txOymiJ4iBekDQagQuI5WSOBs938fQN9D3Mle50OtqkD2gb+MxyeX0VFnefXTu68GaYvOeOL1UgaE5ydvLj/GgoUnVK4QuVhgp4gyVCIXN8D7vtGEXMlOvbW/NVpvOhmvHIWdhPNydXqoQ6fxe0hEJDiyh5/FaZzeulnGlSbQPTTu9Wen2hpt6DS9W/mb7Owug+dN85Dg9OXZmOPiqZ3ap9Bl+9Cg5VTDOAVqUMFKEizQopcBi357clJXllppaa5lP3EUamlBOWNQcRM5VCE0lCdJsesNfbzA0PSevLmTpcZV8t3h6OjgIPn46+jUlqt33NGDB/Aby6Om/SL8Zb+mJpCgvCN60hgZ+CIB2TSAytGaAtYgdd1v9DlfNqDf7Y5acCCNgTVfzwV2myXuSahRWop40xhnF/xeuxYquUSQUEv14WwXkBTYGLdmXOBbazn/n1MecZqHxsAcQc5N1wGhLbp951GhXuJVexTvc1A45GXW1K2zK0v0P/L38TUTgZxro/mS7nIH5xHmUp23DYErgTAEbReUhApr7BGu0Bh+8wXupeLvsNKh6nC0tkBv1mzbhx3Dp1tASgyqYlkJFF2qGVcIQaqKCaIIKmkLc6PuJW7rgi534wjBUksgp84xEDw6637Ebz58D29gJW2nOb2A9ZzoXgbKNrQe4zh+zKPGbovx6dqNazsNuZKGm+dp83U6+l/ozW5ICngRksZIbRlWJyKbnfhMhGw0C0V2JTWimwu5dzaxCM0iwYrD3pvNXBJ+9Ga7ZXM/r7I0FZp4IQuRl9IQ/gUx95hm7+z7HNfXJ+alNC27dTq4lF5zAyKfzLaRqFAW6LvO+rjnSmET9qJuDa+c5UqgX78ci+32D4mX864=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Restart Server",
+    "permalink": "/bluebubbles-cli/api/restart-server"
+  },
+  "next": {
+    "title": "Save Settings",
+    "permalink": "/bluebubbles-cli/api/save-settings"
+  }
+}

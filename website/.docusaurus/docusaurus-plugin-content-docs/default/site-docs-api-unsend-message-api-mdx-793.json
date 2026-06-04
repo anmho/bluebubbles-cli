@@ -1,0 +1,35 @@
+{
+  "id": "api/unsend-message",
+  "title": "Unsend Message",
+  "description": "Unsend a message that you've sent.",
+  "source": "@site/docs/api/unsend-message.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/unsend-message",
+  "permalink": "/bluebubbles-cli/api/unsend-message",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "unsend-message",
+    "title": "Unsend Message",
+    "description": "Unsend a message that you've sent.",
+    "sidebar_label": "Unsend Message",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztVttu3DYQ/ZUB/ZDEUKR167SFWqSIk6DYB8eG104RxIbNlUYrJhTJcChtFosF8iHtz+VLiqHkvcRO0uei+yItNbcznDkzS+Gklw0G9CTyt0thZIMiF04Sza0vRSKUEbn40KJfiESUSIVXLijLp29s6+FIt3jUTqcaCSboO/SwpU1FjY0U+VKEhWPLFLwyM7FKBH6UjdN8tlzeaqxWYnWVCI/krCEkVvxhNOLHrutJWxRIVLUaboXFapWIIGcMRHQHIhHHSCRnKK6+DPzCEJoSJDS9BIRaBljY9kGHQGhCemkuzf7+sTKqaZv7ML5GT8qa/f0cDtLDdMQK169swBxCjddwfeOkD2NT4seba7hepxkUgTV6AdQ6Z33AEqyBRhYnEzgaz2DSepCmBINz9El89fihVR7pvjC66Py6D/dsENzfz/ngMZx61cmA8Ox0zH97L6/RhNbLSwMAwHJ7e3t7wLpIAY5sueDDm5sbeEfWXJplL5llcF4jMCqwFYPcZM9CGzOarkUHQOoLQBuBk3gXUidQYiVbHYjNjDYCxy0FmCJIA8oEnKGHh40yOYweDaGLdYYvRQ6jS7MaAhdcQREOo+HiKawJaAK/Sue0KiR7zxggn92pUjt9h0UQiXDeOvRB9aWIpQpY3pbVfUU9lcX7ufQlPbeNk0FNlVZh8S2NNYitrwNgsVpt98kd/+K8VsQFxZdhcH57IeK7cYiX0RKn/POnv75i5vOnv8VOfKNVDKjBUNuSWcJSzJEMtchFJp3KuoNs0M5+++Ni/OJp1lcGU0Gs2J5mWq9j39eWwtDzfBdnm1t7+XXUQ+6+D3ItuIOBKa2yMdsqRP7Z6iuRiK7vbJGLg3SUju6w3na2np2O4YUt2gZNiCUFlfXxyz29+sy5BwRnLyfnrBcp5ilEaycODZv6MR0BOSxgLglmaNBLvqXK2yYatVWlCiX1jvVTS6GRBgqrNRYcRA51CI7yLCuH2NCnMwyul0wL22Sdwnn2809Pfjk8zC5ePzkz1fy4JwP4k8lQ7dANf9n2qQgkFN4SPXZahsr6BqRzgIWlBQVsQKqmr68p3wGo4w1XSK2Zaz2U2KkCKe2T0KA0lIAk0NbM+LmwLdSyQybqyCe9Qlai03bBuMC3xrD9r6c8ibyudeSSqY4R9OwfqbVA1eE6PEq3c1Ba5GtWFO/ZVhX63/n7+c4RgYyFpzBSGAXrEbg0W0fMlIQhKDOjLNTYYI9wjlrzkxvdy4K/w1yFOuJoTYleL/hsG3YKb+4AqTAUNRS1DJTcti17CEEWNSeIEqilKfUXfm9xGxtUNbAhQackkC3eYyB4OIkv6fjkVxjDXJrA/opamjguuQVMjLZqQ+sxTdNHkc36EuPuGlaJYdYer6lpp5u2qPn/qfyfn8rDeAv4MWROS2W4ZOIsWA5T5K2QTjEJ8/62GWf9LBGJGKbJVSJ4dLD8cjmVhBder1Z83G+qPGNKRdwmpcgrqQm/UXj/Yo+9N/L3uNjdlTupWxaLA62TXnEAIn97tUpEjbJEHyPr9Z73/h+fs+mN7p39hG2tR+7pyeScJ9+w1zS2ZB0v57zzyDn7ToSNGOPGEs+WQksza/uh2Nvk3z+lqyKY",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Stop Send Typing Indicator",
+    "permalink": "/bluebubbles-cli/api/stop-send-typing-indicator"
+  },
+  "next": {
+    "title": "Update a Chat",
+    "permalink": "/bluebubbles-cli/api/update-a-chat"
+  }
+}

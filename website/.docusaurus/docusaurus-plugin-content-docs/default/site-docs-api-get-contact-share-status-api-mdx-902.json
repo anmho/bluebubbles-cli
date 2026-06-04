@@ -1,0 +1,35 @@
+{
+  "id": "api/get-contact-share-status",
+  "title": "Get Contact Share Status",
+  "description": "Fetch messages associated with a specified chat",
+  "source": "@site/docs/api/get-contact-share-status.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-contact-share-status",
+  "permalink": "/bluebubbles-cli/api/get-contact-share-status",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-contact-share-status",
+    "title": "Get Contact Share Status",
+    "description": "Fetch messages associated with a specified chat",
+    "sidebar_label": "Get Contact Share Status",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "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",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Contact Card",
+    "permalink": "/bluebubbles-cli/api/get-contact-card"
+  },
+  "next": {
+    "title": "Get Contacts",
+    "permalink": "/bluebubbles-cli/api/get-contacts"
+  }
+}

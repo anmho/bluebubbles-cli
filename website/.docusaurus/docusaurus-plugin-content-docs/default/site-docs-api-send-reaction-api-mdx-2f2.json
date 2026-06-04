@@ -1,0 +1,35 @@
+{
+  "id": "api/send-reaction",
+  "title": "Send Reaction",
+  "description": "Send a text message via iMessage",
+  "source": "@site/docs/api/send-reaction.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/send-reaction",
+  "permalink": "/bluebubbles-cli/api/send-reaction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "send-reaction",
+    "title": "Send Reaction",
+    "description": "Send a text message via iMessage",
+    "sidebar_label": "Send Reaction",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJztV1Fv2zYQ/isHBli7TJadtd0GFdjQtF2RhyxBnHYo6iKmpZPFhiJVHmXHM/zfh6MkW06coc9D/SL5yPt4d7z77rQWlXSyRI+ORPJpLYwsUSSikkRL6zIRCWVEIr7W6FYiEhlS6lTllWXpR1s7ONU1ntazmUaCMboFOuhpU1pgKUWyFn5VMTJ5p8xcbCKBd7KsNMvW605jsxGbz5FwSJU1hMSKP49G/Ng/elynKRLltYZus9hsIuHlnB0RixMRiXMkknMUn+8bPkaTgQSPdx7KZhMslATVakzMxBwfnyujyro85OEHdKSsOT5OYBQ/i0escPOX9ZiAL/AGbqaVdP7MZHg3vYGbbZBBEVijV0B1VVnnMQNroJTpxRhOz+Ywrh1Ik4HBJboovDr8WiuHdMiMxUn8PB7dNOZetRvZqEunFtIjvLo848Wjo6Mj4HUkD6c2W7FwOp3CF7JmYtYTAwAwHMJ1gfDu/dkbyK1jT+B1IT2sbA1LaTz4QtE2YN7CDIGQ5bZBmIi0kP5drbKJSGAiuni+/OnlXe83EdHeiR1iONlbcCjTPiihxtRj1qLt8O8DBUVlDYMQmizerp7X5NlcaxBsnsBU2wVOI5hqdRuemaLuVct6XvALllUhSf0TpCF4ypppBNbBdNABDDq1QQ9isMUY7IEMtiidb53Jhx3iLAKbh6voxb0LUNzbrIiTy68qlUqtV1ATZuEaWz2CpfIFlLX2qtINNO0A/rQO2oqMQO2fWEja6akygP0Qqmen3+awupfDuw0XofikjiDDXNbaE3syenhF0oAyHufo4GmpTAKjH7tgbYuKozWamE2bx4IpI4SWk5vZIrXGo/H8KqtKq1Ty6UPOd5Y9oCU7+4KpF5GonK3QedVwT5fOBwnsXlpe453/ln2P4nWpcHBx63pvtQ2T2Gz6dNq3+rEKFI9YLx4utECibx//6xk02gQLSvSF5b2VpRBK6QuRiKGs1HBxMmyzaRhgwjnMYU3bqZ0OfaCw5NsewFd1tbvUtwfda+PzmDePLd/X7nm2le35x20wtyH0yoee1WNjEYlF0w9EIk7iUTx60Cm35VkEToY3Nq1LND5k5ZZsDzD8q6p6QnD1dnzNejHn++9NsV9UaBjqWTwCqjCFpSSYo0Enua3kzpYB1Oa5SpXUe+iXlnwpDaRWc2CUNQkU3leUDIdZaxu6eI6+anbGqS2HC4XL4a+/vPjt+fPh+w8vrky+PG/aC/zNfULtNSle6Z+pCCSkzhINKi19bl0JsqoAU0sr8liCVCVmoa/wHWy7MUuk1tyGHGS4UClS3AShRGkoAkmgrZnzk3tVIRcIsqWkRmGYYaXtiv0CVxvD+I+HPGKYJ1oHOppp7PpJ25BTVAvcmkdxPwaZRWr6JF+OzXN0f/D69Z6IQM6UVkwzAdtbhzCT6W1dEfM9offKzGnoCyyx8XCJWvOTq95xvpp5Q+nsR20ydHrFsr7bMXx84EiOPi2Ai4iibXOIQHov04IDRBEU0mT63rmd38Z6lbeESmFsIpveoid4Og4v8dnFSzhrJwbLJxm+xFACJlib1752GMfxj4HamhTj6mrHzzCfXXVFea+YeuT+fZD7Psh9H+T+X4NcO9uwUcNKS2WYIsJ8sG4nik9CVoqbLn/jta51TZy/9XiI4F3r9UwSvnd6s2Fx8w3L00amiMkwE0kuNeF/8Ms3fOEetPcWV/tf0Qupa94WRpuFdIoNEMmnz5tIFCgzdMGyRu91c/7gmqF3ug8GWcbaDl2XF+NrEYlZOwCXNmMdJ5ccGrlshjYbfAyjbZCthZZmXnMAE9Fg8u9f6xB8yg==",
+    "sidebar_class_name": "post api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Send Multipart Message",
+    "permalink": "/bluebubbles-cli/api/send-multipart-message"
+  },
+  "next": {
+    "title": "Send Text",
+    "permalink": "/bluebubbles-cli/api/send-text"
+  }
+}

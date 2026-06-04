@@ -1,0 +1,35 @@
+{
+  "id": "api/get-attachment-count",
+  "title": "Get Attachment Count",
+  "description": "Fetch the total number of attachments for your iMessage account (on the device)",
+  "source": "@site/docs/api/get-attachment-count.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/get-attachment-count",
+  "permalink": "/bluebubbles-cli/api/get-attachment-count",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "get-attachment-count",
+    "title": "Get Attachment Count",
+    "description": "Fetch the total number of attachments for your iMessage account (on the device)",
+    "sidebar_label": "Get Attachment Count",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJy1VU1v3DYQ/SsD5pAEUCW7TdpCBVo4bRr4EDjIOi0Cx4dZarQiTJEsZ6TNYqH/Xoy0jneTtOilJwqcz/eG87Q3CTP2JJTZ1Dd7E7AnU5uEzNuYG1MYF0xt/hoo70xhGmKbXRIX9fZ9HDK88AO9GNZrTwwryiNlOIpm21GPpt4b2SXNzJJd2JipMPQR++T1br+/j5gmM90WJhOnGJhYA789O9PjtPRqsJaY28HDvbOZpsIIbhSIGc9NYS5E0HY9BTG3n/f+O4ntQDoCiYIewtCvKUNsAT9FMbQxw05RutfEjBsCtDYOQeBJDHN0Q6Oz9NQUpifpYmNqsyExhUkonalNhclV43n1kLWaEyg3M1sL70P2MxFdZDmQ4EIbZ+KczCwdEW0Ko5ELkvPyrDz7YjbXnWNwPPd48eYSfot20Oqo9hmXWr4yvIuUHjO8fbm61rjyQ/gQfoY521WioKm+K8+AE1nYIsOGAmUUaqDNsZ+TxrZ11qE/yf4msvQYwEbvyWoTNXQiieuqag69US43JGnxLG3sq9HRtvrh++c/PntWvfvj+dvQbl9rR48ewZ8digI8KqKW45qOAcHmyPxN8ihtzD1gSkA28o6FekDXUwMSYa2v8mHKEgG9X0a/TJjLhYSeMHAByOBj2Oi5iwN0OBIg9GivVoeAqqHk405xQR5C0Pz/THmhaR57D2sCXPu5A6bQAIYGMllyI31qj8tjDppIOmbH85xj21L+Re3XJ1cMuHbeiVPnCCwxE6zR3g2J9dUzibiw4Uo66mlBuCXv9XQ6GrRqh62TZW2G0FD2O707hl3C+y+AtPOu2Q6FC+gPGIrjRSugw9D4z+re4w5RXOvs/HQZRofA0d6RMDxZzR/l5dVPcAlbDKL1bIdBhzivwLKm7SBDprIsn6r0HJ6YbtdB8F6RwINcwK+HFT3Zqb2xMYiqyf8hHwd9FPooVfLogjY6y8L+oCU3BpPT1VdteyhjCrMoym1hVD7Ucb9fI9O77KdJrxf5Vp1pHOtUGlO36Jn+BeF/EPevtnxHu9MfyIh+ULdZ1EbMThsw9c3tdKSZr15em2n6GxXkS3A=",
+    "sidebar_class_name": "get api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Get Attachment by GUID",
+    "permalink": "/bluebubbles-cli/api/get-attachment-by-guid"
+  },
+  "next": {
+    "title": "Get Attachment Live Photo",
+    "permalink": "/bluebubbles-cli/api/get-attachment-live-photo"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "api/update-a-chat",
+  "title": "Update a Chat",
+  "description": "Updates an existing chat",
+  "source": "@site/docs/api/update-a-chat.api.mdx",
+  "sourceDirName": "api",
+  "slug": "/api/update-a-chat",
+  "permalink": "/bluebubbles-cli/api/update-a-chat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "update-a-chat",
+    "title": "Update a Chat",
+    "description": "Updates an existing chat",
+    "sidebar_label": "Update a Chat",
+    "hide_title": true,
+    "hide_table_of_contents": true,
+    "api": "eJzdVttu20YQ/ZXB+iGJwZBKk7QFW6RwLij8kNrwJUVgGfBoORQ3Xu5udpZSBEH/XsxSjuVLij5XL6Rmdq5n9gzXKmDEnhJFVvXFWjnsSdUqIPPSx0YVyjhVq68DxZUqVEOsownJeJF+9kOEt3agt8NsZonhlOKCIuxYs+6oR1WvVVoF8cwpGjdXm0LRN+yDFdl6fWOx2ajNZaEicfCOicXwp8lEHndDnw5aE3M7WLg5rDabQiWcSyFq8UIV6l2HSV3ez/o8NJiIAR3QN8PJuDnoDtPUTd3+/kfjTD/0j5X1iSIb7/b3a5iUL8vJaHBCXwcTiev9fTiOZoGJ4OD4UJR7e3t7IHriBG99sxLh1dXVF/Zu6tZTBwBQVfD0KOeG9hkcgKMlCArQ+ggI8+iHsM1Pjk9VYzhYXP2FPU1VDVM1VVO3yY6VtC6Hk2jSNe1dIpfkFUOwRqNEqiQDkT2Ax8++kE6qUCH6QDGZEYOdmI9gudlF895hJepNoXpKnW9ktIbsHlOnalVhMNXiRSX1Vb8LXvDn+eH7NzI5uenjVA7R5jHpPKftiEgFJ7e1fvhR+Nt5M671OXmT8tTtIKwKtRjBVbV6UU7KyYNZP+sMg2FIXYYX3ns99ORS7mfGSjSPTM1BCE8YTj6cnoldKSPwBrK3o0BOXL0sJ8CBNCyRYU6OIiZqoI2+z0592xpt0N7xfuw59ehAe2tJSxI1dCkFrquq2eZGsZxTCuPJUvu+WhhaVr/8/PrXV6+q80+vT1y7/DhOKvwtzTe8G0Q0uzENA4KOnvl5sJhaH3vAEIC05xUn6gFNTw0kDzPpOpiPxIxzEglaCyshjIYWRhOXYxN6QscFIIP1bi7PlR+gwwUBQo/66HRrUDUUrF9JXRAH58T/j1teiJsn1sKMAGc2Z8DkGkDXQCRNZkHf0+NytweNJ4HZcMbZty3FP0R/dkfEgDNjjVyQ7Dv5SDBDfT0EBt8CUxJm4Sp11NNY4ZKslacRaFBn5lma1OU6BtdQtCuR7ZZdwucHhbSUdJc5gQvotzUUgCmh7qRBXECHrrH34t7U7Xwy7ZYKGBYGgb2+psTw9DS/lIdHv8EhLNEliac7dAJivgIuZ9sOaYhUluUzuVrbEZPbtV0gI8kCQubge5dph5b+52y8JcpE31IVLBon3cpstt5S4IXCYIR/ZGHpsVm7RHhZKGE9Obhez5DpPNrNRsTjThZ6bAzLaDSqbtEy/Uu3/8PGfjTla1rd/SpYoB1Gdr+UP9FIAqq+uNwUqiNsKObMRrt3Y/znZ+L61vbBQhJf3/fE8fmZKtRsu8d634hJxKXsOFxK6EL5XGLeUFm2VhbdfMC5nB1dyu8fhZ8ReQ==",
+    "sidebar_class_name": "put api-method",
+    "info_path": "api/bluebubbles",
+    "custom_edit_url": null
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Unsend Message",
+    "permalink": "/bluebubbles-cli/api/unsend-message"
+  },
+  "next": {
+    "title": "Update a Scheduled Message by ID",
+    "permalink": "/bluebubbles-cli/api/update-a-scheduled-message-by-id"
+  }
+}
